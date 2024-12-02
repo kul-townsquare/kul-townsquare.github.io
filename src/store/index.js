@@ -104,7 +104,7 @@ export default new Vuex.Store({
       isMenuOpen: false,
       isStatic: false,
       isMuted: false,
-      isImageOptIn: false,
+      isImageOptIn: true,
       zoom: 0,
       background: ""
     },
@@ -170,7 +170,7 @@ export default new Vuex.Store({
     toggleStatic: toggle("isStatic"),
     toggleNight: toggle("isNight"),
     toggleGrimoire: toggle("isPublic"),
-    toggleImageOptIn: toggle("isImageOptIn"),
+    // toggleImageOptIn: toggle("isImageOptIn"),
     toggleModal({ modals }, name) {
       if (name) {
         modals[name] = !modals[name];

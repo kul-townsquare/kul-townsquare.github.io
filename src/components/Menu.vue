@@ -87,7 +87,7 @@
             Background image
             <em><font-awesome-icon icon="image"/></em>
           </li>
-          <li v-if="!edition.isOfficial" @click="imageOptIn">
+          <!-- <li v-if="!edition.isOfficial" @click="imageOptIn">
             <small>Show Custom Images</small>
             <em
               ><font-awesome-icon
@@ -96,7 +96,7 @@
                   grimoire.isImageOptIn ? 'check-square' : 'square'
                 ]"
             /></em>
-          </li>
+          </li> -->
           <li @click="toggleStatic">
             Disable Animations
             <em
