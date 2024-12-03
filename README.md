@@ -1,7 +1,5 @@
 # Blood on the Clocktower Grimoire & Town Square
 
-> :warning: **This project is no longer actively maintained** and will only receive critical bug fixes. :warning:
-
 ![social](https://user-images.githubusercontent.com/325521/102897760-d1147b00-4468-11eb-9d7b-63a204bc9fc1.png)
 
 This is an unofficial online tool to run Blood on the Clocktower games through Discord or other digital means.
