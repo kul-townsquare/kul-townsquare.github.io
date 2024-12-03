@@ -632,11 +632,11 @@ li.move:not(.from) .player .overlay svg.move {
   }
 }
 
-@include glow("townsfolk", $townsfolk);
-@include glow("outsider", $outsider);
-@include glow("demon", $demon);
-@include glow("minion", $minion);
-@include glow("traveler", $traveler);
+@include glow("镇民", $townsfolk);
+@include glow("外来者", $outsider);
+@include glow("恶魔", $demon);
+@include glow("爪牙", $minion);
+@include glow("旅行者", $traveler);
 
 .player.you .token {
   animation: townsfolk-glow 5s ease-in-out infinite;

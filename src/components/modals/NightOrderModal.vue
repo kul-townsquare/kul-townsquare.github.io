@@ -113,25 +113,24 @@ export default {
       if (this.players.length > 6) {
         rolesFirstNight.push(
           {
-            id: "evil",
-            name: "Minion info",
+            id: "minion_info",
+            name: "爪牙信息",
             firstNight: 5,
             team: "minion",
             players: this.players.filter(p => p.role.team === "minion"),
             firstNightReminder:
-              "• If more than one Minion, they all make eye contact with each other. " +
-              "• Show the “This is the Demon” card. Point to the Demon."
+              "• 如果有七名或以上玩家：爪牙睁眼相互认识。" +
+              "• 告诉他们恶魔是哪名玩家。"
           },
           {
-            id: "evil",
-            name: "Demon info & bluffs",
+            id: "demon_info",
+            name: "恶魔信息",
             firstNight: 8,
             team: "demon",
             players: this.players.filter(p => p.role.team === "demon"),
             firstNightReminder:
-              "• Show the “These are your minions” card. Point to each Minion. " +
-              "• Show the “These characters are not in play” card. Show 3 character tokens of good " +
-              "characters not in play."
+              "• 如果有七名或以上玩家：告诉恶魔，这些玩家是你的爪牙。 " +
+              "• 告诉恶魔3个不在场的伪装角色。"
           }
         );
       }
