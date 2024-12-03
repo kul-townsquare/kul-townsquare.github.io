@@ -11,7 +11,7 @@
       title="Show Night Order"
     />
     <h3>
-      Character Reference
+      角色能力表
       <font-awesome-icon icon="address-card" />
       {{ edition.name || "Custom Script" }}
     </h3>
