@@ -32,10 +32,12 @@
               backgroundImage: `url(${
                 role.image && grimoire.isImageOptIn
                   ? role.image
-                  : require('../../assets/icons/' +
-                      (role.imageAlt || role.id) +
-                      '.png')
-              })`
+                  : require(
+                      '../../assets/icons/' +
+                        (role.imageAlt || role.id) +
+                        '.png',
+                    )
+              })`,
             }"
           ></span>
           <div class="role">
@@ -60,17 +62,17 @@
           <span
             class="icon"
             :style="{
-              backgroundImage: `url(${require('../../assets/icons/' +
-                jinx.first.id +
-                '.png')})`
+              backgroundImage: `url(${require(
+                '../../assets/icons/' + jinx.first.id + '.png',
+              )})`,
             }"
           ></span>
           <span
             class="icon"
             :style="{
-              backgroundImage: `url(${require('../../assets/icons/' +
-                jinx.second.id +
-                '.png')})`
+              backgroundImage: `url(${require(
+                '../../assets/icons/' + jinx.second.id + '.png',
+              )})`,
             }"
           ></span>
           <div class="role">
@@ -93,23 +95,23 @@ import { mapMutations, mapState } from "vuex";
 
 export default {
   components: {
-    Modal
+    Modal,
   },
   computed: {
     /**
      * Return a list of jinxes in the form of role IDs and a reason
      * @returns {*[]} [{first, second, reason}]
      */
-    jinxed: function() {
+    jinxed: function () {
       const jinxed = [];
-      this.roles.forEach(role => {
+      this.roles.forEach((role) => {
         if (this.jinxes.get(role.id)) {
           this.jinxes.get(role.id).forEach((reason, second) => {
             if (this.roles.get(second)) {
               jinxed.push({
                 first: role,
                 second: this.roles.get(second),
-                reason
+                reason,
               });
             }
           });
@@ -117,9 +119,9 @@ export default {
       });
       return jinxed;
     },
-    rolesGrouped: function() {
+    rolesGrouped: function () {
       const rolesGrouped = {};
-      this.roles.forEach(role => {
+      this.roles.forEach((role) => {
         if (!rolesGrouped[role.team]) {
           rolesGrouped[role.team] = [];
         }
@@ -128,7 +130,7 @@ export default {
       delete rolesGrouped["traveler"];
       return rolesGrouped;
     },
-    playersByRole: function() {
+    playersByRole: function () {
       const players = {};
       this.players.forEach(({ name, role }) => {
         if (role && role.id && role.team !== "traveler") {
@@ -141,11 +143,11 @@ export default {
       return players;
     },
     ...mapState(["roles", "modals", "edition", "grimoire", "jinxes"]),
-    ...mapState("players", ["players"])
+    ...mapState("players", ["players"]),
   },
   methods: {
-    ...mapMutations(["toggleModal"])
-  }
+    ...mapMutations(["toggleModal"]),
+  },
 };
 </script>
 
@@ -305,16 +307,16 @@ ul {
         width: 6vh;
       }
       .role {
-        line-height: 100%;
+        line-height: max(100%, 1.5rem);
       }
       .name {
-        font-size: 100%;
+        font-size: max(100%, 1.2rem);
       }
       .player {
-        font-size: 100%;
+        font-size: max(100%, 1.2rem);
       }
       .ability {
-        font-size: 90%;
+        font-size: max(90%, 1rem);
       }
     }
   }

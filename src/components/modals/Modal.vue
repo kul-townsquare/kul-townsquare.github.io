@@ -74,10 +74,12 @@ export default {
     overflow-y: auto;
   }
 
-  .roles &,
-  .characters & {
-    max-height: 100%;
-    max-width: 60%;
+  @media only screen and (max-width: 800px) {
+    .roles &,
+    .characters & {
+      max-height: 100%;
+      max-width: 100%;
+    }
   }
 
   ul {
