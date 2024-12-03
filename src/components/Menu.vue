@@ -47,19 +47,19 @@
 
         <template v-if="tab === 'grimoire'">
           <!-- Grimoire -->
-          <li class="headline">Grimoire</li>
+          <li class="headline">游戏</li>
           <li @click="toggleGrimoire" v-if="players.length">
-            <template v-if="!grimoire.isPublic">Hide</template>
-            <template v-if="grimoire.isPublic">Show</template>
+            <template v-if="!grimoire.isPublic">隐藏</template>
+            <template v-if="grimoire.isPublic">显示</template>
             <em>[G]</em>
           </li>
           <li @click="toggleNight" v-if="!session.isSpectator">
-            <template v-if="!grimoire.isNight">Switch to Night</template>
-            <template v-if="grimoire.isNight">Switch to Day</template>
+            <template v-if="!grimoire.isNight">进入夜晚</template>
+            <template v-if="grimoire.isNight">进入白天</template>
             <em>[S]</em>
           </li>
           <li @click="toggleNightOrder" v-if="players.length">
-            Night order
+            夜晚顺序
             <em>
               <font-awesome-icon
                 :icon="[
@@ -70,7 +70,7 @@
             </em>
           </li>
           <li v-if="players.length">
-            Zoom
+            缩放
             <em>
               <font-awesome-icon
                 @click="setZoom(grimoire.zoom - 1)"
@@ -84,7 +84,7 @@
             </em>
           </li>
           <li @click="setBackground">
-            Background image
+            背景图片
             <em><font-awesome-icon icon="image"/></em>
           </li>
           <!-- <li v-if="!edition.isOfficial" @click="imageOptIn">
@@ -98,14 +98,14 @@
             /></em>
           </li> -->
           <li @click="toggleStatic">
-            Disable Animations
+            禁用动画
             <em
               ><font-awesome-icon
                 :icon="['fas', grimoire.isStatic ? 'check-square' : 'square']"
             /></em>
           </li>
           <li @click="toggleMuted">
-            Mute Sounds
+            静音
             <em
               ><font-awesome-icon
                 :icon="['fas', grimoire.isMuted ? 'volume-mute' : 'volume-up']"
@@ -116,29 +116,29 @@
         <template v-if="tab === 'session'">
           <!-- Session -->
           <li class="headline" v-if="session.sessionId">
-            {{ session.isSpectator ? "Playing" : "Hosting" }}
+            {{ session.isSpectator ? "玩家" : "说书人" }}
           </li>
           <li class="headline" v-else>
-            Live Session
+            会话
           </li>
           <template v-if="!session.sessionId">
-            <li @click="hostSession">Host (Storyteller)<em>[H]</em></li>
-            <li @click="joinSession">Join (Player)<em>[J]</em></li>
+            <li @click="hostSession">创建小镇(说书人)<em>[H]</em></li>
+            <li @click="joinSession">加入小镇(玩家)<em>[J]</em></li>
           </template>
           <template v-else>
             <li v-if="session.ping">
-              Delay to {{ session.isSpectator ? "host" : "players" }}
-              <em>{{ session.ping }}ms</em>
+              与{{ session.isSpectator ? "说书人" : "玩家" }}
+              <em>{{ session.ping }}毫秒延迟</em>
             </li>
             <li @click="copySessionUrl">
-              Copy player link
+              复制玩家链接
               <em><font-awesome-icon icon="copy"/></em>
             </li>
             <li
               v-if="session.voteHistory.length || !session.isSpectator"
               @click="toggleModal('voteHistory')"
             >
-              Vote history<em>[V]</em>
+             投票记录<em>[V]</em>
             </li>
             <li @click="leaveSession">
               退出房间
@@ -149,7 +149,7 @@
 
         <template v-if="tab === 'players' && !session.isSpectator">
           <!-- Users -->
-          <li class="headline">Players</li>
+          <li class="headline">玩家</li>
           <li @click="addPlayer" v-if="players.length < 20">添加座位<em>[A]</em></li>
           <li @click="randomizeSeatings" v-if="players.length > 2">
             随机座位
@@ -163,7 +163,7 @@
 
         <template v-if="tab === 'characters'">
           <!-- Characters -->
-          <li class="headline">Characters</li>
+          <li class="headline">角色</li>
           <li v-if="!session.isSpectator" @click="toggleModal('edition')">
             选择剧本
             <em>[E]</em>
@@ -191,7 +191,7 @@
 
         <template v-if="tab === 'help'">
           <!-- Help -->
-          <li class="headline">Help</li>
+          <li class="headline">帮助</li>
           <li @click="toggleModal('reference')">
             角色能力表
             <em>[R]</em>
@@ -201,29 +201,29 @@
             <em>[N]</em>
           </li>
           <li @click="toggleModal('gameState')">
-            Game State JSON
+            游戏状态(JSON)
             <em><font-awesome-icon icon="file-code"/></em>
           </li>
-          <li>
-            <a href="https://discord.gg/Gd7ybwWbFk" target="_blank">
-              Join Discord
-            </a>
-            <em>
-              <a href="https://discord.gg/Gd7ybwWbFk" target="_blank">
-                <font-awesome-icon :icon="['fab', 'discord']" />
-              </a>
-            </em>
-          </li>
-          <li>
-            <a href="https://github.com/bra1n/townsquare" target="_blank">
-              Source code
-            </a>
-            <em>
-              <a href="https://github.com/bra1n/townsquare" target="_blank">
-                <font-awesome-icon :icon="['fab', 'github']" />
-              </a>
-            </em>
-          </li>
+<!--          <li>-->
+<!--            <a href="https://discord.gg/Gd7ybwWbFk" target="_blank">-->
+<!--              Join Discord-->
+<!--            </a>-->
+<!--            <em>-->
+<!--              <a href="https://discord.gg/Gd7ybwWbFk" target="_blank">-->
+<!--                <font-awesome-icon :icon="['fab', 'discord']" />-->
+<!--              </a>-->
+<!--            </em>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="https://github.com/bra1n/townsquare" target="_blank">-->
+<!--              Source code-->
+<!--            </a>-->
+<!--            <em>-->
+<!--              <a href="https://github.com/bra1n/townsquare" target="_blank">-->
+<!--                <font-awesome-icon :icon="['fab', 'github']" />-->
+<!--              </a>-->
+<!--            </em>-->
+<!--          </li>-->
         </template>
       </ul>
     </div>

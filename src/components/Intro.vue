@@ -2,14 +2,15 @@
   <div class="intro">
     <img src="static/apple-icon.png" alt="" class="logo" />
     <div>
-      Welcome to the (unofficial)
-      <b>Virtual Town Square and Grimoire</b> for Blood on the Clocktower!
-      Please add more players through the
+      欢迎来到
+      <b>鲁汶</b>《钟楼谜团》(非官方)！
+      点击右上角
       <span class="button" @click="toggleMenu">
-        <font-awesome-icon icon="cog" /> Menu
+        <font-awesome-icon icon="cog" /> 菜单
       </span>
-      on the top right or by pressing <b>[A]</b>. You can also join a game
-      session by pressing <b>[J]</b>.<br />
+      可查看主要功能<br>
+      快捷键：[A]添加座位 [J]加入小镇
+
       <div class="footer">
         This project is free and open source and can be found on
         <a href="https://github.com/bra1n/townsquare" target="_blank">GitHub</a
@@ -18,14 +19,6 @@
         Institute.
       </div>
     </div>
-    <a
-      class="redirect"
-      v-if="language === 'zh-CN'"
-      href="https://clocktower.gstonegames.com"
-    >
-      <img src="../assets/gstone.png" class="gstone" alt="" />
-      你想使用中文版魔典吗？
-    </a>
   </div>
 </template>
 

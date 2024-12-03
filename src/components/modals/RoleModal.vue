@@ -1,12 +1,13 @@
 <template>
   <Modal v-if="modals.role && availableRoles.length" @close="close">
     <h3>
-      Choose a new character for
+     为
       {{
         playerIndex >= 0 && players.length
           ? players[playerIndex].name
-          : "bluffing"
+          : "恶魔的伪装"
       }}
+      选择角色
     </h3>
     <ul class="tokens" v-if="tab === 'editionRoles' || !otherTravelers.size">
       <li
