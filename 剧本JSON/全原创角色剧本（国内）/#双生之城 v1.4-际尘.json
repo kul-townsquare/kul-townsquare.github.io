@@ -1,0 +1,373 @@
+[{
+	"id": "_meta",
+	"name": "双生之城",
+	"author": "际尘",
+	"logo": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/_meta.png",
+	"almanac": "",
+	"a jinxedName": "相克",
+	"a jinxed": "相克"
+}, {
+	"id": "2_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/_twincity.png",
+	"reminders": ["死亡", "打破规则", "魔王降临"],
+	"setup": true,
+	"name": "地城领主",
+	"team": "demon",
+	"ability": "你可以随时查看魔典并提出打破规则的建议，当说书人第三次打破规则时，一名善良玩家得知“魔王降临”。在你的首个夜晚，你可以选择获得一个其他恶魔角色的能力。如果说书人被处决，善良阵营获胜。【无爪牙】",
+	"firstNight": 5,
+	"otherNight": 5,
+	"firstNightReminder": "让地城领主查看魔典选择一个恶魔角色并提出打破规则的建议，说书人来决定是否采纳起建议，并告知目前一共打破了几条建议。当第三次打破规则时，唤醒一名善良玩家向他展示“魔王降临”标记。",
+	"otherNightReminder": "让地城领主查看魔典并提出打破规则的建议，说书人来决定是否采纳起建议，并告知目前一共打破了几条建议。当第三次打破规则时，唤醒一名善良玩家向他展示“魔王降临”标记。",
+	"setup": true
+}, {
+	"id": "1_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/1_twincity.png",
+	"reminders": ["死亡"],
+	"name": "瓦尔拉文",
+	"team": "demon",
+	"ability": "在你的首个夜晚，你要选择两个角色（至多一个镇民），说书人可能会开始制造这些角色在场的假象。每个夜晚*，你要选择一名玩家：他死亡。",
+	"firstNight": 10,
+	"otherNight": 11,
+	"firstNightReminder": "让瓦尔拉文选择两个角色，最多只能选择一个镇民角色。",
+	"otherNightReminder": "让瓦尔拉文选择一名玩家，给他标记“死亡”",
+	"setup": false
+}, {
+	"id": "3_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/2_twincity.png",
+	"remindersGlobal": ["魂火碎片", "死亡"],
+	"setup": true,
+	"name": "魂火",
+	"team": "demon",
+	"ability": "两名善良玩家是恶魔、中毒且必定产生错误信息，爪牙代替恶魔获取初始恶魔信息，并得知这两名玩家的角色。每个夜晚*，爪牙们商议决定让一名玩家死亡。所有玩家都知道魂火在场。【-1恶魔，+1镇民】",
+	"firstNight": 7,
+	"otherNight": 12,
+	"firstNightReminder": "给两名镇民玩家标记“魂火碎片”",
+	"otherNightReminder": "唤醒所有爪牙，让他们选择一名玩家，给他标记“死亡”",
+	"setup": true
+}, {
+	"id": "_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/3_twincity.png",
+	"reminders": ["被处决","死亡"],
+	"remindersGlobal": ["保留能力"],
+	"setup": true,
+	"name": "惨绝戏子",
+	"team": "demon",
+	"ability": "每个夜晚*，你要选择一名玩家：他死亡。你死于处决后保留能力且在结算游戏胜利条件时被当作存活。【+1外来者；邪恶阵营胜利条件改为处决所有初始爪牙和恶魔】",
+	"firstNight": 0,
+	"otherNight": 13,
+	"firstNightReminder": "",
+	"otherNightReminder": "让惨绝戏子选择一名玩家，给他标记“死亡”",
+	"setup": true
+}, {
+	"id": "5_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/4_twincity.png",
+	"edition": "custom",
+	"name": "迷雾人",
+	"ability": "在你的首个夜晚，你要选择一个善良角色：你拥有该角色能力且会被当作善良的该角色。如果该角色在场，他中毒，你得知他是谁，且他会被当作邪恶的迷雾人。【-1外来者】。",
+	"team": "minion",
+	"sch_team": "爪牙",
+	"firstNight": 8,
+	"otherNight": 0,
+	"firstNightReminder": "让他可以选择一个善良角色，如果该角色在场，告诉迷雾人该角色的玩家是谁并标记迷雾。将迷雾人的标记替换成所选的善良角色，并标记是迷雾人。",
+	"otherNightReminder": "",
+	"reminders": [
+		"中毒"
+	],
+	"remindersGlobal": [
+		"是迷雾人"
+	],
+	"setup": true
+}, {
+	"id": "7_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/5_twincity.png",
+	"reminders": ["寂静", "死亡"],
+	"name": "死寂",
+	"team": "minion",
+	"ability": "每个夜晚，你要选择一名玩家：当晚他不会被唤醒，如果他私聊说书人，他可能会死亡。在下个黄昏前，如果他对自己本应被唤醒疯狂，他可能会被处决。",
+	"firstNight": 9,
+	"otherNight": 7,
+	"firstNightReminder": "让死寂选择一名玩家，给他标记“寂静”，如果他当晚私聊说书人，可以酌情给他标记“死亡”。夜晚不要因任何原因唤醒“寂静”标记的玩家。",
+	"otherNightReminder": "让死寂选择一名玩家，给他标记“寂静”，如果他当晚私聊说书人，可以酌情给他标记“死亡”。夜晚不要因任何原因唤醒“寂静”标记的玩家。",
+	"setup": false
+}, {
+	"id": "6_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/26_twincity.png",
+	"reminders": ["死于处决", "献祭完成"],
+	"name": "死亡牧者",
+	"team": "minion",
+	"ability": "你可能被当作恶魔角色，如果你首次死于处决，你存活但被当作死亡，且获得能力：如果恶魔死亡，你与该恶魔交换角色（不刷新能力），一名存活善良玩家得知“献祭完成”。",
+	"firstNight": 0,
+	"otherNight": 6,
+	"firstNightReminder": "",
+	"otherNightReminder": "如果有“死于处决标记”，让死亡牧者选择一名玩家，如果他是存活的给他标记“重获能力”，否则给他标记并展示“献祭开始”标记。",
+	"setup": false
+}, {
+	"id": "4_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/6_twincity.png",
+	"reminders": [],
+	"setup": true,
+	"name": "双子龙",
+	"team": "minion",
+	"ability": "每个夜晚*，你要选择一名玩家和一个角色：如果他是该角色，他获得一枚龙蛋。【+对立阵营的双子龙】",
+	"firstNight": 0,
+	"otherNight": 9,
+	"firstNightReminder": "",
+	"otherNightReminder": "让双子龙选择一个玩家和一个角色，如果他是该角色，给这个玩家一个“龙蛋”标记。",
+	"setup": true
+}, {
+	"id": "8_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/7_twincity.png",
+	"reminders": ["死亡", "邪恶"],
+	"name": "渥金",
+	"team": "outsider",
+	"ability": "如果你是善良的，在第四个夜晚死亡。你首次在夜晚被邪恶玩家选择时，转变为邪恶阵营，一名善良玩家得知“渥金已离去”，随后他代替你成为目标。",
+	"firstNight": 0,
+	"otherNight": 14,
+	"firstNightReminder": "",
+	"otherNightReminder": "如果在游戏的第四个夜晚渥金是善良的，给他标记“死亡”。如果有邪恶玩家选择了渥金，告知渥金转变为邪恶阵营，向一名善良玩家展示“渥金已离去”标记，随后让他代替渥金成为目标。",
+	"setup": false
+}, {
+	"id": "9_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/8_twincity.png",
+	"reminders": ["得知", "沉睡", "已猜测"],
+	"name": "睡鼠",
+	"team": "outsider",
+	"ability": "一名邪恶玩家知道你在场，每局游戏限一次，他可以猜测谁是睡鼠：如果猜测正确，他选择一名玩家在夜晚不再被唤醒。你在夜晚只能听到“嘶嘶嘶”的声音。你死亡后保留能力。",
+	"firstNight": 12,
+	"otherNight": 8,
+	"firstNightReminder": "给一名邪恶玩家展示“得知”标记。",
+	"otherNightReminder": "夜晚不要因任何原因唤醒“沉睡”标记的玩家。",
+	"setup": false
+}, {
+	"id": "11_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/9_twincity.png",
+	"reminders": ["机关开启","以为存活"],
+	"name": "机关触发者",
+	"team": "outsider",
+	"ability": "你死亡后的某时刻会突然听见“咔嗒！”，最后举手的存活善良玩家死亡且被当作存活。如果你对外来者疯狂，当晚可能会有一名邪恶玩家行动两次，即使你已死亡。",
+	"firstNight": 0,
+	"otherNight": 0,
+	"setup": false
+}, {
+	"id": "10_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/10_twincity.png",
+	"reminders": ["已选择","标记"],
+	"name": "弗兰肯斯坦",
+	"team": "outsider",
+	"ability": "在你的首个夜晚，你要选择三名其他玩家，说书人将他们的能力重新排列组合后成为你的能力，但你不知道是什么。每个白天你可以找说书人猜测一次，你会得知你的猜测有多准确。",
+	"firstNight": 11,
+	"otherNight": 0,
+	"firstNightReminder": "让弗兰肯斯坦选择三名玩家，根据这些玩家的能力组合成为弗兰肯斯坦本局的能力，但是不要告诉他。",
+	"otherNightReminder": "",
+	"setup": false
+}, {
+	"id": "16_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/17_twincity.png",
+	"reminders": ["重获能力", "得知"],
+	"name": "史莱姆",
+	"team": "townsfolk",
+	"ability": "在你的首个夜晚，你可以选择两名其他玩家，如果他们阵营相同，一名邪恶玩家得知史莱姆在场，否则一名善良玩家得知史莱姆在场。当首次因你的能力得知史莱姆在场的玩家死亡时，你重获能力。",
+	"firstNight": 17,
+	"otherNight": 16,
+	"firstNightReminder": "让史莱姆选择除他以外的两名玩家，如果他们角阵营向他，向一名邪恶玩家展示“得知”标记，否则向一名善良玩家展示“得知”标记。",
+	"otherNightReminder": "当有“得知”标记的玩家死亡，且史莱姆没有“重获能力”标记，给史莱姆标记“重获能力”，并让史莱姆选择除他以外的两名玩家，如果他们角阵营向他，向一名邪恶玩家展示“得知”标记，否则向一名善良玩家展示“得知”标记。",
+	"setup": false
+}, {
+	"id": "12_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/12_twincity.png",
+	"reminders": ["得知", "获得能力"],
+	"name": "执旗手",
+	"team": "townsfolk",
+	"ability": "在你的首个夜晚，一名存活善良玩家得知执旗手在场。如果你在夜晚死亡，他获得执旗手的能力。",
+	"firstNight": 15,
+	"otherNight": 15,
+	"firstNightReminder": "向一名善良玩家展示“得知”标记。",
+	"otherNightReminder": "如果执旗手或者有“获得能力”标记的玩家死亡，将原有“得知”标记替换为“获得能力”标记，并向另一名善良玩家展示“得知”标记。",
+	"setup": false
+}, {
+	"id": "14_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/13_twincity.png",
+	"reminders": ["剩余一天", "剩余二天", "剩余三天", "剩余四天", "剩余五天", "末日降临", "死亡"],
+	"name": " 末日预言官",
+	"team": "townsfolk",
+	"ability": "在你的首个夜晚，你得知你将在第几夜死亡，且当晚不会有其他玩家死亡。每个夜晚，你要选择一名玩家：如果他是邪恶的，你提前一天死亡。如果你死于自身能力，一名善良玩家得知“末日降临”。",
+	"firstNight": 13,
+	"otherNight": 10,
+	"firstNightReminder": "展示对应天数的标记给末日预言官看，并让他选择一名玩家，如果他是邪恶的，将标记替换为少一天的标记。",
+	"otherNightReminder": "如果到了标记剩余一天，给末日预言官标记“死亡”，并向一名善良玩家得知“末日降临”标记；否则让末日预言官选择一名玩家，如果他是邪恶的，将标记替换为少一天的标记。",
+	"setup": false
+}, {
+	"id": "15_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/14_twincity.png",
+	"reminders": ["口令"],
+	"name": "竖琴手",
+	"team": "townsfolk",
+	"ability": "在你的首个夜晚，你要写一条口令，一名善良玩家和一名邪恶玩家得知该口令。如果存活玩家不多于三名，善良阵营获胜。",
+	"firstNight": 16,
+	"otherNight": 0,
+	"firstNightReminder": "分别唤醒有“口令”标记的玩家，告知他们本局的口令",
+	"otherNightReminder": "",
+	"setup": false
+}, {
+	"id": "3_sheshecup",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/15_twincity.png",
+	"name": "吹笛手",
+	"team": "townsfolk",
+	"ability": "每个夜晚，你可以选择除你以外的三名玩家：如果他们的类型都不相同，你失去能力；如果仅有两名玩家角色类型相同，另一名玩家得知吹笛手在场。",
+	"team": "townsfolk",
+	"sch_team": "村民",
+	"firstNight": 18,
+	"otherNight": 17,
+	"firstNightReminder": "让他选择除他以外的三名玩家，如果他们角色类型都不一样，标记吹笛手失去能力，之后的夜晚无需再唤醒吹笛手。如果他们之中有两个角色类型相同，告诉另一名角色类型不同的玩家吹笛手在场。",
+	"otherNightReminder": "让他选择除他以外的三名玩家，如果他们角色类型都不一样，标记吹笛手失去能力，之后的夜晚无需再唤醒吹笛手。如果他们之中有两个角色类型相同，告诉另一名角色类型不同的玩家吹笛手在场。",
+	"reminders": [
+		"失去能力",
+		"得知"
+	],
+	"setup": false
+}, {
+	"id": "20_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/16_twincity.png",
+	"reminders": ["失去能力"],
+	"remindersGlobal": ["是懂王"],
+	"name": "懂王",
+	"team": "townsfolk",
+	"ability": "每局游戏限一次，在白天时，你可以公开宣称“没有人比我更懂［其他善良角色名］”，该角色的玩家解除一切状态，你获得该角色的能力，直到下个黎明。",
+	"firstNight": 0,
+	"otherNight": 0,
+	"setup": false
+}, {
+	"id": "13_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/11_twincity.png",
+	"reminders": ["得知"],
+	"name": "工匠",
+	"team": "townsfolk",
+	"ability": "在你的首个夜晚，与邪恶玩家邻近的一名善良玩家得知工匠在场。",
+	"firstNight": 14,
+	"otherNight": 0,
+	"firstNightReminder": "向一名与邪恶玩家邻近的善良玩家展示“得知”标记。",
+	"otherNightReminder": "",
+	"setup": false
+}, {
+	"id": "18_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/18_twincity.png",
+	"reminders": [],
+	"name": "先知",
+	"team": "townsfolk",
+	"ability": "每局游戏限一次，你可以在第x个白天拜访说书人回答x个问题，随后你得知你答对了几题。",
+	"reminders": ["失去能力"],
+	"firstNight": 0,
+	"otherNight": 0,
+	"setup": false
+}, {
+	"id": "19_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/19_twincity.png",
+	"reminders": ["已猜测", "得知"],
+	"name": "双面间谍",
+	"team": "townsfolk",
+	"ability": "每个夜晚，你要选择一名玩家：你得知他的角色类型。一名邪恶玩家得知一条有关你的信息，每局游戏限一次，他可以猜测谁是双面间谍，如果正确，当晚你变成一个不在场的外来者角色。",
+	"firstNight": 19,
+	"otherNight": 18,
+	"firstNightReminder": "让双面间谍决定是否选择一名玩家，如果他选择了，告诉他该玩家的身份类型，同时让一名邪恶玩家得知一条关于双面间谍位置的信息。",
+	"otherNightReminder": "让双面间谍决定是否选择一名玩家，如果他选择了，告诉他该玩家的身份类型，同时让一名邪恶玩家得知一条关于双面间谍位置的信息。如果那名邪恶玩家猜测正确了，将双面间谍变成一名不在场的外来者角色并告知他",
+	"setup": false
+}, {
+	"id": "21_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/20_twincity.png",
+	"name": "观测员",
+	"team": "townsfolk",
+	"ability": "每个夜晚，你要选择至多三名玩家，如果当晚有邪恶角色的能力选择或影响了他们之中的玩家，你获得一条有关该玩家的信息。",
+	"firstNight": 20,
+	"otherNight": 19,
+	"firstNightReminder": "让观测员选择一至三名玩家，如果当晚有邪恶玩家的能力选中或影响了他们之中的玩家，告诉观测员一条关于这个玩家的信息",
+	"otherNightReminder": "让观测员选择一至三名玩家，如果当晚有邪恶玩家的能力选中或影响了他们之中的玩家，告诉观测员一条关于这个玩家的信息。",
+	"setup": false
+}, {
+	"id": "22_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/21_twincity.png",
+	"reminders": ["已下毒", "毒药", "灵药"],
+	"name": "草药商人",
+	"team": "townsfolk",
+	"ability": "每个白天，你可以邀请其他玩家光顾你的药店，秘密选择其中一名玩家，当晚他不受邪恶玩家能力的影响。每局游戏限一次，效果改为他中毒或保护自己。",
+	"firstNight": 0,
+	"otherNight": 0,
+	"setup": false
+}, {
+	"id": "24_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/22_twincity.png",
+	"name": "双生子",
+	"team": "townsfolk",
+	"ability": "你以为你是一个在场的镇民角色，且拥有该角色的能力。如果你或者该角色的玩家死于处决，另一名玩家开始醉酒。",
+	"remindersGlobal": ["是双生子", "醉酒"],
+	"firstNight": 0,
+	"otherNight": 0,
+	"setup": false
+}, {
+	"id": "25_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/23_twincity.png",
+	"reminders": [],
+	"setup": true,
+	"name": " 双子龙",
+	"team": "townsfolk",
+	"ability": "每个夜晚*，你要选择一名玩家和一个角色：如果他是该角色，他获得一枚龙蛋。【+对立阵营的双子龙】",
+	"firstNight": 0,
+	"otherNight": 9,
+	"firstNightReminder": "",
+	"otherNightReminder": "让双子龙选择一个玩家和一个角色，如果他是该角色（说书人视角），给这个玩家一个“龙蛋”标记",
+	"setup": true
+}, {
+	"id": "26_city_of_illusio",
+	"image": "https://vip.helloimg.com/i/2024/08/04/66aef4fbe61e3.png",
+	"name": "冒险者",
+	"team": "traveler",
+	"ability": "你拥有一枚20面骰，每个白天限一次：你可以发表一个公开声明，如果投掷结果大于等于说书人设定的挑战值，挑战成功。如果投掷结果为20，说书人可以给你一些额外的奖励。如果投掷结果小于挑战值的一半，你立即被流放。",
+	"firstNight": 0,
+	"otherNight": 0,
+	"setup": false
+}, {
+	"id": "27_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/City_of_Illusio\/27_city_of_illusio.png",
+	"reminders": ["监视"],
+	"name": "全视之眼",
+	"team": "traveler",
+	"ability": "每局游戏限一次，在夜晚时，你可以查看魔典并写一句话给一名对立阵营的玩家（此后该玩家阵营无法被转变），随后你被移出游戏。你死亡后保留能力。",
+	"firstNight": 3,
+	"otherNight": 3,
+	"firstNightReminder": "让全视之眼写一句话，将这句话在夜晚的任意时候发送给与他对立阵营的一名玩家。如果他主动查看了魔典，标记“已查看”。",
+	"otherNightReminder": "让全视之眼写一句话，将这句话在夜晚的任意时候发送给与他对立阵营的一名玩家。如果他主动查看了魔典，标记“已查看”。",
+	"setup": false
+}, {
+	"id": "28_city_of_illusio",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/City_of_Illusio\/28_city_of_illusio.png",
+	"name": "独奏家",
+	"team": "fabled",
+	"ability": "旅行者会被非旅行者角色的能力当作不在游戏中，但恶魔仍然可以选择杀死旅行者。"
+}, {
+	"id": "shengjiezhipo",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/25_twincity.png",
+	"name": "上古石碑",
+	"reminders": ["以为邪恶"],
+	"team": "fabled",
+	"ability": "①最多只会有一名善良玩家转变为邪恶，当有更多的玩家将要转变为邪恶阵营时，他们可能会以为自己转变为邪恶阵营。②地城领主无法让玩家转变阵营。③如果惨绝戏子在场，当只有两名玩家实际存活时，善良阵营获胜。"
+}, {
+	"id": "DragonEgg",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/24_twincity.png",
+	"name": "龙蛋",
+	"team": "fabled",
+	"reminders": ["龙蛋"],
+	"ability": "得到龙蛋的玩家会得知此事。玩家根据拥有的龙蛋颗数获得以下效果：一枚，失去能力；两枚，可以选择一个善良角色，如果该角色不在场，变为那个角色；三枚，立即死于处决，即使因任何原因不会死亡。"
+}, {
+	"id": "jinxz1",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/23_twincity.png",
+	"name": "双子龙&双子龙",
+	"team": "a jinxed",
+	"setup": 0,
+	"ability": "如果红蓝双子龙同时猜对了对方的角色，那么他们同时获得一颗龙蛋。"
+},  {
+	"id": "jinxz2",
+	"image": "https:\/\/www.bloodstar.xyz\/p\/jc3635\/TwinCity\/_twincity.png",
+	"name": "地城领主&魂火",
+	"team": "a jinxed",
+	"setup": 0,
+	"ability": "如果地城领主选择了魂火，地城领主是爪牙且死亡后保留能力。"
+}]

@@ -1,0 +1,326 @@
+[
+  {
+    "id": "_meta",
+    "name": "三拜九叩2.1",
+    "author": "痴愚",
+    "logo": "https://oss.gstonegames.com/data_file/clocktower/edition_icon/custom/d_6031968932271_dd2308a4.jpg",
+    "almanac": "https://www.bloodstar.xyz/p/chiyu/SBJK8/almanac.html"
+  },
+  {
+    "id": "_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/_sbjk8.png",
+    "firstNightReminder": "给距离舞龙（头）最远的一名镇民玩家放置舞龙（尾）标记。告诉他，他和舞龙（尾）最近距离间存活的善良玩家数量。",
+    "otherNightReminder": "告诉他，他和舞龙（尾）最近距离间存活的善良玩家数量。",
+    "setup": 1,
+    "name": "舞龙（头）",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你会得知你和舞龙（尾）最近距离间存活的善良玩家数量（不含旅行者）。[离你最远的一名镇民玩家是舞龙（尾）]",
+    "firstNight": 19,
+    "otherNight": 13
+  },
+  {
+    "id": "1_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/1_sbjk8.png",
+    "remindersGlobal": [
+      "是舞龙（尾）"
+    ],
+    "setup": true,
+    "name": "舞龙（尾）",
+    "team": "townsfolk",
+    "ability": "你不知道你是舞龙（尾），你以为你是其他镇民角色，如果你和舞龙（头）之间的其他玩家都已死亡，这些玩家变成舞龙（身）并复活，在此之前你只会死于处决。[+舞龙（头）]"
+  },
+  {
+    "id": "2_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/2_sbjk8.png",
+    "name": "神婆",
+    "team": "townsfolk",
+    "ability": "每个白天，你可以私下拜访说书人以得知一条信息，并在下次拜访说书人时回答一个关于上条信息的问题，如果回答正确，你当天获得正确信息。"
+  },
+  {
+    "id": "3_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/3_sbjk8.png",
+    "otherNightReminder": "如果儒生的预言成真，唤醒他。",
+    "reminders": [
+      "言出法随"
+    ],
+    "name": "儒生",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在白天时，你可以私下向说书人做出一个预言，之后该预言首次成真的当晚说书人会唤醒你。",
+    "otherNight": 10
+  },
+  {
+    "id": "4_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/4_sbjk8.png",
+    "firstNightReminder": "告诉灶王爷二名玩家和一个数字，该数字为灶王爷和他们的角色类型数量。",
+    "reminders": [
+      "灶火"
+    ],
+    "name": "灶王爷",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知二名玩家和一个数字：该数字为你和他们的角色类型数量。",
+    "firstNight": 17
+  },
+  {
+    "id": "5_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/5_sbjk8.png",
+    "otherNightReminder": "让丹青师选择一名玩家，如果该玩家是邪恶玩家或曾与画中人私会，告知丹青师，然后，将画中人提示标记放置在丹青师旁边，不再移动。",
+    "setup": true,
+    "name": "丹青师",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择一名玩家：如果他曾与画中人私会，你会得知是，然后，画中人永远与你私会。[+画中人]",
+    "otherNight": 11
+  },
+  {
+    "id": "6_sbjk8",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_7038078932271_8eddf678.jpg",
+    "firstNightReminder": "说书人需要先确定乩童和恶魔谁先发动能力，然后告知乩童恶魔的种类，如果乩童可以发动能力，让乩童发动能力。",
+    "otherNightReminder": "如果乩童可以发动能力，让乩童发动能力。",
+    "reminders": [
+      "可用能力"
+    ],
+    "setup": true,
+    "name": "乩童",
+    "team": "townsfolk",
+    "ability": "你和一名恶魔轮流使用他的能力，即使他已死亡。[所有邪恶玩家死亡善良阵营才能获胜]",
+    "firstNight": 12,
+    "otherNight": 3
+  },
+  {
+    "id": "7_sbjk8",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_3398082593271_d217f5cb.jpg",
+    "remindersGlobal": [
+      "是心猿"
+    ],
+    "name": "心猿",
+    "team": "townsfolk",
+    "ability": "每个黎明，你会变成一个与上个黎明不同类型的角色。你同时是心猿。"
+  },
+  {
+    "id": "8_sbjk8",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_8246282593271_6be8b96f.jpg",
+    "remindersGlobal": [
+      "是金蝉子"
+    ],
+    "setup": true,
+    "name": "金蝉子",
+    "team": "townsfolk",
+    "ability": "你不知道你是金蝉子，你以为你是其他镇民角色。你不会死亡。"
+  },
+  {
+    "id": "9_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/9_sbjk8.png",
+    "reminders": [
+      "失去能力"
+    ],
+    "name": "贞洁者",
+    "team": "townsfolk",
+    "ability": "当你首次被提名时，如果提名你的玩家是镇民，他立刻被处决。"
+  },
+  {
+    "id": "10_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/10_sbjk8.png",
+    "remindersGlobal": [
+      "是悟道者"
+    ],
+    "setup": true,
+    "name": "悟道者",
+    "team": "townsfolk",
+    "ability": "你以为你是一个外来者，但其实你不是。如果有邪恶玩家的能力选择了你或将要影响你，你会变成一个不在场的镇民角色。"
+  },
+  {
+    "id": "11_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/11_sbjk8.png",
+    "firstNightReminder": "在为首个夜晚做准备时（如果有超过一名村夫在场），将村夫的“醉酒”提示标记放置到其中一个村夫角色标记旁。",
+    "otherNightReminder": "每个夜晚，唤醒任意一名村夫。让他指向一名玩家。对他给出拇指向上或向下的手势。让他重新入睡。重复这个操作，直到所有村夫玩家都进行了夜晚行动。",
+    "reminders": [
+      "醉酒"
+    ],
+    "setup": true,
+    "name": "村夫",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一名玩家：你会得知他的阵营。[+0~2村夫，复数村夫中有一人醉酒]",
+    "firstNight": 18,
+    "otherNight": 12
+  },
+  {
+    "id": "12_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/12_sbjk8.png",
+    "reminders": [
+      "失去能力"
+    ],
+    "name": "渔夫",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些建议以帮助你的阵营获胜。"
+  },
+  {
+    "id": "13_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/13_sbjk8.png",
+    "reminders": [
+      "失去能力"
+    ],
+    "name": "猎手",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，你可以在白天时公开选择一名玩家：如果他是恶魔，他死亡。"
+  },
+  {
+    "id": "14_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/14_sbjk8.png",
+    "firstNightReminder": "将画中人标记放至恶魔。",
+    "otherNightReminder": "将画中人标记移至下一个镇民玩家。",
+    "remindersGlobal": [
+      "画中人"
+    ],
+    "setup": true,
+    "name": "画中人",
+    "team": "outsider",
+    "ability": "所有玩家会知道画中人于恶魔处入场。每个夜晚*，画中人会找左侧下一名镇民私会：他醉酒且不知道自己在与画中人私会。[+1镇民]",
+    "firstNight": 11,
+    "otherNight": 2
+  },
+  {
+    "id": "15_sbjk8",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_67418292271_2a5339c3.jpg",
+    "name": "福星",
+    "team": "outsider",
+    "ability": "游戏结束时，你获胜，但每个落败阵营的玩家都可以猜测一次谁是福星，首个猜对的玩家会和你交换角色，即使你已死亡。"
+  },
+  {
+    "id": "16_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/16_sbjk8.png",
+    "reminders": [
+      "无法提名"
+    ],
+    "name": "魔像",
+    "team": "outsider",
+    "ability": "每局游戏你只能发起提名一次。当你发起提名时，如果被你提名的玩家不是恶魔，他死亡。"
+  },
+  {
+    "id": "17_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/17_sbjk8.png",
+    "otherNightReminder": "如果白天入殓师提名了恶魔且恶魔被处决，唤醒他，并对他展示“你是\"提示标记和恶魔角色标记。",
+    "reminders": [
+      "是恶魔"
+    ],
+    "name": "入殓师",
+    "team": "outsider",
+    "ability": "如果你提名了恶魔且他死于这次处决，你会变成邪恶的恶魔。当剩余存活玩家小于等于四人时（旅行者除外），你失去能力。",
+    "otherNight": 9
+  },
+  {
+    "id": "18_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/18_sbjk8.png",
+    "name": "畸形秀演员",
+    "team": "outsider",
+    "ability": "当你对“我是外来者”疯狂时，你可能会被处决。"
+  },
+  {
+    "id": "19_sbjk8",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/assassin.png",
+    "otherNightReminder": "刺客可以选择一名玩家。如果他这么做了，标记那名玩家死亡，且刺客失去能力，之后的夜晚无需再唤醒刺客。",
+   "reminders": [
+      "死亡",
+      "失去能力"
+    ],
+    "name": "刺客",
+    "team": "minion",
+    "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
+    "otherNight": 5
+  },
+  {
+    "id": "20_sbjk8",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_8718378932271_e05dccda.jpg",
+    "firstNightReminder": "让伥变成一个不在场的善良角色。",
+    "otherNightReminder": "让伥变成一个不在场的善良角色。",
+    "remindersGlobal": [
+      "是伥"
+    ],
+    "name": "伥",
+    "team": "minion",
+    "ability": "每个夜晚，你会变成一个不在场的善良角色。你同时是伥且可能被视为善良阵营。",
+    "firstNight": 13,
+    "otherNight": 4
+  },
+  {
+    "id": "21_sbjk8",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/scarlet_woman.png",
+    "otherNightReminder": "如果红唇女郎今天变成了小恶魔，对她展示“你是”信息标记，和小恶魔角色标记。",
+    "reminders": [
+      "是恶魔"
+    ],
+    "name": "红唇女郎",
+    "team": "minion",
+    "ability": "如果大于等于五名玩家存活时（旅行者不计算在内）恶魔死亡，你变成那个恶魔。",
+    "otherNight": 6
+  },
+  {
+    "id": "22_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/22_sbjk8.png",
+    "firstNightReminder": "首个夜晚，唤醒画皮，让其选择一名玩家，该玩家进入“活尸”状态。在魔典中该玩家的角色标记上添加帷幕标记和“以为存活”标记。但不要宣布该玩家已经死亡，也不要在城镇广场上将该玩家的生命标记翻面。",
+    "otherNightReminder": "如果画皮选择的玩家重生，在画皮的角色标记旁放置“重获能力”标记。每个夜晚，如果画皮有“重获能力\"标记，唤醒画皮，让其选择一名玩家，该玩家进入“活尸”状态。在魔典中该玩家的角色标记上添加帷幕标记和“以为存活”标记。但不要宣布该玩家已经死亡，也不要在城镇广场上将该玩家的生命标记翻面。",
+    "reminders": [
+      "以为存活",
+      "重获能力"
+    ],
+    "name": "画皮",
+    "team": "minion",
+    "ability": "在你的首个夜晚，你要选择一名存活玩家：他死亡但会被当作存活。当他下一次死亡时，他重生，随后你重获能力。",
+    "firstNight": 15,
+    "otherNight": 7
+  },
+  {
+    "id": "23_sbjk8",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_7970578932271_138318d2.jpg",
+    "firstNightReminder": "让灵感大王选择一个玩家。",
+    "otherNightReminder": "让灵感大王选择一个玩家。如果每有一名被灵感大王选择的玩家存活，当晚他就可以额外选择一名玩家，额外选择的玩家死亡。",
+    "reminders": [
+      "祭品",
+      "死亡"
+    ],
+    "name": "灵感大王",
+    "team": "demon",
+    "ability": "每个夜晚，你要选择一名玩家，说书人会在黎明时宣布你选择了谁。入夜时，每有一名被你选择的玩家存活，当晚你就可以额外选择一名玩家：额外选择的玩家死亡。",
+    "firstNight": 16,
+    "otherNight": 8
+  },
+  {
+    "id": "24_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/24_sbjk8.png",
+    "reminders": [
+      "讨封"
+    ],
+    "name": "黄皮子",
+    "team": "traveler",
+    "ability": "每个白天，你可以选择一名其他玩家讨封，问道“老乡，你看我像个啥”。你可能会由于讨封而变成黄大仙。"
+  },
+  {
+    "id": "25_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/25_sbjk8.png",
+    "reminders": [
+      "仙术"
+    ],
+    "name": "黄大仙",
+    "team": "traveler",
+    "ability": "你获得讨封成功时所述的能力。[不可选择，只能由黄皮子变成]"
+  },
+  {
+    "id": "26_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/26_sbjk8.png",
+    "firstNightReminder": "告知蝴蝶一名与他同阵营的玩家。",
+    "otherNightReminder": "告知蝴蝶一名与他同阵营的玩家。",
+    "reminders": [
+      "知晓"
+    ],
+    "name": "梦蝶",
+    "team": "traveler",
+    "ability": "每个夜晚，你会得知一名与你同阵营的玩家（会有一次错误）。你不知道你的阵营。",
+    "firstNight": 20,
+    "otherNight": 14
+  },
+  {
+    "id": "27_sbjk8",
+    "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/27_sbjk8.png",
+    "name": "舞龙（身）",
+    "team": "traveler",
+    "ability": "你无法被流放。每个白天，舞龙（头）可以向一名非旅行者玩家发起流放，此次流放仅舞龙能参与且半数以上舞龙同意即可流放成功。[只能因舞龙（尾）能力出场]"
+  }
+]

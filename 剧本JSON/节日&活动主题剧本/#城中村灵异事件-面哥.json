@@ -1,0 +1,413 @@
+[{
+	"id": "_meta",
+	"name": "城中村灵异事件",
+	"author": "面哥",
+	"logo": "https://www.helloimg.com/i/2024/09/14/66e466024e617.png",
+	"description": "老城区一个待拆迁的城中村发生了一些诡异的事，大胆的来看看发生了什么。",
+	"townsfolkName": "镇民",
+	"outsidersName": "外来者",
+	"minionsName": "爪牙",
+	"demonsName": "恶魔",
+	"townsfolk": "镇民",
+	"outsider": "外来者",
+	"minion": "爪牙",
+	"demon": "恶魔",
+	"a jinxedName": "相克",
+	"a jinxed": "相克",
+	"state": [{
+		"stateName": "诅咒",
+		"stateDescription": "能力失效，获取错误信息。"
+	}, {
+		"stateName": "恐惧",
+		"stateDescription": "说书人与你的交流会变成“黑猫的惨叫”。"
+	}, {
+		"stateName": "中邪",
+		"stateDescription": "一名邻座的玩家可能会因你死亡，你造成死亡后，解除中邪。"
+	}, {
+		"stateName": "降头",
+		"stateDescription": "降头师对玩家施展的能力，降头师死亡后，解除降头。"
+	}, {
+		"stateName": "脏东西（诅咒/恐惧/中邪/降头）",
+		"stateDescription": "脏东西（诅咒/恐惧/中邪/降头）只会被其他角色的能力，中邪者杀人后，降头师死亡后，被焚尸后解除。"
+	}, {
+		"stateName": "焚尸",
+		"stateDescription": "提名并处决死亡的玩家后，该玩家无法再被复活，解除所有脏东西，收回投票标记并失去能力。"
+	}, {
+		"stateName": "窃窃私语",
+		"stateDescription": "说书人与玩家私下交流的片段。"
+	}, {
+		"stateName": "黑猫",
+		"stateDescription": "每个夜晚，黑猫会跳进一个玩家的阳台。玩家被告知有黑猫出现，要立刻选择是否抱起它。下一个夜晚，黑猫会离开并跳进另一个玩家的家里。黑猫会优先寻找存活的玩家和它没见过的人。"
+	}],
+	"status": [{
+		"stateName": "诅咒",
+		"stateDescription": "能力失效，获取错误信息。"
+	}, {
+		"stateName": "恐惧",
+		"stateDescription": "说书人与你的交流会变成“黑猫的惨叫”。"
+	}, {
+		"stateName": "中邪",
+		"stateDescription": "一名邻座的玩家可能会因你死亡，你造成死亡后，解除中邪。"
+	}, {
+		"stateName": "降头",
+		"stateDescription": "降头师对玩家施展的能力，降头师死亡后，解除降头。"
+	}, {
+		"stateName": "脏东西（诅咒/恐惧/中邪/降头）",
+		"stateDescription": "脏东西（诅咒/恐惧/中邪/降头）只会被其他角色的能力，中邪者杀人后，降头师死亡后，被焚尸后解除。"
+	}, {
+		"stateName": "焚尸",
+		"stateDescription": "提名并处决死亡的玩家后，该玩家无法再被复活，解除所有脏东西，收回投票标记并失去能力。"
+	}, {
+		"stateName": "窃窃私语",
+		"stateDescription": "说书人与玩家私下交流的片段。"
+	}, {
+		"stateName": "黑猫",
+		"stateDescription": "每个夜晚，黑猫会跳进一个玩家的阳台。玩家被告知有黑猫出现，要立刻选择是否抱起它。下一个夜晚，黑猫会离开并跳进另一个玩家的家里。黑猫会优先寻找存活的玩家和它没见过的人。"
+	}]
+}, {
+	"id": "cc68c2ce-4326-44ba-81222222c8-c399b6f27ffe",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e4626bb0bb6.png ",
+	"edition": "custom",
+	"name": "快递小哥",
+	"ability": "你的首个夜晚，你得知一名外来者玩家和他的角色。如果你和他，在他死之前都没有“疯狂”地证明他是外来者，你获得一条关于他的一位邻座玩家和说书人的窃窃私语。(本局无外来者时不会登场）【当你抱起黑猫，你可以在天亮前把黑猫送到你指定的玩家的阳台。】",
+	"team": "townsfolk",
+	"sch_team": "镇民",
+	"firstNight": 24,
+	"otherNight": 0,
+	"firstNightReminder": "你的首个夜晚，你得知一名外来者是谁。注意保守秘密，同时让他把身份藏好。",
+	"reminders": ["得知外来者", "送猫", "承认外来者", "未承认外来者"],
+	"setup": true
+}, {
+	"id": "966f94a7-006e-46ee-8ae5-22222fa432813a9a6",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e4630d17b09.png",
+	"edition": "custom",
+	"name": "清洁工",
+	"ability": "每个夜晚，当邻座有邪恶/诅咒/中邪/降头的存活玩家时，你会陷入恐惧。【黑猫访问你时，你会把黑猫立刻赶走，明天之前黑猫不再出现】",
+	"team": "townsfolk",
+	"sch_team": "镇民",
+	"firstNight": 25,
+	"otherNight": 8,
+	"firstNightReminder": "每个晚上，当邻座有邪恶、诅咒、中邪、降头的玩家时，你会陷入恐惧。",
+	"otherNightReminder": "每个晚上，当邻座有邪恶、诅咒、中邪、降头的玩家时，你会陷入恐惧。",
+	"reminders": ["恐惧"]
+}, {
+	"id": "d9016652-484b-4a04-a3be-ddd22222532eca521",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e4630faa599.png",
+	"edition": "custom",
+	"name": "阴阳风水师",
+	"ability": "每个夜晚，你可以选择两名玩家，解除他们身上的中邪/诅咒/降头/恐惧状态。【当你抱起黑猫，恶魔会陷入恐惧】",
+	"team": "townsfolk",
+	"sch_team": "镇民",
+	"firstNight": 26,
+	"otherNight": 9,
+	"firstNightReminder": "每个晚上，你可以选择两名玩家，解除他们身上的中邪、诅咒、降头、恐惧状态。",
+	"otherNightReminder": "每个晚上，你可以选择两名玩家，解除他们身上的中邪、诅咒、降头、恐惧状态。【当你抱起黑猫，恶魔会陷入恐惧】 ",
+	"reminders": ["恶魔恐惧"]
+}, {
+	"id": "1db7e5cc-b28a-471b-835a-822222eea9a57050b",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e465063c267.png",
+	"edition": "custom",
+	"name": "烧卤店老板",
+	"ability": "每个白天，你可以在白天时公开选择一名其他玩家（与上个不同）：他要拜访说书人选择是否吃烧卤，吃烧卤的玩家当晚不会被恶魔杀死。【当你抱起黑猫，给黑猫吃一份烧卤，下次对你生效的邪恶玩家的能力改为对邪恶玩家本身生效】",
+	"team": "townsfolk",
+	"sch_team": "镇民",
+	"firstNight": 0,
+	"otherNight": 1,
+	"otherNightReminder": "检查喂猫状态，再看有没有成为邪恶阵营的目标。",
+	"reminders": ["吃烧卤", "抱猫，反射", "不会被杀"]
+}, {
+	"id": "4f775e9e-d484-468e-85cf-323234de01663122222b3",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e465320923e.png",
+	"edition": "custom",
+	"name": "落魄小说家",
+	"ability": "每个白天，你可以编一个故事，当晚恶魔会得知这个故事并要猜测谁是落魄小说家。如果猜测错误，恶魔当晚失去能力，然后你诅咒/中邪。【当你抱起黑猫，你会和场上某个善良镇民交换角色】",
+	"team": "townsfolk",
+	"sch_team": "镇民",
+	"firstNight": 0,
+	"otherNight": 0,
+	"reminders": ["恶魔猜错"]
+}, {
+	"id": "6cdeadb4-bc0c-4992332323232323-83c4-624e5ed6d124",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46671844db.png",
+	"edition": "custom",
+	"name": "盲人按摩师",
+	"ability": "每个白天，你可以秘密选择一名其他玩家，说书人会询问他是否同意接受按摩服务：如果他同意，你会秘密得知他和上一个同意的玩家的角色类型是否相同。【当你抱起黑猫，你得知上一位抱猫者的角色】",
+	"team": "townsfolk",
+	"sch_team": "镇民",
+	"firstNight": 0,
+	"otherNight": 0,
+	"reminders": ["按摩"]
+}, {
+	"id": "33abe52f-fc07-4dbc-804b222222-b3e11032323233d35aff",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e466b6e89e1.png",
+	"edition": "custom",
+	"name": "过气明星",
+	"ability": "当存活人数小于等于4人时，你会听到恶魔和说书人的窃窃私语。【当你抱起黑猫，今天你不会被处决】",
+	"team": "townsfolk",
+	"sch_team": "镇民",
+	"firstNight": 0,
+	"otherNight": 0,
+	"reminders": ["免于处决"]
+}, {
+	"id": "62adaae0-b932-42222222222222849-8d91-e383056d47d9",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e4674a1eccf.png",
+	"edition": "custom",
+	"name": "小卖部老板",
+	"ability": "每局游戏限一次，在夜晚时，你可以选择三名玩家，如果他们当中有邪恶阵营，黑猫今晚一定会来到你的阳台。【若你抱着黑猫，当晚你会得知白天提名你的人的角色】",
+	"team": "townsfolk",
+	"sch_team": "镇民",
+	"firstNight": 27,
+	"otherNight": 10,
+	"firstNightReminder": "本局游戏限一次。晚上，你可以选择三名玩家，如果他们当中有邪恶阵营，黑猫次日早上一定会跳到你家阳台。",
+	"otherNightReminder": "本局游戏限一次。晚上，你可以选择三名玩家，如果他们当中有邪恶阵营，黑猫次日早上一定会跳到你家阳台。【若你抱着黑猫，晚上你会知道当天提名你的人是什么角色】",
+	"reminders": ["黑猫过来", "失去能力"]
+}, {
+	"id": "1c1e15cb-222222222222ca2c-4f31-8e8f-0e57c1be654c",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e4678453ab5.png",
+	"edition": "custom",
+	"name": "兽医",
+	"ability": "每局游戏限一次，在白天时，你可以指定黑猫未来两天的访问顺序（不能访问自己）。如果该顺序发生改变，你会立刻知道。【当你抱起黑猫，会出现第二只黑猫】",
+	"team": "townsfolk",
+	"sch_team": "镇民",
+	"firstNight": 0,
+	"otherNight": 0,
+	"reminders": ["1天", "2天", "失去能力"],
+	"remindersGlobal": ["黑猫1", "黑猫2"]
+}, {
+	"id": "96454136-ebe1-45ec-b73c-478612222222222dfde82a",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e467da806ce.png",
+	"edition": "custom",
+	"name": "退休老警察",
+	"ability": "每局游戏限一次，在白天时，你可以选择一名死亡玩家，获得一条关于造成他死亡的玩家的信息（提名者视为造成了被处决者的死亡）。【当你抱起黑猫，你会在发动技能时额外获得两条信息】",
+	"team": "townsfolk",
+	"sch_team": "镇民",
+	"firstNight": 0,
+	"otherNight": 0,
+	"reminders": ["失去能力"]
+}, {
+	"id": "3b0d6716-4298-492222224f-abc0-7451b8c675ce",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46837cbae0.png",
+	"edition": "custom",
+	"name": "彩票店老板",
+	"ability": "每局游戏限一次，在白天时，你可以选择3-5名玩家，说书人会逐个邀请他们是否刮彩票，随后，你会得知其中一名玩家中大奖（或无人中奖）：本局游戏中邪恶角色的能力对他无效。【当你抱起黑猫，你可以作弊让自己刮到大奖】",
+	"team": "townsfolk",
+	"sch_team": "镇民",
+	"firstNight": 0,
+	"otherNight": 0,
+	"reminders": ["大奖", "失去能力"]
+}, {
+	"id": "6cf3e2a5-f424-4222222926-88bc-03194f9434ee",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e468c4853cc.png",
+	"edition": "custom",
+	"name": "发廊小妹",
+	"ability": "每局游戏限一次，在白天时，你可以让其他存活玩家从（0元/300元/600元）中选择一个数字。说书人会公开他们的消费数额，并告诉你收到多少冥币（邪恶玩家选择的数字总和）。【当你抱起黑猫，你发动能力时可要求一名玩家为你充值600元】",
+	"team": "townsfolk",
+	"sch_team": "镇民",
+	"firstNight": 0,
+	"otherNight": 0,
+	"reminders": ["强迫充值", "失去能力"]
+}, {
+	"id": "98830d8222221-3d98-49d6-ad5a-4733dbdb2b3d",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e468c49fe13.png",
+	"edition": "custom",
+	"name": "寿衣店老板",
+	"ability": "每局游戏限一次，在夜晚时，你可以选择一名死亡玩家：次日起你将获得他的能力。如果你选择的是邪恶玩家，你会死亡且当晚不会有其他玩家死亡。【当你抱起黑猫，次日一名死亡玩家会复活】",
+	"team": "townsfolk",
+	"sch_team": "镇民",
+	"firstNight": 0,
+	"otherNight": 12,
+	"otherNightReminder": "每局游戏限一次，在夜晚时，你可以选择一名死亡玩家：次日起你将获得他的能力。如果你选择的是邪恶玩家，你会死亡且当晚不会有其他玩家死亡。【当你抱起黑猫，次日一名死亡玩家会复活】",
+	"reminders": ["拥有技能", "失去能力", "死亡", "明天复活"]
+}, {
+	"id": "641ac874-1012-2222222224206-88ce-eec1d86dc18b",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46a04e2c06.png",
+	"edition": "custom",
+	"name": "失孤老人",
+	"ability": "若你收留黑猫，每个夜晚，黑猫会帮你抓一只老鼠，每只老鼠可以让你额外拥有一张投票标记，即使你已死亡。【黑猫访问你时，你会情不自禁地抱起黑猫，你可以选择收留他或放生它】",
+	"team": "outsider",
+	"sch_team": "外来者",
+	"firstNight": 0,
+	"otherNight": 0,
+	"reminders": ["留下猫咪", "老鼠1", "老鼠2", "老鼠3", "老鼠4", "老鼠5"]
+}, {
+	"id": "97055af1-22222332222231cf-436b-a5bd-68a5b93dc0b3",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46ac44253f.png",
+	"edition": "custom",
+	"name": "自闭少年",
+	"ability": "每局游戏限一次，在你死亡后恶魔可以在夜晚附生你的尸体：你无法复活，恶魔死亡后可借助你的尸体继续存活，直到你被焚尸。【当你抱起黑猫，你会得知猫的行动轨迹。你时常会出现幻觉（黑猫来访/错误信息/恐惧）】",
+	"team": "outsider",
+	"sch_team": "外来者",
+	"firstNight": 0,
+	"otherNight": 0,
+	"reminders": ["恶魔附身", "尸体成灰"]
+}, {
+	"id": "73e3dfb9-8f22222222222222e-4405-9a62-13007e2e2a4d",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46a04ef480.png",
+	"edition": "custom",
+	"name": "破产商人",
+	"ability": "如果你“疯狂”地证明自己是某个镇民，那么当存活玩家小于等于5时，你可能会和恶魔交换阵营和角色，然后他失去能力，并仍然以为自己是邪恶的恶魔。【当你抱起黑猫，你白天可以秘密猜测谁是恶魔，如果你猜测正确，你和他交换阵营和角色。】",
+	"team": "outsider",
+	"sch_team": "外来者",
+	"firstNight": 0,
+	"otherNight": 0,
+	"remindersGlobal": ["是破产商人"]
+}, {
+	"id": "adc6d80222222222229-8297-4b7f-8098-ac756360ff00",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46a04f3264.png",
+	"edition": "custom",
+	"name": "绝症病人",
+	"ability": "每个夜晚，你要选择一名其他玩家：如果该玩家是善良的，他会陷入异常（诅咒/中邪/恐惧之一）。如果该玩家是邪恶的，他会知道你是谁。【当你抱起黑猫，你随时可能死亡】",
+	"team": "outsider",
+	"sch_team": "外来者",
+	"firstNight": 22,
+	"otherNight": 11,
+	"firstNightReminder": "每个夜晚，你要选择一名其他玩家：如果该玩家是善良的，他会陷入异常（诅咒/中邪/恐惧之一）。如果该玩家是邪恶的，他会知道你是谁。",
+	"otherNightReminder": "每个夜晚，你要选择一名其他玩家：如果该玩家是善良的，他会陷入异常（诅咒/中邪/恐惧之一）。如果该玩家是邪恶的，他会知道你是谁。",
+	"reminders": ["随时可能死亡", "死亡"]
+}, {
+	"id": "265da8c1-42222220a1-4dda-aaf8-7aa28c2bb39e",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46a76c4558.png",
+	"edition": "custom",
+	"name": "降头师",
+	"ability": "每个夜晚，你可以施展降头术，每种降头能够施展一次。情降：选择两名玩家：其中一人死亡时，另一人也会死亡；鬼降：选择一名玩家，如果他抱起黑猫，当晚他将杀死一名存活的恶魔并变成该恶魔。【当你抱着黑猫，当夜你可以自杀并选择其中一项：1.继续施展降头；2.让一名非恶魔玩家在次日复活】",
+	"team": "minion",
+	"sch_team": "爪牙",
+	"firstNight": 23,
+	"otherNight": 3,
+	"firstNightReminder": "下情降还是鬼降？",
+	"otherNightReminder": "下情降还是鬼降？【黑猫在的话，你可以自杀然后继续下降或者复活某人。】",
+	"reminders": ["情降", "鬼降", "抱猫自杀", "复活"]
+}, {
+	"id": "377d93ac-5943-403a-80f4-db15a5922222e0c2e",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46b2512c88.png",
+	"edition": "custom",
+	"name": "虐猫狂",
+	"ability": "*每个夜晚*，你可以选择两名玩家，如果其中有人抱着黑猫，你会夺走黑猫，然后你要选择三名玩家：他们陷入恐惧。",
+	"team": "minion",
+	"sch_team": "爪牙",
+	"firstNight": 0,
+	"otherNight": 2,
+	"otherNightReminder": "晚上开始抓猫，发出三道恐惧。",
+	"remindersGlobal": ["恐惧"]
+}, {
+	"id": "f89c7c21-322222147-4def-83c1-29595a84ea2c",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46c97d401e.png",
+	"edition": "custom",
+	"name": "鬼故事大师",
+	"ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他需要观看“恐怖图片”并告诉说书人看到了什么，回答正确他会转变为你的阵营，如果该玩家不观看则会死亡，然后你可以重新指定一名玩家。【当你抱起黑猫的一刻，你可以选择和恶魔交换角色】",
+	"team": "minion",
+	"sch_team": "爪牙",
+	"firstNight": 0,
+	"otherNight": 4,
+	"otherNightReminder": "发恐怖图片，谁不敢看就传下去。",
+	"reminders": ["恐怖图片", "死亡", "转变阵营"]
+}, {
+	"id": "345055c4-9222226c9-4a16-81a6-2c848374b2ae",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46c97ba436.png",
+	"edition": "custom",
+	"name": "龙婆",
+	"ability": "每个白天，你可以向说书人秘密选择一名存活玩家：他今天必须提名自己，任何可能导致他无法提名自己的行为都会被阻止。如果他当天未被处决，本局游戏你不会死亡。【若你抱着黑猫，你的能力将导致该玩家直接被处决】",
+	"team": "minion",
+	"sch_team": "爪牙",
+	"firstNight": 0,
+	"otherNight": 0,
+	"reminders": ["强制提名自己", "抱猫","不会死亡"]
+}, {
+	"id": "cca7ca8722222-946d-4c9c-8d65-8cfcc1addcbe",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46c97c10a1.png",
+	"edition": "custom",
+	"name": "吊死鬼珍珍",
+	"ability": "在你的首个夜晚，与你临近的两名善良玩家受到诅咒。每个夜晚*，你要选择一名玩家：他死亡。【如果你抱起黑猫，明天起所有碰过猫的玩家都将被诅咒。】",
+	"team": "demon",
+	"sch_team": "恶魔",
+	"firstNight": 21,
+	"otherNight": 5,
+	"firstNightReminder": "首夜你左右最近的善良玩家将受到一次诅咒。",
+	"otherNightReminder": "你可以杀死一名玩家，如果你今天抱过黑猫，明天起碰过猫的人都中诅咒。",
+	"reminders": ["死亡", "诅咒黑猫"],
+	"remindersGlobal": ["诅咒"]
+}, {
+	"id": "7a1a22222a3e8-ba5a-4f30-9d74-ab4de495668f",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46c97b2e97.png",
+	"edition": "custom",
+	"name": "邪童阳阳",
+	"ability": "每个夜晚*，你要选择一名玩家：他死亡；或选择一名玩家：他中邪。（-1外来者）【如果你抱起黑猫，你每天可以选择一个玩家，他以为黑猫拜访了他】",
+	"team": "demon",
+	"sch_team": "恶魔",
+	"firstNight": 0,
+	"otherNight": 6,
+	"otherNightReminder": "可以杀人，或者让人中邪。如果有猫，要想好让假猫去找谁。",
+	"reminders": ["死亡", "假猫访问"],
+	"remindersGlobal": ["中邪"],
+	"setup": true
+}, {
+	"id": "dd937f99-b7ff-4d40-8be8-7822222fca83a60a4",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46c97b1bbf.png",
+	"edition": "custom",
+	"name": "人皮妖阿玲",
+	"ability": "你始终被善良玩家的能力当做善良角色。每个夜晚*，你选择一名玩家：他死亡。然后你可以选择一个未选择过的恶魔的伪装或者死亡的善良角色，抱着黑猫的玩家变成该角色，但是他以为自己没有变化。（+1外来者）【黑猫不会来找你】",
+	"team": "demon",
+	"sch_team": "恶魔",
+	"firstNight": 0,
+	"otherNight": 7,
+	"otherNightReminder": "可以杀人，然后给抱着黑猫的人贴人皮变身。",
+	"reminders": ["死亡", "黑猫变身"],
+	"setup": true
+}, {
+	"id": "3129302222220-a2cb-47b5-862a-3177dc35bae7",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46e51930d5.png",
+	"edition": "custom",
+	"name": "新闻记者",
+	"ability": "每天帮说书人宣布一条消息，你可以改为你给出的信息。",
+	"team": "traveler",
+	"firstNight": 0,
+	"otherNight": 0
+}, {
+	"id": "3a1b14fe-a0cd-4ed6-82a22229-0f1dec411843",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46e518e0ce.png",
+	"edition": "custom",
+	"name": "政府官员",
+	"ability": "你发起的提名，统计票数+1。",
+	"team": "traveler",
+	"firstNight": 0,
+	"otherNight": 0
+}, {
+	"id": "5892e38222225-10f7-4cd5-8e23-b835ee5df481",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46e5192ca5.png",
+	"edition": "custom",
+	"name": "失恋少女",
+	"ability": "黑猫每隔一天就会来找你，并钻进你的怀里（视为你抱着黑猫）。",
+	"team": "traveler",
+	"firstNight": 0,
+	"otherNight": 0
+}, {
+	"id": "fb171181-22222c659-4efe-9944-80c4c17df83e",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46e518f23e.png",
+	"edition": "custom",
+	"name": "流浪乞丐",
+	"ability": "每局游戏限一次，你可以选择一个玩家，在白天他的能力必须以你为目标。",
+	"team": "traveler",
+	"firstNight": 0,
+	"otherNight": 0
+}, {
+	"id": "f6a81a1d22222-795f-4228-9cf6-05eec0317271",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46e51a1a3c.png",
+	"edition": "custom",
+	"name": "失业求职者",
+	"ability": "如果白天没人被处决，你会被流放。",
+	"team": "traveler",
+	"firstNight": 0,
+	"otherNight": 0
+}, {
+	"id": "619eed49-2432-4cb4-8ae6-ab70cc1222290368",
+	"image": "https://www.helloimg.com/i/2024/09/14/66e46d1c329fa.png",
+	"edition": "custom",
+	"name": "黑猫",
+	"ability": "每个夜晚，黑猫会跳进一个玩家的阳台。玩家被告知有黑猫出现，要立刻选择是否抱起它。下一个夜晚，黑猫会离开并跳进另一个玩家的家里。黑猫会优先寻找存活的玩家和它没见过的人。",
+	"team": "fabled",
+	"firstNight": 99,
+	"otherNight": 99,
+	"firstNightReminder": "每个夜晚，黑猫跳进一个玩家的阳台，询问这名玩家是否要抱起黑猫。",
+	"otherNightReminder": "每个夜晚，黑猫跳进一个玩家的阳台，询问这名玩家是否要抱起黑猫。",
+	"remindersGlobal": ["黑猫访问", "抱猫"]
+}]

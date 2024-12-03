@@ -1,0 +1,404 @@
+[
+    {
+        "id": "_meta",
+        "name": "法革风暴 v4.3.0",
+        "author": "Hadrian Caesar",
+        "logo": "https://i.postimg.cc/jjgtTndq/image.png",
+        "almanac": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/almanac.html"
+    },
+    {
+        "id": "_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/_the_french_revolution_2024_rv.png",
+        "otherNightReminder": "让他选择两名玩家，告知其中一名玩家的角色；如果得到的信息为邪恶角色，放置“革命恐怖！”标记。",
+        "reminders": [
+            "革命恐怖！"
+        ],
+        "name": "罗伯斯庇尔",
+        "team": "townsfolk",
+        "ability": "每个夜晚*，你要选择除你以外的两名玩家：你会得知其中之一的角色。每局游戏限一次，如果你得知的是邪恶角色，在明天白天会发生革命恐怖。《不可腐蚀者》——你的阵营不会被转变，即使你已死亡。",
+        "otherNight": 18
+    },
+    {
+        "id": "1_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/1_the_french_revolution_2024_rv.png",
+        "firstNightReminder": "指向两名玩家，其中一名为罗伯斯庇尔。",
+        "otherNightReminder": "如果圣鞠斯特死亡，让他选择一名玩家，告知他那名玩家的阵营。",
+        "reminders": [
+            "导师",
+            "错误"
+        ],
+        "setup": true,
+        "name": "圣鞠斯特",
+        "team": "townsfolk",
+        "ability": "在你的首个夜晚，你会得知两名玩家：他们之一是罗伯斯庇尔。如果你死亡，在当晚你会被唤醒，然后你要选择一名玩家：你会得知他的阵营。《革命大天使》——你的阵营不会被转变，即使你已死亡。[+罗伯斯庇尔]",
+        "firstNight": 18,
+        "otherNight": 12
+    },
+    {
+        "id": "2_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/2_the_french_revolution_2024_rv.png",
+        "firstNightReminder": "指向三名玩家，其中有教宗或塔列朗。",
+        "otherNightReminder": "询问他选择是否发动技能，如果发动技能，让他选择一名玩家，放置“帝国审判”标记。",
+        "reminders": [
+            "帝国审判",
+            "帝皇加冕！"
+        ],
+        "name": "拿破仑",
+        "team": "townsfolk",
+        "ability": "在你的首个夜晚，你会得知三名玩家：只有他们中可能有教宗或塔列朗。每局游戏限一次，在夜晚时*，你可以选择一名存活的玩家，如果他明天白天被提名，他立刻被处决。《法兰西皇帝》——你的阵营不会被转变，即使你已死亡。",
+        "firstNight": 17,
+        "otherNight": 11
+    },
+    {
+        "id": "3_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/3_the_french_revolution_2024_rv.png",
+        "firstNightReminder": "让他选择两名玩家，告知他们之外的一个角色类型，为其中一名玩家放置“辩护无罪”标记。",
+        "otherNightReminder": "让他选择两名玩家，告知他们之外的一个角色类型，为其中一名玩家放置“辩护无罪”标记。",
+        "reminders": [
+            "辩护无罪"
+        ],
+        "name": "丹东",
+        "team": "townsfolk",
+        "ability": "每个夜晚，你要选择两名玩家（与上个夜晚不同）：你会得知他们之外的一个角色类型，且其中一名在明天白天被处决时不会死亡。",
+        "firstNight": 19,
+        "otherNight": 13
+    },
+    {
+        "id": "4_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/4_the_french_revolution_2024_rv.png",
+        "firstNightReminder": "让他选择一名玩家，如果该玩家是外来者或爪牙，放置“反动罪”标记。",
+        "otherNightReminder": "让他选择一名玩家，如果该玩家是外来者或爪牙，放置“反动罪”标记。",
+        "reminders": [
+            "反动罪",
+            "激进暗杀"
+        ],
+        "name": "埃贝尔",
+        "team": "townsfolk",
+        "ability": "每个夜晚，你要选择一名玩家：如果他是外来者或爪牙，且在明天白天发起提名，他会在当晚死亡。",
+        "firstNight": 20,
+        "otherNight": 14
+    },
+    {
+        "id": "5_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/5_the_french_revolution_2024_rv.png",
+        "otherNightReminder": "如果马拉死亡，告知他正确答复的数量。",
+        "reminders": [
+            "马拉之死"
+        ],
+        "name": "马拉",
+        "team": "townsfolk",
+        "ability": "每个白天，你可以私下询问说书人以得知一条信息，或询问一个问题以得知答案。如果你死亡，在当晚你会被唤醒，且得知之中正确信息与答案正确的问题的数量总和。",
+        "otherNight": 19
+    },
+    {
+        "id": "6_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/6_the_french_revolution_2024_rv.png",
+        "firstNightReminder": "让他选择两名玩家，放置“民众监督”标记。",
+        "otherNightReminder": "让他选择两名玩家，放置“民众监督”标记。如前夜技能目标之一被处决则告知前夜选择的其中一名玩家的角色。",
+        "reminders": [
+            "民众监督",
+            "人民审判",
+            "得知"
+        ],
+        "name": "无套裤汉",
+        "team": "townsfolk",
+        "ability": "每个夜晚，你要选择两名玩家：如果明天白天其中一名被处决，在当晚你会得知其中一名的角色。",
+        "firstNight": 21,
+        "otherNight": 15
+    },
+    {
+        "id": "7_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/7_the_french_revolution_2024_rv.png",
+        "firstNightReminder": "让她选择两个角色。如其中有在场角色，放置“在场”标记。",
+        "otherNightReminder": "让她选择两个角色。如其中有在场角色，放置“在场”标记。如果进步妇女死亡，告知她所有猜测过的角色当下的在场玩家数量并得知其中一个不在场角色或得知都在场。",
+        "reminders": [
+            "在场",
+            "不在场"
+        ],
+        "name": "进步妇女",
+        "team": "townsfolk",
+        "ability": "每个夜晚，你要选择两个角色。如果你死亡，你会得知你选择过的角色有多少名在场，且得知其中一个不在场的角色（或你会得知都在场）。",
+        "firstNight": 22,
+        "otherNight": 16
+    },
+    {
+        "id": "8_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/8_the_french_revolution_2024_rv.png",
+        "reminders": [
+            "失去能力"
+        ],
+        "name": "革命卫队",
+        "team": "townsfolk",
+        "ability": "每局游戏限一次，你可以在白天公开选择一名玩家：如果他是爪牙或反法同盟，他会被处决。如果你以这种方式选择了反法同盟，你保留能力。"
+    },
+    {
+        "id": "9_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/9_the_french_revolution_2024_rv.png",
+        "reminders": [
+            "专政审判"
+        ],
+        "name": "雅各宾派",
+        "team": "townsfolk",
+        "ability": "你会获得上个因你提名而死于处决的玩家的能力直到下个黄昏。"
+    },
+    {
+        "id": "10_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/10_the_french_revolution_2024_rv.png",
+        "otherNightReminder": "让他选择一名玩家，为那名玩家放置“打破牢狱”标记，如果革命恐怖即将发生，为他放置“紧急审判”标记。",
+        "reminders": [
+            "打破牢狱",
+            "紧急审判"
+        ],
+        "name": "吉伦特派",
+        "team": "townsfolk",
+        "ability": "每个夜晚*，你要选择一名玩家，他不会中毒或醉酒直到下个黄昏，且在当晚不会死亡。但如果明天发生了革命恐怖，他随时可能会被处决。",
+        "otherNight": 2
+    },
+    {
+        "id": "11_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/11_the_french_revolution_2024_rv.png",
+        "firstNightReminder": "让他选择是否发动技能，如果发动技能则让他选择三名玩家，告知其中是否有爪牙。",
+        "otherNightReminder": "让他选择是否发动技能，如果发动技能则让他选择三名玩家，告知其中是否有爪牙。如果忿激派死亡，告知他发动技能时选择的其中一名玩家当下的角色。",
+        "reminders": [
+            "得知"
+        ],
+        "name": "忿激派",
+        "team": "townsfolk",
+        "ability": "每局游戏限一次，在夜晚时，你可以选择三名玩家：你会得知其中是否有爪牙。之后如果你死亡，你会得知其中一名玩家的角色。",
+        "firstNight": 23,
+        "otherNight": 17
+    },
+    {
+        "id": "12_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/12_the_french_revolution_2024_rv.png",
+        "reminders": [
+            "好事",
+            "胜利之歌！"
+        ],
+        "name": "乐团指挥",
+        "team": "townsfolk",
+        "ability": "每个白天，如果存活的玩家数量不小于死亡的玩家数量，你可以组织一场联欢，即使你已死亡。如果所有善良玩家都同意加入，且只有一名邪恶玩家存活，你的阵营获胜，不然你的阵营可能会发生一些好的事情。"
+    },
+    {
+        "id": "14_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/14_the_french_revolution_2024_rv.png",
+        "otherNightReminder": "如果菲利普平等白天被提名，选择是否让菲利普平等死亡，如果死亡，放置“革命恐怖”标记。",
+        "reminders": [
+            "被提名",
+            "革命恐怖！"
+        ],
+        "name": "菲利普平等",
+        "team": "outsider",
+        "ability": "在你被提名的当天，你随时可能会被处决或在可能会在当晚死亡（即使因为任何原因让你不会死亡），然后明天白天会发生革命恐怖。",
+        "otherNight": 9
+    },
+    {
+        "id": "13_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/13_the_french_revolution_2024_rv.png",
+        "firstNightReminder": "如果教宗改变了阵营，告诉他。唤醒恶魔，告知教宗在场。",
+        "otherNightReminder": "如果教宗改变了阵营，告诉他。",
+        "setup": true,
+        "name": "教宗",
+        "team": "outsider",
+        "ability": "你不会死于处决。每个夜晚，你会转变为与你邻近的一名存活的玩家的阵营。恶魔知道你在场。[+拿破仑]",
+        "firstNight": 11,
+        "otherNight": 10
+    },
+    {
+        "id": "15_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/15_the_french_revolution_2024_rv.png",
+        "firstNightReminder": "唤醒恶魔，告知谁是西班牙国王。",
+        "name": "西班牙国王",
+        "team": "outsider",
+        "ability": "如果你“疯狂”地证明自己是外来者，你可能会被处决且转变阵营。恶魔知道你是西班牙国王。",
+        "firstNight": 12
+    },
+    {
+        "id": "16_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/16_the_french_revolution_2024_rv.png",
+        "firstNightReminder": "唤醒一名反法同盟，告知谁是旺代农民。",
+        "reminders": [
+            "是旺代农民"
+        ],
+        "setup": true,
+        "name": "旺代农民",
+        "team": "outsider",
+        "ability": "你以为你是反法同盟，但其实你不是。会有一名反法同盟知道你是旺代农民。你可能会被当作邪恶玩家或反法同盟。[+反法同盟]",
+        "firstNight": 13
+    },
+    {
+        "id": "17_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/17_the_french_revolution_2024_rv.png",
+        "reminders": [
+            "革命恐怖！"
+        ],
+        "name": "富歇",
+        "team": "minion",
+        "ability": "每局游戏限一次，如果你或恶魔死于处决（恶魔死于处决会再额外进行一个夜晚和一个白天），在明天白天会发生革命恐怖。"
+    },
+    {
+        "id": "18_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/18_the_french_revolution_2024_rv.png",
+        "firstNightReminder": "让他选择一名玩家，放置“斡旋”标记。",
+        "otherNightReminder": "让他选择一名玩家，放置“斡旋”标记。",
+        "reminders": [
+            "斡旋",
+            "醉酒",
+            "狡诈天才！"
+        ],
+        "name": "塔列朗",
+        "team": "minion",
+        "ability": "每个夜晚，你要选择一名玩家：他不会死亡，直到下个黄昏。如果明天白天他被提名，他会醉酒直到下个黎明。你可能会被当作善良阵营、镇民角色或外来者角色。",
+        "firstNight": 15,
+        "otherNight": 3
+    },
+    {
+        "id": "19_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/19_the_french_revolution_2024_rv.png",
+        "firstNightReminder": "让他选择一名玩家。放置“暗通款曲”标记。",
+        "otherNightReminder": "当革命恐怖即将发生时，唤醒玛丽王后并选择是否让革命恐怖发生。",
+        "reminders": [
+            "暗通款曲"
+        ],
+        "name": "玛丽王后",
+        "team": "minion",
+        "ability": "在你的首个夜晚，你要选择一名玩家：他醉酒且你会得知他的角色。在革命恐怖即将发生的前一个夜晚，你会被唤醒并选择是否让革命恐怖发生。当路易十六因处决而死亡时，你被视为恶魔且在下个黄昏变成反法同盟。",
+        "firstNight": 16,
+        "otherNight": 20
+    },
+    {
+        "id": "20_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/20_the_french_revolution_2024_rv.png",
+        "otherNightReminder": "让他选择一名玩家。",
+        "reminders": [
+            "金钱腐蚀",
+            "不被唤醒"
+        ],
+        "name": "布尔乔亚",
+        "team": "minion",
+        "ability": "每个夜晚*，你要选择除你以外的一名玩家，他可能会死亡且在下个黄昏转变阵营。如果你以这个能力杀死了玩家，你不再会因自身能力而被唤醒。",
+        "otherNight": 8
+    },
+    {
+        "id": "21_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/21_the_french_revolution_2024_rv.png",
+        "firstNightReminder": "放置“王位尚稳”标记。",
+        "otherNightReminder": "让他选择一名其他玩家，将他杀害。",
+        "reminders": [
+            "死亡",
+            "王位尚稳",
+            "国王已死！"
+        ],
+        "setup": true,
+        "name": "路易十六",
+        "team": "demon",
+        "ability": "每个夜晚*，你要选择除你以外的一名玩家：他死亡。革命恐怖一定不会发生。如果你死于处决，说书人会公开宣布“国王已死！革命万岁！” [+玛丽王后]",
+        "firstNight": 14,
+        "otherNight": 7
+    },
+    {
+        "id": "22_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/22_the_french_revolution_2024_rv.png",
+        "otherNightReminder": "让他选择一名玩家，将他杀害。当保王党首次选择爪牙时，放置“革命恐怖”标记。",
+        "reminders": [
+            "死亡",
+            "陷害收买",
+            "革命恐怖！"
+        ],
+        "name": "保王党",
+        "team": "demon",
+        "ability": "每个夜晚*，你要选择一名玩家：他死亡。当你首次选择爪牙时，改为与他邻近的一名存活的善良玩家会死亡且转变阵营，且明天白天会发生革命恐怖。",
+        "otherNight": 6
+    },
+    {
+        "id": "23_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/23_the_french_revolution_2024_rv.png",
+        "otherNightReminder": "让他选择两名玩家，其中一名被杀害并中毒，另一名可能中毒。",
+        "reminders": [
+            "毒亡",
+            "中毒",
+            "已猜测",
+            "热月政变！"
+        ],
+        "name": "督政府",
+        "team": "demon",
+        "ability": "每个夜晚*，你要选择两名玩家：其中一名中毒且死亡，另一名可能会中毒直到下个黄昏。每个白天限一次，爪牙可以公开选择一名存活的玩家：如果该玩家是罗伯斯庇尔，他会被处决。",
+        "otherNight": 5
+    },
+    {
+        "id": "24_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/24_the_french_revolution_2024_rv.png",
+        "otherNightReminder": "分别唤醒反法同盟，让他们各选择一名玩家，将其中一名杀害。当反法同盟首次选择外来者时，放置“镇民中毒”与“革命恐怖！”标记。",
+        "reminders": [
+            "死亡",
+            "镇民中毒",
+            "革命恐怖！"
+        ],
+        "setup": true,
+        "name": "反法同盟",
+        "team": "demon",
+        "ability": "每个夜晚*，反法同盟各要选择一名玩家，其中一名会死亡。当反法同盟首次杀死了外来者，所有镇民中毒直到下个黄昏且明天白天会发生革命恐怖。[所有爪牙都是反法同盟，+1外来者]",
+        "otherNight": 4
+    },
+    {
+        "id": "25_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/25_the_french_revolution_2024_rv.png",
+        "reminders": [
+            "减少审判",
+            "追加审判"
+        ],
+        "name": "贝多芬",
+        "team": "traveler",
+        "ability": "如果有革命恐怖发生，你可以公开选择一名玩家或选择说书人：他唱一首歌。然后你可以公开选择减少或追加这次革命恐怖的一轮审判，即使你已经死亡。"
+    },
+    {
+        "id": "26_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/26_the_french_revolution_2024_rv.png",
+        "name": "拉法耶特",
+        "team": "traveler",
+        "ability": "在提名开始前，你可以公开选择一名存活的玩家作为之后的首次提名。每局游戏限一次，你可以选择一名待定处决的玩家，他立刻被处决。"
+    },
+    {
+        "id": "27_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/27_the_french_revolution_2024_rv.png",
+        "reminders": [
+            "资助"
+        ],
+        "name": "罗斯柴尔德",
+        "team": "traveler",
+        "ability": "每局游戏限一次，你可以在白天时公开选择除你以外的一名玩家：他可能会发生一些好事。你会得知他的角色且转变为他的阵营，且与他共享胜利条件。你不会知道谁是恶魔。[最多可以有3名罗斯柴尔德在场]"
+    },
+    {
+        "id": "28_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/28_the_french_revolution_2024_rv.png",
+        "reminders": [
+            "一轮审判",
+            "二轮审判",
+            "三轮审判"
+        ],
+        "name": "革命恐怖",
+        "team": "fabled",
+        "ability": "革命恐怖一旦发生会在黎明被公开宣布。当天直接开始提名且需依次处决三名存活的玩家。最后一次处决之前的待定处决的存活的玩家会立刻被处决，且这几次处决之前使用的投票标记不会被收回。如果革命恐怖中被处决的玩家都是善良的，邪恶阵营获胜。“没有恐怖的美德是软弱的，没有美德的恐怖是邪恶的。”——罗伯斯庇尔"
+    },
+    {
+        "id": "29_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/29_the_french_revolution_2024_rv.png",
+        "name": "作者留言",
+        "team": "fabled",
+        "ability": "让革命与恐怖燃尽那些虚伪的面纱罢！此主体内容均为本人（哈德良凯撒）原创，未经本人授权，严禁私自商用此剧本及篡改内容。若需商用、制作视频及其他衍生物，以及咨询演绎及规则性问题请联系作者微信：Hadrian_Caesar"
+    },
+    {
+        "id": "30_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/30_the_french_revolution_2024_rv.png",
+        "name": "帝皇加冕！",
+        "team": "fabled",
+        "ability": "如果小于等于四人存活（旅行者不计算在内）时拿破仑或教宗之一仍存活，则拿破仑与教宗共同获得胜利。如果督政府或塔列朗之一仍存活，拿破仑与教宗无法用这个能力获胜。“永远别以为敌人比你愚蠢！”——拿破仑"
+    },
+    {
+        "id": "31_the_french_revolution_2024_rv",
+        "image": "https://www.bloodstar.xyz/p/Hadrian_Caesar/The_French_Revolution_2024_RV/31_the_french_revolution_2024_rv.png",
+        "name": "狡诈天才！",
+        "team": "fabled",
+        "ability": "如果塔列朗和拿破仑均存活，善良阵营无法获胜。如果小于等于四人存活（旅行者不计算在内）时拿破仑和塔列朗均存活，则塔列朗获得胜利。“人之所以拥有语言，就是为了掩盖他的思想。”——塔列朗"
+    }
+]

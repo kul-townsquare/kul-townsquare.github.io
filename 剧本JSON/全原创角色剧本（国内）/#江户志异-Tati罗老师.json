@@ -1,0 +1,526 @@
+[
+    {
+        "id": "_meta",
+        "name": "江户志异",
+        "logo": "https://www.helloimg.com/i/2024/10/31/67238070b40b2.png",
+        "author":"Tati罗老师桌游&瞎技霸玩·桌游吧",
+        "description": "江户志异",
+        "townsfolkName": "镇民",
+        "outsidersName": "外来者",
+        "minionsName": "爪牙",
+        "demonsName": "恶魔",
+        "townsfolk": "镇民",
+        "outsider": "外来者",
+        "minion": "爪牙",
+        "demon": "恶魔",
+        "a jinxedName": "相克",
+        "a jinxed": "相克"
+    },
+    {
+        "id": "jianghu_hanghaijia",
+        "image": "https://www.helloimg.com/i/2024/11/01/6723b40e8d587.png",
+        "edition": "custom",
+        "name": "航海家",
+        "ability": "提名阶段结束时，除你以外的所有玩家可以投票选择一名玩家：你获得他的能力，直到下个黄昏。如果无人投票或者平票，你获得顺时针方向下一位玩家（每晚顺延）的能力，直到下个黄昏。",
+        "team": "traveler",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "获得能力"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_nulizhu",
+        "image": "https://www.helloimg.com/i/2024/11/01/6723b40e7edc6.png",
+        "edition": "custom",
+        "name": "奴隶主",
+        "ability": "每局游戏限一次，提名阶段结束时，如果没有玩家标记被处决，你可以选择一名玩家：他被处决。",
+        "team": "traveler",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "失去能力"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_gongshi",
+        "image": "https://www.helloimg.com/i/2024/11/01/6723b40e98f32.png",
+        "edition": "custom",
+        "name": "公使",
+        "ability": "每个白天，你可以邀请一位玩家与你一起拜访说书人：你会得知他的角色。",
+        "team": "traveler",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "setup": false
+    },
+    {
+        "id": "jianghu_wunv",
+        "image": "https://www.helloimg.com/i/2024/10/31/6723805f83be7.png",
+        "edition": "custom",
+        "name": "巫女",
+        "ability": "在你的首个夜晚，你会得知两个在场角色。每个夜晚*，你要选择除你以外的两名玩家：你会得知他们之中是否有你得知的角色。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 45,
+        "otherNight": 95,
+        "firstNightReminder": "唤醒巫女，给巫女展示两个在场角色。",
+        "otherNightReminder": "唤醒巫女，让巫女选择除自己以外的两名玩家，根据结果告诉巫女对应信息。",
+        "reminders": [
+            "得知"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_tingzhong",
+        "image": "https://www.helloimg.com/i/2024/10/31/6723808591976.png",
+        "edition": "custom",
+        "name": "町众",
+        "ability": "在你的首个夜晚，你会得知三个善良角色：其中有且只有一个不在场。每局游戏限一次，在白天时，你可以私下询问说书人猜测不在场的角色，若你猜对，你会在当晚变成该角色。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 50,
+        "otherNight": 0,
+        "firstNightReminder": "唤醒町众，给町众展示两个在场善良角色和一个不在场善良角色。",
+        "otherNightReminder": "",
+        "setup": false
+    },
+    {
+        "id": "jianghu_langren",
+        "image": "https://www.helloimg.com/i/2024/11/06/672a4f1d82cd2.png",
+        "edition": "custom",
+        "name": "浪人",
+        "ability": "每个夜晚， 你会得知与你邻近的存活玩家中有几种角色类型。[+1外来者]",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 55,
+        "otherNight": 100,
+        "firstNightReminder": "唤醒浪人，告诉浪人临近的存活玩家中的角色类型数量。",
+        "otherNightReminder": "唤醒浪人，告诉浪人临近的存活玩家中的角色类型数量。",
+        "setup": true
+    },
+    {
+        "id": "jianghu_daming",
+        "image": "https://www.helloimg.com/i/2024/10/31/672380a875e3c.png",
+        "edition": "custom",
+        "name": "大名",
+        "ability": "每个夜晚，你会得知恶魔左边或右边一名玩家的阵营（每晚得知对应方向的下一名玩家）。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 60,
+        "otherNight": 105,
+        "firstNightReminder": "唤醒大名，告诉大名恶魔左边或者右边一名玩家的阵营。",
+        "otherNightReminder": "唤醒大名，告诉大名对应方向的下一名玩家的阵营。",
+        "reminders": [
+            "得知"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_kuileishi",
+        "image": "https://www.helloimg.com/i/2024/10/31/672380bb200ec.png",
+        "edition": "custom",
+        "name": "傀儡师",
+        "ability": "每个夜晚，你可以选择一名玩家：创造一个他的傀儡，当晚任何使用自身能力选择他的其他玩家，会改为选中傀儡作为替代。在黎明时，如果你的傀儡成功在当晚生效，你的傀儡损坏，你失去能力。每个白天，你可以私聊说书人恢复你的能力：如果傀儡是损坏的，你会得知它被修复并可以继续使用；如果傀儡在之前未发动效果，你会得知它损坏。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 65,
+        "otherNight": 55,
+        "firstNightReminder": "唤醒傀儡师，让傀儡师选择一名玩家，该玩家被傀儡守护。如果当晚傀儡损坏，放置傀儡损坏标记。",
+        "otherNightReminder": "唤醒傀儡师，让傀儡师选择一名玩家，该玩家被傀儡守护。如果当晚傀儡损坏，放置傀儡损坏标记。",
+        "reminders": [
+            "傀儡守护",
+            "傀儡损坏",
+            "失去能力"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_dumai",
+        "image": "https://www.helloimg.com/i/2024/10/31/672380c9872d5.png",
+        "edition": "custom",
+        "name": "读卖",
+        "ability": "每个白天，你可以私下询问说书人以得知一条关于邪恶阵营的零碎信息。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "setup": false
+    },
+    {
+        "id": "jianghu_renzhe",
+        "image": "https://www.helloimg.com/i/2024/10/31/6723882a0712d.png",
+        "edition": "custom",
+        "name": "忍者",
+        "ability": "每个夜晚*，你可以选择一名未以此法选择过的玩家：如果他是镇民，你获得他的能力，直到下个黄昏。否则你中毒。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 45,
+        "firstNightReminder": "",
+        "otherNightReminder": "唤醒忍者，让忍者选择一名之前未选择过的玩家。如果这名玩家是镇民，忍者获得他的能力直到下个黄昏。如果不是镇民，忍者中毒。",
+        "reminders": [
+            "获得能力",
+            "选择过",
+            "中毒"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_huahuoshi",
+        "image": "https://www.helloimg.com/i/2024/10/31/6723883d89e66.png",
+        "edition": "custom",
+        "name": "花火师",
+        "ability": "每个夜晚*，你可以选择一名除你以外的玩家：如果他是善良的，今晚任何玩家使用自身能力选择你们之一作为目标时，改为选中另一名玩家。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 50,
+        "firstNightReminder": "",
+        "otherNightReminder": "唤醒花火师，让花火师选择一名除自己以外的其他玩家。如果该玩家是善良的，放置提示标记，当晚你和他之间会发生目标转移。",
+        "reminders": [
+            "花火升空"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_beimianwushi",
+        "image": "https://www.helloimg.com/i/2024/10/31/6723885f61c2a.png",
+        "edition": "custom",
+        "name": "北面武士",
+        "ability": "每个夜晚*，你要选择一名除你以外的玩家：如果他是镇民，他不会在今晚死亡，如果你死亡，他也死亡。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 60,
+        "firstNightReminder": "",
+        "otherNightReminder": "唤醒北面武士，让北面武士选择一名玩家。如果被选择的玩家是镇民，放置提示标记。如果选择了镇民的夜晚北面武士死亡，被选择的镇民一同死亡。",
+        "reminders": [
+            "守护"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_yiji",
+        "image": "https://www.helloimg.com/i/2024/10/31/67238877de6ce.png",
+        "edition": "custom",
+        "name": "艺伎",
+        "ability": "每个夜晚*，你要选择一名未以此法选择过的玩家：他醉酒直到下个黄昏。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 40,
+        "firstNightReminder": "",
+        "otherNightReminder": "唤醒艺伎，让艺伎选择一名未选择过的玩家，那名玩家醉酒到下个黄昏。",
+        "reminders": [
+            "醉酒",
+            "选择过"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_yaoshi",
+        "image": "https://www.helloimg.com/i/2024/10/31/67238896b041c.png",
+        "edition": "custom",
+        "name": "药师",
+        "ability": "每个夜晚*，你要选择一名玩家：移除他受到的醉酒和中毒影响。如果你两次选择同一名清醒健康的玩家：他死亡。你的能力对恶魔无效。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 65,
+        "firstNightReminder": "",
+        "otherNightReminder": "唤醒药师，让药师选择一名玩家，将这名玩家的“醉酒”与“中毒”标记移除。如果是第二次选择这名玩家，他死亡。",
+        "reminders": [
+            "选择过",
+            "死亡"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_yinyangshi",
+        "image": "https://www.helloimg.com/i/2024/10/31/672388aaa44a6.png",
+        "edition": "custom",
+        "name": "阴阳师",
+        "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：如果他是爪牙，他失去能力。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 70,
+        "firstNightReminder": "",
+        "otherNightReminder": "唤醒阴阳师，询问阴阳师是否发动能力。如果发动能力，让阴阳师选择一名玩家：如果他是爪牙，他失去能力。",
+        "reminders": [
+            "失去能力"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_yedaojiang",
+        "image": "https://www.helloimg.com/i/2024/10/31/672388ca06d3b.png",
+        "edition": "custom",
+        "name": "冶刀匠",
+        "ability": "在你提名并处决了一名玩家后，你会在当晚得知他的角色。你不会中毒或醉酒。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 110,
+        "firstNightReminder": "",
+        "otherNightReminder": "如果白天冶刀匠提名并处决了一名玩家，在当晚唤醒冶刀匠并告诉他被处决的玩家的角色。",
+        "reminders": [
+            "处决于今日"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_xuzuozhinan",
+        "image": "https://www.helloimg.com/i/2024/10/31/672388e633524.png",
+        "edition": "custom",
+        "name": "须佐之男",
+        "ability": "每个夜晚，你要选择两名存活玩家：他们中的一名玩家在明天白天发起的提名的投票无效。",
+        "team": "outsider",
+        "sch_team": "外来者",
+        "firstNight": 70,
+        "otherNight": 115,
+        "firstNightReminder": "唤醒须佐之男，让须佐之男选择两名存活玩家。他们中的一名玩家在明天白天发起的提名的投票无效。",
+        "otherNightReminder": "唤醒须佐之男，让须佐之男选择两名存活玩家。他们中的一名玩家在明天白天发起的提名的投票无效。",
+        "reminders": [
+            "投票无效"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_yixienaqi",
+        "image": "https://www.helloimg.com/i/2024/10/31/672388fb51803.png",
+        "edition": "custom",
+        "name": "伊邪那岐",
+        "ability": "每个夜晚，你要选择一名玩家：如果他是邪恶的，你转变为邪恶阵营，你和伊邪那美都失去能力，即使你已死亡。如果游戏结束时你和伊邪那美都是善良的：你们落败。[+伊邪那美]",
+        "team": "outsider",
+        "sch_team": "外来者",
+        "firstNight": 75,
+        "otherNight": 120,
+        "firstNightReminder": "唤醒伊邪那岐，让伊邪那岐选择一名玩家，如果他是邪恶的，伊邪那岐转变为邪恶阵营，然后伊邪那岐和伊邪那美都失去能力。",
+        "otherNightReminder": "唤醒伊邪那岐，让伊邪那岐选择一名玩家，如果他是邪恶的，伊邪那岐转变为邪恶阵营，然后伊邪那岐和伊邪那美都失去能力。",
+        "reminders": [
+            "失去能力",
+            "变为邪恶"
+        ],
+        "remindersGlobal": [
+            "是伊邪那岐"
+        ],
+        "setup": true
+    },
+    {
+        "id": "jianghu_yixienamei",
+        "image": "https://www.helloimg.com/i/2024/10/31/6723893ec554f.png",
+        "edition": "custom",
+        "name": "伊邪那美",
+        "ability": "每个夜晚，你要选择一名玩家：如果他是邪恶的，你转变为邪恶阵营，你和伊邪那岐都失去能力，即使你已死亡。如果游戏结束时你和伊邪那岐都是善良的：你们落败。[+伊邪那岐]",
+        "team": "outsider",
+        "sch_team": "外来者",
+        "firstNight": 80,
+        "otherNight": 125,
+        "firstNightReminder": "唤醒伊邪那美，让伊邪那美选择一名玩家，如果他是邪恶的，伊邪那美转变为邪恶阵营，然后伊邪那岐和伊邪那美都失去能力。",
+        "otherNightReminder": "唤醒伊邪那美，让伊邪那美选择一名玩家，如果他是邪恶的，伊邪那美转变为邪恶阵营，然后伊邪那岐和伊邪那美都失去能力。",
+        "reminders": [
+            "失去能力",
+            "变为邪恶"
+        ],
+        "remindersGlobal": [
+            "是伊邪那美"
+        ],
+        "setup": true
+    },
+    {
+        "id": "jianghu_jiajutuming",
+        "image": "https://www.helloimg.com/i/2024/10/31/6723894ea867b.png",
+        "edition": "custom",
+        "name": "加具土命",
+        "ability": "你以为你是一个镇民角色，其实你不是。离你最远的镇民玩家醉酒，即使你已死亡。如果那名玩家死亡，你会在当晚变成你以为的那个角色。",
+        "team": "outsider",
+        "sch_team": "外来者",
+        "firstNight": 40,
+        "otherNight": 20,
+        "firstNightReminder": "离加具土命最远的镇民玩家醉酒。如果那名玩家死亡，加具土命会在当晚变成他以为的那个角色。",
+        "otherNightReminder": "离加具土命最远的镇民玩家醉酒。如果那名玩家死亡，加具土命会在当晚变成他以为的那个角色。",
+        "remindersGlobal": [
+            "醉酒",
+            "是加具土命"
+        ],
+        "setup": true
+    },
+    {
+        "id": "jianghu_yuedu",
+        "image": "https://www.helloimg.com/i/2024/10/31/67238963927fb.png",
+        "edition": "custom",
+        "name": "月读",
+        "ability": "如果你被镇民的能力选中或影响，你会被当作邪恶阵营、爪牙角色或恶魔角色，你会在能力生效后变为天照，但你还是会以为自己是月读。",
+        "team": "outsider",
+        "sch_team": "外来者",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "remindersGlobal": [
+            "是月读"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_tianzhao",
+        "image": "https://www.helloimg.com/i/2024/10/31/67238971556d6.png",
+        "edition": "custom",
+        "name": "天照",
+        "ability": "恶魔的负面能力对你无效。如果恶魔选中你，你会在能力生效后变为月读。[初始不在游戏中]",
+        "team": "outsider",
+        "sch_team": "外来者",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "remindersGlobal": [
+            "是天照"
+        ],
+        "setup": true
+    },
+    {
+        "id": "jianghu_xueji",
+        "image": "https://www.helloimg.com/i/2024/10/31/6723898472884.png",
+        "edition": "custom",
+        "name": "雪姬",
+        "ability": "每个夜晚*，你要选择一名玩家（与上个夜晚不同）：他被冰封，当晚他不会被唤醒，明天白天他不能提名、被提名以及投票。说书人会在黎明宣布被冰封的玩家。",
+        "team": "minion",
+        "sch_team": "爪牙",
+        "firstNight": 0,
+        "otherNight": 25,
+        "firstNightReminder": "",
+        "otherNightReminder": "唤醒雪姬，让雪姬选择一个未选择过的玩家，他被冰封。",
+        "reminders": [
+            "选择过"
+        ],
+        "remindersGlobal": [
+            "冰封"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_baimuyao",
+        "image": "https://www.helloimg.com/i/2024/10/31/6723899a59034.png",
+        "edition": "custom",
+        "name": "百目妖",
+        "ability": "每个夜晚， 你要选择两名玩家：当你累计选择过四个不同的镇民玩家后， 你变成一个不在场的恶魔。你不与其他爪牙与恶魔互认。 [-1外来者]",
+        "team": "minion",
+        "sch_team": "爪牙",
+        "firstNight": 25,
+        "otherNight": 75,
+        "firstNightReminder": "百目妖不与其他爪牙和恶魔互认。唤醒百目妖，让他选择两名玩家。",
+        "otherNightReminder": "唤醒百目妖，让他选择两名玩家。当百目妖累计选择过四个不同的镇民玩家后，百目妖变成一个不在场的恶魔。",
+        "reminders": [
+            "选择过"
+        ],
+        "setup": true
+    },
+    {
+        "id": "jianghu_jiutuntongzi",
+        "image": "https://www.helloimg.com/i/2024/10/31/672389a2ee17c.png",
+        "edition": "custom",
+        "name": "酒吞童子",
+        "ability": "在你的首个夜晚，你获得等于邪恶玩家数量的酒。每个夜晚，你可以选择若干数量的玩家，消耗对应数量的酒，他们醉酒直到下个黄昏。酒用尽时，你失去能力。",
+        "team": "minion",
+        "sch_team": "爪牙",
+        "firstNight": 20,
+        "otherNight": 30,
+        "firstNightReminder": "给酒吞童子等于邪恶玩家数量的酒。唤醒酒吞童子，询问是否发动能力。如果发动能力，让酒吞童子选择若干数量的玩家并消耗对应数量的酒，他们醉酒直到下个黄昏。酒用尽时，酒吞童子失去能力。",
+        "otherNightReminder": "唤醒酒吞童子，询问是否发动能力。如果发动能力，让酒吞童子选择若干数量的玩家并消耗对应数量的酒，他们醉酒直到下个黄昏。酒用尽时，酒吞童子失去能力。",
+        "reminders": [
+            "4点酒气",
+            "3点酒气",
+            "2点酒气",
+            "1点酒气",
+            "失去能力",
+            "醉酒"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_feitouman",
+        "image": "https://www.helloimg.com/i/2024/10/31/672389afc23c2.png",
+        "edition": "custom",
+        "name": "飞头蛮",
+        "ability": "每个夜晚*，你的头颅会飞到你左侧下一名存活镇民身上：他中毒。每局游戏限一次，在夜晚时*，你可以收回头颅，头颅目前所在的玩家死亡，然后你失去能力。",
+        "team": "minion",
+        "sch_team": "爪牙",
+        "firstNight": 0,
+        "otherNight": 35,
+        "firstNightReminder": "",
+        "otherNightReminder": "让飞头蛮的头飞到他的左侧下一名存活镇民身上，拥有头的镇民中毒。唤醒飞头蛮，询问他是否发动能力。如果发动能力，收回头颅，头颅目前所在的玩家死亡，然后飞头蛮失去能力。",
+        "reminders": [
+            "头",
+            "死亡",
+            "失去能力"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_baqidashe",
+        "image": "https://www.helloimg.com/i/2024/10/31/672389c2d7b49.png",
+        "edition": "custom",
+        "name": "八岐大蛇",
+        "ability": "每个夜晚， 你要选择一名玩家：他在下个夜晚死亡，如果他在明天白天被处决，之后你死亡时，一名存活的爪牙变成八岐大蛇。",
+        "team": "demon",
+        "sch_team": "恶魔",
+        "firstNight": 35,
+        "otherNight": 85,
+        "firstNightReminder": "唤醒八岐大蛇，让他选择一名玩家。",
+        "otherNightReminder": "唤醒八岐大蛇，让他选择一名玩家。前一晚选择的玩家死亡。如果前一晚选择的玩家被处决了，用八岐之术标记八岐大蛇。",
+        "reminders": [
+            "死亡",
+            "八岐之术"
+        ],
+        "setup": false
+    },
+    {
+        "id": "jianghu_bore",
+        "image": "https://www.helloimg.com/i/2024/10/31/672389c50965b.png",
+        "edition": "custom",
+        "name": "般若",
+        "ability": "在你的首个夜晚，你会得知有哪些外来者角色在场，然后你要选择是否让所有外来者互相认识，你可以与外来者一同互认。每个夜晚*，你要选择一名玩家：他死亡。若白天有外来者死亡，你要额外选择一名玩家：他死亡。[+1或+2外来者]",
+        "team": "demon",
+        "sch_team": "恶魔",
+        "firstNight": 30,
+        "otherNight": 80,
+        "firstNightReminder": "唤醒般若，告诉他所有在场外来者角色，然后他要选择是否让所有外来者互认。并且询问般若是否与所有外来者一同互认。",
+        "otherNightReminder": "唤醒般若，让他选择一名玩家，被选择的玩家死亡。如果白天有外来者死亡，般若额外选择一名玩家，被选择的玩家死亡。",
+        "reminders": [
+            "死亡",
+            "死于今日"
+        ],
+        "setup": true
+    },
+    {
+        "id": "jianghu_datiangou",
+        "image": "https://www.helloimg.com/i/2024/10/31/672389c567215.png",
+        "edition": "custom",
+        "name": "大天狗",
+        "ability": "每个夜晚*，你要选择一名玩家：他死亡。每局游戏限一次，如果你以这种方式杀死了自己，你要选择一名玩家：他变成邪恶的大天狗，然后一名存活的爪牙失去能力，即使你已死亡。",
+        "team": "demon",
+        "sch_team": "恶魔",
+        "firstNight": 0,
+        "otherNight": 90,
+        "firstNightReminder": "",
+        "otherNightReminder": "唤醒大天狗，让他选择一名玩家，被选择的玩家死亡。每局游戏限一次，如果大天狗以这种方式杀死了自己，大天狗要选择一名玩家：他变成邪恶的大天狗，然后一名存活的爪牙失去能力。",
+        "reminders": [
+            "死亡",
+            "限一次",
+            "失去能力"
+        ],
+        "setup": false
+    }
+]

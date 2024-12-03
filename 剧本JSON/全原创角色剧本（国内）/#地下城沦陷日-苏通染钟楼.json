@@ -1,0 +1,507 @@
+[{
+		"id": "_meta",
+		"name": "地下城沦陷日",
+		"author": "苏通染",
+		"logo": "https://postimage.me/image/UVWphN",
+		"description": "无",
+		"townsfolkName": "镇民",
+		"outsidersName": "外来者",
+		"minionsName": "爪牙",
+		"demonsName": "恶魔",
+		"townsfolk": "镇民",
+		"outsider": "外来者",
+		"minion": "爪牙",
+		"demon": "恶魔",
+		"state": [{
+			"stateName": "",
+			"stateDescription": ""
+		}],
+		"status": [{
+			"name": "",
+			"skill": ""
+		}]
+	}, {
+		"id": "DiceOfFate",
+		"image": "https://postimage.me/image/UVWemy",
+		"name": "命运龙骰",
+		"team": "fabled",
+		"ability": "军团长在某次战争中获得的秘宝。每次提名开始前，说书人需袋投掷一颗与场上玩家数量相同点数的般子，由对应座位号的玩家选择一名其他玩家发起提名。"
+	}, {
+		"id": "5_sheshecup4",
+		"image": "https://postimage.me/images/2024/08/01/69f98caa9674532894d01645ee5ab6b1.png",
+		"name": "暮光精灵",
+		"team": "townsfolk",
+		"ability": "在你的首个夜晚，你会得知最多的相邻镇民数量。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 45,
+		"otherNight": 0,
+		"firstNightReminder": "给他展示数字手势告诉他最多相邻镇民的数量",
+		"otherNightReminder": "",
+		"reminders": [],
+		"setup": false
+	}, {
+		"id": "1_sheshecup11",
+		"image": "https://postimage.me/images/2024/08/01/71b7c902bd8af1b51679408b9ca922a5.png",
+		"name": "巡林客",
+		"team": "townsfolk",
+		"ability": "在你的首个夜晚，你会得知与爪牙相邻的善良角色数量。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 37,
+		"otherNight": 0,
+		"firstNightReminder": "给他展示数字手势告诉他与爪牙相邻的善良角色总数量",
+		"otherNightReminder": "",
+		"reminders": [
+		],
+		"setup": false
+	}, {
+		"id": "3_sheshecup11",
+		"image": "https://postimage.me/images/2024/08/01/8ec3ba3ce389b931e15d1662ede9c473.png",
+		"name": "大主教",
+		"team": "townsfolk",
+		"ability": "每局游戏限一次，在夜晚时*，你会得知与死亡玩家数量相等的善良角色，其中有且只有一个角色不在场。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 0,
+		"otherNight": 57,
+		"firstNightReminder": "",
+		"otherNightReminder": "大主教可以选择发动能力，如果他这么做了，告诉他与死亡玩家数量相等的善良角色，其中有且只有一个角色不在场。随后标记大主教失去能力，之后的夜晚无需再唤醒大主教。",
+		"reminders": ["失去能力"],
+		"setup": false
+	},{
+		"id": "4_sheshecup",
+		"image": "https://postimage.me/images/2024/08/01/06579c7e3694cf8a058a07ee6fd1b520.png",
+		"name": "怪物专家",
+		"team": "townsfolk",
+		"ability": "在你的首个夜晚，你要选择一个邪恶角色写入图鉴。每个夜晚*，你要选择任意名玩家：如果他们中没有图鉴上的角色，你要选择新的邪恶角色写入图鉴。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 50,
+		"otherNight": 70,
+		"firstNightReminder": "让他选择一个邪恶角色，如果该角色在场，给该角色的玩家标记怪物图鉴",
+		"otherNightReminder": "让他选择任意名玩家，检查这些玩家中是否有怪物图鉴标记，如果没有，让怪物专家选择一个邪恶角色：如果该角色在场，给该角色的玩家标记怪物图鉴。",
+		"reminders": [
+			"怪物图鉴"
+		],
+		"setup": false
+	}, {
+		"id": "3_sheshecup",
+		"image": "https://i.postimg.cc/rpvQ7Byw/2-dnd.png",
+		"name": "风语者",
+		"team": "townsfolk",
+		"ability": "每个夜晚，你要选择除你以外的三名非旅行者玩家：如果他们角色类型各不相同，你失去能力，否则你得知其中角色类型唯一的玩家。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 40,
+		"otherNight": 55,
+		"firstNightReminder": "让他选择除他以外的三名非旅行者玩家，如果他们角色类型都不一样，标记风语者失去能力，之后的夜晚无需再唤醒风语者。如果他们之中有两个角色类型相同，告诉他另一名角色类型不同的玩家是谁。",
+		"otherNightReminder": "让他选择除他以外的三名非旅行者玩家，如果他们角色类型都不一样，标记风语者失去能力，之后的夜晚无需再唤醒风语者。如果他们之中有两个角色类型相同，告诉他另一名角色类型不同的玩家是谁。",
+		"reminders": [
+			"失去能力"
+		],
+		"setup": false
+	}, {
+		"id": "5_sheshecup1z",
+		"image": "https://postimage.me/images/2024/08/01/ed47cefc483a3c927a18593bcf0609bf.png",
+		"name": "提夫林",
+		"team": "townsfolk",
+		"ability": "每个夜晚*，你要选择一名与你距离大于1的存活玩家：你得知在顺时针方向上，你与该玩家之间有多少名邪恶玩家，如果你选择了邪恶玩家，你产生错误信息。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 0,
+		"otherNight": 71,
+		"firstNightReminder": "",
+		"otherNightReminder": "唤醒提夫林，让他选择一名与他距离大于1的存活玩家，告诉他在他的顺时针方向上，他与该玩家之间有多少名邪恶玩家。如果他选择的那名玩家是邪恶玩家，告诉他错误的信息。",
+		"reminders": [],
+		"setup": false
+	}, {
+		"id": "5_sheshecup2",
+		"image": "https://postimage.me/images/2024/08/01/3e2fb1db466c77b06c96f3187b949977.png",
+		"name": "牧师",
+		"team": "townsfolk",
+		"ability": "每个夜晚，你要选择两名玩家，得知他们均不为哪种角色类型。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 53,
+		"otherNight": 73,
+		"firstNightReminder": "让他选择两名玩家，告诉他一种与这两名玩家都不同的角色类型。",
+		"otherNightReminder": "让他选择两名玩家，告诉他一种与这两名玩家都不同的角色类型。",
+		"reminders": [],
+		"setup": false
+	}, {
+		"id": "5_sheshecup311",
+		"image": "https://postimage.me/images/2024/08/01/eeeac096dab50e44cd3ff29f14333616.png",
+		"name": "萨满",
+		"team": "townsfolk",
+		"ability": "如果你在夜晚死亡，你会得知在场的恶魔角色。如果存活玩家中仅存在一名善良或邪恶玩家，你会得知此事，即使你已死亡。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 0,
+		"otherNight": 50,
+		"firstNightReminder": "",
+		"otherNightReminder": "如果萨满在夜晚死亡，唤醒萨满并告诉他在场的一个恶魔角色。即使他死亡了，如果场上仅存活一名善良玩家，告诉他仅存活一名善良玩家；如果场上仅存活一名邪恶玩家，告诉他仅存活一名邪恶玩家。",
+		"reminders": [],
+		"setup": false
+	}, {
+		"id": "72a9b85e-6f8a-40ab-9dc2-7fa440b1fa0c11",
+		"image": "https://i.postimg.cc/q7zx4sVt/1-dnd.png",
+		"edition": "custom",
+		"name": "祈愿妖精",
+		"ability": "在你的首个白天，拜访说书人并选择“那么……”，说书人会告诉你“如果……”，他们组成你的完整能力。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 0,
+		"otherNight": 0,
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"reminders": [],
+		"setup": false
+	}, {
+		"id": "5_sheshecup11",
+		"image": "https://postimage.me/images/2024/08/01/dbba47960819c355028b5bf9b74890dd.png",
+		"name": "迷题石像",
+		"team": "townsfolk",
+		"ability": "每个白天，你可以拜访说书人回答一个与本局游戏相关的问题。当回答正确两次后，你失去能力。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 0,
+		"otherNight": 0,
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"reminders": ["答对"],
+		"setup": false
+	}, {
+		"id": "cb82338c-538f-4016-8530-efe018c839bc11z",
+		"image": "https://postimage.me/images/2024/08/01/d094915b8c8b9fabaf15649b5ef52cdd.png",
+		"edition": "custom",
+		"name": "圣骑士",
+		"ability": "每个夜晚，你要选择一名除你以外的玩家：他产生正确信息，即使因为任何原因他无法产生正确信息，直到下个黄昏。如果他在当夜死于恶魔的能力，他会得知你是圣骑士。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 15,
+		"otherNight": 48,
+		"firstNightReminder": "让他选择一名其他玩家，在那名玩家面前放置圣光标记，当晚那名玩家必定产生正确信息。",
+		"otherNightReminder": "让他选择一名其他玩家，在那名玩家面前放置圣光标记，当晚那名玩家必定产生正确信息。如果那名玩家在夜晚死亡，告诉那名玩家他是圣骑士",
+		"reminders": [
+			"圣光"
+		],
+		"setup": false
+	}, {
+		"id": "1_sheshecup",
+		"image": "https://postimage.me/images/2024/08/01/01ae3405f770f0d23f487a60a549f0c7.png",
+		"name": "罗姆人",
+		"team": "townsfolk",
+		"ability": "首个被你提名或提名你的爪牙会变成罗姆人。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 0,
+		"otherNight": 0,
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"reminders": [
+			"罗姆人",
+			"失去能力"
+		],
+		"setup": false
+	}, {
+		"id": "202f0292-7bda-422b-9706-9b758a895bac1",
+		"image": "https://postimage.me/images/2024/08/01/f2f96ce454d19301fcba8eae8f10da27.png",
+		"edition": "custom",
+		"name": "军团长",
+		"ability": "在你的首个夜晚，你会得知本局游戏的童子军数量。每局游戏限一次，在夜晚时*，你可以选择任意数量的存活玩家：如果所有存活的童子军被你选中且没有选择其他玩家，你的阵营获胜。所有玩家都知道军团长在场。[至少半数镇民是童子军]",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 28,
+		"otherNight": 8,
+		"firstNightReminder": "用数字手势告诉他在场的童子军数量。黎明时告诉所有玩家军团长在场。",
+		"otherNightReminder": "军团长可以选择发动能力，如果他这么做了，他可以选择任意数量的玩家，如果他恰好选择了所有存活的童子军，立即宣布善良阵营获胜，否则标记军团长失去能力，之后的夜晚无需再唤醒军团长。",
+		"reminders": [
+			"失去能力"
+		],
+		"setup": true
+	}, {
+		"id": "7_sheshecup11b",
+		"image": "https://postimage.me/images/2024/08/01/7157a4b171f576565a3628869db44896.png",
+		"name": "童子军",
+		"team": "townsfolk",
+		"ability": "当你提名了一名存活的邪恶爪牙或你被他提名时，被提名者立即被处决。如果最后一名善良的童子军死亡，邪恶阵营获胜。[+军团长]",
+		"sch_team": "镇民",
+		"firstNight": 0,
+		"otherNight": 0,
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"reminders": [
+		],
+		"setup": true
+	}, {
+		"id": "8_sheshecup1",
+		"image": "https://postimage.me/images/2024/08/01/152830d6106b6c6c0f18d80a527bdc03.png",
+		"name": "迷沙陷阱",
+		"team": "outsider",
+		"ability": "一名镇民踏入迷沙陷阱。每个夜晚*，他顺时针的下一名存活玩家代替他踏入迷沙陷阱。在迷沙陷阱中的镇民醉酒，会产生错误信息并且被其他角色能力当做外来者。[+1镇民]",
+		"team": "outsider",
+		"sch_team": "外来者",
+		"firstNight": 0,
+		"otherNight": 1,
+		"firstNightReminder": "",
+		"otherNightReminder": "将迷沙陷阱的标记移动到顺时针的下一名存活玩家上。",
+		"reminders": [],
+		"remindersGlobal": [
+			"迷沙陷阱"
+		],
+		"setup": true
+	}, {
+		"id": "6_sheshecup",
+		"image": "https://i.postimg.cc/C18CfwKS/dnd.png",
+		"name": "宝箱怪",
+		"team": "outsider",
+		"ability": "每个夜晚，你要选择一名你未选择过的其他存活玩家，他要选择是否打开宝箱：如果他选择否，他中毒直到下个黄昏。当你死亡时，所有选择过是的善良玩家一同死亡。如果所有存活邪恶玩家都选择过是，你必然获胜，即使你已死亡。",
+		"team": "outsider",
+		"sch_team": "外来者",
+		"firstNight": 10,
+		"otherNight": 5,
+		"firstNightReminder": "唤醒宝箱怪，让他选择一名他未选择过的玩家。唤醒那名玩家，让他选择是否打开宝箱，如果他选择是，给他标记诅咒，如果他摇头，给他标记中毒。",
+		"otherNightReminder": "将中毒标记替换成已选择标记，让他选择一名他未选择过的玩家。唤醒那名玩家，让他选择是否打开宝箱，如果他选择是，给他标记诅咒，如果他摇头，给他标记中毒。",
+		"reminders": [
+			"中毒", "已选择","诅咒"
+		],
+		"remindersGlobal": [],
+		"setup": false
+	}, {
+		"id": "7_sheshecup111",
+		"image": "https://postimage.me/images/2024/08/01/bb0f9ab7566903f31ef62b1ef3c9b3fb.png",
+		"name": "鳍裔怪人",
+		"team": "outsider",
+		"ability": "与你邻近的玩家中没有死亡的善良玩家时善良阵营无法获胜，即使你已死亡。恶魔知道你在场。[仅与一名邪恶玩家邻座]",
+		"team": "outsider",
+		"sch_team": "外来者",
+		"firstNight": 9,
+		"otherNight": 0,
+		"firstNightReminder": "唤醒恶魔，告知他鳍裔怪人在场。",
+		"otherNightReminder": "",
+		"reminders": ["无法获胜"],
+		"setup": true
+	}, {
+		"id": "d0fc421d-6f44-4eec-99fc-90505973763e",
+		"image": "https://postimage.me/images/2024/08/01/eaf1217f29757fbd100ad4c7340cca34.png",
+		"edition": "custom",
+		"name": "野蛮人",
+		"ability": "在你的首个夜晚，你得知一个不在场的恶魔角色，你可能被当作该角色，当你死亡时，恶魔可以在当晚变成该角色。",
+		"team": "outsider",
+		"sch_team": "外来者",
+		"firstNightReminder": "唤醒野蛮人，告知他一个不在场的恶魔角色。",
+		"otherNightReminder": "如果野蛮人死亡，给他标记狂野之力，随后唤醒恶魔，让他选择是否变成那个不在场的恶魔角色。",
+		"firstNight": 20,
+		"otherNight": 3,
+		"reminders": [
+			"狂野之力"
+		],
+		"setup": false
+	}, {
+		"id": "d0fc421d-6f44-4eec-99fc-90505973763e1",
+		"image": "https://i.postimg.cc/j2TvSy7V/3-dnd.png",
+		"edition": "custom",
+		"name": "史莱姆",
+		"ability": "你以为你是另一个外来者，但其实你不是。当你死亡时，与你邻近的两名善良镇民之一醉酒。",
+		"team": "outsider",
+		"sch_team": "外来者",
+		"firstNight": 0,
+		"otherNight": 0,
+		"reminders": [],
+		"remindersGlobal": ["是史莱姆", "醉酒"],
+		"setup": false
+	}, {
+		"id": "28671bc486-4de3-9026-bcc540fd60df1",
+		"image": "https://postimage.me/images/2024/08/01/24de9202acd2b929d0611cfd8dacc896.png",
+		"edition": "custom",
+		"name": "附身灵",
+		"ability": "如果一名非镇民玩家死于爪牙发起的提名处决，他转变为邪恶阵营并和你交换角色。[+1外来者]",
+		"team": "minion",
+		"sch_team": "爪牙",
+		"firstNight": 0,
+		"otherNight": 13,
+		"firstNightReminder": "",
+		"otherNightReminder": "唤醒有附身标记的非镇民玩家，告诉他转变为邪恶的附身灵，然后告诉附身灵变成了那名非镇民玩家的角色。",
+		"reminders": [
+			"附身",
+			"邪恶"
+		],
+		"setup": true
+	}, {
+		"id": "15e37bab-662c-486f-9df1-90fe6b65490e1z",
+		"image": "https://postimage.me/images/2024/08/01/22f5313d704a5e13e671df76aad6fd7a.png",
+		"edition": "custom",
+		"name": "继生王爵",
+		"ability": "在你的首个夜晚，你要选择任意名玩家，你分别得知他们的角色。如果他们都死亡，你获得能力：恶魔死亡时，你变为那个恶魔。",
+		"team": "minion",
+		"sch_team": "爪牙",
+		"firstNight": 12,
+		"otherNight": 0,
+		"firstNightReminder": "让他选择任意名玩家，给他们标记目标，并告诉继生王爵每个目标玩家的角色。如果有目标标记的玩家都死亡，给继生王爵标记获得能力。",
+		"otherNightReminder": "",
+		"reminders": [
+			"目标",
+			"获得能力"
+		],
+		"remindersGlobal": [""],
+		"setup": false
+	}, {
+		"id": "10_sheshecup1",
+		"image": "https://i.postimg.cc/RC1Xbpkv/4-dnd.png",
+		"name": "死魂灵",
+		"team": "demon",
+		"ability": "在你的首个夜晚，你死亡，但依然被当做存活。如果你再次死亡，与你邻近的存活镇民之一获得你的能力。",
+		"team": "minion",
+		"sch_team": "爪牙",
+		"firstNight":11,
+		"otherNight": 0,
+		"firstNightReminder": "给死魂灵当作存活标记。",
+		"otherNightReminder": "如果白天有玩家获得死魂灵标记，给该玩家标记当作存活。",
+		"reminders": [
+			"当作存活",
+			"死魂灵"
+		],
+		"setup": false
+	},
+	{
+		"id": "3f4f7b8c-b436-4aff-8f73-dea8cd2984e2",
+		"image": "https://postimage.me/images/2024/08/01/07daeadebd9565978fa0c288af9677ab.png",
+		"edition": "custom",
+		"name": "判决者",
+		"ability": "每局游戏限一次，在夜晚时*，你可以选择两名玩家，所有玩家知道你的选择。下个白天必须处决其中一名玩家或恶魔，否则邪恶阵营获胜。如果有外来者因此被处决，你可以再次使用能力。",
+		"team": "minion",
+		"sch_team": "爪牙",
+		"firstNightReminder": "",
+		"otherNightReminder": "判决者可以选择发动能力，如果他这么做了，他要选择两名玩家标记审判，随后标记判决者已发动，之后的夜晚无需再唤醒判决者。黎明时宣布有审判标记的玩家被审判。",
+		"firstNight": 0,
+		"otherNight": 11,
+		"reminders": ["审判", "已发动"]
+	},
+	{
+		"id": "11_sheshecup1",
+		"image": "https://postimage.me/images/2024/08/01/d73c0539a61f51b6de0f8cf82a0016c1.png",
+		"name": "变幻海灵",
+		"team": "demon",
+		"ability": "每个夜晚*，最多只会有一名善良玩家因你的能力死亡。你拥有剧本中所有其他恶魔的能力。[-1爪牙]",
+		"team": "demon",
+		"sch_team": "恶魔",
+		"firstNight": 0,
+		"otherNight": 34,
+		"firstNightReminder": "",
+		"otherNightReminder": "让变幻海灵选择一名玩家。标记那名玩家死亡。",
+		"reminders": [
+			"死亡"
+		],
+		"setup": true
+	},
+	{
+		"id": "75b898b8-10b9-4103-8228-bd826e4874e511",
+		"image": "https://postimage.me/images/2024/08/01/7b3b5ae6d3a68a98bdbbaaf91109825b.png",
+		"edition": "custom",
+		"name": "奇奇默克",
+		"ability": "每个夜晚*，你要选择一名玩家：他死亡。你与最近爪牙之间的镇民玩家的能力都会产生错误信息。",
+		"team": "demon",
+		"sch_team": "恶魔",
+		"firstNight": 0,
+		"otherNight": 31,
+		"firstNightReminder": "",
+		"otherNightReminder": "让奇奇默克选择一名玩家。标记那名玩家死亡。",
+		"reminders": [
+			"死亡","错误"
+		],
+		"remindersGlobal": [],
+		"setup": false
+	},
+	{
+		"id": "12_sheshecup1",
+		"image": "https://postimage.me/images/2024/08/01/2e49d0c0ce4dde60acda5bb5db8b2e0f.png",
+		"name": "卓尔卡尼斯",
+		"team": "demon",
+		"ability": "每个夜晚*，你要选择一名玩家：他死亡。如果前两次被提名的玩家中没有邪恶阵营，你获得能力：在夜晚时*，你可以可以选择两名玩家（不能选择其他恶魔）交换角色，但每局游戏仅能交换一次。",
+		"team": "demon",
+		"sch_team": "恶魔",
+		"firstNight": 0,
+		"otherNight": 32,
+		"firstNightReminder": "",
+		"otherNightReminder": "让卓尔卡尼斯选择一名玩家。标记那名玩家死亡。如果卓尔卡尼斯有可交换标记，他可以选择发动能力，如果他这么做了，他可以选择两名其他玩家交换他们的角色。随后将可交换标记替换成限一次标记。",
+		"reminders": [
+			"死亡","可交换","限一次"
+		],
+		"remindersGlobal": [],
+		"setup": false
+	},
+	{
+		"id": "14_sheshecup1",
+		"image": "https://postimage.me/images/2024/08/01/b1f976aaba89c0ddbb98e490868f9095.png",
+		"name": "呓语之球",
+		"team": "demon",
+		"ability": "每个夜晚*，你要选择一名玩家：他死亡，与他顺时针邻近的存活善良玩家会被当作邪恶的呓语之球，直到下个黄昏。",
+		"team": "demon",
+		"sch_team": "恶魔",
+		"firstNight": 0,
+		"otherNight": 33,
+		"firstNightReminder": "",
+		"otherNightReminder": "让呓语之球选择一名玩家。给那名玩家标记死亡和当作呓语之球。",
+		"reminders": [
+			"死亡","当作呓语之球"
+		],
+		"remindersGlobal": [],
+		"setup": false
+	},
+	{
+		"id": "975f7fe7-60f2-470a-9cf7-5fc354157b861",
+		"image": "https://www.bloodstar.xyz//p//comm503//sheshebei//_sheshebei.png",
+		"edition": "custom",
+		"name": "往生者",
+		"ability": "独立阵营。每个白天限一次，你可以拜访说书人以获得一条信息。如果在游戏结束前你成功复原了魔典，你加入获胜的阵营；如果你对说书人给予的信息疯狂，你无法获胜。",
+		"team": "traveler",
+		"firstNight": 0,
+		"otherNight": 0,
+		"reminders": [
+			"小机灵鬼",
+			"就你多嘴"
+		]
+	},
+	{
+		"id": "975f7fe7-60f2-470a-9cf7-5fc354157b8611",
+		"image": "https://postimage.me/image/UVWMPV",
+		"edition": "custom",
+		"name": "冒险者",
+		"ability": "每个白天限一次：发表一个公开声明，由说书人设定一个挑战值，你进行一次1d20的判定，如果结果不小于挑战值即可成功。如果出现大失败，你被流放。",
+		"team": "traveler",
+		"firstNight": 0,
+		"otherNight": 0,
+		"reminders": [
+			"大成功",
+			"大失败"
+		]
+	},
+	{
+		"id": "975f7fe7-60f2-470a-9cf7-5fc354157b8612",
+		"image": "https://postimage.me/image/UVW7wj",
+		"edition": "custom",
+		"name": "狗头人盗贼",
+		"ability": "你不知道你的阵营。在你的首个夜晚，你得知三个善良角色。如果你是善良的，其中两个在场；如果你是邪恶的，其中两个不在场。",
+		"team": "traveler",
+		"firstNight": 1,
+		"otherNight": 0,
+		"firstNightReminder": "根据他的阵营给他展示三个善良的标记。",
+		"otherNightReminder": "",
+		"reminders": []
+	}, {
+		"id": "jinx1",
+		"image": "https://postimage.me/images/2024/08/01/2e49d0c0ce4dde60acda5bb5db8b2e0f.png",
+		"name": "卓尔卡尼斯&死魂灵",
+		"team": "a jinxed",
+		"setup": 0,
+		"ability": "如果卓尔卡尼斯交换了自己和死魂灵，死魂灵会变成存活的恶魔。"
+	}, {
+		"id": "jinx2",
+		"image": "https://postimage.me/images/2024/08/01/07daeadebd9565978fa0c288af9677ab.png",
+		"name": "判决者&童子军",
+		"team": "a jinxed",
+		"setup": 0,
+		"ability": "如果童子军因自身能力被处决，判决者能力不生效。"
+	}
+]

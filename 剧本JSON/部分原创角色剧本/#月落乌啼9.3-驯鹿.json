@@ -1,0 +1,451 @@
+[{
+        "id": "_meta",
+        "name": "月落乌啼",
+        "author": "驯鹿",
+        "logo": "https://i.postimg.cc/h42sDHdG/image.png"
+    },{
+		"ability": "每个夜晚，你要选择一名存活的玩家：你或他之一会醉酒直到下个黄昏。你不会死亡。",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/sailor.png",
+		"edition": "custom",
+		"flavor": "",
+		"id": "sailor_button",
+		"firstNightReminder": "让水手选择一名存活玩家。标记那名玩家或水手醉酒。",
+		"otherNightReminder": "让水手选择一名存活玩家。标记那名玩家或水手醉酒。",
+		"name": "水手",
+		"otherNight": 10,
+		"setup": 0,
+		"reminders": [
+			"醉酒"
+		],
+		"remindersGlobal": [],
+		"team": "townsfolk",
+		"firstNight": 6300
+	},{
+		"ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/courtier.png",
+		"edition": "custom",
+		"flavor": "",
+		"id": "courtier_button",
+		"firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+		"otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+		"name": "侍臣",
+		"otherNight": 30,
+		"setup": 0,
+		"reminders": [
+			"醉酒1",
+			"醉酒2",
+			"醉酒3",
+			"失去能力"
+		],
+		"remindersGlobal": [],
+		"team": "townsfolk",
+		"firstNight": 6320
+	},{
+        "firstNightReminder": "",
+        "firstNight": 0,
+        "otherNightReminder": "",
+        "otherNight": 0,
+        "name": "戏法师",
+        "team": "townsfolk",
+        "setup": false,
+        "reminders": [],
+        "remindersGlobal":[],
+        "ability": "每个白天限一次，你可以公开猜测谁是爪牙，谁是恶魔。如果你猜对，善良阵营获胜。",
+        "image": "https://clocktower-wiki.gstonegames.com/images/d/d6/Alsaahir.png",
+        "id": "noduck",
+        "flavor": "Duck_Town"
+    },{
+	"ability": "在你的首个夜晚，你会得知一名玩家的角色类型。每个夜晚*，你会从他的顺时针方向得知下一名非旅行者玩家的角色类型。",
+	"image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_0697822943171_0efef766.jpg",
+	"edition": "custom",
+	"flavor": "",
+	"id": "fengshuishi_button",
+	"firstNightReminder": "在首个夜晚，唤醒风水师，告知他“标记”提示标记旁的玩家角色类型，并将标记顺时针移动一名玩家。",
+	"otherNightReminder": "唤醒风水师，告知他“标记”提示标记旁的玩家角色类型，并将标记顺时针移动一名玩家。",
+	"name": "风水师",
+	"otherNight": 180,
+	"setup": 0,
+	"reminders": ["标记"],
+	"remindersGlobal": [],
+	"team": "townsfolk",
+	"firstNight": 6380
+},{
+        "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/chambermaid.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "chambermaid_button",
+        "firstNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
+        "otherNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
+        "name": "侍女",
+        "otherNight": 200,
+        "setup": 0,
+        "reminders": [],
+        "remindersGlobal": [],
+        "team": "townsfolk",
+        "firstNight": 6390,
+        "GstoneID": "chambermaid"
+    },{
+        "ability": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_7627472943171_a65c3206.jpg",
+        "edition": "custom",
+        "flavor": "",
+        "id": "shiguan_button",
+        "firstNightReminder": "",
+        "otherNightReminder": "如果死亡玩家人数大于存活玩家，唤醒史官并展示数字手势来告诉他存活镇民数量。",
+        "name": "史官",
+        "otherNight": 190,
+        "setup": 0,
+        "reminders": [],
+        "remindersGlobal": [],
+        "team": "townsfolk",
+        "firstNight": 0,
+        "GstoneID": "shiguan"
+    },{
+        "ability": "每个夜晚*，你要选择一名玩家并猜测他的角色：如果你猜错了，你会死亡。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/gambler.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "gambler_button",
+        "firstNightReminder": "",
+        "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
+        "name": "赌徒",
+        "otherNight":40,
+        "setup": 0,
+        "reminders": [
+            "死亡"
+        ],
+        "remindersGlobal": [],
+        "team": "townsfolk",
+        "firstNight": 0,
+        "GstoneID": "gambler"
+    },{
+		"ability": "在你的首个夜晚，你要选择一个数字。在该数字对应的那一个夜晚，你会得知对应数量的在场角色。",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_9290087694761_94c7b6f3.jpg",
+		"edition": "custom",
+		"flavor": "",
+		"id": "fangshi_button",
+		"firstNightReminder": "唤醒方士，让其选择一个数字，将对应数字的标记放置在方士角色标记旁边。如果他选择了1，向他展示一个在场角色的标记。",
+		"otherNightReminder": "在游戏的对应天数唤醒方士，向他展示对应数量的在场角色的标记。",
+		"name": "方士",
+		"otherNight": 170,
+		"setup": 0,
+		"reminders": [
+			"第一天",
+			"第二天",
+			"第三天",
+			"第四天",
+			"第五天",
+			"第六天"
+		],
+		"remindersGlobal": [],
+		"team": "townsfolk",
+		"firstNight":6370
+	},{
+		"ability": "每局游戏限一次，在白天时，你可以提议所有玩家观看你的演出，并从同意参加的玩家中选择你的观众。如果恶魔成为了观众，你会在当晚死亡。",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_3570909608961_efc2d989.jpg",
+		"edition": "custom",
+		"flavor": "",
+		"id": "geling_button",
+		"firstNightReminder": "",
+		"otherNightReminder": "如果歌伶在白天使用了能力，且恶魔成为了观众，标记歌伶死亡。",
+		"name": "歌伶",
+		"otherNight": 150,
+		"setup": 0,
+		"reminders": [
+			"失去能力",
+			"死亡",
+			"观众"
+		],
+		"remindersGlobal": [],
+		"team": "townsfolk",
+		"firstNight": 0
+	},{
+        "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他醉酒并死亡。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_1134823943171_5fc42e52.jpg",
+        "edition": "custom",
+        "flavor": "",
+        "id": "zhen_button",
+        "firstNightReminder": "",
+        "otherNightReminder": "唤醒鸩，让其选择一个镇民角色，如果该角色在场，在其角色标记旁放置“死亡”和“醉酒”提示标记",
+        "name": "鸩",
+        "otherNight": 130,
+        "setup": 0,
+        "reminders": [
+            "死亡",
+            "失去能力",
+            "醉酒"
+        ],
+        "team": "townsfolk",
+        "firstNight": 0,
+        "GstoneID": "zhen"
+    },{
+        "ability": "在你首次提名玩家后，你会在当晚得知他的角色。外来者会被你的能力当作爪牙或恶魔角色。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_7402377694761_cd9eb282.jpg",
+        "edition": "custom",
+        "flavor": "",
+        "id": "tixingguan_button",
+        "firstNightReminder": "",
+        "otherNightReminder": "如果提刑官在白天进行了整局游戏中他的首次提名，唤醒他并对他展示他提名的玩家的角色标记。",
+        "name": "提刑官",
+        "otherNight": 160,
+        "setup": 0,
+        "reminders": [
+            "被首次提名"
+        ],
+        "remindersGlobal": [],
+        "team": "townsfolk",
+        "firstNight": 0,
+        "GstoneID": "tixingguan"
+    },{
+        "ability": "如果与你邻近的两名存活的玩家是善良的，他们不会死亡。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/tea_lady.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "tea_lady_button",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "name": "茶艺师",
+        "otherNight": 0,
+        "setup": 0,
+        "reminders": [
+            "不会死亡"
+        ],
+        "remindersGlobal": [],
+        "team": "townsfolk",
+        "firstNight": 0,
+        "GstoneID": "tea_lady"
+    },{
+		"ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择一名玩家：你会得知他的角色。",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/ravenkeeper.png",
+		"edition": "custom",
+		"flavor": "",
+		"id": "ravenkeeper_button",
+		"firstNightReminder": "",
+		"otherNightReminder": "如果守鸦人今晚死亡，唤醒他并让他选择一名玩家。对他展示那名玩家的角色标记。",
+		"name": "守鸦人",
+		"otherNight": 140,
+		"setup": 0,
+		"reminders": [],
+		"remindersGlobal": [],
+		"team": "townsfolk",
+		"firstNight": 0
+	},{
+        "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/mutant.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "mutant_button",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "name": "畸形秀演员",
+        "otherNight": 0,
+        "setup": 0,
+        "reminders": [],
+        "remindersGlobal": [],
+        "team": "outsider",
+        "firstNight": 0,
+        "GstoneID": "mutant"
+    },{
+		"ability": "当你得知你死亡时，你要公开选择一名存活的玩家：如果他是邪恶的，你的阵营落败。",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/klutz.png",
+		"edition": "custom",
+		"flavor": "",
+		"id": "klutz",
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"name": "呆瓜",
+		"otherNight": 0,
+		"setup": 0,
+		"reminders": [],
+		"remindersGlobal": [],
+		"team": "outsider",
+		"firstNight": 0
+	},
+    {
+        "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你会在当晚转变为邪恶；如果你先死于处决，他会在当晚转变为邪恶。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_6302887694761_9ba8a0f3.jpg",
+        "edition": "custom",
+        "flavor": "",
+        "id": "nichen_button",
+        "firstNightReminder": "唤醒逆臣，让其选择一名玩家。在该玩家的角色标记旁放置“不共戴天”提示标记。",
+        "otherNightReminder": "如果逆臣或标记了“不共戴天”的玩家死于处决，唤醒两者之中的另一名玩家，告诉他变为邪恶阵营。",
+        "name": "逆臣",
+        "otherNight": 60,
+        "setup": 0,
+        "reminders": [
+            "不共戴天"
+        ],
+        "remindersGlobal": [],
+        "team": "outsider",
+        "firstNight": 6360,
+        "GstoneID": "nichen"
+    }, {
+        "ability": "如果你死亡，当晚与你邻近的存活玩家之一可能会死亡。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_0178555308961_1721ee8f.jpg",
+        "edition": "custom",
+        "flavor": "",
+        "id": "shaxing_button",
+        "firstNightReminder": "",
+        "otherNightReminder": "如果煞星死亡，将与其邻近的存活善良玩家之一标记为死亡。",
+        "name": "煞星",
+        "otherNight": 120,
+        "setup": 0,
+        "reminders": [
+            "死亡"
+        ],
+        "remindersGlobal": [],
+        "team": "outsider",
+        "firstNight": 0,
+        "GstoneID": "shaxing"
+    }, {
+        "ability": "每个夜晚，你要选择一名存活的玩家（与上个夜晚不同）：如果明天白天他被处决，他不会死亡。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/devils_advocate.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "devils_advocate_button",
+        "firstNightReminder": "让魔鬼代言人选择一名存活玩家。标记那名玩家处决不死。",
+        "otherNightReminder": "让魔鬼代言人选择一名存活玩家，不能是上一夜他选择过的玩家。标记那名玩家处决不死。",
+        "name": "魔鬼代言人",
+        "otherNight":50,
+        "setup": 0,
+        "reminders": [
+            "处决不死"
+        ],
+        "remindersGlobal": [],
+        "team": "minion",
+        "firstNight": 6330,
+        "GstoneID": "devils_advocate"
+    },{
+        "ability": "在你的首个夜晚，你要选择一名存活玩家：他死亡但会被当作存活。当他下一次死亡时，他重生，随后你重获能力。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_8796728760171_7caa0950.jpg",
+        "edition": "custom",
+        "flavor": "",
+        "id": "huapi_button",
+        "firstNightReminder": "首个夜晚，唤醒画皮，让其选择一名玩家，该玩家进入“活尸”状态。在魔典中该玩家的角色标记上添加帷幕标记，和“以为存活”标记。但不要宣布该玩家已经死亡，也不要在城镇广场上将该玩家的生命标记翻面。",
+        "otherNightReminder": "如果画皮选择的玩家重生，在画皮的角色标记旁放置“重获能力”标记。\n每个夜晚，如果画皮有“重获能力”标记，唤醒画皮，让其选择一名玩家，该玩家进入“活尸”状态。在魔典中该玩家的角色标记上添加帷幕标记，和“以为存活”标记。但不要宣布该玩家已经死亡，也不要在城镇广场上将该玩家的生命标记翻面。",
+        "name": "画皮",
+        "otherNight": 20,
+        "setup": 0,
+        "reminders": [
+            "以为存活",
+            "重获能力"
+        ],
+        "remindersGlobal": [],
+        "team": "minion",
+        "firstNight": 6310,
+        "GstoneID": "huapi"
+    },{
+        "ability": "与你邻近的两名镇民玩家会在其首次死亡时被当作仍然存活。[-1外来者]",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4215797694761_97f10b13.jpg",
+        "edition": "custom",
+        "flavor": "",
+        "id": "ganshiren_button",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "name": "赶尸人",
+        "otherNight": 0,
+        "setup": 1,
+        "reminders": [
+            "以为存活",  "以为存活"
+
+        ],
+        "remindersGlobal": [],
+        "team": "minion",
+        "firstNight": 0,
+        "GstoneID": "ganshiren"
+    },{
+		"ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/assassin.png",
+		"edition": "custom",
+		"flavor": "",
+		"id": "assassin_button",
+		"firstNightReminder": "",
+		"otherNightReminder": "刺客可以选择一名玩家。如果他这么做了，标记那名玩家死亡，且刺客失去能力，之后的夜晚无需再唤醒刺客。",
+		"name": "刺客",
+		"otherNight": 110,
+		"setup": 0,
+		"reminders": [
+			"死亡",
+			"失去能力"
+		],
+		"remindersGlobal": [],
+		"team": "minion",
+		"firstNight": 0
+	},{
+        "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果今天白天有外来者死亡，当晚改为你要选择一名玩家：他死亡，但被当作仍然存活，随后会有一名其他玩家死亡。[+1外来者]",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_3300298608961_2077dc45.jpg",
+        "edition": "custom",
+        "flavor": "",
+        "id": "qiongqi_button",
+        "firstNightReminder": "",
+        "otherNightReminder": "每个白天，如果有外来者死亡，将穷奇的“死于今日”提示标记放置到该玩家的角色标记旁。\n除了首个夜晚外的每个夜晚，唤醒穷奇，并让他指向任意一名玩家。让穷奇重新入睡。\n如果穷奇的“死于今日”提示标记未被放置，那么穷奇选择的玩家死亡，在他角色标记旁放置“死亡”提示标记。\n如果穷奇的“死于今日”提示标记已被放置，且穷奇选择的玩家当前处于存活状态，并能够成功被穷奇杀死，那么穷奇选择的玩家进入“活尸”状态。在魔典中该玩家的角色标记上添加帷幕标记，但不要在黎明时宣布该玩家已经死亡，也不要在城镇广场上将该玩家的生命标记翻面。随后，再在任意一名玩家的角色标记旁放置“死亡”提示标记。\n在黎明时，移除“死于今日”提示标记，并宣布当晚放置了穷奇的“死亡”提示标记的玩家死亡。",
+        "name": "穷奇",
+        "otherNight": 70,
+        "setup": 1,
+        "reminders": [
+            "死亡",
+            "死于今日",
+            "以为存活"
+
+        ],
+        "remindersGlobal": [],
+        "team": "demon",
+        "firstNight": 0,
+        "GstoneID": "qiongqi"
+    }, {
+        "ability": "每个夜晚*，你要选择任意数量的非旅行者玩家或一名旅行者玩家：如果他们的角色类型均不相同，他们死亡。[+1外来者]",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5897997694761_fbe1f00c.jpg",
+        "edition": "custom",
+        "flavor": "",
+        "id": "taotie_button",
+        "firstNightReminder": "",
+        "otherNightReminder": "唤醒饕餮，让其选择任意数量的玩家。如果这些玩家的角色类型均不相同，标记这些玩家死亡。",
+        "name": "饕餮",
+        "otherNight": 80,
+        "setup": 1,
+        "reminders": [
+            "死亡"
+        ],
+        "remindersGlobal": [],
+        "team": "demon",
+        "firstNight": 0,
+        "GstoneID": "taotie"
+    },{
+        "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2190498760171_1c483826.jpg",
+        "edition": "custom",
+        "flavor": "",
+        "id": "yanluo_button",
+        "firstNightReminder": "首个夜晚，唤醒阎罗并让他按自己意愿的时长来查看魔典。让阎罗选择两名玩家，分别放置“即将死亡”和“三更将死”标记在其角色图标旁。",
+        "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
+        "name": "阎罗",
+        "otherNight": 100,
+        "setup": 0,
+        "reminders": [
+            "即将死亡",
+            "三更将死"
+        ],
+        "remindersGlobal": [],
+        "team": "demon",
+        "firstNight": 6350,
+        "GstoneID": "yanluo"
+    },{
+		"ability": "每个夜晚，你要选择一至三名玩家。如果明天白天其中之一被处决，其余玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
+		"image": "https://clocktower-wiki.gstonegames.com/images/d/db/Dianyuzhang.png",
+		"edition": "custom",
+		"flavor": "",
+		"id": "dianyuzhang_button",
+		"firstNightReminder": "唤醒典狱长，让其选择至多三名玩家。在这些玩家角色标记旁放置“囚禁”提示标记。",
+		"otherNightReminder": "如果今天白天被处决的玩家标记有“囚禁”，则其他标记有囚禁的玩家死亡。否则，将其中一人标记为死亡。移除所有“囚禁”提示标记。唤醒典狱长，让其选择至多三名玩家。在这些玩家角色标记旁放置“囚禁”提示标记。",
+		"name": "典狱长",
+		"otherNight":90,
+		"setup": 0,
+		"reminders": [
+			"囚禁",
+			"死亡"
+		],
+		"remindersGlobal": [],
+		"team": "demon",
+		"firstNight": 6340
+	}]

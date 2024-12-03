@@ -1,0 +1,513 @@
+[
+    {
+        "id": "_meta",
+        "name": "残春花园",
+        "author": "烨子",
+        "logo": "https://www.bloodstar.xyz/p/Yez/nature/_meta.png",
+        "almanac": "https://www.bloodstar.xyz/p/Yez/nature/almanac.html"
+    },
+    {
+        "id": "2_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/2_nature.png",
+        "firstNightReminder": "唤醒玫瑰，为玫瑰用手势比划与他邻近的玩家的腐蚀情况的总和（0~6）。",
+        "otherNightReminder": "唤醒玫瑰，为玫瑰用手势比划与他邻近的玩家的腐蚀情况的总和（0~6）。",
+        "reminders": [
+            "+1"
+        ],
+        "setup": true,
+        "name": "玫瑰",
+        "team": "townsfolk",
+        "ability": "每个夜晚，你会得知与你邻近的存活玩家腐蚀总和。[与你邻近的两名玩家会腐蚀+1]",
+        "firstNight": 26,
+        "otherNight": 24
+    },
+    {
+        "id": "3_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/3_nature.png",
+        "firstNightReminder": "唤醒藤蔓，让他指向一名玩家，在该玩家角色标记旁放置“已选择”提示标记，然后在藤蔓的角色标记旁放置“+1”提示标记。",
+        "otherNightReminder": "唤醒藤蔓，让他指向一名玩家，在该玩家角色标记旁放置“已选择”提示标记。如果此次选择的玩家在选择前没有放置“已选择”提示标记，再为藤蔓或者该玩家角色标记旁放置“+1”提示标记。",
+        "reminders": [
+            "+1",
+            "被选择",
+            "不会死亡"
+        ],
+        "name": "藤蔓",
+        "team": "townsfolk",
+        "ability": "每个夜晚，你要选择除你以外的一名存活的玩家：如果他是善良的，你不会死亡。当你更换目标时，你们之一会腐蚀+1。",
+        "firstNight": 17,
+        "otherNight": 7
+    },
+    {
+        "id": "4_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/4_nature.png",
+        "otherNightReminder": "唤醒杂草。杂草要么摇头表示不使用能力，要么指向一名已死亡的玩家。如果该玩家是镇民，将该玩家的角色标记替换成杂草，且在角色标记旁放置“复活”提示标记。如果该玩家不是镇民，在杂草的角色标记旁放置“+2”提示标记。",
+        "reminders": [
+            "复活",
+            "失去能力",
+            "+2"
+        ],
+        "name": "杂草",
+        "team": "townsfolk",
+        "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡玩家：如果他是镇民，他复活并变成杂草；否则你会腐蚀+2。",
+        "otherNight": 15
+    },
+    {
+        "id": "5_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/5_nature.png",
+        "reminders": [
+            "+1",
+            "最高票数"
+        ],
+        "setup": true,
+        "name": "老树",
+        "team": "townsfolk",
+        "ability": "如果一项提名中所有老树都参与投票，此次提名按照最高票数统计。如果你在今天白天参与过投票，你会腐蚀+1。[+0~2老树]"
+    },
+    {
+        "id": "6_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/6_nature.png",
+        "firstNightReminder": "唤醒苔藓，根据他的腐蚀程度指向一名玩家。",
+        "otherNightReminder": "唤醒苔藓，根据他的腐蚀程度指向一名玩家。",
+        "name": "苔藓",
+        "team": "townsfolk",
+        "ability": "每个夜晚，你会得知一名玩家：如果你的腐蚀为0，得知镇民；为1，得知外来者；为2，得知爪牙；为3，得知恶魔。（或者得知没有对应的玩家在场）",
+        "firstNight": 27,
+        "otherNight": 25
+    },
+    {
+        "id": "7_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/7_nature.png",
+        "firstNightReminder": "唤醒向日葵，让他指向一名玩家，在该玩家的角色标记旁放置“保护”提示标记。",
+        "otherNightReminder": "唤醒向日葵，让他指向一名玩家，在该玩家的角色标记旁放置“保护”提示标记。",
+        "reminders": [
+            "保护"
+        ],
+        "name": "向日葵",
+        "team": "townsfolk",
+        "ability": "每个夜晚，你要选择一名玩家：他的腐蚀情况不会变化直到下个黄昏。",
+        "firstNight": 14,
+        "otherNight": 3
+    },
+    {
+        "id": "17_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/17_nature.png",
+        "firstNightReminder": "唤醒蒲公英，给他展示任意一名“变成恶魔”玩家的角色标记。",
+        "otherNightReminder": "唤醒蒲公英，给他展示任意一名“变成恶魔”玩家的角色标记。",
+        "reminders": [
+            "得知"
+        ],
+        "name": "蒲公英",
+        "team": "townsfolk",
+        "ability": "如果今晚有人变成恶魔，你会知道其中一个恶魔角色。",
+        "firstNight": 25,
+        "otherNight": 23
+    },
+    {
+        "id": "20_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/20_nature.png",
+        "firstNightReminder": "唤醒水草，为他展示一名“已得知”玩家的角色标记并指向该玩家，如果该玩家不是爪牙，则改为展示一个不在场爪牙的角色标记。共执行四次。",
+        "otherNightReminder": "如果有一名“已得知”的玩家死亡，在水草的角色标记旁放置“+1”提示标记。",
+        "reminders": [
+            "得知",
+            "+1"
+        ],
+        "name": "水草",
+        "team": "townsfolk",
+        "ability": "在你的首个夜晚，你会得知四名玩家以及对应的爪牙角色：其中得知正确信息的数量与爪牙数量一致。当他们中有人死亡时，你会+1腐蚀。",
+        "firstNight": 28,
+        "otherNight": 14
+    },
+    {
+        "id": "21_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/21_nature.png",
+        "reminders": [
+            "+2"
+        ],
+        "name": "仙人掌",
+        "team": "townsfolk",
+        "ability": "每个白天限一次，你可以公开选择一名玩家：如果他是恶魔，他死亡；否则你会腐蚀+2。"
+    },
+    {
+        "id": "23_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/23_nature.png",
+        "firstNightReminder": "在荷花的角色标记旁放置“第一天”提示标记。",
+        "otherNightReminder": "将荷花的标记替换到下一天。如果替换到“第四天”提示标记，在一名邪恶恶魔的角色标记旁放置“善良”角色标记。如果荷花在夜晚死亡，把所有善良玩家角色标记旁的腐蚀提示标记全部移除。",
+        "reminders": [
+            "所有善良为0",
+            "善良",
+            "第一夜晚",
+            "第二夜晚",
+            "第三夜晚"
+        ],
+        "setup": true,
+        "name": "荷花",
+        "team": "townsfolk",
+        "ability": "在你的第四个夜晚，如果有爪牙存活，一名邪恶的恶魔会转变为善良阵营。如果你在夜晚死亡，所有善良玩家的腐蚀都会变成0。[+1恶魔]",
+        "firstNight": 11,
+        "otherNight": 2
+    },
+    {
+        "id": "25_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/25_nature.png",
+        "name": "紫荆花",
+        "team": "townsfolk",
+        "ability": "每个白天限一次，在提名开始前，你可以公开猜测所有玩家的腐蚀情况总和，如果你猜对，你的阵营获胜。"
+    },
+    {
+        "id": "26_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/26_nature.png",
+        "otherNightReminder": "唤醒棉花，为棉花用手势比划“提名者”玩家的腐蚀情况（0、1、2或3）。",
+        "reminders": [
+            "-1",
+            "+2",
+            "提名者"
+        ],
+        "name": "棉花",
+        "team": "townsfolk",
+        "ability": "如果提名你的玩家是镇民：他会腐蚀-1，否则你会腐蚀+2。你会在当晚得知他的腐蚀情况。",
+        "otherNight": 26
+    },
+    {
+        "id": "27_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/27_nature.png",
+        "setup": true,
+        "name": "四叶草",
+        "team": "townsfolk",
+        "ability": "你不会转变为其他角色。说书人可以更改任意数量玩家的腐蚀。小于三名玩家存活时，说书人单独获胜；善良玩家和邪恶玩家的胜利条件改为说书人被处决，即使你已经死亡。[无爪牙在场，+或-任意数量外来者]"
+    },
+    {
+        "id": "33_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/33_nature.png",
+        "otherNightReminder": "唤醒彼岸花，让他指向一名玩家，在该角色的旁边放置“永生”标记。",
+        "reminders": [
+            "永生",
+            "死亡"
+        ],
+        "name": "彼岸花",
+        "team": "townsfolk",
+        "ability": "每个夜晚*，你可以选择一名玩家：你或他之一死亡，因你能力死亡的玩家会保留能力（除你以外）。(测试中，在开始前需说书人宣布此角色是否可能加入游戏)",
+        "otherNight": 13
+    },
+    {
+        "id": "8_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/8_nature.png",
+        "firstNightReminder": "如果岩石有腐蚀提示标记，将腐蚀提示标记移除，在与岩石邻近的存活的玩家的角色标记旁放置“+1”提示标记。",
+        "otherNightReminder": "如果岩石有腐蚀提示标记，将腐蚀提示标记移除，在与岩石邻近的存活的玩家的角色标记旁放置“+1”提示标记。",
+        "reminders": [
+            "+1"
+        ],
+        "name": "岩石",
+        "team": "outsider",
+        "ability": "如果你的腐蚀大于0，当晚与你邻近存活的玩家会腐蚀+1，你的腐蚀变为0。",
+        "firstNight": 22,
+        "otherNight": 20
+    },
+    {
+        "id": "9_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/9_nature.png",
+        "otherNightReminder": "在“是蘑菇”玩家的角色标记旁放置“+1”提示标记。",
+        "remindersGlobal": [
+            "是蘑菇",
+            "+1"
+        ],
+        "setup": true,
+        "name": "蘑菇",
+        "team": "outsider",
+        "ability": "你以为你是一个镇民角色或一个邪恶的恶魔角色，但其实你不是。每个夜晚*，你会腐蚀+1。",
+        "otherNight": 8
+    },
+    {
+        "id": "15_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/15_nature.png",
+        "firstNightReminder": "在恶土的角色标记旁放置“+2”和\"第一个白天\"提示标记。",
+        "otherNightReminder": "将恶土的标记替换到下一天，如果恶土的角色标记替换到“第四个白天”，将恶土的角色标记替换为一个不在场的爪牙提示标记，然后唤醒他，给他展示该爪牙角色标记。随后，唤醒一名善良玩家，为他展示“他的能力对你生效“信息标记和恶土角色标记。",
+        "reminders": [
+            "+2",
+            "得知",
+            "第一个白天",
+            "第二个白天",
+            "第三个白天",
+            "第四个白天"
+        ],
+        "name": "恶土",
+        "team": "outsider",
+        "ability": "在你的首个夜晚，你会腐蚀+2。在第三个白天结束时，你变成一名不在场的邪恶爪牙，但会有一名善良玩家得知你的能力被触发。",
+        "firstNight": 13,
+        "otherNight": 4
+    },
+    {
+        "id": "16_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/16_nature.png",
+        "firstNightReminder": "在一名玩家的角色标记旁放置“益虫”提示标记和“+1”提示标记，然后唤醒该玩家，为他展示“他的能力对你生效”信息标记和益虫角色标记。",
+        "otherNightReminder": "将有“益虫”提示标记放置的玩家的腐蚀标记移除，在一名玩家的角色标记旁放置“益虫”提示标记和“+1”提示标记，然后唤醒该玩家，为他展示“他的能力对你生效”信息标记和益虫角色标记。",
+        "remindersGlobal": [
+            "+1",
+            "益虫",
+            "脱离"
+        ],
+        "setup": true,
+        "name": "益虫",
+        "team": "outsider",
+        "ability": "每个夜晚，一名存活玩家会得知自己获得益虫且腐蚀+1。失去益虫的玩家腐蚀会变成0。[+1镇民]",
+        "firstNight": 18,
+        "otherNight": 16
+    },
+    {
+        "id": "11_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/11_nature.png",
+        "firstNightReminder": "唤醒害虫，让他指向一名玩家，在他的角色标记旁放置“+1”提示标记，如果他与害虫邻近，“+1”标记替换成“+2”标记。",
+        "otherNightReminder": "唤醒害虫，让他指向一名玩家，在他的角色标记旁放置“+1”提示标记，如果他与害虫邻近，“+1”标记替换成“+2”标记。",
+        "reminders": [
+            "+2",
+            "+1"
+        ],
+        "name": "害虫",
+        "team": "minion",
+        "ability": "每个夜晚，你要选择一名玩家：他腐蚀+1；如果你选择了邻近的存活玩家，他腐蚀+2。",
+        "firstNight": 15,
+        "otherNight": 6
+    },
+    {
+        "id": "12_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/12_nature.png",
+        "firstNightReminder": "唤醒浮游生物，让他查看魔典并指向一名玩家，在该玩家的角色标记旁放置“生长”提示标记。在带有“生长”提示标记的角色旁放置“+1”提示标记。如果带有“生长”提示标记的角色当晚变成了恶魔或者死亡，与他邻近的玩家角色旁放置“+2”标记并移除“生长”提示标记，唤醒浮游生物，让他查看魔典并指向一名玩家，在该玩家的角色标记旁放置“生长”提示标记。",
+        "otherNightReminder": "在带有“生长”提示标记的角色旁放置“+1”提示标记。如果带有“生长”提示标记的角色当晚变成了恶魔或者死亡，与他邻近的玩家角色旁放置“+2”标记并移除“生长”提示标记，唤醒浮游生物，让他查看魔典并指向一名玩家，在该玩家的角色标记旁放置“生长”提示标记。",
+        "reminders": [
+            "生长",
+            "+1",
+            "+2"
+        ],
+        "name": "浮游生物",
+        "team": "minion",
+        "ability": "在你的首个夜晚，你能查看魔典并选择一名非恶魔的存活玩家，每个夜晚，他腐蚀+1；如果他变成恶魔或者死亡，与他邻近的玩家会腐蚀+2，你重新获得能力。",
+        "firstNight": 21,
+        "otherNight": 19
+    },
+    {
+        "id": "19_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/19_nature.png",
+        "firstNightReminder": "在腐植的角色标记旁放置“+1”提示标记。",
+        "otherNightReminder": "在腐植的角色标记旁放置“+1”提示标记。如果腐植的腐蚀程度大于2，唤醒腐植，让他选择一个不在场的恶魔角色和一名玩家，让他重新入睡。随后用该恶魔角色标记替换腐植角色标记，用腐植角色标记替换该玩家的角色标记，唤醒该玩家，为他展示“他的能力对你生效”信息标记和腐植角色标记，用大拇指向下表示他转变为邪恶阵营。",
+        "reminders": [
+            "仅一次",
+            "+1"
+        ],
+        "name": "腐植",
+        "team": "minion",
+        "ability": "每个夜晚，你会腐蚀+1。如果你的腐蚀大于2，在当晚你要选择一个不在场的恶魔角色和一个玩家：你变成该恶魔，他变成邪恶的腐植，但每局游戏仅能成功转化一次。",
+        "firstNight": 16,
+        "otherNight": 5
+    },
+    {
+        "id": "24_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/24_nature.png",
+        "firstNightReminder": "在所有外来者角色旁放置“吸收”标记，随后将带有“吸收”标记角色的“腐蚀”标记移动至毒菌旁边。如果毒菌有“腐蚀3”标记时又添加了“腐蚀”标记，随后唤醒毒菌并让其指向一名镇民角色，并给那名镇民角色放置“孢子”标记；如果选择的镇民角色在场，则移除毒菌所有“腐蚀”标记。",
+        "otherNightReminder": "在所有外来者角色旁放置“吸收”标记，随后将带有“吸收”标记角色的“腐蚀”标记移动至毒菌旁边。如果毒菌有“腐蚀3”标记时又添加了“腐蚀”标记，随后唤醒毒菌并让其指向一名镇民角色，并给那名镇民角色放置“孢子”标记；如果选择的镇民角色在场，则移除毒菌所有“腐蚀”标记。如果毒菌死亡，将所有的“孢子”标记替换成“+3”标记，移除所有“吸收”标记。",
+        "reminders": [
+            "+3",
+            "+1",
+            "吸收",
+            "孢子"
+        ],
+        "setup": true,
+        "name": "毒菌",
+        "team": "minion",
+        "ability": "所有外来者的腐蚀始终转移至你。如果你的腐蚀大于3，当晚你要选择一名镇民角色：如果他在场，他腐蚀+1，你的腐蚀变为0。如果你死亡，你选择过的所有镇民都会腐蚀+3。[+1~2外来者]",
+        "firstNight": 20,
+        "otherNight": 18
+    },
+    {
+        "id": "1_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/1_nature.png",
+        "otherNightReminder": "唤醒朽木，让他指向一名存活玩家，如果他的腐蚀没超过3，随后，在该玩家角色标记旁放置“枯萎”提示标记；如果他的腐蚀超过3，他死亡。",
+        "reminders": [
+            "枯萎",
+            "死亡"
+        ],
+        "setup": true,
+        "name": "朽木",
+        "team": "demon",
+        "ability": "每个夜晚*，你要选择一名存活玩家：如果他枯萎，他死亡；反之，他腐蚀+3，随后，如果他的腐蚀超过3时，他死亡；否则，他枯萎。",
+        "otherNight": 10
+    },
+    {
+        "id": "10_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/10_nature.png",
+        "otherNightReminder": "唤醒腐化荆棘，让他指向一名玩家，共计两次，在这些玩家的角色标记旁放置“-1”提示标记。随后，标记这些玩家中腐蚀程度为0的人死亡。",
+        "reminders": [
+            "-1",
+            "死亡"
+        ],
+        "setup": true,
+        "name": "腐化荆棘",
+        "team": "demon",
+        "ability": "每个夜晚*，你要行动两次，每次选择一名存活玩家：他会腐蚀-1；随后，如果他的腐蚀程度为0，他死亡。",
+        "otherNight": 11
+    },
+    {
+        "id": "22_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/22_nature.png",
+        "reminders": [
+            "+2"
+        ],
+        "setup": true,
+        "name": "腐尸花",
+        "team": "demon",
+        "ability": "每个白天，在提名开始前，你可以公开选择一名玩家：他死亡。提名你的玩家会腐蚀+2。当你被处决时，如果提名你的玩家腐蚀大于3，你不会死亡。"
+    },
+    {
+        "id": "18_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/18_nature.png",
+        "firstNightReminder": "在所有恶魔角色旁边放置“枯萎”标记",
+        "otherNightReminder": "由说书人决定，让哪一名玩家死亡。",
+        "reminders": [
+            "枯萎",
+            "死亡"
+        ],
+        "setup": true,
+        "name": "黑玫瑰",
+        "team": "demon",
+        "ability": "对调胜负结果，即使你已死亡。每个夜晚*，可能会有一名除你以外的玩家死亡。所有恶魔枯萎。[镇民无法变成该恶魔]",
+        "firstNight": 12,
+        "otherNight": 12
+    },
+    {
+        "id": "32_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/32_nature.png",
+        "otherNightReminder": "在有“是蘑菇”标记的角色旁边放置“+1”标记。",
+        "name": "蘑菇",
+        "team": "fabled",
+        "ability": "如有蘑菇在场，说书人需要在当前顺位使蘑菇腐蚀+1。(为方便说书人按需加入)",
+        "otherNight": 9
+    },
+    {
+        "id": "28_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/28_nature.png",
+        "firstNightReminder": "在一名玩家的角色标记旁放置“益虫”提示标记和“+1”提示标记，然后唤醒该玩家，为他展示“他的能力对你生效”信息标记和益虫角色标记。",
+        "otherNightReminder": "将有“益虫”提示标记放置的玩家的腐蚀标记移除，在一名玩家的角色标记旁放置“益虫”提示标记和“+1”提示标记，然后唤醒该玩家，为他展示“他的能力对你生效”信息标记和益虫角色标记。",
+        "name": "益虫",
+        "team": "fabled",
+        "ability": "如有益虫在场，说书人需要在当前调整益虫转移。(为方便说书人按需加入)",
+        "firstNight": 19,
+        "otherNight": 17
+    },
+    {
+        "id": "_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/_nature.png",
+        "firstNightReminder": "检查所有玩家的腐蚀标记替换成对应的腐蚀程度。如果有人的腐蚀程度大于3，将他的角色标记替换成一个不在场的恶魔角色标记，唤醒该玩家，为他展示“你是”信息标记和该恶魔角色标记，用大拇指向下表示他转变为邪恶阵营。如果没有可以替换的恶魔角色标记，标记该玩家死亡。",
+        "otherNightReminder": "检查所有玩家的腐蚀标记替换成对应的腐蚀程度。如果有人的腐蚀程度大于3，将他的角色标记替换成一个不在场的恶魔角色标记，唤醒该玩家，为他展示“你是”信息标记和该恶魔角色标记，用大拇指向下表示他转变为邪恶阵营。如果没有可以替换的恶魔角色标记，标记该玩家死亡。",
+        "reminders": [
+            "枯萎"
+        ],
+        "name": "腐蚀",
+        "team": "fabled",
+        "ability": "腐蚀程度初始为0，最低为0。腐蚀程度大于3的玩家会在夜晚时变成不在场的邪恶恶魔，没能成功变成恶魔的玩家会枯萎。死亡玩家、恶魔和旅行者腐蚀程度始终为0",
+        "firstNight": 23,
+        "otherNight": 21
+    },
+    {
+        "id": "14_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/14_nature.png",
+        "firstNightReminder": "整合调整角色腐蚀标签",
+        "otherNightReminder": "整合调整角色腐蚀标签",
+        "name": "前夕",
+        "team": "fabled",
+        "ability": "说书人要在这个时候整合腐蚀标签。(为方便说书人按需加入)",
+        "firstNight": 24,
+        "otherNight": 22
+    },
+    {
+        "id": "13_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/13_nature.png",
+        "firstNightReminder": "在魔典中央放置“第一天”提示标记。",
+        "otherNightReminder": "将护林员的标记替换到下一天。如果替换到“第六天”提示标记，且没有恶魔在场，向所有玩家公开声明说书人获胜。",
+        "reminders": [
+            "第一天",
+            "第二天",
+            "第三天",
+            "第四天",
+            "第五天",
+            "第六天"
+        ],
+        "name": "护林员",
+        "team": "fabled",
+        "ability": "在初始设置时不会有恶魔。爪牙会获得恶魔伪装。如果没有恶魔在场：1）善良玩家无法胜利；2）第五天结束时，说书人单独获胜。",
+        "firstNight": 29,
+        "otherNight": 27
+    },
+    {
+        "id": "34_nature",
+        "name": "枯萎",
+        "team": "fabled",
+        "ability": "你的腐蚀始终为0。一项提名中，每存在一名处于“枯萎”的玩家参与投票，统计后的总票数-1。"
+    },
+    {
+        "id": "29_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/29_nature.png",
+        "name": "风滚草",
+        "team": "traveller",
+        "ability": "在白天时，你可以与多名玩家交换座位，但需要对方同意。"
+    },
+    {
+        "id": "30_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/30_nature.png",
+        "reminders": [
+            "枯萎"
+        ],
+        "name": "蚂蚁",
+        "team": "traveller",
+        "ability": "始终存在一名与你阵营不同的玩家：他枯萎。"
+    },
+    {
+        "id": "31_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/31_nature.png",
+        "reminders": [
+            "0票",
+            "1票",
+            "2票",
+            "3票"
+        ],
+        "name": "落叶",
+        "team": "traveller",
+        "ability": "如果有玩家死亡，他的投票标记的票数算作他死亡时的腐蚀情况（最大为三票）。"
+    },
+    {
+        "id": "35_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/35_nature.png",
+        "reminders": [
+            "Ⅰ"
+        ],
+        "remindersGlobal": [
+            "Ⅰ"
+        ],
+        "name": "轻度腐蚀",
+        "team": "fabled",
+        "ability": "腐蚀为1"
+    },
+    {
+        "id": "36_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/36_nature.png",
+        "reminders": [
+            "Ⅱ"
+        ],
+        "remindersGlobal": [
+            "Ⅱ"
+        ],
+        "name": "较多腐蚀",
+        "team": "fabled",
+        "ability": "腐蚀为2"
+    },
+    {
+        "id": "37_nature",
+        "image": "https://www.bloodstar.xyz/p/Yez/nature/37_nature.png",
+        "reminders": [
+            "Ⅲ"
+        ],
+        "remindersGlobal": [
+            "Ⅲ"
+        ],
+        "name": "严重腐蚀",
+        "team": "fabled",
+        "ability": "腐蚀为3"
+    }
+]

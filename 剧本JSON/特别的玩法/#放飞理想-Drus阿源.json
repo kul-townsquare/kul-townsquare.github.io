@@ -1,0 +1,78 @@
+[
+    {
+        "id": "_meta",
+        "name": "放飞理想",
+        "author": "阿源",
+        "logo": "https://www.bloodstar.xyz/p/Drus/5GMXJ/_meta.png",
+        "almanac": "https://www.bloodstar.xyz/p/Drus/5GMXJ/almanac.html"
+    },
+    {
+        "id": "_5gmxj",
+        "image": "https://www.bloodstar.xyz/p/Drus/5GMXJ/_5gmxj.png",
+        "reminders": [
+            "醉酒"
+        ],
+        "name": "白日梦想家",
+        "team": "townsfolk",
+        "ability": "你的能力是如果…，那么…。在你的首个白天拜访并告知说书人“那么”，说书人会告知你能力的“如果”。",
+        "flavor": "“我有一个梦想”"
+    },
+    {
+        "id": "1_5gmxj",
+        "image": "https://www.bloodstar.xyz/p/Drus/5GMXJ/1_5gmxj.png",
+        "reminders": [
+            "醉酒"
+        ],
+        "name": "失去梦想家",
+        "team": "outsider",
+        "ability": "你的能力是如果…，那么…。在你的首个白天拜访并告知说书人“如果”，说书人会告知你能力的“那么”。",
+        "flavor": "“如果我可以有一个梦想...”"
+    },
+    {
+        "id": "2_5gmxj",
+        "image": "https://www.bloodstar.xyz/p/Drus/5GMXJ/2_5gmxj.png",
+        "reminders": [
+            "中毒"
+        ],
+        "name": "氪金梦想家",
+        "team": "minion",
+        "ability": "你的“如果”会更加容易。 你的能力是如果…，那么…。在你的首个白天拜访并告知说书人“那么”，说书人会告知你能力的“如果”。",
+        "flavor": "“氪！”"
+    },
+    {
+        "id": "3_5gmxj",
+        "image": "https://www.bloodstar.xyz/p/Drus/5GMXJ/3_5gmxj.png",
+        "reminders": [
+            "中毒",
+            "死亡"
+        ],
+        "name": "扼杀梦想家",
+        "team": "demon",
+        "ability": "每个夜晚*，选择一名玩家：他死亡。 你的能力是如果…，那么…。在你的首个白天拜访并告知说书人“那么”，说书人会告知你能力的“如果”。",
+        "flavor": "“你清醒一点！”"
+    },
+    {
+        "id": "4_5gmxj",
+        "image": "https://www.bloodstar.xyz/p/Drus/5GMXJ/4_5gmxj.png",
+        "name": "云端筑梦师",
+        "team": "fabled",
+        "ability": "说书人每天会宣布一名随机玩家的如果或那么，顺序会从说书人认为最不可告人的梦想开始。",
+        "flavor": "“WHAT IF... !?”"
+    },
+    {
+        "id": "5_5gmxj",
+        "image": "https://www.bloodstar.xyz/p/Drus/5GMXJ/5_5gmxj.png",
+        "setup": true,
+        "name": "哨兵",
+        "team": "fabled",
+        "ability": "在初始设置时，可能会额外增加或减少一个外来者。"
+    },
+    {
+        "id": "6_5gmxj",
+        "image": "https://www.bloodstar.xyz/p/Drus/5GMXJ/6_5gmxj.png",
+        "name": "冒险家",
+        "team": "traveler",
+        "ability": "你拥有一枚20面骰。每个白天限一次：发表一个公开声明并由说书人设定一个20内的挑战值，如果投出的结果不小于挑战值：即可成功。",
+        "flavor": "“大成功！”"
+    }
+]
