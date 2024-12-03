@@ -30,8 +30,8 @@
       :class="{ closed: !isBluffsOpen }"
     >
       <h5>
-        <span v-if="session.isSpectator">其他角色</span>
-        <span v-else>恶魔的伪装角色</span>
+        <span v-if="session.isSpectator">恶魔的伪装</span>
+        <span v-else>恶魔的伪装</span>
         <font-awesome-icon
           icon="times-circle"
           v-if="isBluffsOpen"
