@@ -29,24 +29,22 @@
       </ul>
     </div>
     <div class="custom" v-else>
-      <h3>Load custom script / characters</h3>
-      To play with a custom script, you need to select the characters you want
-      to play with in the official
+      <h3>加载自定义脚本/角色</h3>
+      要使用自定义脚本进行游戏，您需要在官方中选择您想要玩的角色
       <a href="https://script.bloodontheclocktower.com/" target="_blank"
-        >Script Tool</a
+        >脚本工具</a
       >
-      and then upload the generated "custom-list.json" either directly here or
-      provide a URL to such a hosted JSON file.<br />
+      然后直接在此处上传生成的“custom-list.json”或提供此类托管 JSON 文件的 URL。<br />
       <br />
-      To play with custom characters, please read
+      要使用自定义角色，请阅读
       <a
         href="https://github.com/bra1n/townsquare#custom-characters"
         target="_blank"
-        >the documentation</a
+        >这个文件</a
       >
-      on how to write a custom character definition file.
-      <b>Only load custom JSON files from sources that you trust!</b>
-      <h3>Some popular custom scripts:</h3>
+      ，它是关于如何编写自定义字符定义文件。
+      <b>仅从您信任的来源加载自定义 JSON 文件！</b>
+      <h3>一些流行的自定义脚本：</h3>
       <ul class="scripts">
         <li
           v-for="(script, index) in scripts"
@@ -64,16 +62,16 @@
       />
       <div class="button-group">
         <div class="button" @click="openUpload">
-          <font-awesome-icon icon="file-upload" /> Upload JSON
+          <font-awesome-icon icon="file-upload" /> 上传 JSON
         </div>
         <div class="button" @click="promptURL">
-          <font-awesome-icon icon="link" /> Enter URL
+          <font-awesome-icon icon="link" /> 输入网址
         </div>
         <div class="button" @click="readFromClipboard">
-          <font-awesome-icon icon="clipboard" /> Use JSON from Clipboard
+          <font-awesome-icon icon="clipboard" /> 使用剪贴板中的 JSON
         </div>
         <div class="button" @click="isCustom = false">
-          <font-awesome-icon icon="undo" /> Back
+          <font-awesome-icon icon="undo" /> 返回
         </div>
       </div>
     </div>
