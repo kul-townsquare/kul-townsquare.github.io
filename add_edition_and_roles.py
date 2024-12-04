@@ -30,8 +30,8 @@ def generate_script_summary(input_file):
         raise ValueError("No script metadata found with `id` set to `_meta`.")
 
     # 将角色列表添加到剧本信息
-    script_info["roles"] = [role["name"] for role in roles]
-    # script_info["roles"] = [role["id"] for role in roles]
+    # script_info["roles"] = [role["name"] for role in roles]
+    script_info["roles"] = [role["id"] for role in roles]
 
     return script_info, roles
 
@@ -57,15 +57,15 @@ def add_to_database(input_file, editions_file, roles_file):
     # 读取 roles.json
     with open(roles_file, 'r+', encoding='utf-8') as roles_file_obj:
         roles_data = json.load(roles_file_obj)
-        existing_roles = {role['name'] for role in roles_data}
+        existing_roles = {role['id'] for role in roles_data}
 
         # 找出需要添加的新角色
-        roles_to_add = [role for role in new_roles if role["name"] not in existing_roles]
+        roles_to_add = [role for role in new_roles if role["id"] not in existing_roles]
         print("New roles to add:", [role["name"] for role in roles_to_add])
 
         # 添加新角色到 roles.json
-        for role in roles_to_add:
-            role["id"] = role["name"]
+        # for role in roles_to_add:
+        #     role["id"] = role["name"]
         roles_data.extend(roles_to_add)
 
         # 保存更新的 roles.json
