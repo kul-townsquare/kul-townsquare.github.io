@@ -31,6 +31,7 @@ def generate_script_summary(input_file):
 
     # 将角色列表添加到剧本信息
     script_info["roles"] = [role["name"] for role in roles]
+    # script_info["roles"] = [role["id"] for role in roles]
 
     return script_info, roles
 

@@ -11,13 +11,22 @@ def download_images_from_roles(roles_file, output_dir):
         roles = json.load(file)
 
     for role in roles:
+        role_id = role.get("id")
         role_name = role.get("name")
         image_url = role.get("image")
+
+        # 拼接本地文件路径
+        output_file = os.path.join(output_dir, f"{role_id}.png")
+
+        # 检查是否已经存在文件
+        if os.path.exists(output_file):
+            print(f"Skipping: {role_id}, file already exists.")
+            continue
 
         # 检查是否是 HTTPS 链接
         if image_url and image_url.startswith("https://"):
             # 拼接文件路径
-            output_file = os.path.join(output_dir, f"{role_name}.png")
+            output_file = os.path.join(output_dir, f"{role_id}.png")
 
             # 下载图片
             try:
