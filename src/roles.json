@@ -283,10 +283,10 @@
         "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/soldier.png",
         "edition": "custom",
         "flavor": "",
-        "id": "士兵*",
+        "id": "士兵",
         "firstNightReminder": "",
         "otherNightReminder": "",
-        "name": "士兵*",
+        "name": "士兵",
         "otherNight": 0,
         "setup": 0,
         "reminders": [],

@@ -183,15 +183,16 @@
         <span
           class="icon"
           :style="{
-            backgroundImage: `url(${
-              reminder.image && grimoire.isImageOptIn
-                ? reminder.image
-                : require(
-                    '../assets/icons/' +
-                      (reminder.imageAlt || reminder.role) +
-                      '.png',
-                  )
-            })`,
+            // backgroundImage: `url(${
+            //   reminder.image && grimoire.isImageOptIn
+            //     ? reminder.image
+            //     : require(
+            //         '../assets/icons/' +
+            //           (reminder.imageAlt || reminder.role) +
+            //           '.png',
+            //       )
+            // })`,
+            backgroundImage: `url(${require('@/assets/icons/' + reminder.role + '.png')})`
           }"
         ></span>
         <span class="text">{{ reminder.name }}</span>

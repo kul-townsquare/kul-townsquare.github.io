@@ -4,11 +4,12 @@
       class="icon"
       v-if="role.id"
       :style="{
-        backgroundImage: `url(${
-          role.image && grimoire.isImageOptIn
-            ? role.image
-            : require('../assets/icons/' + (role.imageAlt || role.id) + '.png')
-        })`
+        // backgroundImage: `url(${
+          // role.image && grimoire.isImageOptIn
+            // ? role.image
+            // : require('../assets/icons/' + (role.imageAlt || role.id) + '.png')
+        // })`
+        backgroundImage: `url(${require('@/assets/icons/' + role.id + '.png')})`
       }"
     ></span>
     <span
