@@ -1,0 +1,207 @@
+[
+    {
+        "id": "_meta",
+        "name": "残阳高照",
+        "logo": "https://www.helloimg.com/i/2024/11/11/6731f6dc3fe82.png",
+        "author":"夜雀",
+        "description": "残阳高照",
+        "townsfolkName": "镇民",
+        "outsidersName": "外来者",
+        "minionsName": "爪牙",
+        "demonsName": "恶魔",
+        "townsfolk": "镇民",
+        "outsider": "外来者",
+        "minion": "爪牙",
+        "demon": "恶魔",
+        "a jinxedName": "相克",
+        "a jinxed": "相克"
+    },
+    {
+        "id": "xinjide111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/alchemist.png",
+        "edition": "custom",
+        "name": "炼金术士",
+        "ability": "你拥有一个不在场的爪牙角色的能力。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 3.3,
+        "otherNight": 0,
+        "firstNightReminder": "唤醒炼金术士，对他展示他获得的能力所对应的爪牙角色标记。",
+        "remindersGlobal": [
+            "是炼金术士"
+        ],
+        "setup": true
+    },
+    {
+        "id": "wanizufen111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
+        "edition": "custom",
+        "name": "送葬者",
+        "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 83,
+        "firstNightReminder": "",
+        "otherNightReminder": "如果今天白天有玩家死于处决，唤醒送葬者，对他展示那名玩家的角色标记。",
+        "reminders": [
+            "死于今日"
+        ],
+        "setup": false
+    },
+    {
+        "id": "xiongdinihaoxiang111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/flowergirl.png",
+        "edition": "custom",
+        "name": "卖花女孩",
+        "ability": "每个夜晚*，你会得知在今天白天时是否有恶魔投过票。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 85,
+        "firstNightReminder": "",
+        "otherNightReminder": "唤醒卖花女孩，以点头或摇头告知她今天白天是否有恶魔参与投票。",
+        "reminders": [
+            "恶魔未投票",
+            "恶魔已投票"
+        ],
+        "setup": false
+    },
+    {
+        "id": "gongwenbaozaren111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/exorcist.png",
+        "edition": "custom",
+        "name": "驱魔人",
+        "ability": "每个夜晚*，你要选择一名玩家（与上个夜晚不同）：如果你选中了恶魔，他会得知你的角色，但他当晚不会因其自身能力而被唤醒。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 29,
+        "firstNightReminder": "",
+        "otherNightReminder": "唤醒驱魔人，让他选择一名与上一晚不同的玩家。如果他选中了恶魔，则在驱魔人入睡后通知该恶魔谁是驱魔人。",
+        "reminders": [
+            "被选择"
+        ],
+        "setup": false
+    },
+    {
+        "id": "buhaohe111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/tea_lady.png",
+        "edition": "custom",
+        "name": "茶艺师",
+        "ability": "如果与你邻近的两名存活的玩家是善良的，他们不会死亡。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "不会死亡"
+        ],
+        "setup": false
+    },
+    {
+        "id": "hahaxiaochou111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fool.png",
+        "edition": "custom",
+        "name": "弄臣",
+        "ability": "当你首次将要死亡时，你不会死亡。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "失去能力"
+        ],
+        "setup": false
+    },
+    {
+        "id": "woheduolema111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
+        "edition": "custom",
+        "name": "酒鬼",
+        "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+        "team": "outsider",
+        "sch_team": "外来者",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "remindersGlobal": [
+            "是酒鬼"
+        ],
+        "setup": true
+    },
+    {
+        "id": "zhegeshimonk111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/recluse.png",
+        "edition": "custom",
+        "name": "陌客",
+        "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。",
+        "team": "outsider",
+        "sch_team": "外来者",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "setup": false
+    },
+    {
+        "id": "zhijiagedaziji111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/godfather.png",
+        "edition": "custom",
+        "name": "教父",
+        "ability": "在你的首个夜晚，你会得知有哪些外来者角色在场。如果有外来者在白天死亡，你会在当晚被唤醒并且你要选择一名玩家：他死亡。[-1或+1外来者]",
+        "team": "minion",
+        "sch_team": "爪牙",
+        "firstNight": 21,
+        "otherNight": 53,
+        "firstNightReminder": "唤醒教父，对他展示外来者角色标记，告诉他有哪些外来者在场。",
+        "otherNightReminder": "如果今天白天有外来者死亡，唤醒教父，让他攻击一名玩家。",
+        "reminders": [
+            "死于今日",
+            "死亡"
+        ],
+        "setup": true
+    },
+    {
+        "id": "jiushigelvshi111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/devils_advocate.png",
+        "edition": "custom",
+        "name": "魔鬼代言人",
+        "ability": "每个夜晚，你要选择一名存活的玩家（与上个夜晚不同）：如果明天白天他被处决，他不会死亡。",
+        "team": "minion",
+        "sch_team": "爪牙",
+        "firstNight": 22,
+        "otherNight": 18,
+        "firstNightReminder": "唤醒魔鬼代言人，让他选择一名玩家，那名玩家处决不死。",
+        "otherNightReminder": "唤醒魔鬼代言人，让他选择一名与上一晚不同的玩家，那名玩家处决不死。",
+        "reminders": [
+            "处决不死"
+        ],
+        "setup": false
+    },
+    {
+        "id": "zhiwudazhanjiangshi111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/zombuul.png",
+        "edition": "custom",
+        "name": "僵怖",
+        "ability": "每个夜晚*，如果今天白天没有人死亡，你会被唤醒并要选择一名玩家：他死亡。当你首次死亡后，你仍存活，但会被当作死亡。",
+        "team": "demon",
+        "sch_team": "恶魔",
+        "firstNight": 0,
+        "otherNight": 32,
+        "firstNightReminder": "",
+        "otherNightReminder": "如果白天无人死亡，唤醒僵怖，让他攻击一名玩家。",
+        "reminders": [
+            "死于今日",
+            "死亡"
+        ],
+        "setup": false
+    }
+]

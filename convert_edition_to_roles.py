@@ -14,7 +14,7 @@ def generate_script_summary(input_file, output_file):
     for item in data:
         if "id" in item and item["id"] == "_meta":  # 检查是否是剧本元信息
             script_info = {
-                "id": item.get("name", ""),
+                "id": item.get("id", ""),
                 "name": item.get("name", ""),
                 "author": item.get("author", ""),
                 "description": item.get("description", ""),

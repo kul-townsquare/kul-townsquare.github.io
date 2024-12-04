@@ -1,0 +1,470 @@
+[
+    {
+        "id": "_meta",
+        "name": "氓山走阴7.4",
+        "author": "痴愚",
+        "logo": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_6500452838171_89e491e6.jpg",
+        "description": "常走偏门捞阴钱，不仅五弊三缺，更是晦气深重，终究还是被酆都盯上，派出阴差拘魂索命。阴阳眼、说书人、扎纸匠、摘星手、搬山寻龙、百里行走齐聚氓阴镇，只为求得一线生机。只是，关外的邪魔蠢蠢欲动，动乱的时局渐迷人眼，能否成功将阴神送走，尚不可知...",
+        "townsfolkName": "镇民",
+        "outsidersName": "殃祸",
+        "minionsName": "魍魉",
+        "demonsName": "阴神",
+        "townsfolk": "镇民",
+        "outsider": "殃祸",
+        "minion": "魍魉",
+        "demon": "阴神",
+        "state": [
+            {
+                "stateName": "氓山",
+                "stateDescription": "氓山由封禅台、氓阴镇、乱葬岗、黑水河四个区域组成。夜晚开始时，存活玩家要秘密选择一个区域前往，然后阴神可以选择一个区域并得知哪些玩家处于该区域。"
+            },
+            {
+                "stateName": "末法",
+                "stateDescription": "黎明时说书人会公布所有玩家所处的区域，黄昏时会有一个区域冥土化，剩余二个区域后，以上行动不再进行。前往冥土化区域的善良玩家会在下个黎明死亡但仍被当作存活。"
+            }
+        ],
+        "status": [
+            {
+                "name": "氓山",
+                "skill": "氓山由封禅台、氓阴镇、乱葬岗、黑水河四个区域组成。夜晚开始时，存活玩家要秘密选择一个区域前往，然后阴神可以选择一个区域并得知哪些玩家处于该区域。"
+            },
+            {
+                "name": "末法",
+                "skill": "黎明时说书人会公布所有玩家所处的区域，黄昏时会有一个区域冥土化，剩余二个区域后，以上行动不再进行。前往冥土化区域的善良玩家会在下个黎明死亡但仍被当作存活。"
+            }
+        ]
+    },
+    {
+        "id": "7c7ad298-f481-40a6-8708-54bc874ae1f9",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_573231838171_08513820.jpg",
+        "edition": "custom",
+        "name": "捞尸人",
+        "ability": "每个夜晚，如果你在黑水河：你和说书人秘密猜拳，如果你获胜你会得知一个不在场角色。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 90,
+        "otherNight": 40,
+        "firstNightReminder": "如果捞尸人在黑水河，你和捞尸人秘密猜拳，若捞尸人获胜告诉他一个不在场角色。",
+        "otherNightReminder": "如果捞尸人在黑水河，你和捞尸人秘密猜拳，若捞尸人获胜告诉他一个不在场角色。"
+    },
+    {
+        "id": "cd710eb3-9c02-4f6b-8d38-04c6751d62c0",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_8128731838171_65f71723.jpg",
+        "edition": "custom",
+        "name": "缝尸匠",
+        "ability": "每个夜晚*，你可以选择一名死亡玩家：如果你处于他死亡时的区域，你获得他的能力，但选中邪恶玩家会死亡。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 17,
+        "otherNightReminder": "让缝尸匠选择一名死亡玩家，如果他处于该死亡玩家死亡时的区域，标记他获得该死亡玩家的能力，但选中邪恶玩家他会死亡。",
+        "reminders": [
+            "死亡"
+        ]
+    },
+    {
+        "id": "097f9773-41cd-4ad5-86ef-d040ab9a7101",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_9323931838171_4569f587.jpg",
+        "edition": "custom",
+        "name": "问米婆",
+        "ability": "每个夜晚 *，你会得知你今晚与上个夜晚所处区域玩家的角色类型数量是否相同。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 71,
+        "otherNightReminder": "标记当晚问米婆所处区域玩家的角色类型数量。告诉问米婆所处区域玩家的角色类型数量与上一晚是否相同。",
+        "reminders": [
+            "一粒米",
+            "二粒米",
+            "三粒米",
+            "四粒米"
+        ]
+    },
+    {
+        "id": "9180477e-b32e-405d-a2a2-dcaf5fccff89",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_8988531838171_9acdca92.jpg",
+        "edition": "custom",
+        "name": "出马仙",
+        "ability": "从第三个白天起，每个白天，你可以拜访说书人并选择一名玩家：你会得知他所处的区域。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 0
+    },
+    {
+        "id": "dac31fdb-6f65-4a2e-897d-84a3c141ab33",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_6184031838171_86cd5c0e.jpg",
+        "edition": "custom",
+        "name": "扎纸匠",
+        "ability": "在夜晚时，如果你即将死亡：你不会死亡且变成纸人。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 52,
+        "otherNightReminder": "如果扎纸匠即将死亡，他不会死亡且需要将他的角色换成纸人。",
+        "reminders": [
+            "扎纸"
+        ]
+    },
+    {
+        "id": "ab1f3b4a-f690-44e7-830d-bdcd977f4809",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_6403141838171_edd61114.jpg",
+        "edition": "custom",
+        "name": "刽子手",
+        "ability": "每个夜晚*，如果你在氓阴镇且上个白天有玩家被处决，你会得知邪恶玩家是否参与处决投票。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 36,
+        "otherNightReminder": "如果刽子手在氓阴镇且上个白天有玩家被处决，告诉他邪恶玩家是否参与处决投票。",
+        "reminders": [
+            "行刑"
+        ]
+    },
+    {
+        "id": "af254b14-a30c-402f-aca5-12fa24131ae7",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_2203641838171_c3fb0b05.jpg",
+        "edition": "custom",
+        "name": "走阴人",
+        "ability": "每个夜晚，你要选择一个区域：你会得知是否有魍魉处于该区域。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 50,
+        "otherNight": 51,
+        "firstNightReminder": "让走阴人选择一个区域，告诉他是否有魍魉处于该区域。",
+        "otherNightReminder": "让走阴人选择一个区域，告诉他是否有魍魉处于该区域。"
+    },
+    {
+        "id": "ea0e1b73-9fa8-400c-8380-f40ac696b8e3",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_9112431838171_b6e5c61a.jpg",
+        "edition": "custom",
+        "name": "寿衣张",
+        "ability": "首个夜晚，你要选择除你以外的三个不同角色类型的非阴神角色，你会得知其中有几个角色在场。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 70,
+        "otherNight": 0,
+        "firstNightReminder": "让寿衣张选择除他以外的三个不同类型的非阴神角色，告诉他其中有几个角色在场。"
+    },
+    {
+        "id": "c971d8e5-6218-4475-818d-6e5a38f4caec",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_4409441838171_82228d29.jpg",
+        "edition": "custom",
+        "name": "赶尸人",
+        "ability": "第二个夜晚，如果你在乱葬岗：你会得知存在邪恶玩家的区域的数量。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 48,
+        "otherNightReminder": "第二个夜晚，如果赶尸人在乱葬岗，告诉他存在邪恶玩家的区域的数量。"
+    },
+    {
+        "id": "b8c9ed10-eabf-4c30-93ee-b94e0fe8be70",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_8830151838171_c4edb48f.jpg",
+        "edition": "custom",
+        "name": "摘星手",
+        "ability": "首个夜晚，你会得知二个区域和一个数字：该数字为其中一个区域内角色类型的数量。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 80,
+        "otherNight": 0,
+        "firstNightReminder": "告知摘星手二个区域和一个数字，该数字为其中一个区域内角色类型的数量。"
+    },
+    {
+        "id": "caeecb6b-7fe9-4402-8928-4194f8a62fdd",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_6220941838171_0a44234c.jpg",
+        "edition": "custom",
+        "name": "阴阳生",
+        "ability": "每个夜晚*，如果你在封禅台，你要选择一名存活玩家：你会得知他当晚是否可以被阴神杀害。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 55,
+        "otherNightReminder": "如果阴阳生在封禅台，让他选择一位存活玩家，告诉他该玩家当晚是否可以被阴神杀害。"
+    },
+    {
+        "id": "55d28706-9a0c-40f4-8fd1-301e1364a363",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_8348251838171_80d70d1a.jpg",
+        "edition": "custom",
+        "name": "棺材佬",
+        "ability": "每个夜晚*，如果你在氓阴镇，你会得知一个在场角色，但如果你和阴神处于同一区域，你得知错误信息。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 60,
+        "otherNightReminder": "如果棺材佬在氓阴镇，告诉他一个在场角色，但如果棺材佬和阴神处于同一区域，改为告诉他一个不在场角色。"
+    },
+    {
+        "id": "cd48b29e-f5eb-4110-870f-872f1dd41949",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_4265741838171_c32421e1.jpg",
+        "edition": "custom",
+        "name": "仵作",
+        "ability": "每个白天，你可以私下拜访说书人以得知一条信息，并在下次拜访说书人时回答一个相关问题，如果回答正确，你当天获得正确信息。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 0,
+        "reminders": [
+            "明察秋毫",
+            "老眼昏花"
+        ]
+    },
+    {
+        "id": "f6529f81-3e0e-4f0f-be1c-1cf6f30a71ce",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_3587611838171_979f8c50.jpg",
+        "edition": "custom",
+        "name": "病秧子",
+        "ability": "每晚你前往的区域由阴神决定。停留在你死亡时所处区域的善良玩家可能会得知错误信息。",
+        "team": "outsider",
+        "sch_team": "殃祸",
+        "firstNight": 0,
+        "otherNight": 0,
+        "reminders": [
+            "瘟疫"
+        ]
+    },
+    {
+        "id": "f83bd8ad-3f1b-413a-9ced-8ae7734ee21f",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_9875721838171_0d3978b0.jpg",
+        "edition": "custom",
+        "name": "纸人",
+        "ability": "你以为你是一个镇民角色。提名你的镇民玩家会变成纸人，你变成自认为的角色。",
+        "team": "outsider",
+        "sch_team": "殃祸",
+        "firstNight": 0,
+        "otherNight": 0,
+        "remindersGlobal": [
+            "是纸人"
+        ],
+        "setup": true
+    },
+    {
+        "id": "4edc235c-8aa3-4886-8459-2b8d37fe379e",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_6662311838171_316dc6db.jpg",
+        "edition": "custom",
+        "name": "鱼灯",
+        "ability": "如果你死亡，在当晚阴神可以选择一名其他邪恶玩家和一个不在场的魍魉角色，该玩家获得该角色的能力。",
+        "team": "outsider",
+        "sch_team": "殃祸",
+        "firstNight": 0,
+        "otherNight": 9,
+        "otherNightReminder": "如果鱼灯死亡，阴神可以选择一名其他邪恶玩家和一个不在场的魍魉角色，该玩家获得该角色的能力。",
+        "reminders": [
+            "熄灯",
+            "获得能力"
+        ]
+    },
+    {
+        "id": "e059e9bf-5967-4840-b292-897422283e77",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_9211621838171_21a5a592.jpg",
+        "edition": "custom",
+        "name": "冥躯",
+        "ability": "你以为你是一个镇民角色且拥有该角色的能力。每个夜晚*，阴神知道你所处的区域，可以让你死亡。",
+        "team": "outsider",
+        "sch_team": "殃祸",
+        "firstNight": 0,
+        "otherNight": 35,
+        "otherNightReminder": "告诉阴神冥躯在哪个区域，并让阴神决定冥躯是否死亡。",
+        "remindersGlobal": [
+            "是冥躯"
+        ],
+        "setup": true
+    },
+    {
+        "id": "97e56357-9cc2-4aed-894d-2b80969a0b44",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_5217901838171_57aa03ed.jpg",
+        "edition": "custom",
+        "name": "食香鬼",
+        "ability": "每局游戏限一次，在夜晚时*，你可以让阴神额外行动一次且额外被阴神选择的玩家必定会死亡。",
+        "team": "minion",
+        "sch_team": "魍魉",
+        "firstNight": 0,
+        "otherNight": 20,
+        "otherNightReminder": "食香鬼可以让阴神额外行动一次且额外被阴神选择的玩家必定会死亡。",
+        "reminders": [
+            "失去能力"
+        ]
+    },
+    {
+        "id": "73828dea-1892-45a2-8271-40c2f78e491c",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_1908601838171_fea6848b.jpg",
+        "edition": "custom",
+        "name": "嫁衣新娘",
+        "ability": "每局游戏限一次，你随时可以公开选择一名其他玩家举办冥婚，然后他被处决。如果阴神因此死亡，你和他交换角色。",
+        "team": "minion",
+        "sch_team": "魍魉",
+        "firstNight": 0,
+        "otherNight": 0,
+        "reminders": [
+            "新郎官"
+        ]
+    },
+    {
+        "id": "48c7cea7-1983-4c3d-b4f4-390fb1ad2687",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_4223111838171_4d890e69.jpg",
+        "edition": "custom",
+        "name": "僵尸",
+        "ability": "每个夜晚，你要选择一名玩家：如果下个夜晚你和他处于同一区域，他死亡。",
+        "team": "minion",
+        "sch_team": "魍魉",
+        "firstNight": 14,
+        "otherNight": 18,
+        "otherNightReminder": "让僵尸选择一名玩家。如果上个夜晚被僵尸选择的玩家和他处于同一区域，该玩家死亡。",
+        "reminders": [
+            "追猎",
+            "死亡"
+        ]
+    },
+    {
+        "id": "ba4cd6a2-fb8e-4f86-a542-313f4259aac0",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_4561501838171_7d1c4197.jpg",
+        "edition": "custom",
+        "name": "怨婴",
+        "ability": "每个夜晚，你可以查看魔典，结束后与阴神讨论十秒，即使你已死亡。[+1殃祸]",
+        "team": "minion",
+        "sch_team": "魍魉",
+        "firstNight": 15,
+        "otherNight": 10,
+        "firstNightReminder": "给怨婴看魔典，结束后让他和阴神讨论十秒。",
+        "otherNightReminder": "给怨婴看魔典，结束后让他和阴神讨论十秒。",
+        "setup": true
+    },
+    {
+        "id": "c4d422fe-1840-43d0-9eea-af2315b40635",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_2179001838171_87cd7577.jpg",
+        "edition": "custom",
+        "name": "黑无常",
+        "ability": "每个夜晚*，你要选择一名玩家：如果他和你处于同一区域，他死亡。[-1或+1殃祸]",
+        "team": "demon",
+        "sch_team": "阴神",
+        "firstNight": 0,
+        "otherNight": 34,
+        "otherNightReminder": "先让黑无常选择一个区域，告诉黑无常哪些玩家处于该区域。让他选择一名玩家，如果他和该玩家处于同一区域，该玩家死亡。",
+        "reminders": [
+            "死亡"
+        ],
+        "setup": true
+    },
+    {
+        "id": "423483fb-425d-4504-9fb7-c3958713593c",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_5255201838171_aa1fbede.jpg",
+        "edition": "custom",
+        "name": "白无常",
+        "ability": "每个夜晚*，你要选择一名玩家：如果他和你处于不同区域，他死亡。",
+        "team": "demon",
+        "sch_team": "阴神",
+        "firstNight": 0,
+        "otherNight": 32,
+        "otherNightReminder": "先让白无常选择一个区域，告诉白无常哪些玩家处于该区域。让白无常选择一名玩家，如果他和该玩家处于不同区域，该玩家死亡。",
+        "reminders": [
+            "死亡"
+        ]
+    },
+    {
+        "id": "8aa3f0ec-b1e7-4915-8c50-347b39c6529e",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_8252585766861_c2652ab3.jpg",
+        "edition": "custom",
+        "name": "黄皮子",
+        "ability": "每个白天，你可以选择一名其他玩家讨封，问道“老乡，你看我像个啥”。若他说的合理，你当场变成黄大仙。",
+        "team": "traveler",
+        "firstNight": 0,
+        "otherNight": 0,
+        "reminders": [
+            "讨封"
+        ]
+    },
+    {
+        "id": "4da394d8-5c1c-4b98-8944-a643e267ed97",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_7273685766861_2925401f.jpg",
+        "edition": "custom",
+        "name": "黄大仙",
+        "ability": "无法直接选择，只能由黄皮子变成。你获得讨封成功时所述的能力。",
+        "team": "traveler",
+        "firstNight": 90,
+        "otherNight": 90,
+        "reminders": [
+            "仙术"
+        ]
+    },
+    {
+        "id": "b1e88e94-8581-4eb3-81eb-7e08c15cfb3b",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_2771962020171_5226abbf.jpg",
+        "edition": "custom",
+        "name": "稻草人",
+        "ability": "在白天时，如果即将死亡的玩家找你猜拳且你输了，你可能替他死亡。当你连续胜利三次时，你独自获胜。",
+        "team": "traveler",
+        "firstNight": 0,
+        "otherNight": 0,
+        "reminders": [
+            "赢！"
+        ]
+    },
+    {
+        "id": "b6adc79e-1b93-4b46-96c9-bb1b4771d4dd",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_3264095766861_67d2bbd5.jpg",
+        "edition": "custom",
+        "name": "梦蝶",
+        "ability": "每个夜晚，你会得知一名与你同阵营的玩家（会有一次错误）。你不知道你的阵营。",
+        "team": "traveler",
+        "firstNight": 91,
+        "otherNight": 91,
+        "firstNightReminder": "告知蝴蝶一名与他同阵营的玩家。",
+        "otherNightReminder": "告知蝴蝶一名与他同阵营的玩家。",
+        "reminders": [
+            "知晓"
+        ]
+    },
+    {
+        "id": "b399d9bc-5922-4727-823d-b09c7cc8af6b",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_6176562838171_49588d1b.jpg",
+        "edition": "custom",
+        "name": "封禅台",
+        "ability": "区域：氓山之顶，自古帝王祭天之所，有大功德、大造化。",
+        "team": "fabled",
+        "firstNight": 0,
+        "otherNight": 0,
+        "reminders": [
+            "在封禅台"
+        ]
+    },
+    {
+        "id": "64862eb6-4fec-4c67-8e55-d57c5790c576",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_9522852838171_98aabeab.jpg",
+        "edition": "custom",
+        "name": "氓阴镇",
+        "ability": "区域：氓山之腹，礼乐崩坏，俗神漫天，铜路遍地。",
+        "team": "fabled",
+        "firstNight": 0,
+        "otherNight": 0,
+        "reminders": [
+            "在氓阴镇"
+        ]
+    },
+    {
+        "id": "9f7d3b43-2218-42a3-8a7d-1e96d36418d7",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_8548062838171_b91fcf96.jpg",
+        "edition": "custom",
+        "name": "乱葬岗",
+        "ability": "区域：氓山之脊，无名无姓者葬身之所，至阴至邪，秽物自生。",
+        "team": "fabled",
+        "firstNight": 0,
+        "otherNight": 0,
+        "reminders": [
+            "在乱葬岗",
+            "活尸"
+        ]
+    },
+    {
+        "id": "36ad84e8-d8ae-42a0-93ae-7073cb49ff11",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_7787362838171_878abf5e.jpg",
+        "edition": "custom",
+        "name": "黑水河",
+        "ability": "区域：氓山之脚，积年沉尸，河水漆黑腥臭。",
+        "team": "fabled",
+        "firstNight": 0,
+        "otherNight": 0,
+        "reminders": [
+            "在黑水河"
+        ]
+    }
+]

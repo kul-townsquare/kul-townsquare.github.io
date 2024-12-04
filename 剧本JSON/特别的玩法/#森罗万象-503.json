@@ -1,0 +1,110 @@
+[
+	{
+		"id": "_meta",
+		"name": "森罗万象",
+		"author": "503",
+		"logo": "https://www.bloodstar.xyz//p//comm503//DeathBetween//chaosarise_deathbetween.png",
+		"townsfolkName": "村民",
+		"outsidersName": "外来者",
+		"minionsName": "爪牙",
+		"demonsName": "恶魔",
+		"townsfolk": "村民",
+		"outsider": "外来者",
+		"minion": "爪牙",
+		"demon": "恶魔",
+		"state": [
+			{
+				"stateName": "抽象大战整活怪",
+				"stateDescription": "①所有镇民都是神像匠人，所有外来者都是酒鬼。\n"
+			},
+			{
+				"stateName": " ",
+				"stateDescription": "②在游戏的第二个夜晚，邪恶玩家查看魔典并得知已索要成功的神像匠人玩家能力内容。"
+			}
+		],
+		"status": [
+			{
+				"name": "抽象大战整活怪",
+				"skill": "①所有镇民都是神像匠人，所有外来者都是酒鬼。\n"
+			},
+			{
+				"skill": "②在游戏的第二个夜晚，邪恶玩家查看魔典并得知已索要成功的神像匠人玩家能力内容。",
+				"name": " "
+			}
+		]
+	},
+	{
+		"id": "9730d888-6a69-4c60-84a9-b320e3f4a9ed",
+		"image": "https://www.bloodstar.xyz//p//comm503//DeathBetween//statuebuilder_deathbetween.png",
+		"edition": "custom",
+		"name": "神像匠人",
+		"ability": "你可以在白天向说书人索要一个能力，如果说书人拒绝，你明天可以继续索要。",
+		"team": "townsfolk",
+		"sch_team": "村民",
+		"firstNight": 0,
+		"otherNight": 4,
+		"reminders": [
+			"神迹"
+		]
+	},
+	{
+		"id": "863aa928-5989-49ec-b885-87273b53eba2",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
+		"edition": "custom",
+		"name": "酒鬼",
+		"ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+		"team": "outsider",
+		"sch_team": "外来者",
+		"firstNight": 0,
+		"otherNight": 0,
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"reminders": [],
+		"remindersGlobal": [
+			"是酒鬼"
+		],
+		"setup": true
+	},
+	{
+		"id": "0d373c7d-3ca3-48f2-8533-7bab04fa3596",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/golem.png",
+		"edition": "custom",
+		"name": "魔像",
+		"ability": "每局游戏你只能发起提名一次。当你发起提名时，如果被你提名的玩家不是恶魔，他死亡。[不在初始配版中]",
+		"team": "outsider",
+		"sch_team": "外来者",
+		"firstNight": 0,
+		"otherNight": 0,
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"reminders": [
+			"无法提名"
+		],
+		"setup": true
+	},
+	{
+		"id": "b26cb14f-94c0-4698-9084-33ea4bce1fa3",
+		"image": "https://www.bloodstar.xyz//p//comm503//DeathBetween//golembuilder_deathbetween.png",
+		"edition": "custom",
+		"name": "魔像匠人",
+		"ability": "每个夜晚*，你可以选择一名玩家，他变成魔像。",
+		"team": "minion",
+		"sch_team": "爪牙",
+		"firstNight": 0,
+		"otherNight": 2
+	},
+	{
+		"id": "dec9e5cb-2929-42f7-ae1c-94df3c6aabaf",
+		"image": "https://www.bloodstar.xyz//p//comm503//DeathBetween//tiandao_deathbetween.png",
+		"edition": "custom",
+		"name": "天道",
+		"ability": "每个夜晚*，你可以编写一条特殊规则，一名善良玩家得知这条规则，并决定它是否生效，如果他否决，他死亡，且你可以和一名爪牙交换角色。你无法改变阵营和胜负。",
+		"team": "demon",
+		"sch_team": "恶魔",
+		"firstNight": 0,
+		"otherNight": 3,
+		"reminders": [
+			"死亡"
+		]
+	}
+]

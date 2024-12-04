@@ -1,0 +1,230 @@
+[
+    {
+        "id": "_meta",
+        "name": "宿脑谜团",
+        "logo": "https://www.helloimg.com/i/2024/12/01/674c7879746c4.png",
+        "author":"OJ",
+        "description": "宿脑谜团",
+        "townsfolkName": "镇民",
+        "outsidersName": "外来者",
+        "minionsName": "爪牙",
+        "demonsName": "恶魔",
+        "townsfolk": "镇民",
+        "outsider": "外来者",
+        "minion": "爪牙",
+        "demon": "恶魔",
+        "a jinxedName": "相克",
+        "a jinxed": "相克"
+    },
+    {
+    "id": "shaonibingaiso",
+    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/91/Sentinel.png/600px-Sentinel.png",
+    "edition": "custom",
+    "name": "哨兵",
+    "ability": "在初始设置时，可能会额外增加或减少一个外来者。",
+    "team": "fabled",
+    "firstNight": 0,
+    "otherNight": 0,
+    "setup": true
+  },
+    {
+        "id": "meishayongdeshabi111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
+        "edition": "custom",
+        "name": "小精灵",
+        "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 33,
+        "otherNight": 0,
+        "firstNightReminder": "唤醒小精灵，对他展示一个在场镇民角色标记。",
+        "otherNightReminder": "",
+        "reminders": [
+            "疯狂",
+            "获得能力"
+        ],
+        "setup": false
+    },
+    {
+        "id": "wanizufen111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
+        "edition": "custom",
+        "name": "送葬者",
+        "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 83,
+        "firstNightReminder": "",
+        "otherNightReminder": "如果今天白天有玩家死于处决，唤醒送葬者，对他展示那名玩家的角色标记。",
+        "reminders": [
+            "死于今日"
+        ],
+        "setup": false
+    },
+    {
+        "id": "gongwenbaozaren111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/exorcist.png",
+        "edition": "custom",
+        "name": "驱魔人",
+        "ability": "每个夜晚*，你要选择一名玩家（与上个夜晚不同）：如果你选中了恶魔，他会得知你的角色，但他当晚不会因其自身能力而被唤醒。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 29,
+        "firstNightReminder": "",
+        "otherNightReminder": "唤醒驱魔人，让他选择一名与上一晚不同的玩家。如果他选中了恶魔，则在驱魔人入睡后通知该恶魔谁是驱魔人。",
+        "reminders": [
+            "被选择"
+        ],
+        "setup": false
+    },
+    {
+        "id": "caibuduide111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/juggler.png",
+        "edition": "custom",
+        "name": "杂耍艺人",
+        "ability": "在你的首个白天，你可以公开猜测任意玩家的角色最多五次。在当晚，你会得知猜测正确的角色数量。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 89,
+        "firstNightReminder": "",
+        "otherNightReminder": "如果杂耍艺人在今天白天使用了能力，唤醒杂耍艺人，对他用手势比划数字来告知他白天猜测正确的次数。",
+        "reminders": [
+            "猜测正确"
+        ],
+        "setup": false
+    },
+    {
+        "id": "biubiubiu111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/slayer.png",
+        "edition": "custom",
+        "name": "猎手",
+        "ability": "每局游戏限一次，你可以在白天时公开选择一名玩家：如果他是恶魔，他死亡。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "失去能力"
+        ],
+        "setup": false
+    },
+    {
+        "id": "diaoshangyizhengtiandeyu111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png",
+        "edition": "custom",
+        "name": "渔夫",
+        "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "失去能力"
+        ],
+        "setup": false
+    },
+    {
+        "id": "woheduolema111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
+        "edition": "custom",
+        "name": "酒鬼",
+        "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+        "team": "outsider",
+        "sch_team": "外来者",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "remindersGlobal": [
+            "是酒鬼"
+        ],
+        "setup": true
+    },
+    {
+        "id": "wocaishiemo111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lunatic.png",
+        "edition": "custom",
+        "name": "疯子",
+        "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。",
+        "team": "outsider",
+        "sch_team": "外来者",
+        "firstNight": 5.3,
+        "otherNight": 28,
+        "firstNightReminder": "唤醒疯子并向他提供恶魔信息。如可能，则让疯子进行相应的恶魔行动。随后在恶魔信息环节对恶魔提供疯子的相关信息。",
+        "otherNightReminder": "如果疯子以为的恶魔会在当晚行动，唤醒疯子，并让他以恶魔的方式行动。",
+        "reminders": [
+            "被选择"
+        ],
+        "remindersGlobal": [
+            "是疯子"
+        ],
+        "setup": true
+    },
+    {
+        "id": "jiushigelvshi111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/devils_advocate.png",
+        "edition": "custom",
+        "name": "魔鬼代言人",
+        "ability": "每个夜晚，你要选择一名存活的玩家（与上个夜晚不同）：如果明天白天他被处决，他不会死亡。",
+        "team": "minion",
+        "sch_team": "爪牙",
+        "firstNight": 22,
+        "otherNight": 18,
+        "firstNightReminder": "唤醒魔鬼代言人，让他选择一名玩家，那名玩家处决不死。",
+        "otherNightReminder": "唤醒魔鬼代言人，让他选择一名与上一晚不同的玩家，那名玩家处决不死。",
+        "reminders": [
+            "处决不死"
+        ],
+        "setup": false
+    },
+    {
+        "id": "zheyeshigejiugui111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
+        "edition": "custom",
+        "name": "提线木偶",
+        "ability": "你以为你是一个善良角色，但其实你不是。恶魔会知道你是提线木偶。[提线木偶会与恶魔邻座]",
+        "team": "minion",
+        "sch_team": "爪牙",
+        "firstNight": 10,
+        "otherNight": 0,
+        "firstNightReminder": "如果提线木偶在场，对恶魔展示提线木偶角色标记并指向提线木偶玩家。",
+        "remindersGlobal": [
+            "是提线木偶"
+        ],
+        "setup": true
+    },
+    {
+        "id": "lizhiiiiii111111111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
+        "edition": "custom",
+        "name": "痢蛭",
+        "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
+        "team": "demon",
+        "sch_team": "恶魔",
+        "firstNight": 17,
+        "otherNight": 43,
+        "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
+        "otherNightReminder": "唤醒痢蛭，让他攻击一名玩家。",
+        "reminders": [
+            "中毒",
+            "死亡"
+        ],
+        "setup": false
+    },
+  {
+    "id": "102_meta",
+    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/7/70/Lleech.png/300px-Lleech.png",
+    "name": "痢蛭&猎手",
+    "team": "a jinxed",
+    "setup": 0,
+    "ability": "如果猎手选择了痢蛭的宿主，则宿主会死亡。"
+  }
+]

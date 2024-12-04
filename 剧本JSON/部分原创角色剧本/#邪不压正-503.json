@@ -1,0 +1,255 @@
+[
+	{
+		"id": "_meta",
+		"name": "邪不压正",
+		"author": "503&面哥",
+		"logo": "https://www.bloodstar.xyz//p//comm503//DeathBetween//justiceabsents_deathbetween.png",
+		"description": "正道的光洒在大地上！",
+		"townsfolkName": "镇民",
+		"outsidersName": "外来者",
+		"minionsName": "爪牙",
+		"demonsName": "恶魔",
+		"townsfolk": "镇民",
+		"outsider": "外来者",
+		"minion": "爪牙",
+		"demon": "恶魔",
+		"state": [
+			{
+				"stateName": "古神的低语",
+				"stateDescription": "①“听到低语”的玩家会得知一个恐怖怪诞的短句，如果他对此内容疯狂，他可能随时死亡。"
+			},
+			{
+				"stateName": "",
+				"stateDescription": "②玩家编造的假低语，或仅仅对“听到低语”疯狂，不包含在其中。"
+			}
+		],
+		"status": [
+			{
+				"name": "古神的低语",
+				"skill": "①“听到低语”的玩家会得知一个恐怖怪诞的短句，如果他对此内容疯狂，他可能随时死亡。"
+			},
+			{
+				"skill": "②玩家编造的假低语，或仅仅对“听到低语”疯狂，不包含在其中。",
+				"name": ""
+			}
+		]
+	},
+	{
+		"id": "7c457cb3-39ca-4b09-9e28-d1e4bb1a0867",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ravenkeeper.png",
+		"edition": "custom",
+		"name": "守鸦人",
+		"ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择一名玩家：你会得知他的角色。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 0,
+		"otherNight": 42,
+		"firstNightReminder": "",
+		"otherNightReminder": "如果守鸦人今晚死亡，唤醒他并让他选择一名玩家。对他展示那名玩家的角色标记。",
+		"reminders": [],
+		"setup": false
+	},
+	{
+		"id": "39b8fda7-dced-4743-89b2-46b1df1a6384",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dreamer.png",
+		"edition": "custom",
+		"name": "筑梦师",
+		"ability": "每个夜晚，你要选择除你及旅行者以外的一名玩家：你会得知一个善良角色和一个邪恶角色，该玩家是其中一个角色。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 41,
+		"otherNight": 65,
+		"firstNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+		"otherNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+		"reminders": [],
+		"setup": false
+	},
+	{
+		"id": "161273f3-0cb7-4fef-b33d-530df2375c6e",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_9255777694761_7594675d.jpg",
+		"edition": "custom",
+		"name": "郎中",
+		"ability": "每个夜晚，你要选择一名玩家：你会得知一个与他能力相关的词语。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 35,
+		"otherNight": 52,
+		"firstNightReminder": "唤醒郎中，让其指向一名玩家。以不会被其他玩家察觉的形式对其提供与该玩家角色能力相关的一个词语。",
+		"otherNightReminder": "唤醒郎中，让其指向一名玩家。以不会被其他玩家察觉的形式对其提供与该玩家角色能力相关的一个词语。",
+		"reminders": [],
+		"remindersGlobal": [],
+		"setup": 0
+	},
+	{
+		"id": "78197dd4-00bd-4634-8763-7a950555fe8d",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_7613877694761_6041a632.jpg",
+		"edition": "custom",
+		"name": "舞狮人",
+		"ability": "每个夜晚，你会得知一个在场角色。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 39,
+		"otherNight": 64,
+		"firstNightReminder": "唤醒舞狮人，对他展示一个角色标记。",
+		"otherNightReminder": "唤醒舞狮人，对他展示一个角色标记。",
+		"reminders": [
+			"限一次"
+		],
+		"remindersGlobal": [],
+		"setup": 0
+	},
+	{
+		"id": "8a3a944c-9fcc-4941-8b0c-46a9dc9835be",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_1638387694761_274bf6af.jpg",
+		"edition": "custom",
+		"name": "悟道者",
+		"ability": "你以为你是一个外来者，但你实际上不是。如果有邪恶玩家的能力选择或影响了你，你会立即变成一个不在场的镇民角色。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 0,
+		"otherNight": 0,
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"reminders": [],
+		"remindersGlobal": [
+			"是悟道者"
+		],
+		"setup": 1
+	},
+	{
+		"id": "2ccd6d15-2e7c-42bc-89dd-2f15e98be620",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/empath.png",
+		"edition": "custom",
+		"name": "共情者",
+		"ability": "每个夜晚，你会得知与你邻近的两名存活的玩家中邪恶玩家的数量。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 36,
+		"otherNight": 53,
+		"firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
+		"otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
+		"reminders": [],
+		"setup": false
+	},
+	{
+		"id": "d4a5cecb-5172-4d2d-8dff-a4bc424049f7",
+		"image": "https://www.bloodstar.xyz//p//comm503//DeathBetween//prophet_deathbetween.png",
+		"edition": "custom",
+		"name": "隐秘先知",
+		"ability": "每个夜晚，你选择一名其他玩家并写下一个预言，此预言可能会在他身上应验。如果你对你的角色疯狂，你的阵营落败，即使你已死亡。",
+		"team": "outsider",
+		"sch_team": "外来者",
+		"firstNight": 1,
+		"otherNight": 2,
+		"firstNightReminder": "唤醒先知，询问预言谁。",
+		"otherNightReminder": "唤醒先知，询问预言谁。",
+		"reminders": [
+			"预言锁定"
+		]
+	},
+	{
+		"id": "cf4409f7-153a-4fe4-ae8a-b583cdc5add9",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lunatic.png",
+		"edition": "custom",
+		"name": "疯子",
+		"ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你的角色以及你在每个夜晚选择了哪名玩家。",
+		"team": "outsider",
+		"sch_team": "外来者",
+		"firstNight": 18,
+		"otherNight": 21,
+		"firstNightReminder": "如果有七名或更多玩家，唤醒疯子：展示“他们是你的爪牙”信息标记。指向任意对应数量的玩家。展示“这些角色不在场”信息标记。展示三个善良角色。让疯子重新入睡。唤醒恶魔。展示“你是”信息标记和恶魔角色标记。展示“这名玩家是”信息标记和疯子角色标记，然后指向疯子玩家。",
+		"otherNightReminder": "做任何需要做的事情来模拟一位恶魔的行动。让疯子重新入睡。唤醒恶魔。对恶魔展示疯子角色标记，并指向疯子玩家，随后是疯子的攻击目标。",
+		"reminders": [
+			"被选择1",
+			"被选择2",
+			"被选择3",
+			"是疯子"
+		],
+		"setup": false
+	},
+	{
+		"id": "cd94427c-1142-4ccb-850f-7db40d736f9d",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
+		"edition": "custom",
+		"name": "蛊雕",
+		"ability": "每个夜晚，你要选择左或右：你从当前位置飞行到该方向上的下一名存活善良玩家，你得知他的角色，随后他中毒且可能被当作邪恶阵营和爪牙角色。",
+		"team": "minion",
+		"sch_team": "爪牙",
+		"firstNight": 17,
+		"otherNight": 8,
+		"firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+		"otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+		"reminders": [
+			"中毒"
+		],
+		"remindersGlobal": [],
+		"setup": 0
+	},
+	{
+		"id": "183c5bd8-5ff6-40ca-8c3d-c6e1745e2c27",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_3356597694761_0a4b67e6.jpg",
+		"edition": "custom",
+		"name": "酒蛊师",
+		"ability": "每个夜晚，你选择一名角色，你来决定当晚应以何种言语和动作欺骗他。",
+		"team": "minion",
+		"sch_team": "爪牙",
+		"firstNight": 3,
+		"otherNight": 3,
+		"firstNightReminder": "唤醒酿酒师，让其选择一个角色并给出该角色对应的信息形式。如果该角色在场，在对应的角色标记旁放置“微醺”提示标记。如有必要，记录下该信息形式作为备忘，但不要将这一信息展示给任何能查看魔典的玩家。",
+		"otherNightReminder": "唤醒酿酒师，让其选择一个角色并给出该角色对应的信息形式。如果该角色在场，在对应的角色标记旁放置“微醺”提示标记。如有必要，记录下该信息形式作为备忘，但不要将这一信息展示给任何能查看魔典的玩家。",
+		"reminders": [
+			"蛊惑"
+		],
+		"setup": false
+	},
+	{
+		"id": "4033d06d-61f9-459d-8f4b-bd7ad7f9d798",
+		"image": "https://www.bloodstar.xyz//p//comm503//DeathBetween//yoggsaron_deathbetween.png",
+		"edition": "custom",
+		"name": "尤格萨隆",
+		"ability": "在你的首个夜晚，一名善良玩家会听到古神的低语。当首个尤格萨隆死亡时，如果该玩家存活且从未对低语的内容疯狂，他变成邪恶的尤格萨隆，此后对调胜负结果。每个夜晚*，你选择一名其他玩家，他死亡。",
+		"team": "demon",
+		"sch_team": "恶魔",
+		"firstNight": 26,
+		"otherNight": 26,
+		"firstNightReminder": "我是清醒的梦境.\n你们噩梦中的怪物。\n千面的恶魔。\n在我的真正形态下颤抖吧！\n在死亡之神面前屈服吧！",
+		"reminders": [
+			"死亡",
+			"低语",
+			"命运之轮"
+		]
+	},
+	{
+		"id": "7c367bb5-16a6-4048-9c2e-c272b764de2a",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
+		"edition": "custom",
+		"name": "亡骨魔",
+		"ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
+		"team": "demon",
+		"sch_team": "恶魔",
+		"firstNight": 0,
+		"otherNight": 32,
+		"firstNightReminder": "",
+		"otherNightReminder": "让亡骨魔选择一名玩家。标记那名玩家死亡。如果该玩家是爪牙，标记该玩家保留能力，并标记与该玩家邻近的镇民玩家之一中毒。",
+		"reminders": [
+			"死亡",
+			"保留能力",
+			"中毒"
+		],
+		"setup": true
+	},
+	{
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"name": "古董收藏家",
+		"firstNight": 0,
+		"reminders": [],
+		"id": "antiquerbutton",
+		"team": "fabled",
+		"name_eng": "Antiquer",
+		"setup": false,
+		"ability": "这个剧本的部分角色能力来自过去。",
+		"edition": "custom",
+		"image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/antique_assets_of_lei_gallery.png"
+	}
+]

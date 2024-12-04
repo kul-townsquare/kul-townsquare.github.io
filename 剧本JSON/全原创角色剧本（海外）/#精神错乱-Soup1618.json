@@ -1,0 +1,350 @@
+[
+  {
+    "id": "_meta",
+    "name": "Archives_of_Insanity",
+    "author": "Soup1618",
+    "logo": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/_meta.png",
+    "almanac": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/almanac.html"
+  },
+  {
+    "id": "_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/_archives_of_insanity.png",
+    "firstNightReminder": "唤醒接待员，向他展示镇民、外来者、爪牙、恶魔角色标记各一个。",
+    "reminders": [
+      "已登记"
+    ],
+    "name": "接待员",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知每种角色类型中的各一个角色，其中有且只有两个角色在场。如果你陷入癫狂，这些角色都在场或都不在场。",
+    "firstNight": 25
+  },
+  {
+    "id": "1_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/1_archives_of_insanity.png",
+    "firstNightReminder": "唤醒侦探，向他指出两名玩家。",
+    "otherNightReminder": "如果侦探未被唤醒过且侦探得知的玩家死亡，唤醒侦探，向他展示该玩家的角色标记。",
+    "reminders": [
+      "被得知"
+    ],
+    "name": "侦探",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知两名其他玩家。如果他们之一的玩家在夜晚死亡，你会得知他的角色，但你只会得知一次。",
+    "firstNight": 26,
+    "otherNight": 23
+  },
+  {
+    "id": "2_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/2_archives_of_insanity.png",
+    "firstNightReminder": "唤醒学士，如果他点头，让他选择一名玩家，告知该玩家的阵营，然后为一名玩家放置癫狂标记。",
+    "otherNightReminder": "唤醒学士，如果他点头，让他选择一名玩家，告知该玩家的阵营，然后为一名玩家放置癫狂标记。",
+    "name": "学士",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你可以选择一名玩家，你会得知他的阵营，然后一名玩家陷入癫狂。",
+    "firstNight": 16,
+    "otherNight": 14
+  },
+  {
+    "id": "3_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/3_archives_of_insanity.png",
+    "firstNightReminder": "唤醒抓鬼人，向他比出与邪恶玩家邻座的癫狂玩家数量的数字。",
+    "otherNightReminder": "唤醒抓鬼人，向他比出与邪恶玩家邻座的癫狂玩家数量的数字。",
+    "name": "抓鬼人",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你会得知有多少名癫狂玩家与邪恶玩家邻座。",
+    "firstNight": 21,
+    "otherNight": 19
+  },
+  {
+    "id": "4_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/4_archives_of_insanity.png",
+    "firstNightReminder": "唤醒卷宗管理员，让他选择一个除他以外的角色，向他指出包含该角色的三名玩家。",
+    "otherNightReminder": "唤醒卷宗管理员，让他选择一个除他以外的角色，向他指出包含该角色的三名玩家。",
+    "name": "卷宗管理员",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一个除你的角色以外的角色，你会得知三名玩家，如果该角色在场，其中一名玩家为该角色。",
+    "firstNight": 23,
+    "otherNight": 21
+  },
+  {
+    "id": "5_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/5_archives_of_insanity.png",
+    "firstNightReminder": "唤醒研究员，告知他一个角色类型。",
+    "otherNightReminder": "唤醒研究员，告知他一个角色类型。",
+    "name": "研究员",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你会得知一名与你邻近的存活玩家的角色类型。",
+    "firstNight": 24,
+    "otherNight": 22
+  },
+  {
+    "id": "6_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/6_archives_of_insanity.png",
+    "firstNightReminder": "唤醒占星师，向他指出三名阵营不同的玩家。",
+    "otherNightReminder": "唤醒占星师，向他指出三名阵营不同的玩家。",
+    "name": "占星师",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你会得知三名玩家，他们属于不同阵营。",
+    "firstNight": 22,
+    "otherNight": 20
+  },
+  {
+    "id": "7_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/7_archives_of_insanity.png",
+    "firstNightReminder": "唤醒灵数师，向他比出邻座癫狂玩家的数量的数字。",
+    "otherNightReminder": "唤醒灵数师，向他比出邻座癫狂玩家的数量的数字。",
+    "name": "灵数师",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你会得知有多少对邻座的陷入癫狂的玩家。如果你陷入癫狂，你得知的数字会增加或减少1。",
+    "firstNight": 19,
+    "otherNight": 17
+  },
+  {
+    "id": "8_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/8_archives_of_insanity.png",
+    "firstNightReminder": "唤醒博物馆员，告知他是否改变了其他玩家的精神状态。",
+    "otherNightReminder": "唤醒博物馆员，告知他是否改变了其他玩家的精神状态。",
+    "reminders": [
+      "恢复理智"
+    ],
+    "name": "博物馆员",
+    "team": "townsfolk",
+    "ability": "每个夜晚，与你邻近的善良存活玩家恢复理智，然后你会得知你是否改变了任何玩家的精神状态。",
+    "firstNight": 17,
+    "otherNight": 15
+  },
+  {
+    "id": "9_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/9_archives_of_insanity.png",
+    "firstNightReminder": "唤醒心理学家，让他选择两名玩家。",
+    "otherNightReminder": "唤醒心理学家，让他选择两名玩家。",
+    "name": "心理学家",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择两名玩家，如果他们都属于善良阵营，他们恢复理智。",
+    "firstNight": 18,
+    "otherNight": 16
+  },
+  {
+    "id": "10_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/10_archives_of_insanity.png",
+    "firstNightReminder": "唤醒助理，如果他点头，让他选择一名玩家，那之后，唤醒该玩家，向他展示助理的角色标记。",
+    "otherNightReminder": "唤醒助理，如果他点头，让他选择一名玩家，那之后，唤醒该玩家，向他展示助理的角色标记。",
+    "reminders": [
+      "失去能力",
+      "理智&正确"
+    ],
+    "name": "助理",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，夜晚，你可以选择一名玩家，他恢复理智且当晚必定得知正确信息，他会得知自己被助理选中。",
+    "firstNight": 15,
+    "otherNight": 13
+  },
+  {
+    "id": "11_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/11_archives_of_insanity.png",
+    "firstNightReminder": "唤醒分析师，如果他点头，向他指出所有陷入癫狂的玩家。",
+    "otherNightReminder": "唤醒分析师，如果他点头，向他指出所有陷入癫狂的玩家。",
+    "reminders": [
+      "失去能力"
+    ],
+    "name": "分析师",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，夜晚，你可以选择得知所有陷入癫狂的玩家。一名玩家可能被你的能力当作错误的精神状态。",
+    "firstNight": 20,
+    "otherNight": 18
+  },
+  {
+    "id": "12_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/12_archives_of_insanity.png",
+    "otherNightReminder": "如果解梦师在夜晚死亡，唤醒解梦师，向他指出一名最接近游戏真相的善良玩家。",
+    "name": "解梦师",
+    "team": "townsfolk",
+    "ability": "如果你在夜晚死亡，你会得知说书人认为哪名善良玩家的逻辑链最接近这局游戏的真相。",
+    "otherNight": 12
+  },
+  {
+    "id": "13_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/13_archives_of_insanity.png",
+    "remindersGlobal": [
+      "是患者:臆想"
+    ],
+    "setup": true,
+    "name": "患者:臆想",
+    "team": "outsider",
+    "ability": "你不知道你是患者:臆想。你以为你是一个在场的镇民角色，但你不是。"
+  },
+  {
+    "id": "14_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/14_archives_of_insanity.png",
+    "firstNightReminder": "如果患者:傀儡邻近的存活玩家都陷入癫狂或都未陷入癫狂，告知患者:傀儡他是善良的，否则，告知他是邪恶的。",
+    "otherNightReminder": "如果患者:傀儡邻近的存活玩家都陷入癫狂或都未陷入癫狂，告知患者:傀儡他是善良的，否则，告知他是邪恶的。",
+    "reminders": [
+      "融入邪恶"
+    ],
+    "name": "患者:傀儡",
+    "team": "outsider",
+    "ability": "每个夜晚，如果你邻近的存活玩家都陷入癫狂或都未陷入癫狂，你转变为善良阵营。否则，你转变为邪恶阵营。",
+    "firstNight": 27,
+    "otherNight": 24
+  },
+  {
+    "id": "15_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/15_archives_of_insanity.png",
+    "firstNightReminder": "为一名镇民放置癫狂和无法恢复标记。",
+    "otherNightReminder": "如果患者:偏执死亡且陷入癫狂的镇民已死亡，唤醒患者:偏执，向他展示该玩家的角色标记。",
+    "reminders": [
+      "无法恢复"
+    ],
+    "name": "患者:偏执",
+    "team": "outsider",
+    "ability": "一名镇民陷入癫狂且无法恢复理智，当你在夜晚死亡时，如果他已死亡，你会得知他的角色。",
+    "firstNight": 14,
+    "otherNight": 11
+  },
+  {
+    "id": "16_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/16_archives_of_insanity.png",
+    "otherNightReminder": "如果患者:错乱死亡，唤醒恶魔，如果他点头，让他选择新的恶魔角色，那之后，唤醒患者:错乱，告知他恶魔是否更换了角色。",
+    "reminders": [
+      "幻象崩溃"
+    ],
+    "name": "患者:错乱",
+    "team": "outsider",
+    "ability": "当你死亡时，当晚恶魔可以选择改变他的恶魔角色，你会得知恶魔是否更换了角色。",
+    "otherNight": 10
+  },
+  {
+    "id": "17_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/17_archives_of_insanity.png",
+    "name": "千面人",
+    "team": "minion",
+    "ability": "如果你提名了一名邪恶玩家或被邪恶玩家提名，你们会立刻交换角色。"
+  },
+  {
+    "id": "18_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/18_archives_of_insanity.png",
+    "name": "邪祭师",
+    "team": "minion",
+    "ability": "如果一名邪恶玩家被提名，提名者陷入癫狂。"
+  },
+  {
+    "id": "19_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/19_archives_of_insanity.png",
+    "otherNightReminder": "如果一名外来者死亡，唤醒人皮启示录，如果他点头，改变该外来者邻近的镇民的精神状态。",
+    "reminders": [
+      "死于今日"
+    ],
+    "setup": true,
+    "name": "人皮启示录",
+    "team": "minion",
+    "ability": "如果一名外来者死亡，夜晚，你可以选择改变所有与他邻近的镇民的精神状态。 [+1外来者，至少一名外来者在场]",
+    "otherNight": 8
+  },
+  {
+    "id": "20_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/20_archives_of_insanity.png",
+    "firstNightReminder": "为一名与腐化之源邻近的镇民放置癫狂和无法恢复标记。",
+    "otherNightReminder": "如果因腐化之源陷入癫狂的玩家死亡，为一名与他邻近的镇民放置癫狂和无法恢复标记。",
+    "reminders": [
+      "无法恢复"
+    ],
+    "name": "腐化之源",
+    "team": "minion",
+    "ability": "如果因你陷入癫狂的玩家死亡，一名未因你陷入癫狂的与他邻近的镇民陷入癫狂且无法恢复理智。[一名与你邻近的镇民陷入癫狂且无法恢复理智]",
+    "firstNight": 13,
+    "otherNight": 9
+  },
+  {
+    "id": "21_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/21_archives_of_insanity.png",
+    "firstNightReminder": "唤醒全视之眼，向他展示魔典，然后让他选择一名玩家，为该玩家放置癫狂标记。",
+    "otherNightReminder": "唤醒全视之眼，让他选择一名玩家，为该玩家放置帷幕标记。",
+    "reminders": [
+      "被杀害"
+    ],
+    "setup": true,
+    "name": "全视之眼",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家，他死亡。在你的首个夜晚，你查看魔典并选择一名玩家，他陷入癫狂。[-1外来者]",
+    "firstNight": 11,
+    "otherNight": 4
+  },
+  {
+    "id": "22_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/22_archives_of_insanity.png",
+    "otherNightReminder": "唤醒真理之环，让他选择一名玩家，为该玩家放置帷幕标记。那之后，改变所有镇民的精神状态。",
+    "reminders": [
+      "被杀害"
+    ],
+    "setup": true,
+    "name": "真理之环",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家，他死亡。每个夜晚*，所有镇民的精神状态会被改变。[所有镇民都陷入癫狂]",
+    "otherNight": 5
+  },
+  {
+    "id": "23_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/23_archives_of_insanity.png",
+    "firstNightReminder": "改变结命之网顺时针方向上最近的镇民的精神状态。",
+    "otherNightReminder": "唤醒结命之网，让他选择一名玩家，为该玩家放置帷幕标记。改变结命之网顺市政方向上最近的镇民的精神状态，如果该镇民已被影响过，向下顺延一名镇民。",
+    "reminders": [
+      "被杀害",
+      "已影响"
+    ],
+    "name": "结命之网",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家，他死亡。每个夜晚，你顺时针方向上最近的镇民的精神状态会被改变，如果他已被你影响过精神状态，向下顺延一名镇民。",
+    "firstNight": 12,
+    "otherNight": 6
+  },
+  {
+    "id": "24_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/24_archives_of_insanity.png",
+    "otherNightReminder": "唤醒湮生之冢，让他选择一名玩家，为该玩家放置帷幕标记，那之后，为该玩家邻近的一名镇民放置癫狂标记。",
+    "reminders": [
+      "被杀害"
+    ],
+    "name": "湮生之冢",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家，他死亡，一名与他邻近的镇民陷入癫狂。",
+    "otherNight": 7
+  },
+  {
+    "id": "25_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/25_archives_of_insanity.png",
+    "otherNightReminder": "唤醒美术馆长，让他选择一名玩家，那之后，唤醒该玩家，如果该玩家点头，告知美术馆长该玩家的精神状态。",
+    "name": "美术馆长",
+    "team": "traveler",
+    "ability": "每个夜晚*，你要选择一名玩家：如果他同意，你得知他的精神状态，但他的精神状态可能发生改变。",
+    "otherNight": 2
+  },
+  {
+    "id": "26_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/26_archives_of_insanity.png",
+    "otherNightReminder": "如果播客在上个白天被流放，唤醒播客，向他比出正确声明数量的数字。",
+    "reminders": [
+      "正确",
+      "流于今日"
+    ],
+    "name": "播客",
+    "team": "traveler",
+    "ability": "每个白天，说书人会做出一项公开声明。当你被流放时，夜晚，你会得知有有多少项公开声明是正确的。",
+    "otherNight": 3
+  },
+  {
+    "id": "27_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/27_archives_of_insanity.png",
+    "name": "摄影师",
+    "team": "traveler",
+    "ability": "每次投票时，你可以决定是顺时针投票还是逆时针投票。"
+  },
+  {
+    "id": "28_archives_of_insanity",
+    "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/28_archives_of_insanity.png",
+    "reminders": [
+      "癫狂"
+    ],
+    "name": "癫狂",
+    "team": "fabled",
+    "ability": "癫狂玩家的能力都会产生错误信息。除非癫狂玩家因为某个角色的能力而恢复理智，否则他一直保持癫狂，即癫狂不会因为效果来源的死亡/中毒/醉酒/离场而解除。"
+  }
+]

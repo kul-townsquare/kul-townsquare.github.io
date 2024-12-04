@@ -1,0 +1,458 @@
+[
+    {
+        "id": "_meta",
+        "name": "恶路难行",
+        "author": "Boxiao",
+        "logo": "https://img2.imgtp.com/2024/04/23/yHsvy5xt.png",
+        "state": [
+            {
+                "stateName": "疯狂",
+                "stateDescription": "当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做就会受到惩罚。"
+            },
+            {
+                "stateName": "相克规则",
+                "stateDescription": "①洗脑师与哥布林：\n②哥布林与戏子：\n③小怪宝与戏子：在戏子存在于剧本中时，照看小怪宝的玩家可以在游戏中任意时候向说书人示意自己”想要死亡“。说书人会在当晚将小怪宝从游戏中移除。"
+            }
+        ]
+    },
+    {
+        "id": "xizi",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/1/13/Xizi.png/180px-Xizi.png",
+        "edition": "custom",
+        "name": "戏子",
+        "ability": "所有戏子互相认识。不论在场的戏子数量多少或存活与否，胜负结果会被对调。[所有善良玩家都是戏子]",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 12,
+        "otherNight": 0,
+        "firstNightReminder": "唤醒所有戏子，让他们互相确认。如有必要，对他们展示“你是”提示标记和戏子角色标记。",
+        "setup": true
+    },
+    {
+        "id": "gongqing",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/4/4e/Empath.png/300px-Empath.png",
+        "edition": "custom",
+        "name": "共情者",
+        "ability": "每个夜晚,你会得知与你邻近的两名存活的玩家中邪恶玩家的数量。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 36,
+        "otherNight": 53,
+        "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
+        "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
+        "reminders": [],
+        "setup": false
+    },
+    {
+        "id": "tuguan",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/5/55/Librarian.png/300px-Librarian.png",
+        "edition": "custom",
+        "name": "图书管理员",
+        "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 33,
+        "otherNight": 0,
+        "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+        "otherNightReminder": "",
+        "reminders": [
+            "外来者",
+            "错误"
+        ],
+        "setup": false
+    },
+    {
+        "id": "wusheren",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/a/ab/Snakecharmer.png/300px-Snakecharmer.png",
+        "edition": "custom",
+        "name": "舞蛇人",
+        "ability": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 20,
+        "otherNight": 12,
+        "firstNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+        "otherNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+        "reminders": [
+            "中毒"
+        ],
+        "setup": false
+    },
+    {
+        "id": "chushi",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/e/e5/Chef.png/300px-Chef.png",
+        "edition": "custom",
+        "name": "厨师",
+        "ability": "在你的首个夜晚，你会得知场上邻座的邪恶玩家有多少对。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 35,
+        "otherNight": 0,
+        "firstNightReminder": "给他展示数字手势来告诉他场上邻座邪恶玩家有多少对。",
+        "otherNightReminder": "",
+        "reminders": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "setup": false
+    },
+    {
+        "id": "shenyuzhe",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/1/17/Oracle.png/300px-Oracle.png",
+        "edition": "custom",
+        "name": "神谕者",
+        "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 60,
+        "firstNightReminder": "",
+        "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
+        "reminders": [],
+        "setup": false
+    },
+    {
+        "id": "guizu",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/5/59/Noble.png/300px-Noble.png",
+        "edition": "custom",
+        "name": "贵族",
+        "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 43,
+        "otherNight": 0,
+        "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
+        "reminders": [
+            "被得知"
+        ]
+    },
+    {
+        "id": "jiangjun",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/6/6d/General.png/300px-General.png",
+        "edition": "custom",
+        "name": "将军",
+        "ability": "每个夜晚，你会得知说书人认为哪个阵营当前更有优势（善良/邪恶/均势）。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 49,
+        "otherNight": 69,
+        "firstNightReminder": "告诉将军你认为的答案。",
+        "otherNightReminder": "告诉将军你认为的答案。",
+        "reminders": [],
+        "setup": false
+    },
+    {
+        "id": "事务官",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/e/ee/Steward.png/300px-Steward.png",
+        "edition": "custom",
+        "name": "事务官",
+        "ability": "在你的首个夜晚，你会得知一名善良玩家。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 42,
+        "otherNight": 0,
+        "firstNightReminder": "唤醒事务官，指向标记有“得知”的那名玩家。让事务官重新入睡。",
+        "reminders": [
+            "得知"
+        ]
+    },
+    {
+        "id": "gonggao",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/b/b7/Towncrier.png/300px-Towncrier.png",
+        "edition": "custom",
+        "name": "城镇公告员",
+        "ability": "每个夜晚*，你会得知在今天白天时是否有爪牙发起过提名。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 59,
+        "firstNightReminder": "",
+        "otherNightReminder": "对他点头或摇头示意今天白天是否有爪牙发起过提名。",
+        "reminders": [
+            "爪牙未提名",
+            "爪牙已提名"
+        ],
+        "setup": false
+    },
+    {
+        "id": "dianxiaoer",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_8586487694761_0ecde168.jpg",
+        "edition": "custom",
+        "name": "店小二",
+        "ability": "在你的首个夜晚，你会得知两名善良玩家。他们之中会有一人醉酒，即使你已死亡。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 44,
+        "otherNight": 0,
+        "firstNightReminder": "唤醒店小二，对他指向标记有店小二的“熟客”和“醉酒”提示标记的这两名玩家。",
+        "reminders": [
+            "熟客",
+            "醉酒"
+        ]
+    },
+    {
+        "id": "caifeng",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/a/ae/Seamstress.png/300px-Seamstress.png",
+        "edition": "custom",
+        "name": "女裁缝",
+        "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 42,
+        "otherNight": 61,
+        "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+        "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+        "reminders": [
+            "失去能力"
+        ],
+        "setup": false
+    },
+    {
+        "id": "xiaojingling",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/2/22/Pixie.png/300px-Pixie.png",
+        "edition": "custom",
+        "name": "小精灵",
+        "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 29,
+        "otherNight": 0,
+        "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
+        "otherNightReminder": "",
+        "reminders": [
+            "疯狂",
+            "获得能力"
+        ],
+        "setup": false
+    },
+    {
+        "id": "bianlian",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/4/49/Bianlianshi.png/180px-Bianlianshi.png",
+        "edition": "custom",
+        "name": "变脸师",
+        "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你会在当晚获得那个角色的能力，直到下个黄昏。",
+        "team": "townsfolk",
+        "sch_team": "镇民",
+        "firstNight": 0,
+        "otherNight": 0,
+        "reminders": [
+            "疯狂"
+        ],
+        "remindersGlobal": [
+            "是变脸师"
+        ]
+    },
+    {
+        "id": "zhengke",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/91/Politician.png/300px-Politician.png",
+        "edition": "custom",
+        "name": "政客",
+        "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
+        "team": "outsider",
+        "sch_team": "外来者",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "setup": false
+    },
+    {
+        "id": "nichen",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_6302887694761_9ba8a0f3.jpg",
+        "edition": "custom",
+        "name": "逆臣",
+        "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你转变为邪恶；如果你先死于处决，他转变为邪恶。",
+        "team": "outsider",
+        "sch_team": "外来者",
+        "firstNight": 38,
+        "otherNight": 1,
+        "firstNightReminder": "唤醒逆臣，让其选择一名玩家。在该玩家的角色标记旁放置“不共戴天”提示标记。",
+        "otherNightReminder": "如果逆臣或标记了“不共戴天”的玩家死于处决，唤醒两者之中的另一名玩家，告诉他变为邪恶阵营。",
+        "reminders": [
+            "不共戴天"
+        ]
+    },
+    {
+        "id": "shengtu",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/b/bc/Saint.png/300px-Saint.png",
+        "edition": "custom",
+        "name": "圣徒",
+        "ability": "如果你死于处决，你的阵营落败。",
+        "team": "outsider",
+        "sch_team": "外来者",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "setup": false
+    },
+    {
+        "id": "daigua",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/f/f6/Klutz.png/300px-Klutz.png",
+        "edition": "custom",
+        "name": "呆瓜",
+        "ability": "当你得知你死亡时，你要公开选择一名存活的玩家：如果他是邪恶的，你的阵营落败。",
+        "team": "outsider",
+        "sch_team": "外来者",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "setup": false
+    },
+    {
+        "id": "jiugui",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/1/14/Drunk.png/300px-Drunk.png",
+        "edition": "custom",
+        "name": "酒鬼",
+        "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+        "team": "outsider",
+        "sch_team": "外来者",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "remindersGlobal": [
+            "是酒鬼"
+        ],
+        "setup": true
+    },
+    {
+        "id": "cike",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/6/69/Assassin.png/300px-Assassin.png",
+        "edition": "custom",
+        "name": "刺客",
+        "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
+        "team": "minion",
+        "sch_team": "爪牙",
+        "firstNight": 0,
+        "otherNight": 37,
+        "firstNightReminder": "",
+        "otherNightReminder": "刺客可以选择一名玩家。如果他这么做了，标记那名玩家死亡，且刺客失去能力，之后的夜晚无需再唤醒刺客。",
+        "reminders": [
+            "死亡",
+            "失去能力"
+        ],
+        "setup": false
+    },
+    {
+        "id": "xinaoshi",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/4/4d/Cerenovus.png/300px-Cerenovus.png",
+        "edition": "custom",
+        "name": "洗脑师",
+        "ability": "每个夜晚，你要选择一名玩家和一个善良角色。他明天白天和夜晚需要“疯狂”地证明自己是这个角色，不然他可能被处决。",
+        "team": "minion",
+        "sch_team": "爪牙",
+        "firstNight": 25,
+        "otherNight": 16,
+        "firstNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
+        "otherNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
+        "reminders": [
+            "疯狂"
+        ],
+        "setup": false
+    },
+    {
+        "id": "yangguren",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/8/80/Yangguren.png/180px-Yangguren.png",
+        "edition": "custom",
+        "name": "养蛊人",
+        "ability": "在你存活时提名你的玩家会在当晚死亡，即使你已死亡。",
+        "team": "minion",
+        "sch_team": "爪牙",
+        "firstNight": 0,
+        "otherNight": 38,
+        "otherNightReminder": "如果有玩家被放置了“提名”标记，标记该玩家死亡。",
+        "reminders": [
+            "提名",
+            "死亡"
+        ]
+    },
+    {
+        "id": "gebulin",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/d/d2/Goblin.png/300px-Goblin.png",
+        "edition": "custom",
+        "name": "哥布林",
+        "ability": "如果你在被提名后公开声明自己是哥布林且在那个白天被处决，你的阵营获胜。",
+        "team": "minion",
+        "sch_team": "爪牙",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "已公开声明"
+        ],
+        "setup": false
+    },
+    {
+        "id": "nvwu",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/e/e6/Witch.png/300px-Witch.png",
+        "edition": "custom",
+        "name": "女巫",
+        "ability": "每个夜晚，你要选择一名玩家：如果他明天白天发起提名，他死亡。如果只有三名存活的玩家，你失去此能力。",
+        "team": "minion",
+        "sch_team": "爪牙",
+        "firstNight": 24,
+        "otherNight": 15,
+        "firstNightReminder": "让女巫选择一名玩家。标记那名玩家被诅咒。",
+        "otherNightReminder": "让女巫选择一名玩家。标记那名玩家被诅咒。",
+        "reminders": [
+            "被诅咒"
+        ],
+        "setup": false
+    },
+    {
+        "id": "baobao",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/3/39/Lilmonsta.png/300px-Lilmonsta.png",
+        "edition": "custom",
+        "name": "小怪宝",
+        "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，会有一名玩家死亡。[+1爪牙]",
+        "team": "demon",
+        "sch_team": "恶魔",
+        "firstNight": 16,
+        "otherNight": 36,
+        "firstNightReminder": "唤醒所有爪牙，允许他们以指向的方式决定谁照看小怪宝，但不能产生其他交流，否则会有非常糟糕的事情发生。",
+        "otherNightReminder": "唤醒所有爪牙，允许他们以指向的方式决定谁照看小怪宝，但不能产生其他交流，否则会有非常糟糕的事情发生。说书人选择一名玩家，那名玩家死亡。",
+        "reminders": [],
+        "remindersGlobal": [
+            "是恶魔",
+            "死亡"
+        ],
+        "setup": true
+    },
+    {
+        "ability": "B站 是苏璃嘛",
+        "image": "https://img2.imgtp.com/2024/04/26/GXmnTq9t.png",
+        "edition": "custom",
+        "id": "Json By",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "name": "Json 制作 By",
+        "firstNight": 0,
+        "otherNight": 0,
+        "setup": 0,
+        "team": "fabled"
+    },
+	{
+		"ability": "使用灯神的相克规则。所有玩家都会知道其内容。",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png",
+		"edition": "custom",
+		"flavor": "",
+		"id": "djiin",
+		"name": "灯神",
+		"otherNight": 0,
+		"setup": 0,
+		"reminders": [],
+		"remindersGlobal": [],
+		"team": "fabled",
+		"firstNight": 0
+	}
+]

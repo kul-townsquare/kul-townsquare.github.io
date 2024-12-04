@@ -1,0 +1,386 @@
+[
+  {
+    "id": "_meta",
+    "name": "小二，上酒！",
+    "author": "刘中奇",
+    "logo": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264598_197011_7204.png",
+    "almanac": "https://www.bloodstar.xyz/p/Zonas_Liu/WuXia/almanac.html"
+  },
+  {
+    "id": "ShenSuanMeng",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202407/c_4099883622271_8b6975f2.jpg",
+    "firstNightReminder": "在第一个夜晚，唤醒神算盟。对他用手势比划数字来表示他和所有邪恶玩家之间的最近距离之和。让神算盟重新入睡。",
+    "name": "神算盟",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知所有邪恶玩家和你最近距离之和。",
+    "attribution": "刘中奇",
+    "flavor": "大道五十，天衍四九，人遁其一",
+    "firstNight": 100
+  },
+  {
+    "id": "EMei",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264600_197011_4900.png",
+    "firstNightReminder": "唤醒峨眉，告知其一条信息作为残缺的秘密。",
+    "otherNightReminder": "如果峨眉提名并处决了一名善良玩家，在峨眉的角色标记旁放置“揭露”标记。如果峨眉的角色标记旁有“揭露”标记，唤醒峨眉再告知其一条信息，并移除“揭露”标记。",
+    "reminders": [
+      "揭露"
+    ],
+    "name": "峨眉",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你得知一个残缺的秘密。每个夜晚*，如果你在白天提名并处决了存活善良玩家，这个秘密就会愈发完整。",
+    "flavor": "刀剑齐失人云亡，秘籍兵书此中藏",
+    "firstNight": 110,
+    "otherNight": 125
+  },
+  {
+    "id": "GaiBang",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264606_197011_2569.png",
+    "firstNightReminder": "在为首个夜晚进行准备时，将丐帮的“莲花落”提示标记放置在任意一名善良玩家的角色标记旁。在首个夜晚，唤醒丐帮，并指向标记有“莲花落”的那名玩家。让丐帮重新入睡。",
+    "reminders": [
+      "莲花落"
+    ],
+    "name": "丐帮",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你得知一名善良玩家：每个夜晚*，如果他中毒或者醉酒，他变为丐帮，随后你死亡。你不会中毒和醉酒。",
+    "attribution": "刘中奇",
+    "flavor": "我也曾轻裘肥马载高轩，指麾万众驱山前。\u003Cbr\u003E\n今日黄金散尽谁复矜，朋友离群猎狗烹。",
+    "firstNight": 89
+  },
+  {
+    "id": "TianJiGe",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264608_197011_430.png",
+    "firstNightReminder": "在首个夜晚，唤醒天机阁，让其选择两名连坐的玩家，并在其角色标记旁放置“探查”标记。",
+    "otherNightReminder": "唤醒天机阁，让其选择两名连坐的玩家，用点头或者摇头来告知是否选择了更多的邪恶玩家，移除之前的“探查”标记，并在新选择的玩家角色标记旁放置“探查”标记。",
+    "reminders": [
+      "探查"
+    ],
+    "name": "天机阁",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择两名除你以外的邻座玩家，你会得知相较于上一个夜晚，你是否选择了更多的邪恶玩家。",
+    "attribution": "刘中奇",
+    "flavor": "稚子问翁新悟处，欲言直恐泄天机。",
+    "firstNight": 87,
+    "otherNight": 128
+  },
+  {
+    "id": "KongTong",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264611_197011_9713.png",
+    "otherNightReminder": "如果崆峒首次提名并处决了一名善良玩家，在魔典中间放置“七伤”标记。如果魔典中间有“七伤”标记，当晚不会有善良玩家死亡。在黎明时移除“七伤”标记",
+    "reminders": [
+      "七伤"
+    ],
+    "name": "崆峒",
+    "team": "townsfolk",
+    "ability": "你首次提名并处决一名存活的善良玩家后，当晚不会有善良玩家死亡。",
+    "attribution": "刘中奇",
+    "flavor": "五行之气调阴阳，损心伤肺摧肝肠。",
+    "otherNight": 19
+  },
+  {
+    "id": "HuaShan",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264613_197011_2123.png",
+    "firstNightReminder": "唤醒华山，让其选择三名玩家（用手指向一名玩家），指向一个三名玩家均不为的角色类型；或者让其选择三个善良角色（指向角色列表），指向其中一个角色对应的玩家，如果都不在场，对华山摇头",
+    "otherNightReminder": "唤醒华山，让其选择三名玩家（用手指向一名玩家），指向一个三名玩家均不为的角色类型；或者让其选择三个善良角色（指向角色列表），指向其中一个角色对应的玩家，如果都不在场，对华山摇头",
+    "name": "华山",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你可以选择三名玩家，你会得知他们均不为哪种角色类型；你也可以选择三个善良角色，你会得知其中一个角色对应的玩家，或者得知都不在场。",
+    "attribution": "刘中奇",
+    "flavor": " 剑斩世间不平事，浮云深处藏功名。",
+    "firstNight": 88,
+    "otherNight": 129
+  },
+  {
+    "id": "WuDang",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264615_197011_7376.png",
+    "otherNightReminder": "唤醒武当，让其选择两个镇民角色，如果这两个角色都存活（存活的先决条件是在场），放置“太极”标记在其角色标记旁。",
+    "reminders": [
+      "太极"
+    ],
+    "name": "武当",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你可以选择除你以外的两个镇民角色，如果他们都存活，他们当晚不会死亡。",
+    "attribution": "刘中奇",
+    "flavor": "天涯思君不可忘，武当山顶松柏长。",
+    "otherNight": 20
+  },
+  {
+    "id": "LiuShanMen",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264617_197011_4488.png",
+    "otherNightReminder": "在六扇门提名时，在对应的玩家标记旁放置“追查”标记。在夜晚时，唤醒六扇门，用点头和摇头来示意与有“追查”标记邻近的玩家中是否存在非镇民玩家。",
+    "reminders": [
+      "追查"
+    ],
+    "name": "六扇门",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你会得知今天白天你提名的玩家邻近的玩家中是否存在非镇民玩家。",
+    "flavor": "“仔细搜寻，此处必有贼人踪迹！”",
+    "otherNight": 127
+  },
+  {
+    "id": "ShaoLin",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_0057777752271_96b1a3f5.jpg",
+    "name": "少林",
+    "team": "townsfolk",
+    "ability": "每个白天，你可以私下询问说书人并依次得知：一条正确信息；一名中毒/醉酒玩家的角色；存活恶魔的角色；一名爪牙玩家和他的角色。[+1外来者]",
+    "attribution": "刘中奇",
+    "flavor": "一切有为法，如梦幻泡影，如露亦如电，当作如是观。",
+    "setup":true
+  },
+  {
+    "id": "LongMenBiaoJu",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264621_197011_6829.png",
+    "firstNightReminder": "在为首个夜晚进行准备时，将龙门镖局的“东家”提示标记放置在任意一名非恶魔的角色标记旁。唤醒“东家”标记的玩家，展示“这个角色在场”和“龙门镖局”的角色标记。",
+    "reminders": [
+      "东家",
+      "失标"
+    ],
+    "name": "龙门镖局",
+    "team": "townsfolk",
+    "ability": "始终有一名存活的非恶魔玩家知道龙门镖局在场，直到你中毒或者醉酒。",
+    "flavor": "“梁子土了点的，里腥把合着，河吾——”",
+    "firstNight": 72
+  },
+  {
+    "id": "TangMen",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_0376377752271_40a9bdd3.jpg",
+    "reminders": [
+      "中毒"
+    ],
+    "setup": true,
+    "name": "唐门",
+    "team": "townsfolk",
+    "ability": "你和弃徒之间顺时针方向上的一名善良玩家中毒。每个白天，你可以拜访说书人回答一个问题，你会得知你回答的有多准确，当你首次得知“完美”时，因你的能力中毒的玩家恢复健康。[+弃徒]",
+    "flavor": "针翎钉棘十指牵，暴雨飞星乾坤颠。"
+  },
+  {
+    "id": "GuanWaiHuJia",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264625_197011_2179.png",
+    "otherNightReminder": "如果关外胡家在夜晚死亡，唤醒他，让他选择两名玩家，随后让他重新入睡。接着分别唤醒他选择的两名玩家，指向另一名玩家和他的角色。",
+    "name": "关外胡家",
+    "team": "townsfolk",
+    "ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择两名其他玩家，他们互相知道对方是什么角色。",
+    "flavor": "城头铁鼓声犹震，匣里金刀血未干",
+    "otherNight": 99
+  },
+  {
+    "id": "ZhongYuanMiaoJia",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264627_197011_8611.png",
+    "otherNightReminder": "如果中原苗家在夜晚死亡，让关外胡家代替其死去。同时唤醒中原苗家，指向一个恶魔伪装的角色。",
+    "setup": true,
+    "name": "中原苗家",
+    "team": "townsfolk",
+    "ability": "如果你在夜晚死亡，关外胡家会代替你死亡，同时你会被唤醒得知恶魔的一个伪装。[+关外胡家]",
+    "flavor": "“洗剑怀中抱月、迎门腿反劈华山、提撩剑白鹤舒翅、冲天掌苏秦背剑——”",
+    "otherNight": 100
+  },
+  {
+    "id": "QiTu",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264629_197011_5272.png",
+    "remindersGlobal": [
+      "是弃徒",
+      "报仇雪恨"
+    ],
+    "setup": true,
+    "name": "弃徒",
+    "team": "outsider",
+    "ability": "你不知道你是弃徒，你会以为自己是一个在场的镇民角色,但其实你不是。对调你自身的胜负结果，除非你提名并处决了与你认知角色相同的玩家，即使你已死亡。",
+    "flavor": "“我失去的我一定要自己亲手拿回来，哪怕深入魔道也在所不惜！”"
+  },
+  {
+    "id": "XiaoYaoGu",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264631_197011_1721.png",
+    "reminders": [
+      "醉酒"
+    ],
+    "name": "逍遥谷",
+    "team": "outsider",
+    "ability": "距离你最远或者最近的一名善良玩家醉酒，如果你提名并处决了这名玩家，改为一名邪恶玩家醉酒，即使你已死亡。",
+    "flavor": "“朝菌不知晦朔，蟪蛄不知春秋，此........再来一壶.....”"
+  },
+  {
+    "id": "XiaKeDao",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264633_197011_5916.png",
+    "reminders": [
+      "请柬"
+    ],
+    "name": "侠客岛",
+    "team": "outsider",
+    "ability": "当你死于处决时，与你邻近的存活玩家不计入邪恶阵营获胜条件。",
+    "flavor": "“张三李四邀请五大掌门于六日后前去七里侠客岛同赏腊八粥”"
+  },
+  {
+    "id": "YiPinTang",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264635_197011_6583.png",
+    "otherNightReminder": "如果白天一品堂参与投票的玩家没有被处决，或者他没有投票，唤醒恶魔，展示“该角色的能力对你生效”和一品堂角色标记，让其选择一名玩家，在其角色标记旁放置“中毒”提示标记。",
+    "reminders": [
+      "中毒",
+      "拥有能力"
+    ],
+    "name": "一品堂",
+    "team": "outsider",
+    "ability": "每个白天，你只能投一票。如果你参与投票的玩家没有被处决，或者你没有投票，当晚恶魔可以选择一名玩家：他中毒直到下个黄昏。如果你死于处决，会有一名邪恶玩家拥有你的能力。",
+    "flavor": "“老子说的话就是命令，不服，不服你就躺地上吧”",
+    "otherNight": 15
+  },
+  {
+    "id": "BaiXiaoSheng",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_6141582653271_958880c0.jpg",
+    "reminders": [
+      "猜测正确"
+    ],
+    "name": "百晓生",
+    "team": "minion",
+    "ability": "每个白天限一次，你可以公开猜测若干玩家的角色，说书人会立即宣布猜测正确的数量，即使你已死亡。 如果你猜测正确所有玩家的角色，邪恶阵营获胜。",
+    "flavor": "刀枪剑戟，哼哼，尔等招式尽在我掌握之中。"
+  },
+  {
+    "id": "WuDu",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_5440882653271_cd540833.jpg",
+    "otherNightReminder": "如果五毒提名了一个玩家，将在他的角色标记旁放置“中蛊”提示标记，如果他还死于处决，将“中蛊”标记放在他邻近的善良玩家边。在夜晚时，唤醒标记有“中蛊”的玩家，在其角色标记旁边放置“中毒”标记，并且给五毒展示他们的角色标记。",
+    "reminders": [
+      "中蛊",
+      "中毒"
+    ],
+    "setup": false,
+    "name": "五毒",
+    "team": "minion",
+    "ability": "每个夜晚*，你会得知被你提名玩家的角色，并且他中毒直到下个黄昏，如果他死于处决或者他是邪恶的，改为他顺时针方向上最近的善良玩家。",
+    "flavor": "从此蝎心戏江湖，再无圣手为一人",
+    "otherNight": 14
+
+  },
+  {
+    "id": "GuSuMuRong",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_4704392653271_1ec8a149.jpg",
+    "otherNightReminder": "唤醒姑苏慕容，告知其一个角色类型，让他选择一个对应的角色，如果该角色不在场，并且将慕容的角色标记替换为他选择的角色。",
+    "reminders": [
+      "死于处决"
+    ],
+    "name": "姑苏慕容",
+    "team": "minion",
+    "ability": "存活玩家大于六人时（旅行者不计算在内），邪恶阵营不会落败。每个夜晚*，你会得知白天死于处决的玩家的角色类型，然后你要选择一个该角色类型的角色，如果其不在场，你变为这个角色。",
+    "flavor": "燕王风气犹若存，血染银盔马踏缰",
+    "otherNight": 16
+  },
+  {
+    "id": "QingYiLou",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_1185592653271_fcc8b2a6.jpg",
+    "otherNightReminder": "如果青衣楼死于处决，在其角色标记旁放置“追杀”提示标记。在夜晚时，如果其角色标记旁有“追杀”提示标记，唤醒青衣楼，让其选择一名玩家，在其角色标记旁放置“死亡”标记。",
+    "reminders": [
+      "追杀",
+      "死亡"
+    ],
+    "name": "青衣楼",
+    "team": "minion",
+    "ability": "如果你死于处决，每个夜晚*，你要选择一名玩家：他死亡。",
+    "flavor": "谁也不知道青衣楼第一楼在哪里，谁也没有亲眼看见过青衣楼第一楼上那一百零八张画像。但无论谁都知道，能够在那里有画像的人，就已经能够在江湖上横冲直闯。",
+    "otherNight": 87
+  },
+  {
+    "id": "MingJiao",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_5914892653271_6d21734b.jpg",
+    "firstNightReminder": "在首个夜晚，唤醒明教，让其选择“正确”或者“错误”，将对应的提示标记放在明教的角色标记旁。",
+    "otherNightReminder": "其他夜晚，唤醒明教，让其选择一名玩家，在其角色标记旁放置“死亡”，让明教重新入睡。",
+    "reminders": [
+      "正确",
+      "错误",
+      "死亡"
+    ],
+    "name": "明教",
+    "team": "demon",
+    "ability": "每个夜晚*，选择一名玩家：他死亡。在你的首个夜晚，你决定镇民玩家的能力产生错误/正确的信息。当有邪恶玩家死亡时，转换正误。",
+    "flavor": "“喜乐悲愁，皆归尘土。怜我世人，忧患实多。”",
+    "firstNight": 35,
+    "otherNight": 49
+  },
+  {
+    "id": "WuMing",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_8570103653271_ff2383e2.jpg",
+    "firstNightReminder": "在首个夜晚，唤醒无名，让其选择一名玩家和一个善良角色，如果该角色不在场，在该玩家的角色标记旁放置“拥有能力”。唤醒放置：“拥有能力”标记的玩家，展示“该角色的能力对你生效”，“无名”角色标记和无名选择的善良角色的标记。",
+    "otherNightReminder": "其他夜晚，唤醒无名，让其选择一名玩家，在其角色标记旁放置“死亡”。如果上个夜晚无名选择的角色在场，让无名重新选择一名玩家和一个善良角色，如果该角色不在场，在该玩家的角色标记旁放置“拥有能力”，让无名重新入睡。",
+    "reminders": [
+      "拥有能力",
+      "死亡"
+    ],
+    "name": "无名",
+    "team": "demon",
+    "ability": "每个夜晚*，选择一名玩家：他死亡。在你的首个夜晚，你要选择一名玩家和一个善良角色，如果该角色不在场，他会拥有该角色的能力，否则你会在下个夜晚被唤醒再次进行选择。",    "flavor": "“我是谁？五十年前我已经记不得了！”",
+    "firstNight": 8,
+    "otherNight": 50
+  },
+  {
+    "id": "RiYueShenJiao",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_8022303653271_c8b973d9.jpg",
+    "otherNightReminder": "如果日月神教的角色标记旁有“行动两次”提示标记，唤醒日月神教，让其选择两次；如果日月神教的角色标记旁有“必定死亡”提示标记，将“死亡”提示标记放置到该玩家的角色标记旁，本次死亡不能通过任何方式来防止",
+    "reminders": [
+      "行动两次",
+      "必定死亡",
+      "死亡"
+    ],
+    "setup": true,
+    "name": "日月神教",
+    "team": "demon",
+    "ability": "每个夜晚*，选择一名玩家：他死亡。偶数夜晚，他必定死亡，即使任何原因他不会死亡，奇数夜晚你行动两次。[-1外来者]",
+    "flavor": "天下武功，无坚不摧，唯快不破。",
+    "otherNight": 52
+  },
+  {
+    "id": "TianLongJiao",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_4963444872271_1decb38b.jpg",
+    "firstNightReminder":"首个夜晚，唤醒天龙教，指向所有的外来者玩家，并且在他们的角色标记旁放置“傀儡”提示标记，但是不要告知天龙教他们的角色，让天龙教选择其中之一，在他顺时针方向上最近的镇民角色标记旁放置“中毒”标记。",
+    "otherNightReminder": "如果天龙教选择的玩家死于处决，展示“傀儡”提示标记，并且再次让他做出选择。其他夜晚，唤醒天龙教，让其选择一名玩家，在其角色标记旁放置“死亡”，让天龙教重新入睡。",
+    "reminders": [
+      "死亡",
+      "中毒",
+      "傀儡"
+    ],
+    "setup": true,
+    "name": "天龙教",
+    "team": "demon",
+    "ability": "在你的首个夜晚，你得知所有的外来者玩家，并且选择其中之一：他顺时针方向上最近的镇民中毒，当他死于处决时，你会被再次唤醒重新做出选择。每个夜晚*，你要选择一名玩家：他死亡。[至少有两名外来者]",
+    "flavor": "羽翼落尽之日，便是我天龙归来之时。",
+    "otherNight": 51,
+    "firstNight":10
+  },
+  {
+    "id": "MeiDaoWang",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_9012952653271_533e28a0.jpg",
+    "name": "美刀王",
+    "team": "traveler",
+    "ability": "你可以选择代替一名异性被处决。",
+    "flavor": "这二十三年之中，跟她也只说过三十九句话。她倒向我说过五十五句。"
+  },
+  {
+    "id": "KuTouTuo",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_7772272653271_6c407f0d.jpg",
+    "name": "苦头陀",
+    "team": "traveler",
+    "ability": "每个黎明，你要选择一名玩家：他只能通过手势或者外语进行发言，但是你必须帮他翻译。",
+    "flavor": "只见右首走过来一个长发披肩的头陀，身材魁伟，满面横七竖八的都是刀疤，本来相貌已全不可辨。"
+  },
+  {
+    "id": "LuDingGong",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_8910962653271_db328b25.jpg",
+    "name": "鹿鼎公",
+    "team": "traveler",
+    "ability": "每个白天，你可以公开选择一名玩家：你和他猜大小，如果你获胜，你可以提出一个合理的要求，他必须选择满足或者死亡。",
+    "flavor": "大功告成，亲个嘴吧！今天大家就赌他个落花流水！"
+  },
+  {
+    "id": "ShuoBuDe",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_9214227613271_dc77f71c.jpg",
+    "name": "说不得",
+    "team": "traveler",
+    "ability": "每个白天，你可以驳回一次提名。",
+    "attribution": "摸鱼",
+    "flavor": "说不得就是说不得，还有甚么道理好讲……"
+  },
+  {
+    "id": "BaoBuTong",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_7442452653271_c36b4410.jpg",
+    "name": "包不同",
+    "team": "traveler",
+    "ability": "每局游戏限一次，提名阶段开始后，你可以公开选择一名玩家：仅有你与他可以发言，三分钟后，所有玩家要表决：你们中谁被处决。（平局则他被处决）",
+    "flavor": "非也，非也"
+  }
+]

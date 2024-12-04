@@ -1,0 +1,522 @@
+[
+	{
+		"id": "_meta",
+		"name": "蛇谷奇观",
+		"author": "503&面哥",
+		"logo": "https://www.bloodstar.xyz//p//comm503//DeathBetween//aprophecyofkukulcan_deathbetween.png",
+		"description": "画脸画皮难画骨，知人知面不知心",
+		"townsfolkName": "镇民",
+		"outsidersName": "外来者",
+		"minionsName": "爪牙",
+		"demonsName": "恶魔",
+		"townsfolk": "镇民",
+		"outsider": "外来者",
+		"minion": "爪牙",
+		"demon": "恶魔"
+	},
+	{
+		"id": "43105bd6-1deb-4dc7-9085-07673babbc5b",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4630967694761_bd56d041.jpg",
+		"edition": "custom",
+		"name": "阴阳师",
+		"ability": "在你的首个夜晚，你会得知两个善良角色和两个邪恶角色，其中有且只有两个角色在场。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 30,
+		"otherNight": 0,
+		"firstNightReminder": "唤醒阴阳师，并对其展示两个善良角色，两个邪恶角色，共四个角色标记。其中正好只有两个角色在场。",
+		"otherNightReminder": "",
+		"reminders": [],
+		"remindersGlobal": [],
+		"setup": 0
+	},
+	{
+		"id": "b34de871-9a6d-4df6-8381-d2a543e7ca83",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
+		"edition": "custom",
+		"name": "小精灵",
+		"ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 29,
+		"otherNight": 0,
+		"firstNightReminder": "对小精灵展示一个在场的镇民角色。",
+		"otherNightReminder": "",
+		"reminders": [
+			"疯狂",
+			"获得能力"
+		],
+		"setup": false
+	},
+	{
+		"id": "d7dd7fff-0ecd-414f-af19-f89ba6c03db9",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snake_charmer.png",
+		"edition": "custom",
+		"name": "舞蛇人",
+		"ability": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 20,
+		"otherNight": 12,
+		"firstNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+		"otherNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+		"reminders": [
+			"中毒"
+		],
+		"setup": false
+	},
+	{
+		"id": "2369f269-6ca5-4805-b476-7969db429cc8",
+		"image": "https://www.bloodstar.xyz//p//comm503//DeathBetween//graverobber_deathbetween.png",
+		"edition": "custom",
+		"name": "摸金校尉",
+		"ability": "每局游戏限一次，在白天提名前，你可以选择任意名存活玩家。如果他们都死亡，当晚你得知他们的角色。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 0,
+		"otherNight": 57,
+		"reminders": [
+			"墓主"
+		]
+	},
+	{
+		"id": "fac2bbe9-081f-42b1-8d3e-d8c16d917063",
+		"image": "https://www.bloodstar.xyz//p//comm503//DeathBetween//psychic_deathbetween.png",
+		"edition": "custom",
+		"name": "通灵师",
+		"ability": "每个白天，你可以拜访说书人并给出一个关键词，你得知一条相关信息。如果你邻座的存活玩家中存在邪恶，你获得错误的信息。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 0,
+		"otherNight": 0
+	},
+	{
+		"id": "49d6f3c0-6b77-4200-b0c1-232420fb2934",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/cannibal.png",
+		"edition": "custom",
+		"name": "食人族",
+		"ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
+		"team": "townsfolk",
+		"sch_team": "村民",
+		"firstNight": 0,
+		"otherNight": 0,
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"reminders": [
+			"中毒",
+			"死于今日"
+		],
+		"remindersGlobal": [],
+		"setup": 0
+	},
+	{
+		"id": "d34d7844-ca73-4a28-9c6c-5fbf063387e2",
+		"image": "https://www.bloodstar.xyz//p//comm503//DeathBetween//statuebuilder_deathbetween.png",
+		"edition": "custom",
+		"name": "神像匠人",
+		"ability": "你可以在白天向说书人索要一个能力，如果说书人拒绝，你明天可以继续索要。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 0,
+		"otherNight": 0,
+		"reminders": [
+			"神迹"
+		]
+	},
+	{
+		"id": "b946b79c-adb2-45cf-8440-696eda8ba0f8",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/chef.png",
+		"edition": "custom",
+		"name": "厨师",
+		"ability": "在你的首个夜晚，你会得知场上邻座的邪恶玩家有多少对。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 7800,
+		"otherNight": 0,
+		"firstNightReminder": "给他展示数字手势来告诉他场上邻座邪恶玩家有多少对。",
+		"otherNightReminder": "",
+		"reminders": [],
+		"remindersGlobal": [],
+		"setup": 0
+	},
+	{
+		"id": "502c690b-b5f4-4265-8990-35274575e0a1",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_9168557760171_8ae6a36c.jpg",
+		"edition": "custom",
+		"name": "驿使",
+		"ability": "每个白天，你可以公开声明一个角色。在当晚，你会得知该角色是否在场。如果你因此得知了否，你失去此能力。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 0,
+		"otherNight": 12210,
+		"firstNightReminder": "",
+		"otherNightReminder": "在每个白天，如果驿使声明使用他的能力，如果驿使声明的角色在场，放置“猜测正确”提示标记在驿使角色标记旁。\n当晚，唤醒驿使艺人。如果他猜测正确，对他点头表示“是”，对他摇头表示“否”，如果你对他摇头，放置一枚“失去能力”的标记在其角色旁",
+		"reminders": [
+			"猜测正确",
+			"失去能力"
+		],
+		"remindersGlobal": [],
+		"setup": 0
+	},
+	{
+		"id": "15dccc59-a10b-477c-9695-6f0214f2c266",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_5337365766861_4d0134a5.jpg",
+		"edition": "custom",
+		"name": "香客",
+		"ability": "每个夜晚*，你要点一根香：你会得知香能否被点燃。如果当天你曾与恶魔一起投票，香无法被点燃。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 0,
+		"otherNight": 61,
+		"firstNightReminder": "",
+		"otherNightReminder": "如果香客与恶魔没有一起投票，告知他“香燃了起来”；如果他曾与恶魔一起投票，告知他“香就是点不着，似乎有什么不好的事情发生了”。",
+		"reminders": [
+			"点燃",
+			"熄灭"
+		],
+		"remindersGlobal": [],
+		"setup": 0
+	},
+	{
+		"id": "b8431b40-b80e-4b9c-a3c8-77aeaf09a93d",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
+		"edition": "custom",
+		"name": "赌徒",
+		"ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 0,
+		"otherNight": 9,
+		"firstNightReminder": "",
+		"otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
+		"reminders": [
+			"死亡"
+		],
+		"setup": false
+	},
+	{
+		"id": "753c5c9f-b17b-4f29-b659-4f37d620cc30",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/innkeeper.png",
+		"edition": "custom",
+		"name": "旅店老板",
+		"ability": "每个夜晚*，你要选择两名玩家：他们当晚不会死亡，但其中一人会醉酒到下个黄昏。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 0,
+		"otherNight": 8,
+		"firstNightReminder": "",
+		"otherNightReminder": "让旅店老板选择两名玩家。标记这两名玩家不会死亡，并标记其中一人醉酒。",
+		"reminders": [
+			"不会死亡",
+			"醉酒"
+		],
+		"setup": false
+	},
+	{
+		"id": "4e17b52c-ede1-4191-b967-3516a4efa617",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/grandmother.png",
+		"edition": "custom",
+		"name": "祖母",
+		"ability": "在你的首个夜晚，你会得知一名善良玩家和他的角色。如果恶魔杀死了他，你也会死亡。",
+		"team": "townsfolk",
+		"sch_team": "镇民",
+		"firstNight": 39,
+		"otherNight": 50,
+		"firstNightReminder": "指向她的孙子玩家，并展示该玩家的角色标记。",
+		"otherNightReminder": "如果孙子被恶魔杀死，祖母也会一同死亡。标记祖母死亡。",
+		"reminders": [
+			"孙子",
+			"死亡"
+		],
+		"setup": false
+	},
+	{
+		"id": "8a2c804e-b44d-4541-939d-ebf7161b7841",
+		"image": "https://www.bloodstar.xyz//p//comm503//DeathBetween//stowaway_deathbetween.png",
+		"edition": "custom",
+		"name": "伏波客",
+		"ability": "在游戏开始时，你得知在场的邪恶角色，你选择其中之一，获得他的能力并加入邪恶阵营，那个角色醉酒。",
+		"team": "outsider",
+		"sch_team": "外来者",
+		"firstNight": 0,
+		"otherNight": 0,
+		"reminders": [
+			"偷渡"
+		]
+	},
+	{
+		"id": "d272d9da-7d88-4f47-9eb2-c52b2e160276",
+		"image": "https://www.bloodstar.xyz//p//comm503//DeathBetween//snakling_deathbetween.png",
+		"edition": "custom",
+		"name": "青鳞",
+		"ability": "你以为你是一个爪牙，但其实你不是。恶魔知道你的认知角色，他决定你如何得知爪牙信息。",
+		"team": "outsider",
+		"sch_team": "外来者",
+		"firstNight": 7,
+		"otherNight": 0,
+		"remindersGlobal": [
+			"是青鳞"
+		],
+		"setup": true
+	},
+	{
+		"id": "de39cd7f-0b96-4134-8273-b6a744b6f3d7",
+		"image": "https://www.bloodstar.xyz//p//comm503//DeathBetween//mage_deathbetween.png",
+		"edition": "custom",
+		"name": "天机老者",
+		"ability": "说书人可能会打破一次规则，你得知他做了什么。在夜晚恶魔有一次猜测你的机会，如果猜对，当晚一名善良玩家死亡。",
+		"team": "outsider",
+		"sch_team": "外来者",
+		"firstNight": 0,
+		"otherNight": 0,
+		"firstNightReminder": "天机不可泄漏",
+		"otherNightReminder": "天机不可泄漏",
+		"reminders": [
+			"死亡"
+		]
+	},
+	{
+		"id": "d5b21fc6-d532-4277-86c0-10ac650ebb8e",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_6245362020171_1d00f89a.jpg",
+		"edition": "custom",
+		"name": "福娃",
+		"ability": "游戏结束时，你获胜，但如果善良阵营落败，首个除你以外的善良玩家猜对你是福娃后会和你交换角色（每人只能猜一次），即使你已死亡。",
+		"team": "outsider",
+		"sch_team": "外来者",
+		"firstNight": 0,
+		"otherNight": 0
+	},
+	{
+		"id": "24cbf0bc-de7f-4595-bb68-8f4f8f2125d4",
+		"image": "https://www.bloodstar.xyz//p//comm503//DeathBetween//hissteller_deathbetween.png",
+		"edition": "custom",
+		"name": "蛇语师",
+		"ability": "每个夜晚，你可以选择一名其他玩家，他暂时失去原能力，随后获得舞蛇人的能力，直到天亮。",
+		"team": "minion",
+		"sch_team": "爪牙",
+		"firstNight": 13,
+		"otherNight": 11,
+		"firstNightReminder": "玩家会知道自己拥有舞蛇人的技能",
+		"otherNightReminder": "玩家会知道自己拥有舞蛇人的技能",
+		"reminders": [
+			"舞蛇学徒"
+		]
+	},
+	{
+		"id": "bd2dd8a4-472c-4524-85d8-d960b50d6b3f",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cerenovus.png",
+		"edition": "custom",
+		"name": "洗脑师",
+		"ability": "每个夜晚，你要选择一名玩家和一个善良角色。他明天白天和夜晚需要“疯狂”地证明自己是这个角色，不然他可能被处决。",
+		"team": "minion",
+		"sch_team": "爪牙",
+		"firstNight": 25,
+		"otherNight": 16,
+		"firstNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
+		"otherNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
+		"reminders": [
+			"疯狂"
+		],
+		"setup": false
+	},
+	{
+		"id": "e97f5e85-8934-490f-8886-a70649400553",
+		"image": "https://www.bloodstar.xyz//p//comm503//DeathBetween//danching_deathbetween.png",
+		"edition": "custom",
+		"name": "丹青鬼",
+		"ability": "每局游戏限一次，在夜晚你可以选择至多三名玩家猜测角色，猜对的中毒一天一夜，反之他可能获得你猜错的那个角色能力。",
+		"team": "minion",
+		"sch_team": "爪牙",
+		"firstNight": 8,
+		"otherNight": 10,
+		"reminders": [
+			"中毒"
+		]
+	},
+	{
+		"id": "a4bd6f2c-c875-4fc5-87f0-115c5693f4e0",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/godfather.png",
+		"edition": "custom",
+		"name": "教父",
+		"ability": "在你的首个夜晚，你会得知有哪些外来者角色在场。如果有外来者在白天死亡，你会在当晚被唤醒并且你要选择一名玩家：他死亡。[-1或+1外来者]",
+		"team": "minion",
+		"sch_team": "爪牙",
+		"firstNight": 21,
+		"otherNight": 15,
+		"firstNightReminder": "对他展示所有在场的外来者标记。",
+		"otherNightReminder": "如果有外来者在今天白天死亡，让教父选择一名玩家。标记那名玩家死亡。",
+		"reminders": [
+			"死于今日",
+			"死亡"
+		],
+		"setup": true
+	},
+	{
+		"id": "130df1dd-dc1e-45b4-9ed8-1041edd6c70b",
+		"image": "https://i.postimg.cc/XJVjrf9v/image.png",
+		"edition": "custom",
+		"name": "镜中魔",
+		"ability": "每个夜晚*，你可以选择一名玩家：他死亡。或选择两名玩家：如果他们角色相同，那么他们一同死亡。[场上存在一对及以上的相同善良镇民角色，每对中的一个中毒，-1 外来者]",
+		"team": "demon",
+		"sch_team": "恶魔",
+		"firstNight": 3,
+		"otherNight": 23,
+		"firstNightReminder": "首夜确定有双生玩家",
+		"otherNightReminder": "选一个或两个人杀害",
+		"reminders": [
+			"中毒",
+			"死亡"
+		],
+		"setup": true
+	},
+	{
+		"id": "344f2b6a-d36b-424f-854f-adbee2285be4",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_6886084308961_f221dd48.jpg",
+		"edition": "custom",
+		"name": "奥赫",
+		"ability": "每个夜晚*，你要选择一个角色：他死亡。如果该角色不在场，则由说书人来决定谁会被你杀死。",
+		"team": "demon",
+		"sch_team": "恶魔",
+		"firstNight": 0,
+		"otherNight": 33,
+		"firstNightReminder": "",
+		"otherNightReminder": "唤醒奥赫。让奥赫指向角色列表上的一个角色标记。如果被选择的角色在场，对应的玩家死亡——使用“死亡”提示标记标记那名玩家。如果被选择的角色不在场，那么改为你来选择任意一名玩家，那名玩家死亡——使用“死亡”提示标记标记那名玩家。让奥赫重新入睡。",
+		"reminders": [
+			"死亡"
+		],
+		"remindersGlobal": [],
+		"setup": 0
+	},
+	{
+		"id": "8cba0e2a-4279-45e1-86f6-de356a53f407",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_1941208694761_71bc0c2b.jpg",
+		"edition": "custom",
+		"name": "食梦貘",
+		"ability": "每个夜晚*，你要选择一名玩家：他死亡。选择你的玩家会改为选中自己。[-1 外来者]",
+		"team": "demon",
+		"sch_team": "恶魔",
+		"firstNight": 0,
+		"otherNight": 30,
+		"firstNightReminder": "",
+		"otherNightReminder": "唤醒食梦貘，让其选择一名玩家。标记那名玩家死亡。",
+		"reminders": [
+			"死亡"
+		],
+		"remindersGlobal": [],
+		"setup": true
+	},
+	{
+		"id": "c3ac94d5-c608-4b0f-90ae-35b948028549",
+		"image": "https://www.bloodstar.xyz//p//comm503//DeathBetween//sacrifice_deathbetween.png",
+		"edition": "custom",
+		"name": "尸祭降神",
+		"ability": "在游戏的第二个、第四个白天，说书人会随机公布三个蛇神祝福，场上存活玩家共同推选一名死亡玩家，他可以消耗自己的遗言票，从三个祝福中选择一个触发。",
+		"team": "fabled",
+		"firstNight": 0,
+		"otherNight": 0,
+		"reminders": [
+			"祭品",
+			"标记"
+		]
+	},
+	{
+		"id": "8fa206db-35e3-44dc-86fa-550c10117602",
+		"image": "https://www.bloodstar.xyz//p//comm503//SMRD//vision_smrd.png",
+		"edition": "custom",
+		"name": "开悟",
+		"ability": "你选择一个角色，你得知他是否在场。",
+		"team": "fabled",
+		"firstNight": 0,
+		"otherNight": 0
+	},
+	{
+		"id": "78da601e-b008-4f28-8bf7-5bc6b22efa7e",
+		"image": "https://www.bloodstar.xyz//p//comm503//SMRD//curse_smrd.png",
+		"edition": "custom",
+		"name": "巫蛊",
+		"ability": "你公开选择一名玩家，如果他和你阵营相同，他死亡。",
+		"team": "fabled",
+		"firstNight": 0,
+		"otherNight": 0
+	},
+	{
+		"id": "2fe4f3cb-ce78-4af5-9c40-49de7b663950",
+		"image": "https://www.bloodstar.xyz//p//comm503//SMRD//invisible_smrd.png",
+		"edition": "custom",
+		"name": "隐遁",
+		"ability": "你选择一名玩家，当晚他无法成为任何玩家的能力目标。",
+		"team": "fabled",
+		"firstNight": 0,
+		"otherNight": 0
+	},
+	{
+		"id": "9093db22-f295-418e-8b0c-da8cb643f044",
+		"image": "https://www.bloodstar.xyz//p//comm503//SMRD//resurrection_smrd.png",
+		"edition": "custom",
+		"name": "还魂",
+		"ability": "你选择一名其他死亡玩家，你需要为他发表追悼词，随后他复活。",
+		"team": "fabled",
+		"firstNight": 0,
+		"otherNight": 0
+	},
+	{
+		"id": "882b76bf-91df-4b46-9678-b1a5120f24c1",
+		"image": "https://www.bloodstar.xyz//p//comm503//SMRD//thorn_smrd.png",
+		"edition": "custom",
+		"name": "冥佑",
+		"ability": "你选择一名玩家，当晚所有用能力选择他的玩家都会改为选择自己。",
+		"team": "fabled",
+		"firstNight": 0,
+		"otherNight": 0
+	},
+	{
+		"id": "d7dcbc69-636d-4904-8150-03c826d4dff2",
+		"image": "https://www.bloodstar.xyz//p//comm503//SMRD//punishing_smrd.png",
+		"edition": "custom",
+		"name": "天谴",
+		"ability": "你选择三名玩家，其中最不活跃的玩家会立刻被处决。",
+		"team": "fabled",
+		"firstNight": 0,
+		"otherNight": 0
+	},
+	{
+		"id": "56265a43-d3f9-4d04-b4ba-d934344603e2",
+		"image": "https://www.bloodstar.xyz//p//comm503//SMRD//miracle_smrd.png",
+		"edition": "custom",
+		"name": "荫蔽",
+		"ability": "你选择一名玩家，今天白天他不会死亡。",
+		"team": "fabled",
+		"firstNight": 0,
+		"otherNight": 0
+	},
+	{
+		"id": "630bcf72-8081-467d-b76b-fc9aeb343fd7",
+		"image": "https://www.bloodstar.xyz//p//comm503//SMRD//traveler_smrd.png",
+		"edition": "custom",
+		"name": "旅者",
+		"ability": "你以一个旅行者身份复活并选择阵营，如果你死亡，你会被移除座位。",
+		"team": "fabled",
+		"firstNight": 0,
+		"otherNight": 0
+	},
+	{
+		"id": "699ee137-7e30-4e02-940c-222fdb25e15a",
+		"image": "https://www.bloodstar.xyz//p//comm503//SMRD//suggestion_smrd.png",
+		"edition": "custom",
+		"name": "听雨",
+		"ability": "你回答一个说书人提供的问题，并随后得知一条对错与否和你的答案相同的信息。",
+		"team": "fabled",
+		"firstNight": 0,
+		"otherNight": 0
+	},
+	{
+		"id": "568ebabc-64ed-4bf6-98c1-7c7b9cc55cd5",
+		"image": "https://www.bloodstar.xyz//p//comm503//SMRD//heavenscroll_smrd.png",
+		"edition": "custom",
+		"name": "坠星",
+		"ability": "你得知三名存活玩家，其中有至少一名邪恶玩家。如果你对此信息疯狂，其中的善良玩家当晚死亡。",
+		"team": "fabled",
+		"firstNight": 0,
+		"otherNight": 0
+	}
+]

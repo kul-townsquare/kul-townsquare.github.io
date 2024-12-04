@@ -1,3 +1,5 @@
+# 设置roles.json中的角色id和name一致，以便设置edition时索引。
+# 本脚本已不再需要。功能已并入add_edition_and_roles.py
 import json
 
 def update_json_ids(file_path):
