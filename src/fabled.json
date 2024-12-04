@@ -5,19 +5,19 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "name": "Doomsayer",
+    "name": "*末日预言者",
     "team": "fabled",
-    "ability": "If 4 or more players live, each living player may publicly choose (once per game) that a player of their own alignment dies."
+    "ability": "如果大于等于四名玩家存活，每名当前存活的玩家可以公开要求你杀死一名与他阵营相同的玩家（每名玩家限一次）。"
   },
   {
     "id": "angel",
     "firstNightReminder": "",
     "otherNightReminder": "",
-    "reminders": ["Protect", "Something Bad"],
+    "reminders": ["保护", "不好的事"],
     "setup": false,
-    "name": "Angel",
+    "name": "*天使",
     "team": "fabled",
-    "ability": "Something bad might happen to whoever is most responsible for the death of a new player."
+    "ability": "对新玩家的死亡负最大责任的人，可能会遭遇一些不好的事情。"
   },
   {
     "id": "buddhist",
@@ -25,29 +25,29 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "name": "Buddhist",
+    "name": "*佛教徒",
     "team": "fabled",
-    "ability": "For the first 2 minutes of each day, veteran players may not talk."
+    "ability": "每个白天的前两分钟老玩家不能发言。"
   },
   {
     "id": "hellslibrarian",
     "firstNightReminder": "",
     "otherNightReminder": "",
-    "reminders": ["Something Bad"],
+    "reminders": ["不好的事情"],
     "setup": false,
-    "name": "Hell's Librarian",
+    "name": "*地狱藏书员",
     "team": "fabled",
-    "ability": "Something bad might happen to whoever talks when the Storyteller has asked for silence."
+    "ability": "当说书人宣布安静时，仍在说话的玩家可能会遭遇一些不好的事情。"
   },
   {
     "id": "revolutionary",
     "firstNightReminder": "",
     "otherNightReminder": "",
-    "reminders": ["Used"],
+    "reminders": ["被当作其他", "革命者"],
     "setup": false,
-    "name": "Revolutionary",
+    "name": "*革命者",
     "team": "fabled",
-    "ability": "2 neighboring players are known to be the same alignment. Once per game, one of them registers falsely."
+    "ability": "公开声明一对邻座玩家本局游戏一直保持同一阵营。每局游戏限一次，他们中的一人可能被当作其他的角色/阵营。"
   },
   {
     "id": "fiddler",
@@ -55,41 +55,41 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "name": "Fiddler",
+    "name": "*小提琴手",
     "team": "fabled",
-    "ability": "Once per game, the Demon secretly chooses an opposing player: all players choose which of these 2 players win."
+    "ability": "每局游戏限一次，恶魔可以秘密选择一名对立阵营的玩家，所有玩家要表决：这两名玩家中谁的阵营获胜。（平局邪恶阵营获胜）"
   },
   {
     "id": "toymaker",
     "firstNightReminder": "",
     "otherNight": 1,
-    "otherNightReminder": "If it is a night when a Demon attack could end the game, and the Demon is marked “Final night: No Attack,” then the Demon does not act tonight. (Do not wake them.)",
-    "reminders": ["Final Night: No Attack"],
+    "otherNightReminder": "如果今晚恶魔的攻击可能结束游戏，而恶魔被标记为不能攻击，则恶魔今晚不会行动。(不要唤醒它们）。",
+    "reminders": ["最后一晚：不能攻击"],
     "setup": false,
-    "name": "Toymaker",
+    "name": "*玩具匠",
     "team": "fabled",
-    "ability": "The Demon may choose not to attack & must do this at least once per game. Evil players get normal starting info."
+    "ability": "恶魔可以在夜晚选择放弃攻击（每局游戏至少一次）。邪恶玩家照常获取初始信息。"
   },
   {
     "id": "fibbin",
     "firstNightReminder": "",
     "otherNightReminder": "",
-    "reminders": ["Used"],
+    "reminders": ["已触发"],
     "setup": false,
-    "name": "Fibbin",
+    "name": "*骗人精",
     "team": "fabled",
-    "ability": "Once per game, 1 good player might get false information."
+    "ability": "每局游戏限一次，一名善良玩家可能会得知“有问题”的信息。"
   },
   {
     "id": "duchess",
     "firstNightReminder": "",
     "otherNight": 1,
-    "otherNightReminder": "Wake each player marked “Visitor” or “False Info” one at a time. Show them the Duchess token, then fingers (1, 2, 3) equaling the number of evil players marked “Visitor” or, if you are waking the player marked “False Info,” show them any number of fingers except the number of evil players marked “Visitor.”",
-    "reminders": ["Visitor", "False Info"],
+    "otherNightReminder": "每次唤醒一个标有“拜访者 ”或 “错误信息 ”的玩家。向他出示公爵夫人令牌，然后出示与标有 “来访者 ”的邪恶玩家人数相等的手指（1、2、3）；如果唤醒的是标有 “错误信息 ”的玩家，则向他出示除标有 “来访者 ”的邪恶玩家人数之外的任意数量的手指。",
+    "reminders": ["拜访者", "错误信息"],
     "setup": false,
-    "name": "Duchess",
+    "name": "*公爵夫人",
     "team": "fabled",
-    "ability": "Each day, 3 players may choose to visit you. At night*, each visitor learns how many visitors are evil, but 1 gets false info."
+    "ability": "每个白天，三名玩家可以一起拜访你。当晚*，他们会得知他们之中有几个是邪恶的，但其中一人的信息是错的。"
   },
   {
     "id": "sentinel",
@@ -97,40 +97,69 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": true,
-    "name": "Sentinel",
+    "name": "*哨兵",
     "team": "fabled",
-    "ability": "There might be 1 extra or 1 fewer Outsider in play."
+    "ability": "在初始设置时，可能会额外增加或减少一个外来者。"
   },
   {
     "id": "spiritofivory",
     "firstNightReminder": "",
     "otherNightReminder": "",
-    "reminders": ["No extra evil"],
+    "reminders": ["无更多邪恶"],
     "setup": false,
-    "name": "Spirit of Ivory",
+    "name": "*圣洁之魂",
     "team": "fabled",
-    "ability": "There can't be more than 1 extra evil player."
-  },
-  {
-    "id": "djinn",
-    "firstNight": 0,
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "reminders": [],
-    "setup": false,
-    "name": "Djinn",
-    "team": "fabled",
-    "ability": "Use the Djinn's special rule. All players know what it is."
+    "ability": "游戏过程中邪恶玩家的总数最多能比初始设置多一名。"
   },
   {
     "id": "stormcatcher",
     "firstNight": 1,
-    "firstNightReminder": "Mark a good player as \"Safe\". Wake each evil player and show them the marked player.",
+    "firstNightReminder": "将一名善良玩家标记为 “被保护”。唤醒每个邪恶的玩家，向他们展示被标记的玩家",
     "otherNightReminder": "",
-    "reminders": ["Safe"],
+    "reminders": ["被保护"],
     "setup": false,
-    "name": "Storm Catcher",
+    "name": "*暴风捕手",
     "team": "fabled",
-    "ability": "Name a good character. If in play, they can only die by execution, but evil players learn which player it is."
+    "ability": "游戏开始时，你要宣布一个善良角色。如果该角色在场，他只能死于处决，但所有邪恶玩家会在首个夜晚得知他是哪一名玩家。"
+  },
+  {
+    "id": "deusexfiasco",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "name": "*失败的上帝",
+    "team": "fabled",
+    "ability": "每局游戏限一次，说书人可能会犯一个“错误”，但会将其纠正，并公开承认自己曾处理有误。"
+  },
+  {
+    "id": "Gardener",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "name": "*园丁",
+    "team": "fabled",
+    "ability": "由说书人来为一名或更多玩家派发角色。"
+  },
+  {
+    "id": "Bootlegger",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "name": "*私货商人",
+    "team": "fabled",
+    "ability": "每局游戏限一次，说书人可能会犯一个“错误”，但会将其纠正，并公开承认自己曾处理有误。"
+  },
+  {
+    "id": "Ferryman",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "name": "*摆渡人",
+    "team": "fabled",
+    "ability": "在游戏的最后一天，所有已死亡玩家会重新获得投票标记。"
   }
 ]

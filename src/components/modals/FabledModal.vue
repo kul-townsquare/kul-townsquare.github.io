@@ -1,7 +1,7 @@
 <template>
   <Modal v-if="modals.fabled && fabled.length" @close="toggleModal('fabled')">
     <h3>
-      Choose a fabled character to add to the game
+      选择传奇角色加入游戏
     </h3>
     <ul class="tokens">
       <li v-for="role in fabled" :key="role.id" @click="setFabled(role)">
