@@ -8,9 +8,13 @@
           class="edition"
           :class="['edition-' + edition.id]"
           :style="{
-            backgroundImage: `url(${require('../../assets/editions/' +
-              edition.id +
-              '.png')})`
+            backgroundImage: `url(${
+              edition.logo
+                ? edition.logo
+                : require('../../assets/editions/' +
+                    (edition.id || 'custom') +
+                    '.png')
+            })`
           }"
           :key="edition.id"
           @click="setEdition(edition)"
