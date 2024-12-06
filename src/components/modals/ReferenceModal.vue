@@ -21,9 +21,9 @@
       :class="['team', team]"
     >
       <aside>
-        <h4>{{ team }}</h4>
+        <h4>{{ renameTeamName(team) }}</h4>
       </aside>
-      <ul>
+      <ul class="reference-list">
         <li v-for="role in teamRoles" :class="[team]" :key="role.id">
           <span
             class="icon"
@@ -146,6 +146,21 @@ export default {
     ...mapState("players", ["players"]),
   },
   methods: {
+    renameTeamName(team) {
+      switch (team) {
+        case "townsfolk":
+          return "镇民";
+        case "outsider":
+          return "外来者";
+        case "minion":
+          return "爪牙";
+        case "fabled":
+          return "传奇角色";
+        case "demon":
+          return "恶魔";
+      }
+      return team;
+    },
     ...mapMutations(["toggleModal"]),
   },
 };
@@ -213,6 +228,15 @@ h3 {
   }
 }
 
+.fabled {
+  .name {
+    color: $fabled;
+  }
+  aside {
+    background: linear-gradient(-90deg, $fabled, transparent);
+  }
+}
+
 .team {
   display: flex;
   align-items: stretch;
@@ -240,11 +264,17 @@ h3 {
   }
 
   h4 {
-    text-transform: uppercase;
+    //text-transform: uppercase;
     text-align: center;
-    transform: rotate(90deg);
+    //transform: rotate(90deg);
     transform-origin: center;
-    font-size: 80%;
+    font-size: 18px;
+
+    padding-top: min(10px);
+    padding-bottom: min(10px);
+
+    writing-mode: vertical-rl;
+    text-orientation: upright;
   }
 
   &.jinxed {
@@ -332,5 +362,10 @@ ul {
 /** hide players when town square is set to "public" **/
 #townsquare.public ~ .characters .modal .player {
   display: none;
+}
+
+.reference-list {
+  align-content: normal !important;
+  align-items: normal !important;
 }
 </style>

@@ -37,13 +37,13 @@
         class="button"
         :class="{ townsfolk: tab === 'editionRoles' }"
         @click="tab = 'editionRoles'"
-        >Edition Roles</span
+        >剧本角色</span
       >
       <span
         class="button"
         :class="{ townsfolk: tab === 'otherTravelers' }"
         @click="tab = 'otherTravelers'"
-        >Other Travelers</span
+        >旅行者</span
       >
     </div>
   </Modal>
