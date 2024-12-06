@@ -5624,18 +5624,6 @@
         "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goblin.png"
     },
     {
-        "firstNightReminder": "",
-        "otherNightReminder": "",
-        "name": "私货商人",
-        "setup": false,
-        "ismeet": true,
-        "reminders": [],
-        "team": "fabled",
-        "id": "Bootlegger",
-        "ability": "这个剧本包含有自制角色或自制规则。",
-        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Bootlegger.png/300px-Bootlegger.png"
-    },
-    {
         "firstNightReminder": "让村夫指向一名玩家，对他给出拇指向上或向下的手势。",
         "otherNightReminder": "让村夫指向一名玩家，对他给出拇指向上或向下的手势。",
         "id": "villageidiotbutton",
@@ -6279,5 +6267,17 @@
         "team": "outsider",
         "firstNight": 0,
         "GstoneID": "heretic"
+    },
+    {
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "name": "私货商人",
+        "setup": false,
+        "ismeet": true,
+        "reminders": [],
+        "team": "fabled",
+        "id": "Bootlegger",
+        "ability": "这个剧本包含有自制角色或自制规则。",
+        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Bootlegger.png/300px-Bootlegger.png"
     }
 ]

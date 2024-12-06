@@ -16,7 +16,7 @@ const getRolesByEdition = (edition = editionJSON[0]) => {
   return new Map(
     rolesJSON
       .filter(r => r.edition === edition.id || edition.roles.includes(r.id))
-      .sort((a, b) => b.team.localeCompare(a.team))
+      // .sort((a, b) => b.team.localeCompare(a.team))
       .map(role => [role.id, role])
   );
 };
