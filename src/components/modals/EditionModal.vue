@@ -1,7 +1,7 @@
 <template>
   <Modal class="editions" v-if="modals.edition" @close="toggleModal('edition')">
     <div v-if="!isCustom">
-      <h3>Select an edition:</h3>
+      <h3>选择剧本：</h3>
       <ul class="editions">
         <li
           v-for="edition in editions"
@@ -28,7 +28,7 @@
             backgroundImage: `url(${require('../../assets/editions/custom.png')})`
           }"
         >
-          Custom Script / Characters
+          自定义脚本/角色
         </li>
       </ul>
     </div>
@@ -145,7 +145,7 @@ export default {
       }
     },
     promptURL() {
-      const url = prompt("Enter URL to a custom-script.json file");
+      const url = prompt("输入自定义剧本json文件的url");
       if (url) {
         this.handleURL(url);
       }
