@@ -1,3 +1,4 @@
+import os
 import json
 import argparse
 
@@ -27,10 +28,9 @@ def generate_script_summary(input_file):
 
     # 如果没有找到剧本元信息，抛出异常
     if script_info is None:
-        raise ValueError("No script metadata found with `id` set to `_meta`.")
+        raise ValueError(f"No script metadata found in file: {input_file}")
 
     # 将角色列表添加到剧本信息
-    # script_info["roles"] = [role["name"] for role in roles]
     script_info["roles"] = [role["id"] for role in roles]
 
     return script_info, roles
@@ -43,6 +43,11 @@ def add_to_database(input_file, editions_file, roles_file):
     # 读取 editions.json
     with open(editions_file, 'r+', encoding='utf-8') as editions_file_obj:
         editions = json.load(editions_file_obj)
+
+        # 检查是否已存在剧本
+        if any(edition["name"] == script_info["name"] for edition in editions):
+            print(f"Script '{script_info['name']}' already exists in {editions_file}. Skipping.")
+            return
 
         # 添加新剧本信息到 editions.json
         editions.append(script_info)
@@ -64,8 +69,6 @@ def add_to_database(input_file, editions_file, roles_file):
         print("New roles to add:", [role["name"] for role in roles_to_add])
 
         # 添加新角色到 roles.json
-        # for role in roles_to_add:
-        #     role["id"] = role["name"]
         roles_data.extend(roles_to_add)
 
         # 保存更新的 roles.json
@@ -75,16 +78,37 @@ def add_to_database(input_file, editions_file, roles_file):
 
     print(f"Added {len(roles_to_add)} new roles to {roles_file}.")
 
+
+def process_folder(folder_path, editions_file, roles_file):
+    # 遍历文件夹中的所有子文件夹
+    for root, _, files in os.walk(folder_path):
+        for file in files:
+            # 处理 .json 文件
+            if file.endswith(".json"):
+                file_path = os.path.join(root, file)
+                try:
+                    add_to_database(file_path, editions_file, roles_file)
+                except ValueError as e:
+                    print(f"Skipping {file_path}: {e}")
+
+
 def main():
     # 使用 argparse 解析命令行参数
-    parser = argparse.ArgumentParser(description="Add a new script to the database and update roles.")
-    parser.add_argument("input_file", type=str, help="Path to the input JSON file for the new script.")
-    parser.add_argument("--editions_file", default="src\editions.json", type=str, help="Path to the editions JSON file.")
-    parser.add_argument("--roles_file", default="src\\roles.json", type=str, help="Path to the roles JSON file.")
+    parser = argparse.ArgumentParser(description="Add new scripts to the database and update roles.")
+    parser.add_argument("input_path", type=str, help="Path to the input file or folder containing scripts.")
+    parser.add_argument("--editions_file", default="src/editions.json", type=str, help="Path to the editions JSON file.")
+    parser.add_argument("--roles_file", default="src/roles.json", type=str, help="Path to the roles JSON file.")
     args = parser.parse_args()
 
-    # 添加剧本到数据库
-    add_to_database(args.input_file, args.editions_file, args.roles_file)
+    # 判断输入路径是文件还是文件夹
+    if os.path.isfile(args.input_path):
+        # 单个文件
+        add_to_database(args.input_path, args.editions_file, args.roles_file)
+    elif os.path.isdir(args.input_path):
+        # 文件夹
+        process_folder(args.input_path, args.editions_file, args.roles_file)
+    else:
+        print(f"Error: {args.input_path} is neither a file nor a folder.")
 
 
 if __name__ == "__main__":
