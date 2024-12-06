@@ -205,12 +205,12 @@ ul.editions .edition {
   font-family: PiratesBay, sans-serif;
   letter-spacing: 1px;
   text-align: center;
-  padding-top: 15%;
+  padding-top: 5%;
   background-position: center center;
-  background-size: 100% auto;
+  background-size: 65% auto;
   background-repeat: no-repeat;
-  width: 30%;
-  margin: 5px;
+  width: 18%;
+  margin: 1px;
   font-size: 120%;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000, 0 0 5px rgba(0, 0, 0, 0.75);
