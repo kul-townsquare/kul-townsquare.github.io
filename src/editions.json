@@ -4,7 +4,7 @@
         "name": "暗流涌动",
         "author": "",
         "description": "乌云在鸦木布拉夫的天空中翻滚着，让这个沉睡中的小镇和迷信的居民们笼罩在不祥的阴影之中。刚洗过的衣物在屋舍间的细绳上诡异地起舞。烟囱向外吐出滚滚的浓烟。<br><br>坩埚在角落里悄悄地冒着泡，混杂着奇异的气味从窗户和门缝中飘散开来。一股不寻常的秋日暖风环绕着藤蔓覆盖的墙壁，向那些敢于行走在鹅卵石街道上的人们发出不祥的低语。<br><br>当远处的地平线上雷声响起时，焦虑的母亲们把玩耍中的孩子唤回家中。然而，如果你再仔细聆听，仍然可以听见近处森林里的诡异回声。远处一座隐约可见的修道院里，有人影在一道道门洞间穿行。<br><br>只有那些读懂迹象的人，才能明白，有什么正在……<br><br>暗流涌动。",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://oss.gstonegames.com/static/image/team/202206/c_5935045915561_5940ef2d.jpg",
         "additional": [
             {
@@ -46,7 +46,7 @@
         "name": "黯月初升",
         "author": "The Pandemonium Institute",
         "description": "冬日的暮色渐近，太阳被盘陀的天际线所吞噬，橙红的枫叶被黑色斑点逐渐侵蚀，森林无声地期待着雪花将至。<br><br>小镇边缘的岩隙深处传来阵阵饿狼的嚎叫，受惊的鸦群从舒适的栖身之处四散而逃。旅行者们匆匆步入旅店，试图回避渐增的刺骨寒意。众人靠着温热的茶水、悠扬的乐曲和浓烈的麦酒来暖和身子，却浑然不觉一双双怪异而邪恶的眼睛正向他们悄然逼近。<br><br>众生皆知，今夜将有……<br><br>黯月初升。",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://oss.gstonegames.com/static/image/team/202206/c_1745145915561_f3303786.jpg",
         "additional": [
             {
@@ -91,7 +91,7 @@
         "name": "梦殒春宵",
         "author": "",
         "description": "生机勃勃的春天已然过去，温暖迷人的夏天悄然来临。园丁在公园和窗栏上精心培育，让百花齐放，一望无际。鸟儿在歌唱，艺术家们拿起了画笔，哲学家在熙熙攘攘的酒馆里思索人生的终极奥秘，城镇周围搭建起老旧的帐篷预示着马戏团即将开启。<br><br>在人们沉湎于纸醉金迷和灯红酒绿时，黑暗势力却悄然崛起。女巫和异教徒们潜藏在郊区的宏伟遗迹之间，在地下洞穴中密谋着渗透城镇，而那在宴会中狂欢的鸦木布拉夫居民们却浑然不知。<br><br>良辰已至……<br><br>梦殒春宵。",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://oss.gstonegames.com/static/image/team/202206/c_3135245915561_027cd2ad.jpg",
         "additional": [
             {
@@ -136,7 +136,7 @@
         "name": "窃窃私语",
         "author": "The Pandemonium Institute",
         "description": "来自于官方第四个大型剧本《游园惊梦》的利维坦虽然早就被设计了出来，但是却因为后续剧本的长期测试而难以在测试人员之外的玩家群体中带来乐趣。因此在一个闲暇的午后，几位设计师闲聊时决定要为利维坦这个有趣的恶魔设计一个专门的小型剧本，经过一段时间的测试和修改，这个逻辑缜密，受人喜爱的小型剧本就诞生了。<br><br>一开始此剧本的难度被定为5级，不过随着《凶宅魅影》的逐渐完善，Steven直言没有一个剧本能比我的《凶宅》难，于是《窃窃私语》的难度便下调为了4级。",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://oss.gstonegames.com/static/image/team/202206/c_8013445915561_50d8c906.jpg",
         "additional": [
             {
@@ -162,7 +162,7 @@
         "name": "无上愉悦",
         "author": "The Pandemonium Institute",
         "description": "《无上愉悦》是官方的第一个小型剧本，也是官方的第一个成型作品，作为一个巧妙运用简单角色进行游戏理念传达的小型剧本，《无上愉悦》设计得非常成功。",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://oss.gstonegames.com/static/image/team/202206/c_1054345915561_8466a4e3.jpg",
         "additional": [
             {
@@ -188,7 +188,7 @@
         "name": "罂粟花开",
         "author": "Danny",
         "description": "",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://i.postimg.cc/T3B5tYrS/copy.png",
         "additional": [],
         "roles": [
@@ -225,7 +225,7 @@
         "name": "夜半狂欢",
         "author": "Zets",
         "description": "",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://www.helloimg.com/i/2024/10/30/6721d7f7957da.png",
         "additional": [],
         "roles": [
@@ -266,7 +266,7 @@
         "name": "瓦釜雷鸣",
         "author": "Emily",
         "description": "",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://www.helloimg.com/i/2024/10/30/6721d89193675.png",
         "additional": [],
         "roles": [
@@ -307,7 +307,7 @@
         "name": "华府雷鸣",
         "author": "寒水",
         "description": "",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://oss.gstonegames.com/data_file/clocktower/upload/1689787160_197011_6283.png",
         "additional": [],
         "roles": [
@@ -351,7 +351,7 @@
         "name": "嚣张跋扈",
         "author": "刘中奇",
         "description": "",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://i.postimg.cc/3JhP5FRs/LOGO-copy.png",
         "additional": [],
         "roles": [
@@ -381,7 +381,7 @@
         "name": "将错就错",
         "author": "刘中奇",
         "description": "",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://i.postimg.cc/fLt4yjtk/LOGO-copy.png",
         "additional": [],
         "roles": [
@@ -411,7 +411,7 @@
         "name": "戏如人生",
         "author": "靶子",
         "description": "",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://i.postimg.cc/GtTTBJ4M/44eda74a61175b5821480e2ad5fe934.png",
         "additional": [],
         "roles": [
@@ -450,7 +450,7 @@
         "name": "改头换面",
         "author": "苏通染",
         "description": "“晓去龙华三半两， 归时香烬满炉装。九叩默祷万事愿，则灵无处不庙堂。”\n随着说书先生的声音戛然而止，众人还在讨论着刚刚的故事，只是众人都意识到似乎已经听了很多个故事。\n再次抬头，发现说书先生早已不见踪影，门外是怪物的嘶吼声，而周围的人脸上都戴上了奇怪的面具。\n他们是谁？你又是谁？",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://i.postimg.cc/FsPpq91R/mmexport1680147261841.png",
         "additional": [],
         "roles": [
@@ -487,7 +487,7 @@
         "name": "日落红尘",
         "author": "刘中奇",
         "description": "",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://i.postimg.cc/DyYF0Y4f/7-1.png",
         "additional": [],
         "roles": [
@@ -523,7 +523,7 @@
         "name": "横行霸道",
         "author": "Manny",
         "description": "",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://oss.gstonegames.com/data_file/clocktower/upload/1689598760_197011_8687.png",
         "additional": [],
         "roles": [
@@ -561,7 +561,7 @@
         "name": "童言无忌",
         "author": "Aaron",
         "description": "",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://i.postimg.cc/c4R0LFRc/LOGO-copy.png",
         "additional": [],
         "roles": [
@@ -598,7 +598,7 @@
         "name": "给我闭嘴",
         "author": "刘中奇",
         "description": "",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://i.postimg.cc/bvTPRTgN/2-1.png",
         "additional": [],
         "roles": [
@@ -625,7 +625,7 @@
         "name": "见风使舵",
         "author": "清清Jungle",
         "description": "",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://i.postimg.cc/HxPHMcc8/4-1.png",
         "additional": [],
         "roles": [
