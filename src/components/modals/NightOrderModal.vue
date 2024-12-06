@@ -11,7 +11,7 @@
       title="Show Character Reference"
     />
     <h3>
-      Night Order
+      夜晚顺序
       <font-awesome-icon icon="cloud-moon" />
       {{ edition.name || "Custom Script" }}
     </h3>
