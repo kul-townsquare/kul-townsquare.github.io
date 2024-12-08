@@ -128,6 +128,7 @@ export default {
         rolesGrouped[role.team].push(role);
       });
       delete rolesGrouped["traveler"];
+      // delete rolesGrouped["fabled"];
       return rolesGrouped;
     },
     playersByRole: function () {
