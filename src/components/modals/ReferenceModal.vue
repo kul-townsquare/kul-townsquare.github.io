@@ -41,9 +41,9 @@
             }"
           ></span>
           <div class="role">
-            <span class="player" v-if="Object.keys(playersByRole).length">{{
-              playersByRole[role.id] ? playersByRole[role.id].join(", ") : ""
-            }}</span>
+<!--            <span class="player" v-if="Object.keys(playersByRole).length">{{-->
+<!--              playersByRole[role.id] ? playersByRole[role.id].join(", ") : ""-->
+<!--            }}</span>-->
             <span class="name">{{ role.name }}</span>
             <span class="ability">{{ role.ability }}</span>
           </div>
