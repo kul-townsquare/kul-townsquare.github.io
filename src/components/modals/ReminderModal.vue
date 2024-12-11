@@ -58,31 +58,37 @@ export default {
       let reminders = [];
       const { players, bluffs } = this.$store.state.players;
       this.$store.state.roles.forEach((role) => {
+        // 初始化 reminders 和 remindersGlobal
+        const roleReminders = role.reminders || [];
+        const roleRemindersGlobal = role.remindersGlobal || [];
+
         // add reminders from player roles
         if (players.some((p) => p.role.id === role.id)) {
-          reminders = [...reminders, ...role.reminders.map(mapReminder(role))];
+          reminders = [...reminders, ...roleReminders.map(mapReminder(role))];
         }
         // add reminders from bluff/other roles
         else if (bluffs.some((bluff) => bluff.id === role.id)) {
-          reminders = [...reminders, ...role.reminders.map(mapReminder(role))];
+          reminders = [...reminders, ...roleReminders.map(mapReminder(role))];
         }
         // add global reminders
-        if (role.remindersGlobal && role.remindersGlobal.length) {
+        if (roleRemindersGlobal.length) {
           reminders = [
             ...reminders,
-            ...role.remindersGlobal.map(mapReminder(role)),
+            ...roleRemindersGlobal.map(mapReminder(role)),
           ];
         }
       });
       // add fabled reminders
       this.$store.state.players.fabled.forEach((role) => {
-        reminders = [...reminders, ...role.reminders.map(mapReminder(role))];
+        const roleReminders = role.reminders || [];
+        reminders = [...reminders, ...roleReminders.map(mapReminder(role))];
       });
 
       // add out of script traveler reminders
       this.$store.state.otherTravelers.forEach((role) => {
+        const roleReminders = role.reminders || [];
         if (players.some((p) => p.role.id === role.id)) {
-          reminders = [...reminders, ...role.reminders.map(mapReminder(role))];
+          reminders = [...reminders, ...roleReminders.map(mapReminder(role))];
         }
       });
 
