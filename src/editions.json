@@ -649,7 +649,7 @@
         "name": "圣光降临",
         "author": "清清Jungle",
         "description": "",
-        "isOfficial": false,
+        "isOfficial": true,
         "logo": "https://www.bloodstar.xyz/p/Jungle/The_Radiance_Descends/_meta.png",
         "additional": [],
         "roles": [

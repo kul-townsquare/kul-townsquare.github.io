@@ -2739,7 +2739,7 @@
     },
     {
         "firstNightReminder": "",
-        "isOfficial": false,
+        "isOfficial": true,
         "otherNightReminder": "",
         "name": "牧童",
         "otherNight": 0,
@@ -5025,7 +5025,7 @@
     },
     {
         "firstNightReminder": "告诉妖僧他的关键词。",
-        "isOfficial": false,
+        "isOfficial": true,
         "otherNightReminder": "",
         "name": "妖僧",
         "otherNight": 0,
@@ -5062,7 +5062,7 @@
     },
     {
         "firstNightReminder": "告诉灵言师他的秘密词语。",
-        "isOfficial": false,
+        "isOfficial": true,
         "otherNightReminder": "唤醒第一个说出灵言师词语的玩家并告知他已经变成邪恶阵营。",
         "name": "灵言师",
         "otherNight": 22,
@@ -5081,7 +5081,7 @@
     },
     {
         "firstNightReminder": "",
-        "isOfficial": false,
+        "isOfficial": true,
         "otherNightReminder": "",
         "name": "精神病患者",
         "otherNight": 0,
