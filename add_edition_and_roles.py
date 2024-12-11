@@ -19,7 +19,7 @@ def generate_script_summary(input_file):
                 "name": item.get("name", ""),
                 "author": item.get("author", ""),
                 "description": item.get("description", ""),
-                "isOfficial": False,  # 假设所有剧本是非官方的
+                "isOfficial": True,  # 假设所有剧本是官方的
                 "logo": item.get("logo", ""),
                 "additional": item.get("additional", [])
             }
