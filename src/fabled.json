@@ -175,5 +175,20 @@
     "name": "摆渡人",
     "team": "fabled",
     "ability": "在游戏的最后一天，所有已死亡玩家会重新获得投票标记。"
+  },
+  {
+    "id": "30_the_radiance_descends",
+    "image": "https://www.bloodstar.xyz/p/Jungle/The_Radiance_Descends/30_the_radiance_descends.png",
+    "otherNightReminder": "如果白天拜访你的玩家的阵营是劣势的，告诉所有玩家他获得了哪个旅行者的能力。",
+    "reminders": [
+        "访客",
+        "获得能力"
+    ],
+    "name": "圣光法杖",
+    "team": "fabled",
+    "ability": "每个白天，一名玩家可以拜访你。当晚，如果他的阵营是劣势的，他会获得一个旅行者的能力，直到下一名玩家获得能力。所有玩家都会知道他获得了什么能力。[“唵 部 林 姆，唵 齿 林 姆，唵 仆 刊 姆，唵 览 姆。”]",
+    "flavor": "“唵 部 林 姆，唵 齿 林 姆，唵 仆 刊 姆，唵 览 姆。”",
+    "otherNight": 2
   }
+  
 ]
