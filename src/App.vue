@@ -151,7 +151,7 @@ export default {
 
 html,
 body {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.4;
   background: url("assets/background.jpg") center center;
   background-size: cover;

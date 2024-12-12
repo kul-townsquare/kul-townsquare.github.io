@@ -8,7 +8,8 @@
           edition.logo && grimoire.isImageOptIn
             ? edition.logo
             : require('../assets/editions/' + edition.id + '.png')
-        })`
+        })`,
+        backgroundSize: '100% auto'
       }"
     ></li>
     <li v-if="players.length - teams.traveler < 5">
@@ -104,7 +105,7 @@ export default {
 .info {
   position: absolute;
   display: flex;
-  width: 20%;
+  //width: 20%;
   height: 20%;
   padding: 50px 0 0;
   align-items: center;
