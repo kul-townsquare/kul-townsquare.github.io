@@ -294,7 +294,7 @@ ul {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    width: 420px;
+    width: min(100%, 300px);
     .icon {
       width: 8vh;
       background-size: cover;
@@ -308,27 +308,27 @@ ul {
       }
     }
     .role {
-      line-height: 80%;
+      line-height: 1rem;
       flex-grow: 1;
     }
     .name {
       font-weight: bold;
-      font-size: 75%;
+      font-size: 0.9rem;
       display: block;
     }
     .player {
       color: #888;
       float: right;
-      font-size: 60%;
+      font-size: 0.9rem;
     }
     .ability {
-      font-size: 70%;
+      font-size: 0.9rem;
     }
   }
 }
 
-/** break into 1 column below 1200px **/
-@media screen and (max-width: 1199.98px) {
+/** break into 1 column below 980px **/
+@media screen and (max-width: 980px) {
   .modal {
     max-width: 60%;
   }
@@ -338,16 +338,16 @@ ul {
         width: 6vh;
       }
       .role {
-        line-height: max(100%, 1.5rem);
+        line-height: 0.9rem;
       }
       .name {
-        font-size: max(100%, 1.2rem);
+        font-size: 0.8rem;
       }
       .player {
-        font-size: max(100%, 1.2rem);
+        font-size: 0.8rem;
       }
       .ability {
-        font-size: max(90%, 1rem);
+        font-size: 0.8rem;
       }
     }
   }
