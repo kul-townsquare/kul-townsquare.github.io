@@ -294,7 +294,7 @@ ul {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    width: 420px;
+    width: min(100%, 420px);
     .icon {
       width: 8vh;
       background-size: cover;
@@ -308,12 +308,12 @@ ul {
       }
     }
     .role {
-      line-height: 80%;
+      line-height: 65%;
       flex-grow: 1;
     }
     .name {
       font-weight: bold;
-      font-size: 75%;
+      font-size: 65%;
       display: block;
     }
     .player {
@@ -322,7 +322,7 @@ ul {
       font-size: 60%;
     }
     .ability {
-      font-size: 70%;
+      font-size: 60%;
     }
   }
 }
