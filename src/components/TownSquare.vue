@@ -12,6 +12,7 @@
       <Player
         v-for="(player, index) in players"
         :key="index"
+        :playerID="index"
         :player="player"
         @trigger="handleTrigger(index, $event)"
         :class="{
