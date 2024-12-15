@@ -108,7 +108,7 @@
         @click="isMenuOpen = !isMenuOpen"
         :class="{ active: isMenuOpen }"
       >
-        <span>{{ player.name }}</span>
+        <span>{{playerID + 1}}. {{ player.name }}</span>
         <font-awesome-icon icon="venus-mars" v-if="player.pronouns" />
         <div class="pronouns" v-if="player.pronouns">
           <span>{{ player.pronouns }}</span>
@@ -213,6 +213,10 @@ export default {
     Token,
   },
   props: {
+    playerID: {
+      type: Number,
+      required: true,
+    },
     player: {
       type: Object,
       required: true,
@@ -708,8 +712,8 @@ li.move:not(.from) .player .overlay svg.move {
   right: 10%;
   display: flex;
   justify-content: center;
-  font-size: 120%;
-  line-height: 120%;
+  font-size: 100%;
+  line-height: 110%;
   cursor: pointer;
   white-space: nowrap;
   width: 120%;

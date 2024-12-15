@@ -308,7 +308,7 @@ ul {
       }
     }
     .role {
-      line-height: 1rem;
+      line-height: 1.1rem;
       flex-grow: 1;
     }
     .name {
@@ -338,16 +338,16 @@ ul {
         width: 6vh;
       }
       .role {
-        line-height: 0.9rem;
+        line-height: 1.1rem;
       }
       .name {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
       }
       .player {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
       }
       .ability {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
       }
     }
   }
