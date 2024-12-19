@@ -294,7 +294,7 @@ ul {
       }
     }
     .reminder {
-      position: fixed;
+      position: absolute;
       padding: 5px 10px;
       left: 50%;
       bottom: 10%;
