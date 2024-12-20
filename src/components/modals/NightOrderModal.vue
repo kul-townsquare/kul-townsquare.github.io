@@ -294,11 +294,13 @@ ul {
       }
     }
     .reminder {
-      position: absolute;
+      position: fixed;
       padding: 5px 10px;
       left: 50%;
       bottom: 10%;
-      width: 500px;
+      width: min(500px, 90vw);
+      max-width: 90vw;
+      transform: translateX(20%); // magic number, I don't know why it works
       z-index: 25;
       background: rgba(0, 0, 0, 0.75);
       border-radius: 10px;
