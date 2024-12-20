@@ -298,7 +298,9 @@ ul {
       padding: 5px 10px;
       left: 50%;
       bottom: 10%;
-      width: 500px;
+      width: min(500px, 90vw);
+      max-width: 90vw;
+      transform: translateX(-50%);
       z-index: 25;
       background: rgba(0, 0, 0, 0.75);
       border-radius: 10px;
@@ -308,7 +310,6 @@ ul {
       pointer-events: none;
       opacity: 0;
       transition: opacity 200ms ease-in-out;
-      margin-left: -250px;
     }
     &:hover .reminder {
       opacity: 1;
