@@ -1,0 +1,492 @@
+[{
+	"author": "摸鱼学徒",
+	"name": "暗潮之下",
+	"logo": "https://i.postimg.cc/mgjcZZD4/LOGO.png",
+	"id": "_meta",
+	"townsfolkName":"镇民"
+},
+    {
+        "ability": "在你的首个夜晚，你得知有多少名外来者在场。所有外来者醉酒。[+1外来者]",
+        "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/blacksmith_assets_of_lei_gallery.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "blacksmith",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "name": "铁匠",
+        "otherNight": 0,
+        "setup": 1,
+        "reminders": [
+            "醉酒"
+        ],
+        "remindersGlobal": [],
+        "team": "townsfolk",
+        "firstNight": 7801
+    },
+	{
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"name": "气球驾驶员",
+		"otherNight": 12100,
+		"setup": true,
+		"reminders": [
+			"被得知"
+		],
+		"id": "balloonistbutton",
+		"edition": "custom",
+		"team": "townsfolk",
+		"name_eng": "Balloonist",
+		"firstNight": 9101,
+		"ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/balloonist.png"
+	},{
+		"ability": "每个夜晚，你得知一名玩家。他醉酒直到下个黄昏，他因自身能力获得的信息均为错误。",
+		"image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/wench_assets_of_lei_gallery.png",
+		"edition": "custom",
+		"flavor": "",
+		"id": "Wench",
+		"firstNightReminder": "唤醒少妇，标记一名玩家醉酒并指向该玩家。",
+		"otherNightReminder": "唤醒少妇，标记一名玩家醉酒并指向该玩家。",
+		"name": "少妇",
+		"otherNight": 1202,
+		"setup": 0,
+		"reminders": [
+			"醉酒"
+		],
+		"remindersGlobal": [],
+		"team": "townsfolk",
+		"firstNight": 4551
+	},
+    {
+        "ability": "每个夜晚*，你可以选择一名玩家：如果他的邻座有且只有一名邪恶玩家，且他不是恶魔，他死亡。",
+        "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/dianite_assets_of_lei_gallery.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "hunter",
+        "firstNightReminder": "",
+        "otherNightReminder": "唤醒追猎者，让其选择一名玩家，或摇头表示不选择。如果他选择的玩家的邻座玩家中正好只有一名邪恶玩家，标记那名玩家死亡。",
+        "name": "追猎者",
+        "otherNight": 8898,
+        "setup": 0,
+        "reminders": [
+            "死亡"
+        ],
+        "team": "townsfolk",
+        "firstNight": 0 
+    },
+    {
+        "ability": "在你的首个夜晚，你会得知几名海盗在场。如果所有存活善良角色均为海盗，善良阵营获胜。[+0或1海盗]",
+        "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/pirate_assets_of_lei_gallery.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "_pirate",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "name": "海盗",
+        "otherNight": 0,
+        "setup": 1,
+        "reminders": [],
+        "remindersGlobal": [],
+        "team": "townsfolk",
+        "firstNight": 12321
+    },
+    {
+        "ability": "你可以与任意一名其他玩家缔结约定。在新约定达成之前，如果有玩家毁约，你和他之一会死亡。",
+        "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter12_assets_of_lei_gallery.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "merchant",
+        "firstNightReminder": "",
+        "otherNightReminder": "记下约定内容并时刻留意游戏情形，一旦该内容被违反或不再可能实现，你可以在合适的时机杀死其中一名玩家。同鹰身女妖一般，这个死亡可以发生在白天或夜晚。但鉴于该剧本中没有白天死亡的逻辑，因此建议在夜晚（推荐的行动顺序）杀死交易者",
+        "name": "商人",
+        "otherNight": 9001,
+        "setup": 0,
+        "reminders": [ "缔约","违约"
+        ],
+        "remindersGlobal": [],
+        "team": "townsfolk",
+        "firstNight":0
+    }, {
+        "ability": "每个白天，你可以公开发表一个声明。如果该声明正确，在当晚会有一名玩家死亡。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/gossip.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "2_39",
+        "firstNightReminder": "",
+        "otherNightReminder": "如果白天的声明为真，会有一名玩家死亡，并由说书人来选择一名玩家，标记该玩家死亡。",
+        "name": "造谣者",
+        "otherNight": 9100,
+        "setup": 0,
+        "reminders": ["死亡"],
+        "remindersGlobal": [],
+        "team": "townsfolk",
+        "firstNight": 0
+    }, {
+        "ability": "一名与你握手的玩家可能会醉酒直到明天黄昏。每个夜晚*，你会得知你是否在今天白天与邪恶玩家握手。",
+        "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter10_assets_of_lei_gallery.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "tyconn",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "name": "大亨",
+        "otherNight": 14403,
+        "setup": 0,
+        "reminders": ["醉酒","握手"],
+        "remindersGlobal": [],
+        "team": "townsfolk",
+        "firstNight": 0
+    },
+    {
+        "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/cannibal.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "cannibal_button",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "name": "食人族",
+        "otherNight": 0,
+        "setup": 0,
+        "reminders": [
+            "中毒",
+            "死于今日"
+        ],
+        "remindersGlobal": [],
+        "team": "townsfolk",
+        "firstNight": 0,
+        "GstoneID": "cannibal"
+    },
+	{
+		"ability": "每个白天，你可以邀请一名玩家（与之前不同）与你分别私下询问说书人：他可以问一个是非问题，随后你会得知一个答案相同的是非问题。",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/upload/1697467997_197011_5602.png",
+		"edition": "custom",
+		"flavor": "",
+		"id": "20236_38",
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"name": "小说家",
+		"name_id": "fictionist",
+		"otherNight": 0,
+		"setup": 0,
+		"reminders": [
+			"已邀请"
+		],
+		"remindersGlobal": [],
+		"team": "townsfolk",
+		"firstNight": 0
+	},
+	{
+		"ability": "每个夜晚*，你会得知上两名被你提名的玩家最近的距离间有多少名邪恶玩家。",
+		"image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/prospector_assets_of_lei_gallery.png",
+		"edition": "custom",
+		"flavor": "",
+		"id": "_prospector",
+		"firstNightReminder": "",
+		"otherNightReminder": "如果勘探者已经提名过两次，唤醒他并向他出示一个数字。",
+		"name": "勘探者",
+		"otherNight": 14401,
+		"setup": 0,
+		"reminders": [
+			"被提名1","被提名2"
+		],
+		"remindersGlobal": [],
+		"team": "townsfolk",
+		"firstNight": 0
+	},
+    {
+      "firstNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+      "otherNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+      "name": "筑梦师",
+      "otherNight": 11500,
+      "setup": false,
+      "reminders": [],
+      "id": "dreamerbutton",
+      "edition": "custom",
+      "team": "townsfolk",
+      "name_eng": "Dreamer",
+      "firstNight": 8500,
+      "ability": "每个夜晚，你要选择除你及旅行者以外的一名玩家：你会得知一个善良角色和一个邪恶角色，该玩家是其中一个角色。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dreamer.png"
+    },
+    {
+      "firstNightReminder": "",
+      "otherNightReminder": "修补匠可能会死亡。如果说书人选择让修补匠死亡，放置死亡标记。",
+      "name": "修补匠",
+      "otherNight": 9200,
+      "setup": false,
+      "reminders": [
+        "死亡"
+      ],
+      "id": "tinkerbutton",
+      "edition": "custom",
+      "team": "outsider",
+      "name_eng": "Tinker",
+      "firstNight": 0,
+      "ability": "你随时可能死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/tinker.png"
+    },
+    {
+        "ability": "每局游戏限一次，在夜晚时*，你要选择一个除自己以外的角色：邪恶玩家的负面能力对他无效。",
+        "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/safeguard_assets_of_lei_gallery.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "safeguard",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "name": "保镖",
+        "otherNight": 1201,
+        "setup": 0,
+        "reminders": [
+            "守护","失去能力"
+        ],
+        "remindersGlobal": [],
+        "team": "townsfolk",
+        "firstNight": 4201
+    }, {
+        "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/recluse.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "20002_7",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "name": "陌客",
+        "otherNight": 0,
+        "setup": 0,
+        "reminders": [],
+        "remindersGlobal": [],
+        "team": "outsider",
+        "firstNight": 0
+    },
+    {
+        "ability": "如果在对你的处决中有人投票，你可能会立即被处决。",
+        "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter19_assets_of_lei_gallery.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "tramp",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "name": "流浪汉",
+        "otherNight": 0,
+        "setup": 0,
+        "reminders": [
+        ],
+        "remindersGlobal": [],
+        "team": "outsider",
+        "firstNight": 0
+    },
+    {
+        "ability": "你知道一个不在场角色。如果超过半数玩家同意释放你，你会在当晚变成这个角色和对应的阵营。在你被释放前你不能投票。",
+        "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter20_assets_of_lei_gallery.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "jail",
+        "firstNightReminder": "唤醒囚犯并向他出示一个不在场的角色标记。诚然，并不推荐向其出示恶魔标记。",
+        "otherNightReminder": "如果在白天时多数玩家表决同意将你释放，在夜晚唤醒囚犯提示角色的转变。如有必要，提示其阵营得转变。",
+        "name": "囚犯",
+        "otherNight": 2,
+        "setup": 0,
+        "reminders": [
+            "得知"
+        ],
+        "remindersGlobal": [],
+        "team": "outsider",
+        "firstNight": 9203
+    },
+    {
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "name": "斗牛士",
+      "otherNight": 8801,
+      "setup": false,
+      "reminders": [
+        "死亡"
+      ],
+      "id": "bullfighter",
+      "edition": "custom",
+      "team": "minion",
+      "firstNight": 0,
+      "ability": "每个夜晚*，一名在你发起提名时投票的，除你以外的玩家死亡。如果没有人在你提名时投票，你可能死亡。",
+      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/bullfighter_assets_of_lei_gallery.png"
+    },
+	{
+		"ability": "在你的首个夜晚，你会得知有哪些外来者角色在场。如果有外来者在白天死亡，你会在当晚被唤醒并且你要选择一名玩家：他死亡。[-1或+1外来者]",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/godfather.png",
+		"edition": "custom",
+		"flavor": "",
+		"id": "20236_30",
+		"firstNightReminder": "对他展示所有在场的外来者标记。",
+		"otherNightReminder": "如果有外来者在今天白天死亡，让教父选择一名玩家。标记那名玩家死亡。",
+		"name": "教父",
+		"name_id": "godfather",
+		"otherNight": 8700,
+		"setup": 1,
+		"reminders": [
+			"死于今日",
+			"死亡"
+		],
+		"remindersGlobal": [],
+		"team": "minion",
+		"firstNight": 5400
+	},
+	{
+		"image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter9_assets_of_lei_gallery.png",
+		"name": "马戏领班",
+		"team": "minion",
+		"ability": "每局游戏限一次，即使你已死亡，你可以选择成为说书人（参与决策）。此后你仍然可以投票。",
+		"id": "ringmaster",
+		"edition": "custom",
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"setup": false,
+		"reminders": [],
+		"remindersGlobal": [
+		],
+		"firstNight": 0,
+		"otherNight": 0
+	},
+    {
+        "id": "weishenmebushilianjinshushi111",
+        "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
+        "edition": "custom",
+        "name": "科学怪人",
+        "ability": "恶魔拥有一个不在场的善良角色的能力，即使他醉酒或中毒。你和他都知道他获得了什么能力。",
+        "team": "minion",
+        "sch_team": "爪牙",
+        "firstNight": 110,
+        "otherNight": 0,
+        "firstNightReminder": "（分别或同时）唤醒科学怪人和恶魔，通知他们恶魔因为科学怪人而获得的善良角色的能力。",
+        "otherNightReminder": "",
+        "reminders": [],
+        "setup": true
+    },
+    {
+        "id": "charoit",
+        "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/chariot_assets_of_lei_gallery.png",
+        "edition": "custom",
+        "name": "战车 ",
+        "ability": "与你顺时针距离为1的玩家中毒。如果是邪恶的非旅行者玩家，改为和他交换角色。每个夜晚*，或该玩家死亡时，该距离+1。",
+        "team": "minion",
+        "firstNight": 4801,
+        "otherNight": 1501,
+        "firstNightReminder":"初始设置时，在战车顺时针距离为1的善良玩家的角色标记旁放置“控制”提示标记以表示他是由于战车的能力中毒；如果战车的顺时针距离为1的玩家是邪恶的，则战车将与其交换角色，随后在新战车的顺时针距离为1的善良玩家的角色标记旁放置“控制”提示标记。",
+        "otherNightReminder": "将战车的“控制”提示标记以顺时针方向推进到下一名玩家。如果落在邪恶玩家上，则战车将与其交换角色，随后在新战车的顺时针距离为1的善良玩家的角色标记旁放置“控制”提示标记。",
+        "remindersGlobal": [
+            "控制"
+        ]
+    },
+    {
+        "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "pukkabutton",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "name": "普卡",
+        "otherNight": 5100,
+        "setup": 0,
+        "reminders": [
+            "死亡","中毒"
+        ],
+        "remindersGlobal": [],
+        "team": "demon",
+        "firstNight": 6600 
+    },
+    {
+        "ability": "每个夜晚*，你要选择一名玩家：他死亡。首个提名你的镇民会在当晚变成邪恶的献礼，而你会随之死亡。但每局游戏只能成功转化一次。",
+        "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/lecadeau_assets_of_lei_gallery.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "lecadeau",
+        "firstNightReminder": "",
+        "otherNightReminder": "如果有镇民在白天提名了献礼，唤醒那名镇民并告诉他你现在是邪恶的献礼，但当天晚上不要让其选择目标攻击，而是标记原献礼死亡。",
+        "name": "献礼",
+        "otherNight": 5401,
+        "setup": 0,
+        "reminders": [
+            "死亡"
+        ],
+        "remindersGlobal": ["限一次"],
+        "team": "demon",
+        "firstNight": 0
+    },
+    {
+        "ability": "每个夜晚*，你要选择一名玩家：他死亡。在夜晚时，如果所有爪牙死亡，你要选择一个除你以外的恶魔角色：你变成那个恶魔，并且每晚行动两次。",
+        "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/sissaphyth_assets_of_lei_gallery.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "sissaphyth",
+        "firstNightReminder": "",
+        "otherNightReminder": "如果没有存活的爪牙，让西西斐斯指向角色列表上的一个其他恶魔角色标记，然后通知他角色变化，并将“行动两次”提示标记放在角色标记旁边。否则，唤醒西西斐斯。让他指向任意一名玩家。那名玩家死亡——在他角色标记旁放置“死亡”提示标记。让西西斐斯重新入睡。",
+        "name": "西西弗斯",
+        "otherNight": 4899,
+        "setup": 0,
+        "reminders": [
+            "死亡","行动两次"
+        ],
+        "remindersGlobal": [],
+        "team": "demon",
+        "firstNight": 0
+    },
+    {
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "name": "灯神",
+      "firstNight": 0,
+      "reminders": [],
+      "id": "djinnbutton",
+      "team": "fabled",
+      "name_eng": "Djinn",
+      "setup": false,
+      "ability": "使用灯神的相克规则。所有玩家都会知道其内容。",
+      "edition": "custom",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png"
+    }, {
+        "ability": "游戏过程中邪恶玩家的总数最多能比初始设置多一名。",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/spirit_of_ivory.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "20003_106",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "name": "圣洁之魂",
+        "otherNight": 0,
+        "setup": 0,
+        "reminders": ["禁止邪恶"],
+        "remindersGlobal": [],
+        "team": "fabled",
+        "firstNight": 0
+    },
+    {
+        "ability": "旅行者会被非旅行者角色当作不在游戏中，但恶魔仍然可以选择杀死旅行者。",
+        "image": "https://i.postimg.cc/mD2DR7sv/image.png",
+        "edition": "custom",
+        "flavor": "",
+        "id": "recitalist",
+        "name": "独奏家",
+        "otherNight": 0,
+        "setup": 0,
+        "reminders": [],
+        "remindersGlobal": [],
+        "team": "fabled",
+        "firstNight": 0
+    },
+    {
+      "id": "patches",
+      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/pirate_assets_of_lei_gallery.png",
+      "name": "科学怪人 & 海盗",
+      "team": "a jinxed",
+      "setup": 0,
+      "ability": "如果海盗在场数量不足3人，科学怪人可以让恶魔拥有海盗的能力。"
+    },
+    {
+      "id": "pc",
+      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/chariot_assets_of_lei_gallery.png",
+      "name": "战车 & 普卡",
+      "team": "a jinxed",
+      "setup": 0,
+      "ability": "如果普卡的角色因战车发生了交换，不会因此移除原本普卡的“中毒”提示标记与效果。"
+    }
+]

@@ -102,30 +102,23 @@
         "setup": false
     },
     {
-        "id": "woshidingzhenbuhuishuxue111",
-        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mathematician.png",
+        "id": "baziji9865765487le115555551",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
         "edition": "custom",
-        "name": "数学家",
-        "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。（从上个黎明到你被唤醒时）",
+        "name": "杂技演员",
+        "ability": "每个夜晚*，你要选择一名玩家：如果当晚他醉酒或中毒，你死亡。",
         "team": "townsfolk",
         "sch_team": "镇民",
-        "firstNight": 65,
-        "otherNight": 101,
-        "firstNightReminder": "唤醒数学家，用手势比划数字来告诉他今天有多少玩家的能力未正常生效。",
-        "otherNightReminder": "唤醒数学家，用手势比划数字来告诉他今天有多少玩家的能力未正常生效。",
+        "firstNight": 0,
+        "otherNight": 12.5,
+        "firstNightReminder": "",
+        "otherNightReminder": "：唤醒杂技演员，让他选择一名玩家。如果当晚这名玩家醉酒或中毒，杂技演员死亡。",
         "reminders": [
-            "未正常生效"
+            "被选择",
+            "死亡"
         ],
         "setup": false
     },
-  {
-    "id": "0_meta",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/0/00/Chambermaid.png/300px-Chambermaid.png",
-    "name": "侍女&数学家",
-    "team": "a jinxed",
-    "setup": 0,
-    "ability": "侍女会得知数学家是否醒来，即使她是在数学家之前醒来。"
-},
     {
         "id": "paibusini111",
         "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/preacher.png",
@@ -144,39 +137,19 @@
         "setup": false
     },
     {
-        "id": "abe41d52-a5e4-4d91-b895-294b77a4eff1",
-        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/8/8f/Acrobat.png/300px-Acrobat.png",
-        "edition": "custom",
-        "name": "杂技演员",
-        "ability": "每个夜晚*，如果与你邻近的存活善良玩家之一醉酒或中毒，你死亡。",
-        "team": "outsider",
-        "sch_team": "外来者",
-        "firstNight": 0,
-        "otherNight": 60,
-        "firstNightReminder": "",
-        "otherNightReminder": "在夜晚的任意时机如果与杂技演员邻近的存活善良玩家醉酒中毒，杂技演员死亡。",
-        "reminders": [
-            "死亡"
-        ],
-        "setup": false
-    },
-    {
-        "id": "8e236331-7d6e-4419-bf4a-949ac2e7993b",
-        "image": "https://clocktower-wiki.gstonegames.com/images/thumb/3/35/Balloonist.png/300px-Balloonist.png",
+        "id": "zhuijidelaoda111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/balloonist.png",
         "edition": "custom",
         "name": "气球驾驶员",
-        "ability": "每个夜晚，你会得知一名不同角色类型的玩家，直到场上所有的角色类型你都得知过一次。[+1 外来者]",
+        "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]",
         "team": "townsfolk",
         "sch_team": "镇民",
         "firstNight": 50,
         "otherNight": 90,
         "firstNightReminder": "唤醒气球驾驶员，对他指向一名玩家。",
-        "otherNightReminder": "唤醒气球驾驶员，对他指向一名玩家，这名玩家与之前气球驾驶员得知过的玩家属于不同的角色类型。",
+        "otherNightReminder": "唤醒气球驾驶员，对他指向一名玩家，这名玩家与之前气球驾驶员上一个夜晚得知过的玩家属于不同的角色类型。",
         "reminders": [
-            "得知镇民",
-            "得知外来者",
-            "得知爪牙",
-            "得知恶魔"
+            "得知"
         ],
         "setup": true
     },
@@ -199,37 +172,35 @@
         "setup": false
     },
     {
-        "id": "wojiushitukuai111",
-        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
+        "id": "shiyizhezhezhezhe",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/amnesiac.png",
         "edition": "custom",
-        "name": "赌徒",
-        "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
+        "name": "失忆者",
+        "ability": "你不知道你的能力是什么。每个白天你可以找说书人猜测一次，你会得知你的猜测有多准确。",
         "team": "townsfolk",
         "sch_team": "镇民",
-        "firstNight": 0,
-        "otherNight": 14,
-        "firstNightReminder": "",
-        "otherNightReminder": "唤醒赌徒，让他进行猜测。如果猜测错误，他死亡。",
+        "firstNight": 1.5,
+        "otherNight": 1.5,
+        "firstNightReminder": "决定失忆者的能力，并根据具体能力决定是否需要唤醒失忆者、何时唤醒、唤醒后让他做出什么操作或得知什么信息。",
+        "otherNightReminder": "根据失忆者的具体能力决定是否需要唤醒失忆者、何时唤醒、唤醒后让他做出什么操作或得知什么信息。",
         "reminders": [
-            "死亡"
+            "？"
         ],
         "setup": false
     },
     {
-        "id": "xitele111",
-        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/artist.png",
+        "id": "huojin111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
         "edition": "custom",
-        "name": "艺术家",
-        "ability": "每局游戏限一次，在白天时，你可以私下询问说书人一个是非问题，你会得知该问题的答案。",
+        "name": "博学者",
+        "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
         "team": "townsfolk",
         "sch_team": "镇民",
         "firstNight": 0,
         "otherNight": 0,
         "firstNightReminder": "",
         "otherNightReminder": "",
-        "reminders": [
-            "失去能力"
-        ],
+        "reminders": [],
         "setup": false
     },
     {
@@ -317,22 +288,25 @@
         ],
         "setup": true
     },
-  {
-    "id": "7_meta",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/2/2d/Plaguedoctor.png/300px-Plaguedoctor.png",
-    "name": "瘟疫医生&提线木偶",
-    "team": "a jinxed",
-    "setup": 0,
-    "ability": "如果在瘟疫医生死亡时说书人获得了提线木偶的能力，且与恶魔邻座的存活玩家中有镇民或外来者，其中一名玩家会变成邪恶的提线木偶。如果此时场上的邪恶玩家数量比初始设置时的数量超出一名或更多，改为无事发生。"
-  },
-  {
-    "id": "10_meta",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/2/2d/Plaguedoctor.png/300px-Plaguedoctor.png",
-    "name": "瘟疫医生&红唇女郎",
-    "team": "a jinxed",
-    "setup": 0,
-    "ability": "如果瘟疫医生死亡且说书人会因此获得红唇女郎的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。"
-  },
+    {
+        "id": "chousha111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/moonchild.png",
+        "edition": "custom",
+        "name": "月之子",
+        "ability": "当你得知你死亡时，你要公开选择一名存活的玩家。如果他是善良的，在当晚他会死亡。",
+        "team": "outsider",
+        "sch_team": "外来者",
+        "firstNight": 0,
+        "otherNight": 64,
+        "firstNightReminder": "",
+        "otherNightReminder": "如果月之子在今天白天的时候使用自己的能力选择了一名善良玩家，那名玩家死亡。",
+        "reminders": [
+            "死亡"
+        ],
+        "setup": false
+    },
+  
+  
     {
         "id": "youzhizhua11111111",
         "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/widow.png",
@@ -370,21 +344,6 @@
         "setup": true
     },
     {
-        "id": "hongchunnvlangaaaaaaaa111",
-        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png",
-        "edition": "custom",
-        "name": "红唇女郎",
-        "ability": "如果大于等于五名玩家存活时（旅行者不计算在内）恶魔死亡，你变成那个恶魔。",
-        "team": "minion",
-        "sch_team": "爪牙",
-        "firstNight": 0,
-        "otherNight": 26,
-        "otherNightReminder": "如果红唇女郎的能力曾被触发，唤醒她并告知她变成了哪个恶魔角色。",
-        "reminders": [
-            "是恶魔"
-        ]
-    },
-    {
         "id": "zheyeshigejiugui111",
         "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
         "edition": "custom",
@@ -419,20 +378,19 @@
         "setup": false
     },
     {
-        "id": "xiaoweibaxiliuxiliu111",
-        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
+        "id": "gebulinaaaaaaa111111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goblin.png",
         "edition": "custom",
-        "name": "普卡",
-        "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
-        "team": "demon",
-        "sch_team": "恶魔",
-        "firstNight": 30,
-        "otherNight": 33,
-        "firstNightReminder": "唤醒普卡，让他选择一名玩家，那名玩家中毒。",
-        "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
+        "name": "哥布林",
+        "ability": "如果你在被提名后公开声明自己是哥布林且在那个白天被处决，你的阵营获胜。",
+        "team": "minion",
+        "sch_team": "爪牙",
+        "firstNight": 0,
+        "otherNight": 0,
+        "firstNightReminder": "",
+        "otherNightReminder": "",
         "reminders": [
-            "中毒",
-            "死亡"
+            "已宣称"
         ],
         "setup": false
     },
@@ -452,6 +410,25 @@
             "死亡"
         ],
         "setup": false
+    },
+    {
+        "id": "wangguuuuuuuu111111",
+        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
+        "edition": "custom",
+        "name": "亡骨魔",
+        "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
+        "team": "demon",
+        "sch_team": "恶魔",
+        "firstNight": 0,
+        "otherNight": 40,
+        "firstNightReminder": "",
+        "otherNightReminder": "唤醒亡骨魔，让他攻击一名玩家。",
+        "reminders": [
+            "死亡",
+            "保留能力",
+            "中毒"
+        ],
+        "setup": true
     },
     {
         "id": "xiaoshabi111111",
@@ -481,11 +458,28 @@
     "ability": "提线木偶会与一名爪牙玩家邻座，而不是恶魔。提线木偶不会被唤醒来决定是否照看小怪宝，也不会在照看小怪宝时得知自己是提线木偶。"
   },
   {
-    "id": "63_meta",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/3/39/Lilmonsta.png/300px-Lilmonsta.png",
-    "name": "小怪宝&红唇女郎",
+    "id": "31_meta",
+    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/3/3d/Marionette.png/300px-Marionette.png",
+    "name": "提线木偶&气球驾驶员",
     "team": "a jinxed",
     "setup": 0,
-    "ability": "如果在五名及以上的玩家存活时照看小怪宝的玩家死亡，当晚红唇女郎必须要照看小怪宝。"
+    "ability": "如果提线木偶抽到了气球驾驶员，也可能会+1外来者。"
+  },
+  {
+    "id": "7_meta",
+    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/2/2d/Plaguedoctor.png/300px-Plaguedoctor.png",
+    "name": "瘟疫医生&提线木偶",
+    "team": "a jinxed",
+    "setup": 0,
+    "ability": "如果在瘟疫医生死亡时说书人获得了提线木偶的能力，且与恶魔邻座的存活玩家中有镇民或外来者，其中一名玩家会变成邪恶的提线木偶。如果此时场上的邪恶玩家数量比初始设置时的数量超出一名或更多，改为无事发生。"
+  },
+  {
+    "id": "9_meta",
+    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/2/2d/Plaguedoctor.png/300px-Plaguedoctor.png",
+    "name": "瘟疫医生&哥布林",
+    "team": "a jinxed",
+    "setup": 0,
+    "ability": "如果瘟疫医生死亡且说书人会因此获得哥布林的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。"
   }
+  
 ]
