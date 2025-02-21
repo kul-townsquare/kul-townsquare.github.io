@@ -7,7 +7,8 @@ def sort_roles_by_team(input_file, output_file):
         "outsider": 2,    # 外来者
         "minion": 3,      # 爪牙
         "demon": 4,       # 恶魔
-        "fabled": 5        # 传奇角色
+        "fabled": 5,      # 传奇角色
+        "travaller": 6,   # 旅行者
     }
 
     try:
