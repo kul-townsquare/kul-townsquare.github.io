@@ -1,0 +1,136 @@
+[{
+	"id": "_meta",
+	"name": "誓约·巴别塔v1.1正式版",
+	"author": "泽度哥","logo": "https://www.helloimg.com/i/2024/11/27/674609a708803.png",
+	"state":[{"stateName":"巴别塔审判",
+	"stateDescription":"没有担任过审判官的玩家可以申请成为今天的审判官，所有玩家要对这项申请举手表决，如果超过半数玩家同意，则申请通过：审判官要公开询问一名其他存活玩家一个是非问题。如果他没有如实回答，他立刻被处决。每个白天至多进行一次审判。"},
+	{"stateName":"末日倒计时",
+	"stateDescription":"在第五个白天结束时，邪恶阵营获胜；善良阵营玩家（怪人除外）被投票处决时，邪恶阵营获胜。 "},
+	{"stateName":"锁定&逃脱",
+	"stateDescription":"锁定：如果你被审判，在回答后你立即被处决，即使有任何原因让审判结果颠倒。逃脱：如果你被审判，你不会被处决，但要失去1次逃脱，即使有任何原因让审判结果颠倒。锁定和逃脱会相互抵消。"}],
+	"status":[{"name":"末日倒计时","skill":"游戏第五日结束时，邪恶阵营获胜；善良阵营玩家（怪人除外）被投票处决时，邪恶阵营获胜\n"},{"name":"锁定&逃脱","skill":"锁定：如果你被审判，在回答后你立即被处决，即使有任何原因让审判结果颠倒。逃脱：如果你被审判，你不会被处决，但要失去1次逃脱，即使有任何原因让审判结果颠倒。锁定和逃脱会相互抵消。\n"},
+	{"name":"巴别塔审判","remindersGlobal": ["锁定","逃脱","审判官"],"skill":"没有担任过审判官的玩家可以申请成为今天的审判官，所有玩家要对这项申请举手表决，如果超过半数玩家同意，则申请通过：审判官要公开询问一名其他存活玩家一个是非问题。如果他没有如实回答，他立刻被处决。每个白天至多进行一次审判。"}]}
+
+,
+{
+	"id": "_babieta",
+	"image": "https://www.helloimg.com/i/2024/11/27/674609b931287.png",
+	"name": "誓约巴别塔",
+	"team": "fabled",
+	"ability": "审判玩法见状态栏“巴别塔审判”  游戏第五日结束时，或善良阵营（怪人除外）被投票处决时，邪恶阵营获胜。"
+},{
+	"id": "1_babieta",
+	"image": "https://www.helloimg.com/i/2024/11/27/674609f87b4b6.png",
+	"name": "勇士",
+	"team": "townsfolk",
+	"firstNight": 19,
+	"ability": "在你的首个夜晚， 你会得知与恶魔邻近的两名玩家的角色类型。",
+	"firstNightReminder": "勇士得知与恶魔相邻的两名玩家的角色类型。"
+}, {
+	"id": "2_babieta",
+	"image": "https://www.helloimg.com/i/2024/11/27/67460a1e0412a.png",
+	"otherNightReminder": "如果诗人成为审判官， 当晚你得知被审判者的角色类型。",
+	"reminders": ["得知"],
+	"name": "诗人",
+	"team": "townsfolk",
+	"ability": "如果你成为审判官，你会在当晚得知被审判者的角色类型。",
+	"otherNight": 4
+}, {
+	"id": "3_babieta",
+	"image": "https://www.helloimg.com/i/2024/11/27/67460a2dbe25b.png",
+	"otherNightReminder": "如果术士今天被审判并且存活下来，当晚他变为一个不在场的镇民角色。",
+	"name": "术士",
+	"team": "townsfolk",
+	"ability": "如果你被审判，你会在当晚变成一个不在场的镇民角色。",
+	"otherNight": 3
+}, {
+	"id": "4_babieta",
+	"image": "https://www.helloimg.com/i/2024/11/27/67460a403d276.png",
+	"otherNightReminder": "如果隐士使用能力，告知他上一次审判结果是否可靠。之后不再唤醒隐士。",
+	"name": "隐士",
+	"team": "townsfolk",
+	"reminders": ["失去能力"],
+	"ability": "每局游戏限一次，在夜晚时，你可以得知上次的审判结果是否可靠。",
+	"otherNight": 5
+}, {
+	"id": "5_babieta",
+	"image": "https://www.helloimg.com/i/2024/11/27/67460a57ae6fe.png",
+	"firstNightReminder": "如果研究员选择一个角色，告知他该角色是否在场。之后不再唤醒研究员。",
+	"otherNightReminder": "如果研究员选择一个角色，告知他该角色是否在场。之后不再唤醒研究员。",
+	"reminders": ["失去能力"],
+	"name": "研究员",
+	"team": "townsfolk",
+	"ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：你会得知该角色是否在场。如果你被审判，你重获能力。",
+	"firstNight": 18,
+	"otherNight": 6
+}, {
+	"id": "12_babieta",
+	"image": "https://www.helloimg.com/i/2024/11/27/67460a645ed6d.png",
+	"firstNightReminder": "猎人可以选择一个其他角色，并指定锁定或逃脱。放置该标记到该角色旁。此后不要再唤醒猎人。",
+	"otherNightReminder": "猎人可以选择一个其他角色，并指定锁定或逃脱。放置该标记到该角色旁。此后不要再唤醒猎人。",
+	"reminders": ["失去能力"],
+	"remindersGlobal": ["锁定","逃脱"],
+	"name": "猎人",
+	"team": "townsfolk",
+	"ability": "每局游戏限一次，在夜晚时，你可以选择一个其他角色：由你选择他获得锁定或逃脱。",
+	"firstNight": 16,
+	"otherNight": 8
+}, {
+	"id": "6_babieta",
+	"image": "https://www.helloimg.com/i/2024/11/27/67460a7f5d9b6.png",
+	"name": "信徒",
+	"team": "outsider",
+	"remindersGlobal": ["是信徒"],
+	"ability": "你以为你是一个爪牙角色，但其实你不是。"
+}, {
+	"id": "7_babieta",
+	"image": "https://www.helloimg.com/i/2024/11/27/67460a8255bf3.png",
+	"otherNightReminder": "如果怪人完成了两项任务，当晚他独自获胜。",
+	"name": "怪人",
+	"team": "outsider",
+	"remindersGlobal": ["锁定","逃脱"],
+	"ability": "在你的首个夜晚，你获得逃脱。如果你“疯狂”地证明自己是怪人，你会被锁定两次。如果你审判处决一名玩家，且你被审判过，当晚你独自获胜。",
+	"firstNightReminder":  "怪人获得逃脱",
+	"firstNight": 15,
+	"otherNight": 2
+}, {
+	"id": "8_babieta",
+	"image": "https://www.helloimg.com/i/2024/11/27/67460a9bc248b.png",
+	"name": "火神",
+	"team": "minion",
+	"reminders": ["镇民颠倒","外来者颠倒","爪牙颠倒","恶魔颠倒"],
+	"ability": "在你的首个夜晚，你要选择一个角色类型：如果该类型玩家被审判，审判结果颠倒。",
+	"firstNight": 14,
+	"firstNightReminder": "火神要选择一个角色类型：当该类型玩家被审判时，审判结果颠倒。放置该标记到火神旁边。"
+}, {
+	"id": "9_babieta",
+	"image": "https://www.helloimg.com/i/2024/11/27/67460a9d228fe.png",
+	"firstNightReminder": "如果逆转使用能力，则放置逆转、失去能力标记到他角色旁。",
+	"otherNightReminder": "如果逆转使用能力，则放置逆转、失去能力标记到他角色旁。",
+	"reminders": ["失去能力"],
+	"remindersGlobal": ["逆转"],
+	"name": "逆转",
+	"team": "minion",
+	"ability": "每局游戏限一次，在夜晚时：你可以选择让下次的审判结果颠倒。",
+	"firstNight": 13,
+	"otherNight": 7
+}, {
+	"id": "10_babieta",
+	"image": "https://www.helloimg.com/i/2024/11/27/67460aa3f1de9.png",
+	"firstNightReminder": "荒芜获得2层逃脱。荒芜要选择一个角色，如果该角色在场，荒芜得知他是谁。",
+	"name": "荒芜",
+	"team": "demon",
+	"remindersGlobal": ["逃脱"],
+	"ability": "在你的首个夜晚，你获得逃脱两次，然后你要选择一个角色：如果该角色在场，你会得知他是谁。[+1外来者]",
+	"firstNight": 11
+}, {
+	"id": "11_babieta",
+	"image": "https://www.helloimg.com/i/2024/11/27/67460aa343ae8.png",
+	"firstNightReminder": "战争查看魔典，然后选择一名玩家，他获得逃脱，如果他是善良的，他中毒。",
+	"reminders": ["中毒"],
+	"name": "战争",
+	"team": "demon",
+	"remindersGlobal": ["逃脱"],
+	"ability": "在你的首个夜晚，你能查看魔典并选择一名玩家，他获得逃脱，如果他是善良的，他中毒。",
+	"firstNight": 11
+}]

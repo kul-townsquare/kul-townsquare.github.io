@@ -189,6 +189,24 @@
     "ability": "每个白天，一名玩家可以拜访你。当晚，如果他的阵营是劣势的，他会获得一个旅行者的能力，直到下一名玩家获得能力。所有玩家都会知道他获得了什么能力。[“唵 部 林 姆，唵 齿 林 姆，唵 仆 刊 姆，唵 览 姆。”]",
     "flavor": "“唵 部 林 姆，唵 齿 林 姆，唵 仆 刊 姆，唵 览 姆。”",
     "otherNight": 2
-  }
+  },
+  {
+		"ability": "最幸运的玩家可以选择自己的角色。",
+		"image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_7795514308961_0eb9c6ca.jpg",
+		"edition": "custom",
+		"flavor": "",
+		"id": "qilin",
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"name": "麒麟",
+		"otherNight": 0,
+		"setup": 0,
+		"reminders": [
+			"好的事情"
+		],
+		"remindersGlobal": [],
+		"team": "fabled",
+		"firstNight": 0
+	}
   
 ]
