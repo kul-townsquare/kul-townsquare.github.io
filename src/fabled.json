@@ -207,6 +207,33 @@
 		"remindersGlobal": [],
 		"team": "fabled",
 		"firstNight": 0
-	}
-  
+	},
+  {
+		"ability": "说书人就是这么诡诈，要小心。",
+		"edition": "custom",
+		"flavor": "",
+		"id": "mm",
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"name": "mm",
+		"otherNight": 0,
+		"setup": 0,
+		"remindersGlobal": [],
+		"team": "fabled",
+		"firstNight": 0
+	},
+  {
+		"ability": "",
+		"edition": "custom",
+		"flavor": "",
+		"id": "skyrain",
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"name": "天雨",
+		"otherNight": 0,
+		"setup": 0,
+		"remindersGlobal": [],
+		"team": "fabled",
+		"firstNight": 0
+	}  
 ]
