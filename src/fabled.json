@@ -235,5 +235,19 @@
 		"remindersGlobal": [],
 		"team": "fabled",
 		"firstNight": 0
-	}  
+	},
+  {
+		"ability": "",
+		"edition": "custom",
+		"flavor": "",
+		"id": "Flying",
+		"firstNightReminder": "",
+		"otherNightReminder": "",
+		"name": "Flying",
+		"otherNight": 0,
+		"setup": 0,
+		"remindersGlobal": [],
+		"team": "fabled",
+		"firstNight": 0
+	}    
 ]
