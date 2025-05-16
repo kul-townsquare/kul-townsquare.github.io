@@ -100,6 +100,17 @@
 
     <ReminderModal :player-index="selectedPlayer"></ReminderModal>
     <RoleModal :player-index="selectedPlayer"></RoleModal>
+
+    <div v-if="!session.isSpectator" class="storyteller-controls">
+      <button 
+        v-for="(player, index) in players" 
+        :key="player.id || player.name || index"
+        @click="togglePlayerPublic(player)"
+        :class="{ active: player.isPublic }"
+      >
+        {{ player.name }} {{ player.isPublic ? '已公开' : '未公开' }}
+      </button>
+    </div>
   </div>
 </template>
 
@@ -109,6 +120,7 @@ import Player from "./Player";
 import Token from "./Token";
 import ReminderModal from "./modals/ReminderModal";
 import RoleModal from "./modals/RoleModal";
+import { getLiveSession } from '../store/socket';
 
 export default {
   components: {
@@ -269,6 +281,18 @@ export default {
       this.swap = -1;
       this.nominate = -1;
     },
+    togglePlayerPublic(player) {
+      const socket = getLiveSession();
+      if (!this.session.isSpectator && socket) {
+        const newValue = !player.isPublic;
+        this.$store.commit('players/update', { player, property: 'isPublic', value: newValue });
+        socket.sendPlayer({
+          player,
+          property: 'isPublic',
+          value: newValue
+        });
+      }
+    }
   },
 };
 </script>
@@ -285,6 +309,7 @@ export default {
   align-items: center;
   align-content: center;
   justify-content: center;
+  position: relative;
 }
 
 .circle {
@@ -661,5 +686,38 @@ export default {
 
 #townsquare:not(.spectator) .fabled ul li:hover .token:before {
   opacity: 1;
+}
+
+.storyteller-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  z-index: 100;
+  
+  button {
+    padding: 5px 10px;
+    border: 1px solid #666;
+    border-radius: 3px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    
+    &:hover {
+      background: #444;
+    }
+    
+    &.active {
+      background: #666;
+      border-color: #999;
+    }
+  }
 }
 </style>

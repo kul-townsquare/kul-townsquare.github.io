@@ -5,6 +5,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import socketPlugin from "./store/socket";
 
 const faIcons = [
   "AddressCard",
@@ -61,6 +62,8 @@ library.add(
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;
+
+store.subscribeAction(socketPlugin);
 
 new Vue({
   render: h => h(App),
