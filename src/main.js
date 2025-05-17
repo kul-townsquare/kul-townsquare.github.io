@@ -53,19 +53,24 @@ const faIcons = [
   "VolumeMute",
   "VoteYea",
   "WindowMaximize",
-  "WindowMinimize"
+  "WindowMinimize",
 ];
 const fabIcons = ["Github", "Discord"];
 library.add(
-  ...faIcons.map(i => fas["fa" + i]),
-  ...fabIcons.map(i => fab["fa" + i])
+  ...faIcons.map((i) => fas["fa" + i]),
+  ...fabIcons.map((i) => fab["fa" + i]),
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;
 
-store.subscribeAction(socketPlugin);
+// 等待 store 初始化完成后再注册 socketPlugin
+store.subscribe((mutation, state) => {
+  if (mutation.type === "session/setSessionId" && state.session.sessionId) {
+    socketPlugin(store);
+  }
+});
 
 new Vue({
-  render: h => h(App),
-  store
+  render: (h) => h(App),
+  store,
 }).$mount("#app");

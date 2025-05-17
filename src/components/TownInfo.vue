@@ -9,12 +9,10 @@
             ? edition.logo
             : require('../assets/editions/' + edition.id + '.png')
         })`,
-        backgroundSize: '100% auto'
+        backgroundSize: '100% auto',
       }"
     ></li>
-    <li v-if="players.length - teams.traveler < 5">
-      请添加更多玩家！
-    </li>
+    <li v-if="players.length - teams.traveler < 5">请添加更多玩家！</li>
     <li>
       <span class="meta" v-if="!edition.isOfficial">
         {{ edition.name }}
@@ -78,10 +76,10 @@ import { mapState } from "vuex";
 
 export default {
   computed: {
-    teams: function() {
+    teams: function () {
       const { players } = this.$store.state.players;
       const nonTravelers = this.$store.getters["players/nonTravelers"];
-      const alive = players.filter(player => player.isDead !== true).length;
+      const alive = players.filter((player) => player.isDead !== true).length;
       return {
         ...gameJSON[nonTravelers - 5],
         traveler: players.length - nonTravelers,
@@ -89,13 +87,13 @@ export default {
         votes:
           alive +
           players.filter(
-            player => player.isDead === true && player.isVoteless !== true
-          ).length
+            (player) => player.isDead === true && player.isVoteless !== true,
+          ).length,
       };
     },
     ...mapState(["edition", "grimoire"]),
-    ...mapState("players", ["players"])
-  }
+    ...mapState("players", ["players"]),
+  },
 };
 </script>
 
@@ -122,7 +120,10 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-shadow: 0 2px 1px black, 0 -2px 1px black, 2px 0 1px black,
+    text-shadow:
+      0 2px 1px black,
+      0 -2px 1px black,
+      2px 0 1px black,
       -2px 0 1px black;
 
     span {

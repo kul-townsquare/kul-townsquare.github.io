@@ -41,16 +41,6 @@
         :role="displayRole"
         @set-role="$emit('trigger', ['openRoleModal'])"
       />
-      <button
-        v-if="!session.isSpectator"
-        class="public-btn"
-        :class="{ active: player.isPublic }"
-        @click.stop="$emit('trigger', ['togglePlayerPublic'])"
-        style="position:absolute;right:-40px;top:10px;z-index:10;"
-      >
-
-        {{ player.isPublic ? '已公开' : '公开' }}
-      </button>
 
       <!-- Overlay icons -->
       <div class="overlay">
@@ -118,7 +108,7 @@
         @click="isMenuOpen = !isMenuOpen"
         :class="{ active: isMenuOpen }"
       >
-        <span>{{playerID + 1}}. {{ player.name }}</span>
+        <span>{{ playerID + 1 }}. {{ player.name }}</span>
         <font-awesome-icon icon="venus-mars" v-if="player.pronouns" />
         <div class="pronouns" v-if="player.pronouns">
           <span>{{ player.pronouns }}</span>
@@ -127,15 +117,13 @@
 
       <transition name="fold">
         <ul class="menu" v-if="isMenuOpen">
-<!--          <li-->
-<!--            @click="changePronouns"-->
-<!--            v-if="-->
-<!--              !session.isSpectator ||-->
-<!--              (session.isSpectator && player.id === session.playerId)-->
-<!--            "-->
-<!--          >-->
-<!--            <font-awesome-icon icon="venus-mars" />改变代称-->
-<!--          </li>-->
+          <li
+            v-if="!session.isSpectator"
+            @click="$emit('trigger', ['togglePlayerPublic'])"
+            :class="{ active: player.isPublic }"
+          >
+            {{ player.isPublic ? '已公开' : '公开' }}
+          </li>
           <template v-if="!session.isSpectator">
             <li @click="changeName">
               <font-awesome-icon icon="user-edit" />改名
@@ -265,7 +253,10 @@ export default {
         return this.player.role;
       }
       // 玩家端：公开 或 自己
-      if (this.player.isPublic || (this.session.playerId && this.player.id === this.session.playerId)) {
+      if (
+        this.player.isPublic ||
+        (this.session.playerId && this.player.id === this.session.playerId)
+      ) {
         return this.player.role;
       }
       return {};

@@ -3,12 +3,11 @@
     <img src="static/apple-icon.png" alt="" class="logo" />
     <div>
       欢迎来到
-      <b>鲁汶</b>《钟楼谜团》(非官方)！
-      点击右上角
+      <b>鲁汶</b>《钟楼谜团》(非官方)！ 点击右上角
       <span class="button" @click="toggleMenu">
         <font-awesome-icon icon="cog" /> 菜单
       </span>
-      可查看主要功能<br>
+      可查看主要功能<br />
       快捷键：[A]添加座位 [J]加入小镇
 
       <div class="footer">
@@ -28,10 +27,10 @@ import { mapMutations } from "vuex";
 export default {
   data() {
     return {
-      language: window.navigator.userLanguage || window.navigator.language
+      language: window.navigator.userLanguage || window.navigator.language,
     };
   },
-  methods: mapMutations(["toggleMenu"])
+  methods: mapMutations(["toggleMenu"]),
 };
 </script>
 

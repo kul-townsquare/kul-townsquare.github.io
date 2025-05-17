@@ -102,13 +102,13 @@
     <RoleModal :player-index="selectedPlayer"></RoleModal>
 
     <div v-if="!session.isSpectator" class="storyteller-controls">
-      <button 
-        v-for="(player, index) in players" 
+      <button
+        v-for="(player, index) in players"
         :key="player.id || player.name || index"
         @click="togglePlayerPublic(player)"
         :class="{ active: player.isPublic }"
       >
-        {{ player.name }} {{ player.isPublic ? '已公开' : '未公开' }}
+        {{ player.name }} {{ player.isPublic ? "已公开" : "未公开" }}
       </button>
     </div>
   </div>
@@ -120,7 +120,7 @@ import Player from "./Player";
 import Token from "./Token";
 import ReminderModal from "./modals/ReminderModal";
 import RoleModal from "./modals/RoleModal";
-import { getLiveSession } from '../store/socket';
+import { getLiveSession } from "../store/socket";
 
 export default {
   components: {
@@ -285,14 +285,18 @@ export default {
       const socket = getLiveSession();
       if (!this.session.isSpectator && socket) {
         const newValue = !player.isPublic;
-        this.$store.commit('players/update', { player, property: 'isPublic', value: newValue });
+        this.$store.commit("players/update", {
+          player,
+          property: "isPublic",
+          value: newValue,
+        });
         socket.sendPlayer({
           player,
-          property: 'isPublic',
-          value: newValue
+          property: "isPublic",
+          value: newValue,
         });
       }
-    }
+    },
   },
 };
 </script>
@@ -701,7 +705,7 @@ export default {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 5px;
   z-index: 100;
-  
+
   button {
     padding: 5px 10px;
     border: 1px solid #666;
@@ -709,11 +713,11 @@ export default {
     background: #333;
     color: white;
     cursor: pointer;
-    
+
     &:hover {
       background: #444;
     }
-    
+
     &.active {
       background: #666;
       border-color: #999;

@@ -20,7 +20,7 @@
           <font-awesome-icon
             :icon="[
               'fas',
-              session.isVoteHistoryAllowed ? 'check-square' : 'square'
+              session.isVoteHistoryAllowed ? 'check-square' : 'square',
             ]"
           />
           Accessible to players
@@ -49,16 +49,8 @@
       <tbody>
         <tr v-for="(vote, index) in session.voteHistory" :key="index">
           <td>
-            {{
-              vote.timestamp
-                .getHours()
-                .toString()
-                .padStart(2, "0")
-            }}:{{
-              vote.timestamp
-                .getMinutes()
-                .toString()
-                .padStart(2, "0")
+            {{ vote.timestamp.getHours().toString().padStart(2, "0") }}:{{
+              vote.timestamp.getMinutes().toString().padStart(2, "0")
             }}
           </td>
           <td>{{ vote.nominator }}</td>
@@ -73,7 +65,7 @@
             <font-awesome-icon
               :icon="[
                 'fas',
-                vote.votes.length >= vote.majority ? 'check-square' : 'square'
+                vote.votes.length >= vote.majority ? 'check-square' : 'square',
               ]"
             />
           </td>
@@ -92,10 +84,10 @@ import { mapMutations, mapState } from "vuex";
 
 export default {
   components: {
-    Modal
+    Modal,
   },
   computed: {
-    ...mapState(["session", "modals"])
+    ...mapState(["session", "modals"]),
   },
   methods: {
     clearVoteHistory() {
@@ -104,11 +96,11 @@ export default {
     setRecordVoteHistory() {
       this.$store.commit(
         "session/setVoteHistoryAllowed",
-        !this.session.isVoteHistoryAllowed
+        !this.session.isVoteHistoryAllowed,
       );
     },
-    ...mapMutations(["toggleModal"])
-  }
+    ...mapMutations(["toggleModal"]),
+  },
 };
 </script>
 
