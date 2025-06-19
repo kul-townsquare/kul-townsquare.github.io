@@ -80,6 +80,12 @@
           @click="nominatePlayer(player)"
           title="Nominate this player"
         />
+        <font-awesome-icon
+          icon="paper-plane"
+          class="send-bluffs"
+          @click="distributeBluffs(player)"
+          title="Send bluffs to this player"
+        />
       </div>
 
       <!-- Claimed seat icon -->
@@ -148,6 +154,10 @@
             >
               <font-awesome-icon icon="chair" />
               空座位
+            </li>
+            <li @click="distributeBluffs(player)" :class="{ disabled: session.lockedVote }">
+              <font-awesome-icon icon="link" />
+              发送恶魔的伪装
             </li>
             <template v-if="!session.nomination">
               <li @click="nominatePlayer()">
@@ -337,6 +347,20 @@ export default {
     claimSeat() {
       this.isMenuOpen = false;
       this.$emit("trigger", ["claimSeat"]);
+    },
+    distributeBluffs(player) {
+      this.isMenuOpen = false;
+      const popup =
+        "你确定要向该玩家发送恶魔的伪装吗？";
+      if (confirm(popup)) {
+        this.$store.commit("session/distributeBluffs", player);
+        setTimeout(
+          (() => {
+            this.$store.commit("session/distributeBluffs", false);
+          }).bind(this),
+          2000
+        );
+      }
     },
     /**
      * Allow the ST to override a locked vote.
