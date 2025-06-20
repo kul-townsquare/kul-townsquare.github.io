@@ -139,6 +139,9 @@ class LiveSession {
       case "player":
         this._updatePlayer(params);
         break;
+      case "bluffs":
+        this._updateBluffs(params);
+        break;
       case "claim":
         this._updateSeat(params);
         break;
@@ -516,6 +519,17 @@ class LiveSession {
     }
   }
 
+  _updateBluffs({ bluffs }) {
+    if (!this._isSpectator || !bluffs.length) {
+      return;
+    }
+    bluffs.forEach((role, index) => {
+      this._store.commit("players/setBluff", {
+      index,
+      role: this._store.state.roles.get(role) || {}
+      });
+    });
+  }
   /**
    * Publish a player pronouns update
    * @param player
@@ -680,6 +694,20 @@ class LiveSession {
     }
   }
 
+  distributeBluffs(player) {
+    const bluffs = JSON.parse(localStorage.getItem("bluffs")) || {};
+    const message = {};
+    if (player.id) {
+      message[player.id] = [
+        "bluffs",
+        { bluffs }
+      ];
+    }
+    if (Object.keys(message).length) {
+      this._send("direct", message);
+    }
+
+  }
   /**
    * A player nomination. ST only
    * This also syncs the voting speed to the players.
@@ -879,6 +907,11 @@ const socketPlugin = store => {
       case "session/distributeRoles":
         if (payload) {
           session.distributeRoles();
+        }
+        break;
+      case "session/distributeBluffs":
+        if (payload) {
+          session.distributeBluffs(payload);
         }
         break;
       case "session/nomination":
