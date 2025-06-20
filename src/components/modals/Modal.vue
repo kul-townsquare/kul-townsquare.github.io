@@ -65,8 +65,8 @@ export default {
   box-shadow: 2px 2px 20px 1px #000;
   display: flex;
   flex-direction: column;
-  max-height: 80%;
-  max-width: 80%;
+  max-height: 80vh;
+  max-width: 80vw;
 
   .vote-history &,
   .night-reference &,
@@ -77,8 +77,8 @@ export default {
   @media only screen and (max-width: 800px) {
     .roles &,
     .characters & {
-      max-height: 100%;
-      max-width: 100%;
+      max-height: 100vh;
+      max-width: 100vw;
     }
   }
 
@@ -110,7 +110,16 @@ export default {
 
   > .slot {
     max-height: 100%;
+    //overflow-x: visible;
+    overflow-y: scroll;
     position: initial;
+
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+
+  > .slot::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
   }
 }
 
