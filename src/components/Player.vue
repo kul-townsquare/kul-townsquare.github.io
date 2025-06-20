@@ -157,7 +157,7 @@
             </li>
             <li @click="distributeBluffs(player)" :class="{ disabled: session.lockedVote }">
               <font-awesome-icon icon="link" />
-              发送恶魔的伪装
+              伪装
             </li>
             <template v-if="!session.nomination">
               <li @click="nominatePlayer()">
