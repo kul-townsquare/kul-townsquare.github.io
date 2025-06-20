@@ -1,5 +1,10 @@
 # Release Notes
 
+### Version 3.0.0
+- New start
+
+---
+
 ### Version 2.16.2
 - fixed custom script format to support new script tool JSON
 - updated packages to be compatible with Node >= 18 again
