@@ -11,8 +11,7 @@ const NEWPLAYER = {
 const state = () => ({
   players: [],
   fabled: [],
-  bluffs: [],
-  isPublic: false
+  bluffs: []
 });
 
 const getters = {
@@ -111,26 +110,16 @@ const mutations = {
   An example of this is in the sendPlayerPronouns and _updatePlayerPronouns
   in socket.js.
    */
-  update(state, { player, property, value, index }) {
-    let idx = -1;
-    if (typeof index === 'number' && index >= 0) {
-      idx = index;
-    } else if (player) {
-      idx = state.players.indexOf(player);
-      if (idx < 0 && player.id) {
-        idx = state.players.findIndex(p => p.id === player.id);
-      }
-    }
-    if (idx >= 0) {
-      state.players[idx][property] = value;
+  update(state, { player, property, value }) {
+    const index = state.players.indexOf(player);
+    if (index >= 0) {
+      state.players[index][property] = value;
     }
   },
-  add(state, player) {
+  add(state, name) {
     state.players.push({
       ...NEWPLAYER,
-      name: typeof player === 'string' ? player : player.name,
-      id: (typeof player === 'object' && player.id) ? player.id : Math.random().toString(36).substr(2, 9),
-      isPublic: false
+      name
     });
   },
   remove(state, index) {
@@ -163,12 +152,6 @@ const mutations = {
       } else {
         state.fabled = fabled;
       }
-    }
-  },
-  togglePublic(state, { player }) {
-    const index = state.players.indexOf(player);
-    if (index >= 0) {
-      state.players[index].isPublic = !state.players[index].isPublic;
     }
   }
 };

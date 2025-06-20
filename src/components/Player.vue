@@ -38,19 +38,9 @@
       </div>
 
       <Token
-        :role="displayRole"
+        :role="player.role"
         @set-role="$emit('trigger', ['openRoleModal'])"
       />
-      <button
-        v-if="!session.isSpectator"
-        class="public-btn"
-        :class="{ active: player.isPublic }"
-        @click.stop="$emit('trigger', ['togglePlayerPublic'])"
-        style="position:absolute;right:-40px;top:10px;z-index:10;"
-      >
-
-        {{ player.isPublic ? '已公开' : '公开' }}
-      </button>
 
       <!-- Overlay icons -->
       <div class="overlay">
@@ -268,17 +258,6 @@ export default {
       } else {
         return { width: 12 + this.grimoire.zoom + unit };
       }
-    },
-    displayRole() {
-      // 说书人始终可见
-      if (!this.session.isSpectator) {
-        return this.player.role;
-      }
-      // 玩家端：公开 或 自己
-      if (this.player.isPublic || (this.session.playerId && this.player.id === this.session.playerId)) {
-        return this.player.role;
-      }
-      return {};
     },
   },
   data() {
@@ -536,15 +515,13 @@ export default {
     transform: perspective(400px) rotateY(0deg);
   }
 
-  &.traveler:not(.dead) .token,
-  &.isPublic:not(.dead) .token {
+  &.traveler:not(.dead) .token {
     transform: perspective(400px) scale(0.8);
     pointer-events: none;
     transition-delay: 0s;
   }
 
-  &.traveler.dead .token,
-  &.isPublic.dead .token {
+  &.traveler.dead .token {
     transition-delay: 0s;
   }
 }

@@ -331,7 +331,7 @@ class LiveSession {
       ["name", "id", "isDead", "isVoteless", "pronouns"].forEach(property => {
         const value = state[property];
         if (player[property] !== value) {
-          this._store.commit("players/update", { player, property, value, index: x });
+          this._store.commit("players/update", { player, property, value });
         }
       });
       // roles are special, because of travelers
@@ -343,16 +343,14 @@ class LiveSession {
           this._store.commit("players/update", {
             player,
             property: "role",
-            value: role,
-            index: x
+            value: role
           });
         }
       } else if (!roleId && player.role.team === "traveler") {
         this._store.commit("players/update", {
           player,
           property: "role",
-          value: {},
-          index: x
+          value: {}
         });
       }
     });
@@ -466,16 +464,6 @@ class LiveSession {
         delete this._gamestate[index].roleId;
         this._send("player", { index, property, value: "" });
       }
-    } else if (property === "isPublic") {
-      // 同步isPublic属性，并同步角色id
-      this._send("player", { index, property, value });
-      if (value) {
-        // 公开时同步角色id
-        const roleId = player.role && player.role.id;
-        if (roleId) {
-          this._send("player", { index, property: "role", value: roleId });
-        }
-      }
     } else {
       this._send("player", { index, property, value });
     }
@@ -515,7 +503,7 @@ class LiveSession {
       }
     } else {
       // just update the player otherwise
-      this._store.commit("players/update", { player, property, value, index });
+      this._store.commit("players/update", { player, property, value });
     }
   }
 
@@ -876,20 +864,10 @@ class LiveSession {
   }
 }
 
-let liveSessionInstance = null;
+export default store => {
+  // setup
+  const session = new LiveSession(store);
 
-export function createLiveSession(store) {
-  liveSessionInstance = new LiveSession(store);
-  return liveSessionInstance;
-}
-
-export function getLiveSession() {
-  return liveSessionInstance;
-}
-
-// 保留原有插件导出
-const socketPlugin = store => {
-  const session = createLiveSession(store);
   // listen to mutations
   store.subscribe(({ type, payload }, state) => {
     switch (type) {
@@ -980,5 +958,3 @@ const socketPlugin = store => {
     store.commit("toggleGrimoire", false);
   }
 };
-
-export default socketPlugin;
