@@ -65,8 +65,8 @@ export default {
   box-shadow: 2px 2px 20px 1px #000;
   display: flex;
   flex-direction: column;
-  max-height: 80vh;
-  max-width: 80vw;
+  max-height: 80%;
+  max-width: 80%;
 
   .vote-history &,
   .night-reference &,
@@ -77,8 +77,8 @@ export default {
   @media only screen and (max-width: 800px) {
     .roles &,
     .characters & {
-      max-height: 100vh;
-      max-width: 100vw;
+      max-height: 100%;
+      max-width: 100%;
     }
   }
 
