@@ -119,6 +119,7 @@ export default new Vuex.Store({
       roles: false,
       voteHistory: false
     },
+    shortcutsDisabled: false,
     edition: editionJSONbyId.get("tb"),
     roles: getRolesByEdition(),
     otherTravelers: getTravelersNotInEdition(),
@@ -170,6 +171,9 @@ export default new Vuex.Store({
     toggleStatic: toggle("isStatic"),
     toggleNight: toggle("isNight"),
     toggleGrimoire: toggle("isPublic"),
+    setShortcutsDisabled(state, value) {
+      state.shortcutsDisabled = value;
+    },
     // toggleImageOptIn: toggle("isImageOptIn"),
     toggleModal({ modals }, name) {
       if (name) {

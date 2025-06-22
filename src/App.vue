@@ -74,7 +74,7 @@ export default {
     Gradients
   },
   computed: {
-    ...mapState(["grimoire", "session"]),
+    ...mapState(["grimoire", "session", "shortcutsDisabled"]),
     ...mapState("players", ["players"])
   },
   data() {
@@ -84,7 +84,7 @@ export default {
   },
   methods: {
     keyup({ key, ctrlKey, metaKey }) {
-      if (ctrlKey || metaKey) return;
+      if (ctrlKey || metaKey || this.shortcutsDisabled) return;
       switch (key.toLocaleLowerCase()) {
         case "g":
           this.$store.commit("toggleGrimoire");
