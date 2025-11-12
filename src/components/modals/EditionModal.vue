@@ -30,28 +30,13 @@
             backgroundImage: `url(${require('../../assets/editions/custom.png')})`,
           }"
         >
-          自定义脚本/角色
+          导入JSON
         </li>
       </ul>
     </div>
     <div class="custom" v-else>
-      <h3>加载自定义脚本/角色</h3>
-      要使用自定义脚本进行游戏，您需要在官方中选择您想要玩的角色
-      <a href="https://script.bloodontheclocktower.com/" target="_blank"
-        >脚本工具</a
-      >
-      然后直接在此处上传生成的“custom-list.json”或提供此类托管 JSON 文件的
-      URL。<br />
-      <br />
-      要使用自定义角色，请阅读
-      <a
-        href="https://github.com/bra1n/townsquare#custom-characters"
-        target="_blank"
-        >这个文件</a
-      >
-      ，它是关于如何编写自定义字符定义文件。
-      <b>仅从您信任的来源加载自定义 JSON 文件！</b>
-      <h3>一些流行的自定义脚本：</h3>
+      <h3>从JSON加载剧本</h3>
+      <!-- <h3>最近在玩的自定义剧本：</h3> -->
       <ul class="scripts">
         <li
           v-for="(script, index) in scripts"
@@ -75,7 +60,7 @@
           <font-awesome-icon icon="link" /> 输入网址
         </div>
         <div class="button" @click="readFromClipboard">
-          <font-awesome-icon icon="clipboard" /> 使用剪贴板中的 JSON
+          <font-awesome-icon icon="clipboard" /> 使用剪贴板中的JSON
         </div>
         <div class="button" @click="isCustom = false">
           <font-awesome-icon icon="undo" /> 返回
@@ -100,28 +85,24 @@ export default {
       isCustom: false,
       scripts: [
         [
-          "Deadly Penance Day",
-          "https://gist.githubusercontent.com/bra1n/0337cc44c6fd2c44f7589256ed5486d2/raw/16be38fa3c01aaf49827303ac80577bdb52c0b25/penanceday.json",
+          "万圣访客",
+          "https://raw.githubusercontent.com/kul-townsquare/kul-townsquare.github.io/1cf0b0fc9fb6e6c1b50c1f77e23e0d581a02a745/%E5%89%A7%E6%9C%ACJSON/2025.11/%23%E4%B8%87%E5%9C%A3%E8%AE%BF%E5%AE%A2-%E7%86%8A%E7%8C%AB%E8%83%BD%E8%83%BD%26%E6%80%A7%E6%84%9F.json",
         ],
         [
-          "Catfishing 11.1",
-          "https://gist.githubusercontent.com/bra1n/8a5ec41a7bbf945f6b7dfc1cef72b569/raw/a312ab93c2f302e0ef83c8b65a4e8e82760fda3a/catfishing.json",
+          "哎呦!猫萌特",
+          "https://raw.githubusercontent.com/kul-townsquare/kul-townsquare.github.io/1cf0b0fc9fb6e6c1b50c1f77e23e0d581a02a745/%E5%89%A7%E6%9C%ACJSON/2025.11/%23%E5%93%8E%E5%91%A6!%E7%8C%AB%E8%90%8C%E7%89%B9-L%20Moment.json",
         ],
         [
-          "On Thin Ice (Teensyville)",
-          "https://gist.githubusercontent.com/bra1n/8dacd9f2abc6f428331ea1213ab153f5/raw/0cacbcaf8ed9bddae0cca25a9ada97e9958d868b/on-thin-ice.json",
+          "仲夏夜之梦",
+          "https://raw.githubusercontent.com/kul-townsquare/kul-townsquare.github.io/1cf0b0fc9fb6e6c1b50c1f77e23e0d581a02a745/%E5%89%A7%E6%9C%ACJSON/2025.11/%E4%BB%B2%E5%A4%8F%E5%A4%9C%E4%B9%8B%E6%A2%A6v1.1.1.json",
         ],
         [
-          "Race To The Bottom (Teensyville)",
-          "https://gist.githubusercontent.com/bra1n/63e1354cb3dc9d4032bcd0623dc48888/raw/5acb0eedcc0a67a64a99c7e0e6271de0b7b2e1b2/race-to-the-bottom.json",
+          "圆桌骑士团",
+          "https://raw.githubusercontent.com/kul-townsquare/kul-townsquare.github.io/1cf0b0fc9fb6e6c1b50c1f77e23e0d581a02a745/%E5%89%A7%E6%9C%ACJSON/2025.11/%E5%9C%86%E6%A1%8C%E9%AA%91%E5%A3%AB%E5%9B%A2v3.0.json",
         ],
         [
-          "Frankenstein's Mayor by Ted (Teensyville)",
-          "https://gist.githubusercontent.com/bra1n/32c52b422cc01b934a4291eeb81dbcee/raw/5bf770693bbf7aff5e86601c82ca4af3222f4ba6/Frankensteins_Mayor_by_Ted.json",
-        ],
-        [
-          "Vigormortis High School (Teensyville)",
-          "https://gist.githubusercontent.com/bra1n/1f65bd4a999524719d5dabe98c3c2d27/raw/22bbec6bf56a51a7459e5ae41ed47e41971c5445/VigormortisHighSchool.json",
+          "达芬奇密码",
+          "https://raw.githubusercontent.com/kul-townsquare/kul-townsquare.github.io/1cf0b0fc9fb6e6c1b50c1f77e23e0d581a02a745/%E5%89%A7%E6%9C%ACJSON/2025.11/%E8%BE%BE%E8%8A%AC%E5%A5%87%E5%AF%86%E7%A0%81v1.3.2.json",
         ],
       ],
     };
@@ -153,15 +134,31 @@ export default {
         this.handleURL(url);
       }
     },
+    convertGitHubBlobToRaw(url) {
+      // 将 GitHub blob 链接转换为 raw 链接
+      // 例如: github.com/user/repo/blob/branch/path → raw.githubusercontent.com/user/repo/branch/path
+      const blobMatch = url.match(/github\.com\/([^/]+)\/([^/]+)\/blob\/(.+)/);
+      if (blobMatch) {
+        const [, owner, repo, path] = blobMatch;
+        return `https://raw.githubusercontent.com/${owner}/${repo}/${path}`;
+      }
+      return url;
+    },
     async handleURL(url) {
-      const res = await fetch(url);
-      if (res && res.json) {
-        try {
-          const script = await res.json();
-          this.parseRoles(script);
-        } catch (e) {
-          alert("Error loading custom script: " + e.message);
+      try {
+        // 自动转换 GitHub blob 链接为 raw 链接
+        const rawUrl = this.convertGitHubBlobToRaw(url);
+        
+        const res = await fetch(rawUrl);
+        if (!res.ok) {
+          alert(`无法加载文件: ${res.status} ${res.statusText}`);
+          return;
         }
+        
+        const script = await res.json();
+        this.parseRoles(script);
+      } catch (e) {
+        alert("Error loading custom script: " + e.message);
       }
     },
     async readFromClipboard() {
