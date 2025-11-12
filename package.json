@@ -19,7 +19,7 @@
     "prom-client": "^13.0.0",
     "sass": "^1.30.0",
     "sass-loader": "^8.0.2",
-    "vue": "^2.6.12",
+    "vue": "^2.7.15",
     "vue-template-compiler": "^2.7.15",
     "vuex": "^3.6.0",
     "ws": "^7.4.6"

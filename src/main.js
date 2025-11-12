@@ -23,12 +23,14 @@ const faIcons = [
   "ExclamationTriangle",
   "FileCode",
   "FileUpload",
+  "Filter",
   "HandPaper",
   "HandPointRight",
   "Heartbeat",
   "Image",
   "Link",
   "MinusCircle",
+  "PaperPlane",
   "PeopleArrows",
   "PlusCircle",
   "Question",
@@ -52,17 +54,17 @@ const faIcons = [
   "VolumeMute",
   "VoteYea",
   "WindowMaximize",
-  "WindowMinimize"
+  "WindowMinimize",
 ];
 const fabIcons = ["Github", "Discord"];
 library.add(
-  ...faIcons.map(i => fas["fa" + i]),
-  ...fabIcons.map(i => fab["fa" + i])
+  ...faIcons.map((i) => fas["fa" + i]),
+  ...fabIcons.map((i) => fab["fa" + i]),
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(App),
-  store
+  render: (h) => h(App),
+  store,
 }).$mount("#app");

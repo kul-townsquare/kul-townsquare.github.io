@@ -80,12 +80,6 @@
           @click="nominatePlayer(player)"
           title="Nominate this player"
         />
-        <font-awesome-icon
-          icon="paper-plane"
-          class="send-bluffs"
-          @click="distributeBluffs(player)"
-          title="Send bluffs to this player"
-        />
       </div>
 
       <!-- Claimed seat icon -->
@@ -114,7 +108,7 @@
         @click="isMenuOpen = !isMenuOpen"
         :class="{ active: isMenuOpen }"
       >
-        <span>{{playerID + 1}}. {{ player.name }}</span>
+        <span>{{ playerID + 1 }}. {{ player.name }}</span>
         <font-awesome-icon icon="venus-mars" v-if="player.pronouns" />
         <div class="pronouns" v-if="player.pronouns">
           <span>{{ player.pronouns }}</span>
@@ -123,15 +117,15 @@
 
       <transition name="fold">
         <ul class="menu" v-if="isMenuOpen">
-<!--          <li-->
-<!--            @click="changePronouns"-->
-<!--            v-if="-->
-<!--              !session.isSpectator ||-->
-<!--              (session.isSpectator && player.id === session.playerId)-->
-<!--            "-->
-<!--          >-->
-<!--            <font-awesome-icon icon="venus-mars" />改变代称-->
-<!--          </li>-->
+          <!--          <li-->
+          <!--            @click="changePronouns"-->
+          <!--            v-if="-->
+          <!--              !session.isSpectator ||-->
+          <!--              (session.isSpectator && player.id === session.playerId)-->
+          <!--            "-->
+          <!--          >-->
+          <!--            <font-awesome-icon icon="venus-mars" />改变代称-->
+          <!--          </li>-->
           <template v-if="!session.isSpectator">
             <li @click="changeName">
               <font-awesome-icon icon="user-edit" />改名
@@ -155,8 +149,11 @@
               <font-awesome-icon icon="chair" />
               空座位
             </li>
-            <li @click="distributeBluffs(player)" :class="{ disabled: session.lockedVote }">
-              <font-awesome-icon icon="link" />
+            <li
+              @click="distributeBluffs(player)"
+              :class="{ disabled: session.lockedVote }"
+            >
+              <font-awesome-icon icon="paper-plane" />
               伪装
             </li>
             <template v-if="!session.nomination">
@@ -350,15 +347,14 @@ export default {
     },
     distributeBluffs(player) {
       this.isMenuOpen = false;
-      const popup =
-        "你确定要向该玩家发送恶魔的伪装吗？";
+      const popup = "你确定要向该玩家发送恶魔的伪装吗？";
       if (confirm(popup)) {
         this.$store.commit("session/distributeBluffs", player);
         setTimeout(
           (() => {
             this.$store.commit("session/distributeBluffs", false);
           }).bind(this),
-          2000
+          2000,
         );
       }
     },
