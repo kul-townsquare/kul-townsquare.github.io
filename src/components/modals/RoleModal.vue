@@ -1,7 +1,7 @@
 <template>
   <Modal v-if="modals.role && availableRoles.length" @close="close">
     <h3>
-     为
+      为
       {{
         playerIndex >= 0 && players.length
           ? players[playerIndex].name

@@ -4,11 +4,9 @@
       class="nomlog-summary"
       v-show="session.voteHistory.length && session.sessionId"
       @click="toggleModal('voteHistory')"
-      :title="
-        `${session.voteHistory.length} recent ${
-          session.voteHistory.length == 1 ? 'nomination' : 'nominations'
-        }`
-      "
+      :title="`${session.voteHistory.length} recent ${
+        session.voteHistory.length == 1 ? 'nomination' : 'nominations'
+      }`"
     >
       <font-awesome-icon icon="book-dead" />
       {{ session.voteHistory.length }}
@@ -17,15 +15,13 @@
       class="session"
       :class="{
         spectator: session.isSpectator,
-        reconnecting: session.isReconnecting
+        reconnecting: session.isReconnecting,
       }"
       v-if="session.sessionId"
       @click="leaveSession"
-      :title="
-        `${session.playerCount} other players in this session${
-          session.ping ? ' (' + session.ping + 'ms latency)' : ''
-        }`
-      "
+      :title="`${session.playerCount} other players in this session${
+        session.ping ? ' (' + session.ping + 'ms latency)' : ''
+      }`"
     >
       <font-awesome-icon icon="broadcast-tower" />
       {{ session.playerCount }}
@@ -64,7 +60,7 @@
               <font-awesome-icon
                 :icon="[
                   'fas',
-                  grimoire.isNightOrder ? 'check-square' : 'square'
+                  grimoire.isNightOrder ? 'check-square' : 'square',
                 ]"
               />
             </em>
@@ -85,7 +81,7 @@
           </li>
           <li @click="setBackground">
             背景图片
-            <em><font-awesome-icon icon="image"/></em>
+            <em><font-awesome-icon icon="image" /></em>
           </li>
           <!-- <li v-if="!edition.isOfficial" @click="imageOptIn">
             <small>Show Custom Images</small>
@@ -118,9 +114,7 @@
           <li class="headline" v-if="session.sessionId">
             {{ session.isSpectator ? "玩家" : "说书人" }}
           </li>
-          <li class="headline" v-else>
-            会话
-          </li>
+          <li class="headline" v-else>会话</li>
           <template v-if="!session.sessionId">
             <li @click="hostSession">创建小镇(说书人)<em>[H]</em></li>
             <li @click="joinSession">加入小镇(玩家)<em>[J]</em></li>
@@ -132,13 +126,13 @@
             </li>
             <li @click="copySessionUrl">
               复制玩家链接
-              <em><font-awesome-icon icon="copy"/></em>
+              <em><font-awesome-icon icon="copy" /></em>
             </li>
             <li
               v-if="session.voteHistory.length || !session.isSpectator"
               @click="toggleModal('voteHistory')"
             >
-             投票记录<em>[V]</em>
+              投票记录<em>[V]</em>
             </li>
             <li @click="leaveSession">
               退出房间
@@ -150,14 +144,16 @@
         <template v-if="tab === 'players' && !session.isSpectator">
           <!-- Users -->
           <li class="headline">玩家</li>
-          <li @click="addPlayer" v-if="players.length < 20">添加座位<em>[A]</em></li>
+          <li @click="addPlayer" v-if="players.length < 20">
+            添加座位<em>[A]</em>
+          </li>
           <li @click="randomizeSeatings" v-if="players.length > 2">
             随机座位
-            <em><font-awesome-icon icon="dice"/></em>
+            <em><font-awesome-icon icon="dice" /></em>
           </li>
           <li @click="clearPlayers" v-if="players.length">
             移除全部座位
-            <em><font-awesome-icon icon="trash-alt"/></em>
+            <em><font-awesome-icon icon="trash-alt" /></em>
           </li>
         </template>
 
@@ -176,16 +172,16 @@
             <em>[C]</em>
           </li>
           <li v-if="!session.isSpectator" @click="distributeRoles">
-              发送角色
-              <em><font-awesome-icon icon="theater-masks"/></em>
-            </li>
+            发送角色
+            <em><font-awesome-icon icon="theater-masks" /></em>
+          </li>
           <li v-if="!session.isSpectator" @click="toggleModal('fabled')">
             传奇角色
-            <em><font-awesome-icon icon="dragon"/></em>
+            <em><font-awesome-icon icon="dragon" /></em>
           </li>
           <li @click="clearRoles" v-if="players.length">
             移除全部角色
-            <em><font-awesome-icon icon="trash-alt"/></em>
+            <em><font-awesome-icon icon="trash-alt" /></em>
           </li>
         </template>
 
@@ -202,28 +198,28 @@
           </li>
           <li @click="toggleModal('gameState')">
             游戏状态(JSON)
-            <em><font-awesome-icon icon="file-code"/></em>
+            <em><font-awesome-icon icon="file-code" /></em>
           </li>
-<!--          <li>-->
-<!--            <a href="https://discord.gg/Gd7ybwWbFk" target="_blank">-->
-<!--              Join Discord-->
-<!--            </a>-->
-<!--            <em>-->
-<!--              <a href="https://discord.gg/Gd7ybwWbFk" target="_blank">-->
-<!--                <font-awesome-icon :icon="['fab', 'discord']" />-->
-<!--              </a>-->
-<!--            </em>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <a href="https://github.com/bra1n/townsquare" target="_blank">-->
-<!--              Source code-->
-<!--            </a>-->
-<!--            <em>-->
-<!--              <a href="https://github.com/bra1n/townsquare" target="_blank">-->
-<!--                <font-awesome-icon :icon="['fab', 'github']" />-->
-<!--              </a>-->
-<!--            </em>-->
-<!--          </li>-->
+          <!--          <li>-->
+          <!--            <a href="https://discord.gg/Gd7ybwWbFk" target="_blank">-->
+          <!--              Join Discord-->
+          <!--            </a>-->
+          <!--            <em>-->
+          <!--              <a href="https://discord.gg/Gd7ybwWbFk" target="_blank">-->
+          <!--                <font-awesome-icon :icon="['fab', 'discord']" />-->
+          <!--              </a>-->
+          <!--            </em>-->
+          <!--          </li>-->
+          <!--          <li>-->
+          <!--            <a href="https://github.com/bra1n/townsquare" target="_blank">-->
+          <!--              Source code-->
+          <!--            </a>-->
+          <!--            <em>-->
+          <!--              <a href="https://github.com/bra1n/townsquare" target="_blank">-->
+          <!--                <font-awesome-icon :icon="['fab', 'github']" />-->
+          <!--              </a>-->
+          <!--            </em>-->
+          <!--          </li>-->
         </template>
       </ul>
     </div>
@@ -236,11 +232,11 @@ import { mapMutations, mapState } from "vuex";
 export default {
   computed: {
     ...mapState(["grimoire", "session", "edition"]),
-    ...mapState("players", ["players"])
+    ...mapState("players", ["players"]),
   },
   data() {
     return {
-      tab: "grimoire"
+      tab: "grimoire",
     };
   },
   methods: {
@@ -254,7 +250,7 @@ export default {
       if (this.session.sessionId) return;
       const sessionId = prompt(
         "输入你想要创建的房间的名称或号码",
-        Math.round(Math.random() * 10000)
+        Math.round(Math.random() * 10000),
       );
       if (sessionId) {
         this.$store.commit("session/clearVoteHistory");
@@ -270,15 +266,14 @@ export default {
     },
     distributeRoles() {
       if (this.session.isSpectator) return;
-      const popup =
-        "你确定要向所有已入座的玩家发送角色吗？";
+      const popup = "你确定要向所有已入座的玩家发送角色吗？";
       if (confirm(popup)) {
         this.$store.commit("session/distributeRoles", true);
         setTimeout(
           (() => {
             this.$store.commit("session/distributeRoles", false);
           }).bind(this),
-          2000
+          2000,
         );
       }
     },
@@ -291,9 +286,7 @@ export default {
     },
     joinSession() {
       if (this.session.sessionId) return this.leaveSession();
-      let sessionId = prompt(
-        "输入你想要加入的房间的名称或号码"
-      );
+      let sessionId = prompt("输入你想要加入的房间的名称或号码");
       if (sessionId.match(/^https?:\/\//i)) {
         sessionId = sessionId.split("#").pop();
       }
@@ -353,9 +346,9 @@ export default {
       "toggleNightOrder",
       "toggleStatic",
       "setZoom",
-      "toggleModal"
-    ])
-  }
+      "toggleModal",
+    ]),
+  },
 };
 </script>
 

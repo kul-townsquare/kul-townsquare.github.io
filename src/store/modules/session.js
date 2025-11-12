@@ -36,7 +36,7 @@ const getters = {};
 const actions = {};
 
 // mutations helper functions
-const set = key => (state, val) => {
+const set = (key) => (state, val) => {
   state[key] = val;
 };
 
@@ -62,7 +62,7 @@ const mutations = {
   },
   nomination(
     state,
-    { nomination, votes, votingSpeed, lockedVote, isVoteInProgress } = {}
+    { nomination, votes, votingSpeed, lockedVote, isVoteInProgress } = {},
   ) {
     state.nomination = nomination || false;
     state.votes = votes || [];
@@ -86,11 +86,11 @@ const mutations = {
       nominee: players[state.nomination[1]].name,
       type: isExile ? "Exile" : "Execution",
       majority: Math.ceil(
-        players.filter(player => !player.isDead || isExile).length / 2
+        players.filter((player) => !player.isDead || isExile).length / 2,
       ),
       votes: players
         .filter((player, index) => state.votes[index])
-        .map(({ name }) => name)
+        .map(({ name }) => name),
     });
   },
   clearVoteHistory(state) {
@@ -106,7 +106,7 @@ const mutations = {
   voteSync: handleVote,
   lockVote(state, lock) {
     state.lockedVote = lock !== undefined ? lock : state.lockedVote + 1;
-  }
+  },
 };
 
 export default {
@@ -114,5 +114,5 @@ export default {
   state,
   getters,
   actions,
-  mutations
+  mutations,
 };
