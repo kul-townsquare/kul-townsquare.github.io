@@ -101,6 +101,42 @@ For base game characters, it is sufficient to only provide the ID, similar to wh
   _Note_: if you create a custom Fabled character, it will be automatically added to the game when the custom script is loaded
 - **ability**: the displayed ability text of the character
 
+## Script Validation
+
+This fork bundles a large collection of Chinese community scripts in `剧本JSON/`.
+Because authors use a variety of tools and conventions, some files contain
+schema drift (duplicate IDs, British spellings like `traveller`, UTF-8 BOM
+prefixes that break `JSON.parse`, non-boolean `setup` values, etc).
+
+Run the validator to surface these issues before loading them in-app:
+
+```bash
+# Scan every bundled script (default: 剧本JSON/)
+python3 validate_scripts.py
+
+# Scan a single file or folder
+python3 validate_scripts.py 剧本JSON/2025.11/仲夏夜之梦v1.1.1.json
+python3 validate_scripts.py 剧本JSON/2025.11/
+
+# Show errors only (hide schema-drift warnings)
+python3 validate_scripts.py --quiet
+
+# Aggregate summary only, no per-file detail
+python3 validate_scripts.py --summary
+```
+
+The validator **reports but does not reject**: it prints issues grouped as
+`ERROR` (would break loading — invalid JSON, duplicate IDs, typo team names,
+bad `setup` value, UTF-8 BOM) vs `WARN` (schema drift worth human review —
+non-bool `setup`, unknown community fields). The in-app loader stays tolerant;
+the validator is a heads-up for human triage.
+
+Known community extensions (`GstoneID`, `name_eng`, `official_id`,
+`attribution`, `flavor`, and per-team lists in `_meta` such as `townsfolk` /
+`outsidersName`) are accepted silently. See
+[`.cursor/memory/project_script_format.md`](.cursor/memory/project_script_format.md)
+for the full list and the reasoning.
+
 ## [Code of Conduct](CODE_OF_CONDUCT.md)
 
 ## [Contributing](CONTRIBUTING.md)

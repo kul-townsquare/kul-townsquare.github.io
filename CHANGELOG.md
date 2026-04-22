@@ -1,5 +1,18 @@
 # Release Notes
 
+### Unreleased
+- Added `validate_scripts.py`, a standalone schema validator for BotC script
+  JSON files. It detects invalid JSON / UTF-8 BOM, duplicate IDs, typo team
+  names (`traveller` → `traveler`), invalid `setup` values, and schema drift
+  (unknown fields). The validator reports but does not reject so in-app
+  loading stays tolerant.
+- Documented Chinese community script conventions: the embedded-ability
+  format, known extension fields (`GstoneID`, `name_eng`, `official_id`,
+  `attribution`, `flavor`), and `_meta` per-team role lists are now
+  explicitly recognized rather than flagged as drift.
+
+---
+
 ### Version 3.0.0
 - New start
 
