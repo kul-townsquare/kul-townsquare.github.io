@@ -148,13 +148,13 @@ export default {
       try {
         // 自动转换 GitHub blob 链接为 raw 链接
         const rawUrl = this.convertGitHubBlobToRaw(url);
-        
+
         const res = await fetch(rawUrl);
         if (!res.ok) {
           alert(`无法加载文件: ${res.status} ${res.statusText}`);
           return;
         }
-        
+
         const script = await res.json();
         this.parseRoles(script);
       } catch (e) {
