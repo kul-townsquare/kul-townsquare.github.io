@@ -1,0 +1,433 @@
+# kul-townsquare.github.io — AI Coding Agent 指令
+
+<!-- AUTO-GENERATED — edit .agent-rules/*.md and run `python3 .agent-rules/sync_agent_rules.py` to update -->
+
+> 适用于 Claude Code / Codex / Cursor 等所有 AI coding agent。
+> Cursor 用户另见 `.cursor/rules/00_synced.mdc` 获取同份规则。
+> 规则修改请编辑 `.agent-rules/*.md` 后运行 `python3 .agent-rules/sync_agent_rules.py`。
+
+---
+# 任务审批规则（所有 Agent 必须遵守）
+
+## 核心原则：规划重量与 blast radius 成正比
+
+改动的影响面决定审批门槛。Agent 不得对所有改动一刀切地走重流程，也不得对高风险改动绕过规划。
+
+## 三档分级
+
+### Level 1 — 直接开工
+以下情形 Agent 可直接动手，无需事先说明或规划：
+
+- 单文件 UI / 样式微调（不改组件结构）
+- Bug 修复，且影响局限于单个组件或函数
+- 文案、i18n 文本更新
+- 注释 / JSDoc 补充
+- 依赖 patch 级升级（`x.y.Z`）
+- `README.md` / `CHANGELOG.md` / `docs/` 文档改动
+- 清理死代码、未使用 import
+
+### Level 2 — 简要确认
+开工前用 1–2 句话告知用户计划并等待确认（`好` / `确认` / `go` 等），不需要创建规划文件：
+
+- 新增单个 Vue 组件
+- 新增 Vuex module 或 action / mutation
+- 新增单个身份 / edition / fabled 数据条目
+- 新增一组内聚的工具函数或 mixin
+- 依赖 minor / major 升级
+- 根目录维护脚本（`*.py`）改动
+- `server/` 内非协议性改动（日志、metrics、错误处理）
+
+### Level 3 — 必须规划文档
+在 `.planning/` 创建规划文件并等待用户明确批准，才能写代码：
+
+- **任何用户契约变更**（见 `core.md` 的「用户契约」节），包括：
+  - `src/roles.json` 字段 schema
+  - 自定义 script JSON 的 `_meta` 约定
+  - 分享 URL 格式
+  - `localStorage` 键名或值结构
+  - WebSocket 消息类型或字段
+- `server/` 的协议层改动
+- Vuex store 顶层结构、全局事件流、路由改动
+- `vue.config.js` / CI / GitHub Pages 部署配置变更
+- 涉及 ≥ 3 个 `src/` 文件联动的重构
+- 任何可能影响线上 `clocktower.online` 用户体验的改动（性能回归、首屏变化、关键交互改动）
+- 新增生产依赖（影响 bundle size）
+
+> 判断不清属于哪一档时，**上靠一档**，宁愿多问一句不要少走一步。
+
+## 规划文件规范
+
+**位置**：统一放在 `.planning/` 目录（不在 `.cursor/` 或根目录）
+
+**命名**：`.planning/{YYYYMMDD}_{task_name}.md`
+
+**格式**：
+
+```markdown
+## 任务：[具体任务名]
+
+**背景**：[为什么做、要解决的用户/开发问题]
+**影响范围**：[会修改或创建的文件列表 + 受影响的用户契约]
+**前置条件**：[依赖哪些已完成的工作]
+**风险**：[可能破坏的东西，以及回滚方案]
+
+### Stage 1: [阶段名]
+- **目标**：[具体交付物]
+- **成功标准**：[可验证的结果 — 建议包含浏览器实测步骤]
+- **状态**：Not Started
+
+### Stage 2: [阶段名]
+...
+
+**待确认事项**：[需要用户决策的问题，逐条列出]
+```
+
+## 批准信号
+
+用户明确给出以下信号才可开始执行：
+
+- 「好」「确认」「开始」「go」「ok」「yes」「proceed」「没问题」
+
+收到模糊回应时（如「嗯」「看看」）**必须追问**，不得默认批准。
+
+## 规划文件生命周期
+
+- 只追加更新，不删除历史规划
+- 执行中更新 Stage 状态（`Not Started` → `In Progress` → `Complete`）
+- 完成后追加 `## 完成记录`：完成时间、实际结果、偏差说明、CHANGELOG 对应条目
+- 历史规划文档永久保留
+
+## 会话恢复
+
+会话中断或重启后：
+1. 先读 `.cursor/task_plan.md`、`.cursor/progress.md`、`.cursor/findings.md` 了解当前执行状态
+2. 再读 `.planning/` 最近的规划文件了解整体规划
+
+## 执行中进度跟踪
+
+会话中使用 `.cursor/` 下的文件记录：
+
+- `task_plan.md`：任务拆解与状态（`planned` → `in_progress` → `done`）
+- `progress.md`：按日期追加会话进展
+- `findings.md`：关键发现、技术结论、踩坑记录
+
+---
+
+# 项目核心规则
+
+## 项目定位
+
+**项目名称**：`kul-townsquare.github.io`
+
+**产品**：《染：钟楼谜团》（Blood on the Clocktower，BotC）说书人辅助程序 —— 一款面向桌游线下聚会 + 线上游戏的城镇广场（Town Square）与 Grimoire 工具。
+
+**核心用户场景**：
+1. **说书人（Storyteller, ST）** 打开 Grimoire 管理本局游戏状态（身份、提醒、夜晚行动）
+2. **玩家** 用各自的设备进入对应房间（Live Session）
+3. **说书人分配身份**，玩家在自己的设备上查看自己的身份与夜间信息
+4. 支持投票、提名、死亡 / 中毒 / 醉酒标记、夜晚行动顺序等游戏流程辅助
+5. 支持官方三版本 + 旅行者 + 传奇角色 + 自定义剧本（JSON）
+
+**项目性质**：
+- 开源社区产品（GPL-3.0），fork 自 `bra1n/townsquare`
+- 已部署到 GitHub Pages，生产环境直面用户
+- 主要用户群：中文 BotC 游戏圈的说书人与玩家
+- 本 fork 的差异化方向：中文本地化、中文社区剧本、中文身份图标/资源
+
+**参考资料**：
+- 游戏中文百科：`https://clocktower-wiki.gstonegames.com/`（需查阅身份机制 / 中文译名时参考；本地索引见 `.cursor/memory/reference_botc_wiki.md`）
+- 上游项目：`https://github.com/bra1n/townsquare`
+- 线上英文版：`https://clocktower.online`
+- 官方 Script Tool：`https://script.bloodontheclocktower.com/`
+
+## 技术栈
+
+| 层 | 技术 |
+|---|---|
+| 前端框架 | Vue 2.7（SFC）+ Vuex 3 |
+| 样式 | SCSS（`sass` + `sass-loader`） |
+| 构建 | Vue CLI 5（webpack 底层） |
+| Lint / Format | ESLint + Prettier（`@vue/eslint-config-prettier`） |
+| 后端（Live Session） | Node.js + `ws` WebSocket + `prom-client` 指标 |
+| 图标 | FontAwesome |
+| 维护脚本 | Python 3（根目录 `.py` 脚本，用于批量处理 `roles.json` 等数据） |
+| 部署 | GitHub Pages（`main` 分支） |
+
+**Node**：建议 18+（参见 CHANGELOG `2.16.2` 的升级记录）。开发环境需 Chrome 浏览器验证。
+
+## 目录规范（对应项目实际结构）
+
+```
+src/                    # Vue 产品代码（ES2015）
+├── App.vue             # 根组件
+├── main.js             # 入口
+├── components/         # 内部组件
+│   └── modals/         # 模态框单独子目录
+├── store/              # Vuex
+│   └── modules/        # 带命名空间的 Vuex 模块
+├── assets/             # 图形资源
+│   ├── editions/       # 版本 logo
+│   ├── icons/          # 身份 token 图标（PNG，透明背景）
+│   ├── fonts/          # webfont
+│   └── sounds/         # 音效
+├── roles.json          # ⚠ 用户契约：身份数据
+├── editions.json       # 版本数据
+├── fabled.json         # 传奇角色数据
+├── game.json           # 游戏规则数据
+├── hatred.json         # 配对/仇恨数据
+├── vars.scss           # SCSS 变量
+└── media.scss          # 响应式断点
+
+server/                 # Live Session WebSocket 后端
+public/                 # 静态资源（不经构建）
+剧本JSON/                # 预制中文剧本 JSON（社区资源）
+根目录 *.py              # 一次性数据维护脚本
+.planning/              # 规划文档（按任务命名）
+.cursor/                # Agent 会话态 + 记忆（memory/、task_plan.md 等）
+.agent-rules/           # 规则 canonical 源（编辑后需运行 sync_agent_rules.py）
+dist/                   # ⚠ 构建产物，不进 Git
+```
+
+**禁止**：
+- 提交 `dist/`（CONTRIBUTING.md 硬性规定）
+- 提交 > 5MB 的二进制（图片应预先压缩或改用外链；根目录已有的历史 PNG 不在此限）
+- 在 `src/` 之外写产品代码（`src/` 内是唯一的 Vue 源树）
+
+**允许**：
+- 根目录 `.py` 维护脚本（既有约定，`add_edition_and_roles.py` 等 6 个脚本就是这样组织的）；新增时沿用同一位置
+
+## 用户契约（Backward Compatibility Contracts）
+
+以下是**不可随意破坏**的对外契约，**任何改动都要走 Level 3 规划 + CHANGELOG 显式标注**：
+
+1. **`src/roles.json` 字段 schema**
+   —— 社区自定义脚本依赖这个 schema（`id` / `name` / `team` / `ability` / `firstNight` / `reminders` / …）
+2. **自定义 script JSON 的 `_meta` 对象**
+   —— 见 README 说明的 `id: "_meta"` / `name` / `author` / `logo`
+3. **分享 URL 格式**
+   —— 用户可能已经分享了链接给他人；query/hash 结构视同 API
+4. **`localStorage` 键名与值结构**
+   —— 影响老用户的本地存档（设置、自定义剧本、音量等）
+5. **WebSocket 消息类型与字段**（`server/` ↔ `src/store/socket.js` 等）
+   —— 新旧客户端需互通；不同版本玩家可能在同一房间
+6. **身份 ID（`id` 字段）**
+   —— 引用该 ID 的剧本会因为改名/删除而失效；官方身份的 ID 必须保持稳定
+
+违反上述契约的改动默认拒绝；确需改动时：
+- 优先选 **叠加**（新字段共存，老字段保留）
+- 必要时提供 **迁移**（localStorage 自动升级、fallback 读取旧 URL）
+- CHANGELOG 以 `BREAKING:` 前缀高亮
+
+## Claude Code 记忆存储规范
+
+Claude Code 的持久化记忆必须存在项目目录内，不用全局路径：
+
+- **记忆根目录**：`.cursor/memory/`
+- **索引文件**：`.cursor/memory/MEMORY.md`（只放链接，不写内容）
+- **记忆文件命名**：`{type}_{topic}.md`，如 `project_user_contract.md`、`reference_botc_wiki.md`
+- **禁止** 使用 `~/.claude/` 或任何项目外路径
+
+每个记忆文件使用如下 frontmatter：
+
+```markdown
+---
+name: 记忆名称
+description: 一句话描述（用于判断未来会话相关性）
+type: user | feedback | project | reference
+---
+
+内容
+```
+
+## 外部资源查阅策略
+
+- 访问 `clocktower-wiki.gstonegames.com` 等外部文档时，**首次查询后在 `.cursor/memory/` 建立索引/摘要**，避免在后续会话重复访问
+- 索引记忆文件命名：`reference_<资源名>.md`
+- 只记录对项目有用的条目（身份中文名、机制描述、规则细节），不抄全文
+
+---
+
+# 代码规范、工作流与质量门禁
+
+## 代码规范
+
+### JavaScript / Vue（产品主代码）
+
+- **ES2015+**，Vue 2 SFC：`<template>` / `<script>` / `<style lang="scss" scoped>`
+- 遵循既有 ESLint + Prettier 配置（`.eslintrc.js`）：
+  - `plugin:vue/essential` + `eslint:recommended` + `@vue/prettier`
+  - `no-console` / `no-debugger` 在 production 构建中警告
+  - 不启用 `vue/multi-word-component-names`（历史原因，已关）
+- **命名**：
+  - 变量 / 函数：`camelCase`
+  - Vue 组件文件：`PascalCase.vue`
+  - Vuex module：`camelCase.js`；action `camelCase`；mutation `SCREAMING_SNAKE_CASE`
+  - 常量：`UPPER_SNAKE_CASE`
+  - SCSS class：`kebab-case`
+- **模块**：ES Modules `import / export`
+- **JSDoc**：仅在"意图非平凡"时写（外部契约、复杂逻辑、反直觉的工作流）；不写复读代码的注释
+- **异步**：统一 `async / await`，不要混 Promise chain
+
+### SCSS
+
+- 全局变量集中在 `src/vars.scss`
+- 响应式 breakpoint 用 `src/media.scss` 中的变量
+- 组件样式默认 `scoped`；需穿透时用 `::v-deep`
+- 避免 > 3 层选择器嵌套
+
+### Python 维护脚本（根目录 `*.py`）
+
+- Python 3.8+ 即可；这些是**一次性数据维护脚本**，不跑生产
+- 简洁优先，不强制 type hints 或 Google docstring
+- 直接用系统 `python3` 调用（`python3 add_edition_and_roles.py`），无需虚拟环境
+- 新脚本沿用同一位置（根目录）与同一风格（见现有 6 个脚本）
+
+## Git 工作流（严格遵守 `CONTRIBUTING.md`）
+
+### 分支策略
+
+- `main` —— **线上生产分支**（直接对应 `clocktower.online`）
+- `develop` —— 下次发版分支；功能分支都 PR 到 `develop`
+- `feat/<描述>` —— 新功能
+- `fix/<描述>` —— Bug 修复
+- `refactor/<描述>` / `docs/<描述>` / `chore/<描述>` —— 重构 / 文档 / 杂项
+- 只有 `develop` → `main` 的 release PR 能合并到 `main`
+
+**禁止**直接向 `main` 推代码或提交。
+
+### Commit 规范
+
+- **格式**：`<type>: <简短描述>`
+- **type**：`feat` / `fix` / `refactor` / `docs` / `style` / `test` / `chore` / `deploy`
+- **语言**：英文
+- 小步提交 OK（PR 合并时 GitHub 会 squash）
+- **禁止** `--no-verify` 跳过 hooks
+
+### PR 规范
+
+- **PR 目标**：**永远是 `develop`**，不是 `main`（release PR 除外）
+- **PR 标题**：
+  - 修 bug 时引用 issue：`fix custom script upload (fix #1234)`
+  - 语言英文（与上游一致）
+- **PR 前必须完成**：
+  - [ ] 更新 `CHANGELOG.md`（CONTRIBUTING.md 强制要求）
+  - [ ] `npm run lint-ci` 通过
+  - [ ] `npm run serve` 本地浏览器实测改动生效
+  - [ ] 不破坏任何「用户契约」（见 `core.md`）
+- **禁止**提交：
+  - `dist/` 目录
+  - `node_modules/`
+  - 超大二进制
+
+## 语言规范
+
+| 场景 | 语言 |
+|---|---|
+| Agent 与用户交互 | 中文 |
+| 代码注释 / JSDoc | 英文 |
+| Commit message | 英文 |
+| PR 标题 | 英文（与上游/开源习惯一致） |
+| PR 描述 | 中英文均可，引用 issue 用 `#NNNN` |
+| `README.md` / `CHANGELOG.md` / `CONTRIBUTING.md` | 英文为主（与上游保持一致） |
+| 规划文档（`.planning/*.md`） | 中文 |
+| UI 文案（`src/` 内） | 英文为主 + 中文本地化 |
+
+## 实施流程
+
+1. **Understand** —— 先读相邻实现，至少找 1 处相似模式作为参考
+2. **Plan**（Level 2 / 3 时）—— 简要说明或规划文档，等用户确认
+3. **Implement** —— 最小改动通过验证
+4. **Verify** —— lint + 浏览器实测（UI 改动不能只看 diff）
+5. **Document** —— 更新 `CHANGELOG.md` + 必要时更新 README / JSDoc
+6. **Commit** —— 英文 message 说 why，引用 issue 或规划文档
+
+## 质量门禁
+
+完成前必须满足：
+
+1. **Lint** —— `npm run lint-ci` 通过（`--no-fix --max-warnings=0`）
+2. **浏览器验证** —— `npm run serve` 并在浏览器实测改动生效；**UI 改动未经浏览器实测不得声称完成**（类型检查与 lint 只能证明代码正确，不能证明功能正确）
+3. **用户契约保留** —— 未破坏 `core.md` 列出的 6 类契约
+4. **CHANGELOG** —— 除纯内部重构 / 文档外，改动必须写入 `CHANGELOG.md`
+5. **回归意识** —— 改动应考虑对既有玩家与既有自定义剧本的影响
+6. **Codex 代码审查通过** —— 属于下节触发范围的改动
+
+## 代码审查（Codex Review Gate）
+
+本项目使用 OpenAI Codex 作为 AI 代码审查工具。各 Agent 的具体调用方式见各自的指令文件（`CLAUDE.md` / `.cursor/rules/` 等）。
+
+### 何时触发
+
+- 完成一个功能分支或逻辑完整的代码块后（对应实施流程第 4–5 步之间）
+- Level 2 / Level 3 改动完成后（见 `approval.md`）
+- 修改核心代码后：
+  - `src/store/` Vuex 结构
+  - `server/` WebSocket 协议
+  - `src/roles.json` / `editions.json` 等数据 schema
+  - `vue.config.js` / 构建配置
+  - 任何影响用户契约的改动
+
+### 审查重点（针对本项目）
+
+- **正确性与 bug** —— 尤其是 session state 同步、WebSocket 消息处理、Vuex mutation/action 副作用
+- **用户契约兼容性** —— `roles.json` 字段、URL、localStorage、WebSocket 消息是否破坏向后兼容
+- **ESLint 规范与项目一致性** —— 命名、模块结构、Vue 2 SFC 惯例
+- **性能** —— bundle size、首屏关键路径、不必要的响应式开销
+- **错误处理** —— 是否有裸 `catch`、是否吞异常、日志是否带定位上下文
+
+### 豁免（不必走 Codex）
+
+- Level 1 改动（单文件 UI / bug / 文案 / 注释 / patch 依赖）
+- 纯 `README` / `CHANGELOG` / `docs` 更新
+- 根目录 `*.py` 维护脚本
+- 明显的非功能性改动（clean up、变量改名）
+
+## 用户契约优先
+
+当新需求与"用户契约"冲突（如改 `roles.json` schema 能简化代码但会破坏老剧本）：
+
+1. **默认选兼容**：保留老字段，新字段叠加
+2. 破坏性改动必须在 `CHANGELOG.md` 以 `BREAKING:` 前缀高亮
+3. 提供迁移路径或 fallback，而非直接断链
+
+## 技术决策排序
+
+评估顺序（冲突时按此优先级取舍）：
+
+1. **用户影响** —— 不破坏现有使用方式
+2. **可验证性** —— 能用浏览器或单测验证
+3. **可读性** —— 与项目既有代码风格一致
+4. **简洁性** —— 最少必要的改动
+5. **可逆性** —— 改错容易回滚
+
+## 卡住处理
+
+同一问题 3 次尝试失败后停止硬改：
+
+1. 记录已试方案、报错、失败原因（写到 `.cursor/findings.md`）
+2. 查看项目内或上游 `bra1n/townsquare` 是否有类似实现
+3. 拆成更小、更可验证的步骤，和用户讨论后再走
+
+## 错误处理
+
+- **快速失败，提供可定位上下文**：WebSocket / socket 错误要带 session ID / 玩家 ID / 消息类型
+- 不吞异常，不裸 `catch`（无日志的 catch 视为 bug）
+- UI 层错误告知用户要克制（非阻塞提示 / 可恢复），避免弹框恐慌
+- 调试用 `console.log` 提交前清理；必要的生产日志用 `console.warn` / `console.error`
+
+## 性能与包大小
+
+- 新增生产依赖前评估 bundle 影响（`npm run build` 观察产物大小）
+- 新增图片 / 音频资源必须压缩；身份图标优先 SVG，其次压缩后的 PNG
+- 避免在 Vuex state 里放大对象或图片二进制
+
+## 权限约定（Agent 操作）
+
+**读操作默认允许**。以下操作必须先征得用户确认：
+
+- `npm install <new-package>` / `npm update`（影响 lock 文件与 bundle）
+- `git push`（尤其是任何推到 `main` 的行为）
+- 批量改写（≥ 5 个文件的 sed / replace）
+- 删除文件
+- 修改 `vue.config.js` / CI 配置 / `package.json` `scripts` 段
+- 任何 Level 3 改动（见 `approval.md`）

@@ -1,0 +1,18 @@
+# Memory Index
+
+<!-- 本文件是 Claude Code 持久化记忆的索引。新增记忆时在对应分类下加一行：
+     `- [标题](file.md) — 一句话提示`
+     每条 ≤ 150 字符，正文写在独立的 `{type}_{topic}.md` 文件里。 -->
+
+## Feedback
+<!-- Agent 收到的用户偏好、纠正、已确认的判断 -->
+
+## Project
+<!-- 项目事实、决策、正在进行的工作等非代码可推导的信息 -->
+
+## User
+<!-- 用户角色、背景、协作偏好 -->
+
+## Reference
+<!-- 外部资源索引（官方文档、wiki、上游项目等） -->
+- [BotC 中文百科索引](reference_botc_wiki.md) — `clocktower-wiki.gstonegames.com` 的查阅入口与已提取条目清单
