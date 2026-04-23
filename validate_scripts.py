@@ -58,6 +58,8 @@ KNOWN_ROLE_FIELDS = {
     "script", "isbutton", "ismeet",
     # embedded jinx metadata attached to role entries
     "jinxes",
+    # official Script Tool metadata (e.g. bag-duplicate markers)
+    "special",
 }
 
 # Fields that are NOT consumed by product code but appear in author data.
@@ -73,6 +75,7 @@ META_KNOWN_FIELDS = {
     "townsfolk", "outsider", "minion", "demon",
     "townsfolkName", "outsidersName", "minionsName", "demonsName",
     "a jinxed", "a jinxedName", "A jinxed",
+    "a role",
     # misc prose fields
     "description", "state", "status", "credits", "additional",
 }
@@ -216,18 +219,23 @@ def validate_script(path, known_ids):
                       f"got {type(data).__name__}")]
 
     issues = [bom_issue] if bom_issue else []
-    ids_seen = Counter()
+    # id -> [indexes]; only track hashable string ids to stay robust against
+    # authors who put arrays/objects where a string id belongs
+    ids_seen = {}
 
     for idx, entry in enumerate(data):
-        if isinstance(entry, dict) and entry.get("id") and entry.get("id") != "_meta":
-            ids_seen[entry["id"]] += 1
+        if isinstance(entry, dict):
+            eid_val = entry.get("id")
+            if isinstance(eid_val, str) and eid_val and eid_val != "_meta":
+                ids_seen.setdefault(eid_val, []).append(idx)
         for level, ent_idx, eid, kind, detail in validate_entry(entry, idx, known_ids):
             issues.append(Issue(level, path, ent_idx, eid, kind, detail))
 
-    for id_, count in ids_seen.items():
-        if count > 1:
-            issues.append(Issue("error", path, -1, id_, "duplicate-id",
-                                f"appears {count} times"))
+    for id_, idxs in ids_seen.items():
+        if len(idxs) > 1:
+            idx_list = ", ".join(str(i) for i in idxs)
+            issues.append(Issue("error", path, idxs[0], id_, "duplicate-id",
+                                f"appears {len(idxs)} times at indexes [{idx_list}]"))
 
     return issues
 
@@ -246,15 +254,24 @@ def load_known_ids():
 
 
 def collect_files(targets):
+    seen = set()
     files = []
     for t in targets:
         tp = Path(t)
+        candidates = []
         if tp.is_file() and tp.suffix == ".json":
-            files.append(tp)
+            candidates = [tp]
         elif tp.is_dir():
-            files.extend(sorted(tp.rglob("*.json")))
+            candidates = sorted(tp.rglob("*.json"))
         else:
             print(f"warning: path not found or not JSON: {t}", file=sys.stderr)
+            continue
+        for c in candidates:
+            key = c.resolve()
+            if key in seen:
+                continue
+            seen.add(key)
+            files.append(c)
     return files
 
 
@@ -267,7 +284,8 @@ def main():
     parser.add_argument("targets", nargs="*", default=["剧本JSON"],
                         help="File(s) or dir(s) to validate (default: 剧本JSON/)")
     parser.add_argument("--quiet", action="store_true",
-                        help="Hide warnings; show only errors")
+                        help="Hide warnings and info in per-file output; "
+                             "errors only. Summary totals are unaffected.")
     parser.add_argument("--strict", action="store_true",
                         help="Exit 1 also when only warnings are found")
     parser.add_argument("--summary", action="store_true",
@@ -302,8 +320,10 @@ def main():
             files_with_warn_only += 1
 
         if not args.summary:
-            shown = [i for i in issues
-                     if i.level == "error" or (i.level == "warn" and not args.quiet)]
+            if args.quiet:
+                shown = [i for i in issues if i.level == "error"]
+            else:
+                shown = issues  # errors + warnings + info
             if shown:
                 print(f"\n{fp}")
                 for i in shown:
