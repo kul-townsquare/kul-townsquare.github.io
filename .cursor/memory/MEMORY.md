@@ -10,6 +10,7 @@
 ## Project
 <!-- 项目事实、决策、正在进行的工作等非代码可推导的信息 -->
 - [中文剧本 JSON 格式现状](project_script_format.md) — 用户是玩家非作者，96% 剧本嵌入完整能力，ID 野蛮生长，摄取端必须宽容
+- [自建部署基础设施现状](project_deployment.md) — kul-botc.eu.org + CF Tunnel + NAS Docker 架构、凭据位置、不变式、常用命令
 
 ## User
 <!-- 用户角色、背景、协作偏好 -->

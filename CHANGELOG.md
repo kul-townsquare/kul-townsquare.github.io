@@ -16,8 +16,15 @@
   read-only root filesystem, all capabilities dropped, no-new-privileges,
   256 MiB memory cap, 0.5 CPU, 100 pids max, and binds to `127.0.0.1:8081`
   only (LAN unreachable). This is Stage 2 of the self-host plan; stage 3
-  will add a Cloudflare Tunnel sidecar and remove the host port binding
-  entirely. See `.planning/20260423_self_host_ws_server.md`.
+  wires in a Cloudflare Tunnel and removes the host port binding. See
+  `.planning/20260423_self_host_ws_server.md`.
+- Self-hosted deployment is partially live on the maintainer's fnOS NAS:
+  cloudflared runs as a systemd service (not the originally planned
+  Docker sidecar — cleaner given trusted local users, no-inbound-port
+  threat model). Awaiting `kul-botc.eu.org` eu.org registry approval
+  before configuring Cloudflare Tunnel public hostname and swapping the
+  frontend over. No impact on the frontend or players yet; upstream
+  `wss://live.clocktower.online:8080/` remains in use.
 
 ---
 

@@ -192,6 +192,25 @@ services:
 
 ### Stage 3 — 命名 Cloudflare Tunnel + 域名接入
 
+**实际架构分支（2026-04-23）** —— 与原规划 Docker sidecar 方案**不同**：
+
+用户选择用 `sudo cloudflared service install <TOKEN>` 直接在 host 以 systemd 方式安装 cloudflared（非 Docker 化）。威胁模型评估结论是**可接受**——关键依据：
+
+- cloudflared 不监听任何入站端口，远程攻击面为 0
+- NAS 用户均可信，本机 `ps aux` 的 token 可见性不构成威胁
+- NAS 无 host 防火墙，Docker 隔离对 cloudflared（非容器化）的边际价值不大
+
+实际部署：
+- `cloudflared` v2026.3.0 作为 systemd 服务（`/etc/systemd/system/cloudflared.service`）
+- 以 **root** 身份运行；token 写在 ExecStart 命令行里
+- 已做安全补强 B：移除 `--no-autoupdate`，启用 cloudflared 自动更新；Cloudflare 账号 2FA 已开
+- 未做安全补强 A（token 文件化 + `EnvironmentFile=`）—— 可选，当前用户群可信场景下非必须
+- 域名：`kul-botc.eu.org`（用户在 eu.org 申请中，等待人工审批）
+- CF zone：已加入用户 CF 账号；CF 分配的 NS pair：`oaklyn.ns.cloudflare.com` + `piotr.ns.cloudflare.com`
+- eu.org 表单填写：NS 已填 CF pair，选第 3 档（`noms de serveurs + SOA + NS`）校验，已提交，**等待审批**（社区队列 1–2 周到数月）
+
+
+
 **目标**：用命名隧道把 hostname 路由到容器的 `8081`，容器对 LAN 依然不可见；仅 CF 边缘能进；且非 WSS 路径（如 `/metrics`）前置 404。
 
 **步骤**：
@@ -244,10 +263,31 @@ services:
 
 **回滚**：
 - Cloudflare dashboard 删 tunnel（1 分钟）
+- `sudo systemctl stop cloudflared && sudo systemctl disable cloudflared`（如需彻底去除 host cloudflared）
 - `docker compose down`
 - 前端无需改动（还在用上游 URL）
 
-**状态**：Not Started
+**状态**：⏸ Blocked（2026-04-23）—— 等待 `kul-botc.eu.org` eu.org 审批
+
+**已完成部分**：
+- [x] cloudflared systemd 服务安装并运行
+- [x] CF 账号创建、tunnel 创建、token 下发
+- [x] 域名选定 `kul-botc.eu.org`，在 CF 加入 zone，拿到 NS pair
+- [x] eu.org 域名申请表单提交（NS + organization 信息）
+- [x] host → 容器通路验证（`curl http://localhost:8081/` → HTTP 426 WS-upgrade-required，握手 101 OK）
+
+**待完成部分**（eu.org 批准后继续）：
+- [ ] eu.org 批准 `kul-botc.eu.org`（人工审批，等）
+- [ ] CF 侧 zone 自动激活（NS 指向 CF 后几小时内完成）
+- [ ] CF dashboard → Zero Trust → Networks → Tunnels → 选 `botc-ws` tunnel → Public Hostname：
+  - Subdomain: `botc-ws`
+  - Domain: `kul-botc.eu.org`
+  - Type: `HTTP`
+  - URL: `localhost:8081`
+  - Path 限制：`^/[a-z0-9-]{8,64}/[a-z0-9-]{1,32}$`（按规划 Stage 3 原方案）
+  - Catch-all 路径 → 404
+- [ ] WAF 规则：Rate limiting per-IP 60/min
+- [ ] 从外网设备（用户的工作电脑）测试 `wscat -c wss://botc-ws.kul-botc.eu.org/chan/host`
 
 ---
 
