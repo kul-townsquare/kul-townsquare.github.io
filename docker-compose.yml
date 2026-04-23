@@ -1,0 +1,53 @@
+# Self-hosted deployment of the Live Session WebSocket backend.
+#
+# STAGE 2 (current): WSS container only, bound to loopback so the port is
+#   reachable from the NAS itself but not from anything on the LAN.
+#
+# STAGE 3 (planned): a `cloudflared` sidecar service will be added on an
+#   internal Docker network; the `ports:` section BELOW will be removed so
+#   the container is not exposed on any host interface at all, and the
+#   tunnel becomes the sole ingress. See .planning/20260423_self_host_ws_server.md.
+
+services:
+  wss:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    image: kul-townsquare-wss:local
+    container_name: kul-townsquare-wss
+    restart: unless-stopped
+    environment:
+      NODE_ENV: development
+    ports:
+      # STAGE 2 ONLY — loopback-only binding. Removing the `127.0.0.1:`
+      # prefix would expose unencrypted ws:// to every device on the LAN.
+      # STAGE 3 removes this line entirely (tunnel reaches the container
+      # via internal Docker network, no host port published).
+      - "127.0.0.1:8081:8081"
+    # Hardening: container cannot write to its own filesystem, cannot
+    # acquire any capability, cannot elevate privileges, capped at 256 MiB
+    # and half a CPU, and at most 100 processes. If the Node process is
+    # ever compromised, blast radius is limited to the tmpfs at /tmp.
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 100
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - node -e "require('net').connect(8081,'127.0.0.1').on('connect',()=>process.exit(0)).on('error',()=>process.exit(1))"
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

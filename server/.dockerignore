@@ -1,0 +1,9 @@
+# Build context is ./server. Keep the image lean and avoid pulling in
+# secrets or ephemeral artifacts that might land next to index.js.
+*.pem
+*.log
+node_modules
+.env
+.env.*
+README.md
+ecosystem.config.js

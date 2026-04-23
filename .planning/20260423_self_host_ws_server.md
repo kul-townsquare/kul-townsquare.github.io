@@ -121,7 +121,13 @@ docker rm -f cf-smoke
 
 **回滚**：`docker rm -f cf-smoke`（容器已 `--rm`）；`docker rmi cloudflare/cloudflared:latest` 回收镜像
 
-**状态**：Not Started
+**状态**：✅ Complete（2026-04-23）
+
+实测记录：
+- `cloudflare/cloudflared@sha256:6b599ca3e974349ead3286d178da61d291961182ec3fe9c505e1dd02c8ac31b0`（2026-03-09 build，63 MB）
+- 临时 URL `https://gem-turtle-normally-fewer.trycloudflare.com` 生成成功
+- `curl` 返回 `HTTP/2 502` + `server: cloudflare` + `cf-ray: 9f0c0f9db92c1b57-BRU` —— **BRU 边缘（布鲁塞尔）自动命中**，延迟最优
+- 容器清理干净，无残留
 
 ---
 
@@ -171,7 +177,16 @@ services:
 
 **回滚**：`docker compose down && docker rmi kul-townsquare-wss:local`
 
-**状态**：Not Started
+**状态**：✅ Complete（2026-04-23）
+
+实测记录：
+- 镜像 `kul-townsquare-wss:local` 基于 `node:22-alpine@sha256:8ea2348b068a9544dae7317b4f3aafcdc032df1647bb7d768a05a5cad1a7683f`
+- 容器 `healthy`；uid=1000、`node` 用户、`ReadonlyRootfs=true`、`CapDrop=[ALL]`、`no-new-privileges=true`、256 MiB、0.5 CPU、PidsLimit=100
+- 端口监听 **仅** `127.0.0.1:8081`（`ss -tln` 实测）
+- 从 NAS 自身 `bash -c '</dev/tcp/127.0.0.1/8081'` → 成功；`bash -c '</dev/tcp/192.168.0.112/8081'` → `Connection refused`（LAN 不可达确认）
+- 实际 WebSocket 握手 `HTTP/1.1 101 Switching Protocols` 成功（带 `Origin: https://example.github.io` 命中现有白名单）
+- 容器日志干净，无 error
+- 容器保持运行中，供 Stage 3 接入（如需手动停：`docker compose down`）
 
 ---
 

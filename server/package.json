@@ -1,0 +1,15 @@
+{
+  "name": "kul-townsquare-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Blood on the Clocktower live session WebSocket backend",
+  "main": "index.js",
+  "license": "GPL-3.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "prom-client": "^13.0.0",
+    "ws": "^7.4.6"
+  }
+}

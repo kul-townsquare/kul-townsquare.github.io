@@ -10,6 +10,14 @@
   format, known extension fields (`GstoneID`, `name_eng`, `official_id`,
   `attribution`, `flavor`), and `_meta` per-team role lists are now
   explicitly recognized rather than flagged as drift.
+- Added `server/Dockerfile`, `server/package.json`, `server/.dockerignore`,
+  and a root `docker-compose.yml` for self-hosted deployment of the live
+  session WebSocket backend. The container runs as non-root with a
+  read-only root filesystem, all capabilities dropped, no-new-privileges,
+  256 MiB memory cap, 0.5 CPU, 100 pids max, and binds to `127.0.0.1:8081`
+  only (LAN unreachable). This is Stage 2 of the self-host plan; stage 3
+  will add a Cloudflare Tunnel sidecar and remove the host port binding
+  entirely. See `.planning/20260423_self_host_ws_server.md`.
 
 ---
 
