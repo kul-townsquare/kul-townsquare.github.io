@@ -30,7 +30,10 @@ services:
     # ever compromised, blast radius is limited to the tmpfs at /tmp.
     read_only: true
     tmpfs:
-      - /tmp
+      # Cap /tmp and harden mount flags. Default tmpfs size is half host RAM
+      # (~7.5 GiB on this 15 GiB NAS), far more than Node needs for transient
+      # scratch. 16 MiB is ample and caps any runaway.
+      - /tmp:size=16m,noexec,nosuid,nodev
     cap_drop:
       - ALL
     security_opt:

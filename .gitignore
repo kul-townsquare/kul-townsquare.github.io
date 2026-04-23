@@ -1,6 +1,10 @@
 .idea
 node_modules
 dist
-*.pem
 
-node_modules
+# TLS / secret material — never commit
+*.pem
+*.key
+.env
+.env.*
+!.env.example

@@ -5,6 +5,9 @@
   "description": "Blood on the Clocktower live session WebSocket backend",
   "main": "index.js",
   "license": "GPL-3.0",
+  "engines": {
+    "node": ">=22 <23"
+  },
   "scripts": {
     "start": "node index.js"
   },

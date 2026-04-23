@@ -10,9 +10,11 @@ FROM node:22-alpine@sha256:8ea2348b068a9544dae7317b4f3aafcdc032df1647bb7d768a05a
 
 WORKDIR /app
 
-# Install production deps first for layer caching.
-COPY package.json ./package.json
-RUN npm install --omit=dev --omit=optional --no-audit --no-fund --loglevel=warn \
+# Install production deps first for layer caching. npm ci + lockfile gives
+# reproducible builds (identical image digest for the same source state);
+# bare `npm install` would resolve semver ranges and drift over time.
+COPY package.json package-lock.json ./
+RUN npm ci --omit=dev --omit=optional --no-audit --no-fund --loglevel=warn \
     && npm cache clean --force
 
 # Copy the single server source file; no frontend, no devtools.
@@ -23,12 +25,13 @@ USER node
 
 EXPOSE 8081
 
-# Keep NODE_ENV=development so index.js listens ws://0.0.0.0:8081 directly
-# (via `new WebSocket.Server({ port: 8081 })`). Production mode requires
-# cert.pem/key.pem and exposes a metrics endpoint on 8080 — both unwanted
-# for this deployment. TLS termination happens at Cloudflare's edge in
-# stage 3; the container is never reachable from host or LAN (enforced
-# by compose port binding).
+# NODE_ENV=development keeps the WS server on plain ws://0.0.0.0:8081 (via
+# `new WebSocket.Server({ port: 8081 })` in index.js). Production mode
+# would require cert.pem/key.pem and expose a metrics endpoint on 8080 —
+# both unwanted here because Cloudflare Tunnel terminates TLS at the edge.
+# Stage 2: reachable from the NAS host on 127.0.0.1:8081 (loopback only);
+# Stage 3: host port binding removed, reachable only via the tunnel sidecar
+# over Docker's internal network.
 ENV NODE_ENV=development
 
 CMD ["node", "index.js"]
