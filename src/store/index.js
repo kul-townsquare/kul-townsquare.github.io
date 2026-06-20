@@ -124,7 +124,7 @@ export default new Vuex.Store({
       voteHistory: false,
     },
     shortcutsDisabled: false,
-    edition: editionJSONbyId.get("tb"),
+    edition: editionJSONbyId.get("tb") || editionJSON[0],
     roles: getRolesByEdition(),
     otherTravelers: getTravelersNotInEdition(),
     fabled,
