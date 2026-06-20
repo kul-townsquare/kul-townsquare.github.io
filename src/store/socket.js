@@ -224,7 +224,9 @@ class LiveSession {
       try {
         const res = await fetch(pingUrl);
         if (res.ok) return;
-      } catch {}
+      } catch (_e) {
+        // server not yet awake, retry
+      }
       await new Promise(r => setTimeout(r, 3000));
     }
   }
