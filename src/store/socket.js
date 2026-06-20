@@ -1,7 +1,6 @@
 class LiveSession {
   constructor(store) {
-    this._wss = "wss://live.clocktower.online:8080/";
-    // this._wss = "ws://localhost:8081/"; // uncomment if using local server with NODE_ENV=development
+    this._wss = process.env.VUE_APP_WS_URL || "wss://live.clocktower.online:8080/";
     this._socket = null;
     this._isSpectator = true;
     this._gamestate = [];
@@ -216,7 +215,21 @@ class LiveSession {
    * Set a unique playerId if there isn't one yet.
    * @param channel
    */
-  connect(channel) {
+  async _wakeUp() {
+    const pingUrl = this._wss
+      .replace(/^wss:\/\//, "https://")
+      .replace(/^ws:\/\//, "http://")
+      .replace(/\/$/, "") + "/ping";
+    for (let i = 0; i < 20; i++) {
+      try {
+        const res = await fetch(pingUrl);
+        if (res.ok) return;
+      } catch {}
+      await new Promise(r => setTimeout(r, 3000));
+    }
+  }
+
+  async connect(channel) {
     if (!this._store.state.session.playerId) {
       this._store.commit(
         "session/setPlayerId",
@@ -227,6 +240,11 @@ class LiveSession {
     this._store.commit("session/setPlayerCount", 0);
     this._store.commit("session/setPing", 0);
     this._isSpectator = this._store.state.session.isSpectator;
+    if (!this._isSpectator) {
+      this._store.commit("session/setReconnecting", true);
+      await this._wakeUp();
+      this._store.commit("session/setReconnecting", false);
+    }
     this._open(channel);
   }
 
