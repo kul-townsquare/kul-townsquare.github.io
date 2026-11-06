@@ -1,0 +1,357 @@
+[
+  {
+    "id": "_meta",
+    "name": "达芬奇密码",
+    "author": "太一",
+    "logo": "https://www.bloodstar.xyz/p/humlet/Dafenqi/_meta.png",
+    "almanac": "https://www.bloodstar.xyz/p/humlet/Dafenqi/almanac.html"
+  },
+  {
+    "id": "7_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/7_dafenqi.png",
+    "firstNightReminder": "得知外来者或爪牙",
+    "otherNightReminder": "若死亡得知外来者或爪牙",
+    "reminders": [
+      "得知爪牙",
+      "得知外来者"
+    ],
+    "setup": 1,
+    "name": "治安官",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知一名外来者或爪牙玩家。如果你在夜晚死亡，你会得知一名外来者或爪牙玩家（角色类型与上次不同）。［+1外来者］",
+    "attribution": "太一",
+    "flavor": "这册名录上褪色的墨迹，写的是我一直追踪的名字。我若某晚不幸遇害，请翻到第13页，折角指向的地址中藏着最后一条罪证。",
+    "firstNight": 14,
+    "otherNight": 14
+  },
+  {
+    "id": "8_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/8_dafenqi.png",
+    "firstNightReminder": "得知一个在场角色，并在该玩家角色旁放置“得知”标记",
+    "otherNightReminder": "若白天她猜对，得知另一个在场角色，并在该玩家角色旁放置“得知”标记",
+    "reminders": [
+      "得知"
+    ],
+    "name": "画家",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知一个在场角色。每个白天你可以进行一次猜测，每当你猜对谁是你最近得知的角色，当晚你会得知另一个在场角色。",
+    "attribution": "太一",
+    "flavor": "我的瞳孔能看到血肉下的构图线，当你们争吵时，我会用夜色勾勒出罪恶的轮廓，夜晚的混沌越浓烈，我的画卷就越接近《维特鲁威人》的完美比例。",
+    "firstNight": 16,
+    "otherNight": 16
+  },
+  {
+    "id": "_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/_dafenqi.png",
+    "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+    "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+    "reminders": [
+      "失去能力"
+    ],
+    "name": "女裁缝",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
+    "attribution": "官方角色",
+    "firstNight": 15,
+    "otherNight": 17
+  },
+  {
+    "id": "25_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/25_dafenqi.png",
+    "firstNightReminder": "在首个夜晚，唤醒修行者。用手指水平指向修行者的某一侧，告诉他与他距离最近的邪恶玩家位于这一侧。如果修行者两侧最近的邪恶玩家与他的距离相等，由你来决定告诉他什么样的信息，并用手指指向对应的一侧。让修行者重新入睡。",
+    "name": "修行者",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知距离最近的邪恶玩家位于你的顺时针还是逆时针方向。如果两侧的邪恶玩家与你距离相等，你得知的信息由说书人决定。",
+    "attribution": "官方角色",
+    "firstNight": 17
+  },
+  {
+    "id": "10_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/10_dafenqi.png",
+    "firstNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
+    "otherNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
+    "name": "侍女",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
+    "attribution": "官方角色",
+    "firstNight": 18,
+    "otherNight": 19
+  },
+  {
+    "id": "53_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/53_dafenqi.png",
+    "reminders": [
+      "错误信息"
+    ],
+    "setup": true,
+    "name": "神秘学家",
+    "team": "townsfolk",
+    "ability": "每个白天，你可以私下询问说书人并得知一条正确信息。如果因你的能力导致减少了一名外来者，你获得的信息会是错误的。[-1或-0外来者]",
+    "attribution": "玉露",
+    "flavor": "答案在星辰间，只需要我们前行。         创意来源：玉露玉某 "
+  },
+  {
+    "id": "9_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/9_dafenqi.png",
+    "otherNightReminder": "如果游歌者在白天公开选择了，唤醒并告知他此刻场上因他醉酒的人数。",
+    "reminders": [
+      "醉酒"
+    ],
+    "name": "游歌者",
+    "team": "townsfolk",
+    "ability": "每个白天，你可以公开选择任意名存活玩家：其中的镇民会醉酒直到你再次选择。当晚你会得知正因你醉酒的人数。",
+    "attribution": "太一",
+    "flavor": "被我指尖点中的灵魂都将坠入梦境。当你们在酒精里踉跄时，我正数着震动的丝弦…三根？五根？这些数字会告诉我，究竟有多少‘诚实者’在甜梦里露出了谎言的形状。",
+    "otherNight": 18
+  },
+  {
+    "id": "50_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/50_dafenqi.png",
+    "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
+    "reminders": [
+      "死亡"
+    ],
+    "name": "赌徒",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择一名玩家并猜测他的角色：如果你猜错了，你会死亡。",
+    "attribution": "官方角色",
+    "otherNight": 5
+  },
+  {
+    "id": "19_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/19_dafenqi.png",
+    "otherNightReminder": "让驱魔人选择一名玩家，不能是上一夜他选择过的玩家。让驱魔人重新入睡。如果驱魔人选中了恶魔：唤醒恶魔。展示“该角色的能力对你生效”信息标记和驱魔人角色标记。指向驱魔人玩家。",
+    "reminders": [
+      "被选择"
+    ],
+    "name": "驱魔人",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择一名玩家（与上个夜晚不同）：如果你选中了恶魔，他会得知你是驱魔人，但他当晚不会因其自身能力而被唤醒。",
+    "attribution": "官方角色",
+    "otherNight": 6
+  },
+  {
+    "id": "12_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/12_dafenqi.png",
+    "otherNightReminder": "唤醒并询问公爵是否发动能力",
+    "reminders": [
+      "死亡",
+      "失去能力"
+    ],
+    "remindersGlobal": [
+      "是公爵"
+    ],
+    "name": "公爵",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡且当晚恶魔不会造成死亡。如果你杀死了恶魔，你和他交换阵营和角色。",
+    "attribution": "太一",
+    "flavor": "我的审判厅有三个房间：第一个绞死背叛者，第二个斩首鹰犬爪牙，第三个…专门招待误入陷阱的恶魔大人。当他的尖叫声穿透石壁时，我会戴上他脱落的面具，用沾满恶魔之血的双手接管你们的噩梦。",
+    "otherNight": 7
+  },
+  {
+    "id": "56_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/56_dafenqi.png",
+    "otherNightReminder": "让旅店老板选择两名玩家。标记这两名玩家不会死亡，并标记其中一人醉酒。",
+    "reminders": [
+      "不会死亡",
+      "醉酒"
+    ],
+    "name": "旅店老板",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择两名玩家：他们当晚不会死亡，但其中一人会醉酒到下个黄昏。",
+    "attribution": "官方角色",
+    "otherNight": 4
+  },
+  {
+    "id": "54_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/54_dafenqi.png",
+    "otherNightReminder": "如果需要，唤醒他",
+    "reminders": [
+      "？"
+    ],
+    "remindersGlobal": [
+      "？"
+    ],
+    "name": "祈愿妖精",
+    "team": "townsfolk",
+    "ability": "在你的首个白天，你要拜访说书人并描述“那么......”，说书人会告诉你“如果......”。“如果......”加“那么......”是你的能力的完整描述。",
+    "attribution": "阿源",
+    "flavor": "低声吟唱精灵语。",
+    "otherNight": 2
+  },
+  {
+    "id": "51_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/51_dafenqi.png",
+    "otherNightReminder": "如果死亡唤醒他，并告知他所有类型的玩家（除旅行者）各一名。",
+    "reminders": [
+      "醉酒"
+    ],
+    "name": "空中飞人",
+    "team": "townsfolk",
+    "ability": "你死亡的当晚会被唤醒并得知所有角色类型的玩家各一名。你死于善良玩家发起的提名处决或能力时你醉酒。",
+    "attribution": "太一",
+    "flavor": "哈哈哈哈！你们闻到了吗？硫磺味的风在撕扯我的伞！听啊！胫骨断裂的节奏比死亡金属更带劲！等会被我的脑浆溅到衣服的观众当中，最难堪的那个就是恶魔！",
+    "otherNight": 15
+  },
+  {
+    "id": "17_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/17_dafenqi.png",
+    "reminders": [
+      "替死"
+    ],
+    "name": "大小姐",
+    "team": "outsider",
+    "ability": "你首次即将死亡时，可能会有两名存活玩家代替你死亡。",
+    "attribution": "太一",
+    "flavor": "你！你！你！和你！"
+  },
+  {
+    "id": "21_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/21_dafenqi.png",
+    "reminders": [
+      "醉酒",
+      "已猜测"
+    ],
+    "name": "解谜大师",
+    "team": "outsider",
+    "ability": "一名玩家醉酒，即使你已死亡。每局游戏限一次，你可以猜测谁是那个醉酒的玩家，如果猜对了，你会得知谁是恶魔，但如果猜错了，你会得知错误的“谁是恶魔”信息。",
+    "attribution": "官方角色"
+  },
+  {
+    "id": "27_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/27_dafenqi.png",
+    "firstNightReminder": "唤醒所有爪牙，并告知他们场中有落难少女。",
+    "reminders": [
+      "已被猜测"
+    ],
+    "name": "落难少女",
+    "team": "outsider",
+    "ability": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
+    "attribution": "官方角色",
+    "firstNight": 11
+  },
+  {
+    "id": "6_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/6_dafenqi.png",
+    "otherNightReminder": "在当晚，一同唤醒所有爪牙和恶魔。对他们展示“该角色的能力对你生效”信息标记，然后展示帽匠角色标记。每名以此被唤醒的玩家可以选择摇头或指向角色列表上与自己当前角色类型相同的一个角色。如果一名玩家在做出自己的选择后会使得自己的角色与一名其他玩家选择的角色相同，对他摇头示意他重新选择。在选择完成后让他重新入睡。移除“今晚茶会”提示标记。根据这些玩家的选择，在魔典上执行相应的角色变化操作。",
+    "reminders": [
+      "今晚茶会"
+    ],
+    "name": "帽匠",
+    "team": "outsider",
+    "ability": "如果你死亡，当晚爪牙和恶魔玩家可以选择变成新的爪牙和恶魔角色。",
+    "attribution": "官方角色",
+    "otherNight": 3
+  },
+  {
+    "id": "2_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/2_dafenqi.png",
+    "firstNightReminder": "唤醒斯芬克斯，让他选择一个角色。",
+    "otherNightReminder": "唤醒斯芬克斯，让他选择一个角色。",
+    "reminders": [
+      "提问"
+    ],
+    "name": "斯芬克斯",
+    "team": "minion",
+    "ability": "每个夜晚，你要选择一个角色：下个白天，如果该角色在场，他会被公开询问一个是非问题。没有答对的玩家可能会被处决。",
+    "attribution": "太一",
+    "flavor": "凡人的视野总被谎言蒙蔽，而我的凝视能穿透一切伪装。当命运的诘问降临时，唯有洞察真理者方能幸存。",
+    "firstNight": 13,
+    "otherNight": 13
+  },
+  {
+    "id": "18_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/18_dafenqi.png",
+    "reminders": [
+      "中毒",
+      "胜负反转",
+      "保留能力"
+    ],
+    "name": "麻风侏儒",
+    "team": "minion",
+    "ability": "在夜晚时，如果镇民使用自身能力选择了你，他会变成胜负条件反转的麻风侏儒，然后你中毒。你死后保留能力。",
+    "attribution": "太一",
+    "flavor": "过来！拥抱我！你到底在怕什么！"
+  },
+  {
+    "id": "49_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/49_dafenqi.png",
+    "name": "主谋",
+    "team": "minion",
+    "ability": "如果恶魔因为死于处决而因此导致游戏结束时，再额外进行一个夜晚和一个白天。在那个白天如果有玩家被处决，他的阵营落败。",
+    "attribution": "官方角色"
+  },
+  {
+    "id": "3_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/3_dafenqi.png",
+    "firstNightReminder": "对他展示所有在场的外来者标记。",
+    "otherNightReminder": "如果有外来者在今天白天死亡，让教父选择一名玩家。标记那名玩家死亡。",
+    "reminders": [
+      "死于今日",
+      "死亡"
+    ],
+    "setup": 1,
+    "name": "教父",
+    "team": "minion",
+    "ability": "在你的首个夜晚，你会得知有哪些外来者角色在场。如果有外来者在白天死亡，你会在当晚被唤醒并且你要选择一名玩家：他死亡。[-1或+1外来者]",
+    "attribution": "官方角色",
+    "firstNight": 12,
+    "otherNight": 12
+  },
+  {
+    "id": "5_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/5_dafenqi.png",
+    "otherNightReminder": "唤醒刻耳柏洛斯，让他选择一名玩家，如果他选择了爪牙，再次让他选择，直到他选择了一名非爪牙玩家。",
+    "reminders": [
+      "死亡",
+      "“超度”"
+    ],
+    "name": "刻耳柏洛斯",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家，每当你选中爪牙时你要再选一名玩家：他们死亡。被你杀死的爪牙保留他的能力。",
+    "attribution": "太一",
+    "flavor": "啃食你的肉体，超度你的灵魂，然后与我一起徘徊在这地狱之门。",
+    "otherNight": 9
+  },
+  {
+    "id": "4_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/4_dafenqi.png",
+    "otherNightReminder": "让涡流选择一名玩家。标记那名玩家死亡。",
+    "reminders": [
+      "死亡"
+    ],
+    "name": "涡流",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没人被处决，邪恶阵营获胜。",
+    "attribution": "官方角色",
+    "otherNight": 8
+  },
+  {
+    "id": "35_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/35_dafenqi.png",
+    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
+    "reminders": [
+      "死亡",
+      "中毒"
+    ],
+    "name": "诺-达鲺",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
+    "attribution": "官方角色",
+    "otherNight": 11
+  },
+  {
+    "id": "55_dafenqi",
+    "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/55_dafenqi.png",
+    "otherNightReminder": "珀可以选择一名玩家；或如果上一次他被唤醒时未做选择，让他选择三名玩家。标记这些玩家死亡。",
+    "reminders": [
+      "死亡",
+      "攻击三次"
+    ],
+    "name": "珀",
+    "team": "demon",
+    "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
+    "attribution": "官方角色",
+    "otherNight": 10
+  }
+]
