@@ -1,6 +1,7 @@
 class LiveSession {
   constructor(store) {
-    this._wss = process.env.VUE_APP_WS_URL || "wss://live.clocktower.online:8080/";
+    this._wss =
+      process.env.VUE_APP_WS_URL || "wss://live.clocktower.online:8080/";
     this._socket = null;
     this._isSpectator = true;
     this._gamestate = [];

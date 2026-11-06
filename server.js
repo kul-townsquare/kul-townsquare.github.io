@@ -34,9 +34,11 @@ wss.on("connection", (ws, req) => {
   const channel = channels.get(channelId);
   channel.set(playerId, ws);
 
-  console.log(`[+] ${playerId} joined channel ${channelId} (${channel.size} in room)`);
+  console.log(
+    `[+] ${playerId} joined channel ${channelId} (${channel.size} in room)`,
+  );
 
-  ws.on("message", data => {
+  ws.on("message", (data) => {
     let command, params;
     try {
       [command, params] = JSON.parse(data);
@@ -63,14 +65,19 @@ wss.on("connection", (ws, req) => {
   });
 
   ws.on("close", () => {
+    // A reconnect may have replaced this socket before it finished closing.
+    if (channel.get(playerId) !== ws) return;
+
     channel.delete(playerId);
-    console.log(`[-] ${playerId} left channel ${channelId} (${channel.size} remaining)`);
+    console.log(
+      `[-] ${playerId} left channel ${channelId} (${channel.size} remaining)`,
+    );
     if (channel.size === 0) {
       channels.delete(channelId);
     }
   });
 
-  ws.on("error", err => {
+  ws.on("error", (err) => {
     console.error(`Error for ${playerId} in ${channelId}:`, err.message);
   });
 });
