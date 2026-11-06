@@ -1,5 +1,8 @@
 # Release Notes
 
+### Unreleased
+- Keep reconnected players reachable for role delivery when an older connection closes.
+
 ### Version 3.0.0
 - New start
 
