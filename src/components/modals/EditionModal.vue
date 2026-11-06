@@ -88,22 +88,12 @@ export default {
           "万圣访客",
           "https://raw.githubusercontent.com/kul-townsquare/kul-townsquare.github.io/1cf0b0fc9fb6e6c1b50c1f77e23e0d581a02a745/%E5%89%A7%E6%9C%ACJSON/2025.11/%23%E4%B8%87%E5%9C%A3%E8%AE%BF%E5%AE%A2-%E7%86%8A%E7%8C%AB%E8%83%BD%E8%83%BD%26%E6%80%A7%E6%84%9F.json",
         ],
-        [
-          "哎呦!猫萌特",
-          "https://raw.githubusercontent.com/kul-townsquare/kul-townsquare.github.io/1cf0b0fc9fb6e6c1b50c1f77e23e0d581a02a745/%E5%89%A7%E6%9C%ACJSON/2025.11/%23%E5%93%8E%E5%91%A6!%E7%8C%AB%E8%90%8C%E7%89%B9-L%20Moment.json",
-        ],
-        [
-          "仲夏夜之梦",
-          "https://raw.githubusercontent.com/kul-townsquare/kul-townsquare.github.io/1cf0b0fc9fb6e6c1b50c1f77e23e0d581a02a745/%E5%89%A7%E6%9C%ACJSON/2025.11/%E4%BB%B2%E5%A4%8F%E5%A4%9C%E4%B9%8B%E6%A2%A6v1.1.1.json",
-        ],
-        [
-          "圆桌骑士团",
-          "https://raw.githubusercontent.com/kul-townsquare/kul-townsquare.github.io/1cf0b0fc9fb6e6c1b50c1f77e23e0d581a02a745/%E5%89%A7%E6%9C%ACJSON/2025.11/%E5%9C%86%E6%A1%8C%E9%AA%91%E5%A3%AB%E5%9B%A2v3.0.json",
-        ],
-        [
-          "达芬奇密码",
-          "https://raw.githubusercontent.com/kul-townsquare/kul-townsquare.github.io/1cf0b0fc9fb6e6c1b50c1f77e23e0d581a02a745/%E5%89%A7%E6%9C%ACJSON/2025.11/%E8%BE%BE%E8%8A%AC%E5%A5%87%E5%AF%86%E7%A0%81v1.3.2.json",
-        ],
+        ["哎呦!猫萌特", "/scripts/odyssey/哎呦!猫萌特.json"],
+        ["仲夏夜之梦", "/scripts/odyssey/仲夏夜之梦.json"],
+        ["圆桌骑士团", "/scripts/odyssey/圆桌骑士团.json"],
+        ["达芬奇密码", "/scripts/odyssey/达芬奇密码.json"],
+        ["但丁密码", "/scripts/odyssey/但丁密码.json"],
+        ["宝宝巴士", "/scripts/odyssey/宝宝巴士.json"],
       ],
     };
   },
