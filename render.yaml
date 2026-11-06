@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: kul-townsquare-frontend
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: VUE_APP_WS_URL
+        sync: false
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+
+  - type: web
+    name: kul-townsquare-ws
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
