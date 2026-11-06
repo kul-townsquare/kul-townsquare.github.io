@@ -1,6 +1,8 @@
 # Release Notes
 
 ### Unreleased
+- Refreshed four Odyssey scripts and added two to the JSON import list.
+  Odyssey preset titles display without version numbers.
 - Keep reconnected players reachable for role delivery when an older connection closes.
 
 ### Version 3.0.0
